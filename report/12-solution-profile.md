@@ -26,7 +26,7 @@ Actualmente, las agencias de turismo y los guías dependen principalmente de tel
 
 *Domain*
 
-VitalTrek opera en la intersección de la gestión logística turística, la seguridad preventiva y la telemetría IoT. El entorno de acción se ubica en el turismo de aventura y expediciones al aire libre, específicamente en geografías caracterizadas por la ausencia o intermitencia de infraestructura de telecomunicaciones tradicionales.
+Tourmate opera en la intersección de la gestión logística turística, la seguridad preventiva y la telemetría IoT. El entorno de acción se ubica en el turismo de aventura y expediciones al aire libre, específicamente en geografías caracterizadas por la ausencia o intermitencia de infraestructura de telecomunicaciones tradicionales.
 
 *Customer Segments*
 
@@ -46,7 +46,7 @@ Existe una clara desconexión entre la necesidad de seguridad continua y las her
 
 *Vision / Strategy*
 
-Nuestra visión es establecer a VitalTrek como el estándar tecnológico para la gestión de riesgo en el turismo de aventura en el Perú. La estrategia se basa en desplegar una arquitectura de hardware y software resiliente: un ecosistema IoT asincrónico mediante wearables de bajo costo y checkpoints Bluetooth estratégicamente ubicados, que capturen signos vitales y datos de ubicación sincronizados en ráfagas. Esto permitirá transformar la gestión de las agencias de un modelo reactivo a uno predictivo, mediante dashboards centralizados y alertas automatizadas, mientras se dota al turista de herramientas robustas de navegación offline.
+Nuestra visión es establecer a Tourmate como el estándar tecnológico para la gestión de riesgo en el turismo de aventura en el Perú. La estrategia se basa en desplegar una arquitectura de hardware y software resiliente: un ecosistema IoT asincrónico mediante wearables de bajo costo y checkpoints Bluetooth estratégicamente ubicados, que capturen signos vitales y datos de ubicación sincronizados en ráfagas. Esto permitirá transformar la gestión de las agencias de un modelo reactivo a uno predictivo, mediante dashboards centralizados y alertas automatizadas, mientras se dota al turista de herramientas robustas de navegación offline.
 
 *Initial Segment*
 
@@ -62,7 +62,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 - *Creo que mis clientes tienen la necesidad de* mantener una supervisión constante sobre la ubicación y el estado de salud de los grupos de turistas en zonas remotas, reduciendo la incertidumbre y los tiempos de respuesta ante emergencias, sin depender de redes de telecomunicaciones tradicionales.
 
-- *Estas necesidades pueden resolverse con* VitalTrek, una plataforma web integrada con un ecosistema IoT (wearables y checkpoints Bluetooth) que captura y sincroniza de forma asincrónica datos biométricos y de geolocalización, dotando a las agencias de dashboards de control y a los turistas de herramientas de navegación offline.
+- *Estas necesidades pueden resolverse con* Tourmate, una plataforma web integrada con un ecosistema IoT (wearables y checkpoints Bluetooth) que captura y sincroniza de forma asincrónica datos biométricos y de geolocalización, dotando a las agencias de dashboards de control y a los turistas de herramientas de navegación offline.
 
 - *Mis clientes iniciales son:*
     - *Segmento B2B:* Agencias de turismo de aventura y guías de alta montaña que gestionan rutas en zonas de baja o nula conectividad.
@@ -80,7 +80,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 - *Mi principal competencia en el mercado será* sistemas de comunicación por radio (VHF/UHF), dispositivos de mensajería satelital como Garmin inReach, y la gestión logística puramente manual.
 
-- *Superaremos a la competencia debido a* nuestro enfoque escalable y preventivo: a diferencia de los dispositivos satelitales costosos por usuario, VitalTrek permite monitorear automáticamente a decenas de turistas simultáneamente, detectando anomalías fisiológicas antes de que se conviertan en emergencias críticas.
+- *Superaremos a la competencia debido a* nuestro enfoque escalable y preventivo: a diferencia de los dispositivos satelitales costosos por usuario, Tourmate permite monitorear automáticamente a decenas de turistas simultáneamente, detectando anomalías fisiológicas antes de que se conviertan en emergencias críticas.
 
 - *El mayor riesgo de mi producto es* que la latencia en la sincronización asincrónica sea demasiado alta para ser útil en una emergencia médica aguda, o que el hardware sufra averías en condiciones climáticas extremas.
 
@@ -127,7 +127,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 - Nuestra competencia principal en el mercado serán TrekkSoft, AllTrails y Garmin inReach, además de métodos tradicionales como radiocomunicación VHF/UHF, coordinación por WhatsApp y seguimiento manual por parte de los guías.
 
-- Los venceremos debido a que VitalTrek es la única plataforma que integra gestión operativa para agencias, navegación offline para turistas e IoT biométrico en un solo ecosistema diseñado específicamente para el contexto peruano de baja conectividad.
+- Los venceremos debido a que Tourmate es la única plataforma que integra gestión operativa para agencias, navegación offline para turistas e IoT biométrico en un solo ecosistema diseñado específicamente para el contexto peruano de baja conectividad.
 
 - Nuestro mayor riesgo de producto es que la latencia entre checkpoints sea demasiado alta para responder oportunamente ante una emergencia médica aguda, o que las agencias rechacen la inversión inicial en hardware por considerarla elevada.
 
@@ -146,7 +146,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 #### Hypothesis Statement 01
 
-**Creemos que** lograremos incrementar la adopción de VitalTrek por parte de las agencias de turismo de aventura.
+**Creemos que** lograremos incrementar la adopción de Tourmate por parte de las agencias de turismo de aventura.
 
 **Si** las agencias de turismo de aventura
 
@@ -170,7 +170,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 #### Hypothesis Statement 03
 
-**Creemos que** lograremos incrementar la preferencia de los turistas por las agencias que utilicen VitalTrek.
+**Creemos que** lograremos incrementar la preferencia de los turistas por las agencias que utilicen Tourmate.
 
 **Si** los turistas
 
@@ -194,7 +194,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 #### Hypothesis Statement 05
 
-**Creemos que** lograremos fortalecer la reputación y competitividad de las agencias de turismo que utilicen VitalTrek.
+**Creemos que** lograremos fortalecer la reputación y competitividad de las agencias de turismo que utilicen Tourmate.
 
 **Si** las agencias de turismo de aventura
 
@@ -218,7 +218,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 #### Hypothesis Statement 07
 
-**Creemos que** lograremos aumentar la comercialización y escalabilidad de VitalTrek como solución tecnológica para el turismo de aventura.
+**Creemos que** lograremos aumentar la comercialización y escalabilidad de Tourmate como solución tecnológica para el turismo de aventura.
 
 **Si** las agencias de turismo de aventura
 
@@ -230,7 +230,7 @@ El despliegue inicial apuntará a agencias de turismo de aventura de tamaño med
 
 El Lean UX Canvas es una herramienta utilizada en el marco del diseño centrado en el usuario (UX) y la metodología Lean, cuyo objetivo es apoyar la creación y mejora de productos de manera ágil y eficiente. Su propósito principal es proporcionar una estructura organizada que fomente la colaboración entre equipos multidisciplinarios. A continuación, se presenta el Lean UX Canvas elaborado por el equipo utilizando la plataforma digital Mural.
 
-![Lean-UX-canvas-vitaltrek](assets/images/lean-ux-canvas.png)
+![Lean-UX-canvas-Tourmate](assets/images/lean-ux-canvas.png)
 
 Enlace para acceder al Lean UX Canvas en Mural: [https://l1nq.com/oa73grw](https://l1nq.com/oa73grw)
 

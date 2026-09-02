@@ -2,13 +2,13 @@
 
 ### 4.6.1. Design-Level EventStorming
 
-En esta sección se presenta el Design-Level EventStorming del proyecto VitalTrek, el cúal se desarrollo en 4 pasos, los cúales se van a explicar a continuación:
+En esta sección se presenta el Design-Level EventStorming del proyecto Tourmate, el cúal se desarrollo en 4 pasos, los cúales se van a explicar a continuación:
 
-* Para empezar, identificamos todos los Domain Events de VitalTrek. En esta etapa analizamos cada funcionalidad obtenida durante el análisis del negocio y registramos todos los eventos importantes que modifican el estado del sistema, como el registro de usuarios, la creación de tours, el inicio de recorridos, el reporte de incidentes o la generación de reportes:
+* Para empezar, identificamos todos los Domain Events de Tourmate. En esta etapa analizamos cada funcionalidad obtenida durante el análisis del negocio y registramos todos los eventos importantes que modifican el estado del sistema, como el registro de usuarios, la creación de tours, el inicio de recorridos, el reporte de incidentes o la generación de reportes:
 
 ![Event Storming](assets/images/Design-Level-EventStorming-1.jpg)
 
-* Luego, procedimos a organizar los Domain Events, eliminando los eventos repetidos, agrupamos aquellos que pertenecían al mismo flujo de negocio y ordenamos la secuencia lógica de cada proceso. Este refinamiento permitió obtener una visión más clara de los distintos procesos que forman parte de VitalTrek antes de incorporar elementos adicionales del modelo:
+* Luego, procedimos a organizar los Domain Events, eliminando los eventos repetidos, agrupamos aquellos que pertenecían al mismo flujo de negocio y ordenamos la secuencia lógica de cada proceso. Este refinamiento permitió obtener una visión más clara de los distintos procesos que forman parte de Tourmate antes de incorporar elementos adicionales del modelo:
 
 ![Event Storming](assets/images/Design-Level-EventStorming-2.jpg)
 

@@ -1,7 +1,7 @@
 ## 4.8. Database Design
 ### 4.8.1. Database Diagrams
 
-El diseño de base de datos de VitalTrek está estructurado en 5 bounded
+El diseño de base de datos de Tourmate está estructurado en 5 bounded
 contexts con 15 tablas, siguiendo los principios de Domain-Driven Design
 para garantizar modularidad, escalabilidad y mantenibilidad. Cada contexto
 —Identity & Access, Tour Management, Navigation & Exploration, Safety &
@@ -14,7 +14,7 @@ Esta arquitectura desacoplada pero conectada garantiza trazabilidad completa
 del recorrido, monitoreo biométrico continuo, sincronización offline y una
 gestión eficiente de toda la operación de turismo de aventura.
 
-![Imagen de la base de datos](assets/images/VitalTrek_DatabaseDiagram.png)
+![Imagen de la base de datos](assets/images/Tourmate_DatabaseDiagram.png)
 
 <div style="page-break-before: always;"></div>
 

@@ -2,7 +2,7 @@
 
 #### 2.2.1. Diseño de Entrevistas
 
-Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de VitalTrek. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los **dueños o responsables de agencias de turismo de aventura** y los **turistas de aventura**.
+Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de Tourmate. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los **dueños o responsables de agencias de turismo de aventura** y los **turistas de aventura**.
 
 ---
 

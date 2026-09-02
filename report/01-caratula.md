@@ -9,7 +9,7 @@
 <h2 align="center"><strong>Carrera de Ingeniería de Software</strong></h2>
 
 <h2 align="center"><strong>1ASI0729</strong></h2>
-<h2 align="center"><strong>Desarrollo de Apliaciones Open Source</strong></h2>
+<h2 align="center"><strong>Desarrollo de Aplicaciones Open Source</strong></h2>
 <h2 align="center">NRC</h2>
 <h2 align="center"><strong>7760</strong></h2>
 <h2 align="center"><strong>Informe del Trabajo Final</strong></h2>
