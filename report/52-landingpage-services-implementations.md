@@ -11,7 +11,7 @@ Para el desarrollo del primer sprint nos centramos en el desarrollo de la landin
 | **Time** | 4:00 PM                                                                                                                                                                                                                                  |
 | **Location** | Reunión virtual                                                                                                                                                                                                                          |
 | **Prepared By** | Giancarlo Verastigue Martinez                                                                                                                                                                                                            |
-| **Attendees** | Giancarlo Verastigue Martinez, Matias Carrillo Acho, xxx, xxxx, xxxx                                                                                                                                                                     |
+| **Attendees** | Giancarlo Verastigue Martinez, Matias Carrillo Acho, Frank Anthony Huingo Tello, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino                                                                                                                                                                     |
 | **Sprint n – 1 Review Summary** | N/A (Primer Sprint del proyecto. Se establecieron las bases de la arquitectura, infraestructura en la nube y repositorios).                                                                                                              |
 | **Sprint n – 1 Retrospective Summary** | N/A (Primer Sprint. El equipo acordó usar GitFlow y Conventional Commits rigurosamente desde el primer día).                                                                                                                             |
 | **Sprint Goal & User Stories** |                                                                                                                                                                                                                                          |
@@ -26,26 +26,48 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page UI/UX | Landing Page Structure | Basic Funcs | Special Funcs |
 |-------------------------------------|-----------------| --- | --- | --- | --- |
 | Verastigue Martinez, Giancarlo      | @CaLoVM         | C | L | C | C |
-| Carrillo Acho, Matias               | @xxx            | C | C | C | L |
-| xxxxxxx                             | @xx             | C | C | L | C |
-| xxxxxxx                             | @xxx            | C | C | L | C |
-| xxxxxxx                             | @xx             | L | C | C | C |
+| Carrillo Acho, Matias               | @lonybreux      | C | C | C | L |
+| Huingo Tello, Frank Anthony         | @Franz2308      | C | C | L | C |
+| Molina Vasquez, Manuel Alejandro    | @AleDusty       | C | C | L | C |
+| Quispe Palomino, Tony Jhunior     | @GonzJunior18p  | L | C | C | C |
 
 #### *5.2.1.3. Sprint Backlog 1*
 
-El sprint backlog se estructuró en torno a la creación de una Landing Page estática, rápida y responsiva, con soporte para cambio de idioma (Español/Inglés) y navegación fluida. Cada User Story se descompuso en tareas técnicas concretas, asignadas a los miembros del equipo según sus roles de liderazgo y colaboración definidos en la matriz LACX.
 
-**Trello link:** [https://trello.com/)
+El objetivo principal de este Sprint es desarrollar el sitio web estático (Landing Page) de TourMate, encargado de comunicar la propuesta de valor de la plataforma a los dos segmentos objetivo: turistas y agencias. Durante este Sprint se implementarán las secciones de contenido principal, navegación, beneficios diferenciados por segmento, funcionalidades del producto, testimonios, información del equipo y el formulario de contacto, además de los flujos de acceso al registro y el manejo de estados de error/no disponibilidad definidos en las User Stories asociadas a EP06.
+
+**Trello link:** [https://trello.com/b/gCKcMjVR/tourmate-sprint-1)
 
 ![Sprint Backlog 1](../assets/images/s1-sprint-backlog.png)
+## Sprint Backlog
 
-| User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
-| --- | --- | --- | --- | --- | --- |-------------| --- |
-| US19 | Landing Page Value Proposition | TS19.1 | Setup Static Proj | Inicializar el repositorio del Landing con la estructura base HTML5 y CSS (Tailwind/CSS puro). | 2 | @xxx        | Done |
-| US19 | Landing Page Value Proposition | TS19.2 | Implement Hero Section | Desarrollar la sección principal responsiva con Flexbox/Grid. | 4 | @xxx        | Done |
-| US20 | Landing Page Navigation | TS20.1 | Vanilla JS Smooth Scroll | Implementar el script JS para navegación interna y el anchor tag externo hacia la Web App. | 2 | @xxx        | Done |
-| US21 | Product Promotional Video | TS21.1 | Embed YouTube Iframe | Integrar el componente de video nativo con fallbacks de imagen vía CSS. | 2 | @xxx        | Done |
-| US26 | Landing Page Language Switcher | TS26.1 | Implement JS Dictionary | Crear el script Vanilla JS para alternar los nodos de texto entre Español e Inglés del DOM. | 3 | @xxx        | Done |
+| User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description                                                                                    | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- |------------------------------------------------------------------------------------------------| --- | --- |--------|
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.1 | Setup base del proyecto Landing | Inicializar el repositorio con la estructura base HTML5/CSS (Tailwind) para la Landing Page.   | 2 | @lonybreux | Done   |
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.2 | Implementar Hero Section | Desarrollar la sección principal con el propósito y beneficio central de TourMate.             | 4 | @lonybreux | Done  |
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.3 | Adaptar Hero Section a móvil | Ajustar el layout de la sección principal con Flexbox/Grid para dispositivos móviles.          | 2 | @CaLoVM | Done  |
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.4 | Manejo de error de contenido principal | Implementar mensaje de fallback cuando el contenido principal no esté disponible.              | 1 | @CaLoVM | Done  |
+| US-LP02 | Navegar entre secciones | TS-LP02.1 | Implementar Navbar | Crear el componente de navegación con enlaces a cada sección de la Landing.                    | 2 | @Franz2308 | Done  |
+| US-LP02 | Navegar entre secciones | TS-LP02.2 | Smooth Scroll con JS | Implementar script Vanilla JS para el desplazamiento suave entre secciones.                    | 2 | @Franz2308 | Done  |
+| US-LP02 | Navegar entre secciones | TS-LP02.3 | Menú responsive (hamburguesa) | Adaptar la navegación a un menú colapsable para dispositivos móviles.                          | 3 | @Franz2308 | Done  |
+| US-LP02 | Navegar entre secciones | TS-LP02.4 | Manejo de sección no disponible | Mostrar mensaje de error cuando una sección solicitada no esté disponible.                     | 1 | @AleDusty | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.1 | Diseñar sección de beneficios – Turista | Maquetar la sección con los beneficios orientados al segmento turista.                         | 3 | @GonzJunior18p | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.2 | Contenido de seguridad y navegación offline | Redactar e integrar el contenido sobre funcionalidades de seguridad y modo offline.            | 2 | @lonybreux | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.3 | CTA de registro – Turista | Implementar botón que redirige al proceso de registro del segmento turista.                    | 1 | @CaLoVM | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.4 | Manejo de error de contenido – Turista | Implementar mensaje de fallback si el contenido del segmento turista falla.                    | 1 | @CaLoVM | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.1 | Diseñar sección de beneficios – Agencia | Maquetar la sección con los beneficios orientados al segmento agencia.                         | 3 | @Franz2308 | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.2 | Contenido de monitoreo, alertas y gestión | Redactar e integrar el contenido sobre funcionalidades de monitoreo y gestión de expediciones. | 2 | @Franz2308 | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.3 | CTA de registro – Agencia | Implementar botón que redirige al proceso de registro del segmento agencia.                    | 1 | @AleDusty | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.4 | Manejo de error de contenido – Agencia | Implementar mensaje de fallback si el contenido del segmento agencia falla.                    | 1 | @GonzJunior18p | Done  |
+| US-LP05 | Conocer las funcionalidades principales | TS-LP05.1 | Sección de funcionalidades principales | Desarrollar grid/cards con las funcionalidades clave de TourMate.                              | 3 | @AleDusty | Done  |
+| US-LP05 | Conocer las funcionalidades principales | TS-LP05.2 | Contenido de operatividad offline | Integrar contenido claro sobre la compatibilidad y uso sin conexión.                           | 2 | @lonybreux | Done  |
+| US-LP05 | Conocer las funcionalidades principales | TS-LP05.3 | Manejo de error de contenido de funcionalidades | Implementar mensaje de fallback si el contenido de funcionalidades falla.                      | 1 | @CaLoVM | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.1 | Formulario de contacto | Maquetar el formulario de contacto con los campos requeridos.                                  | 3 | @Franz2308 | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.2 | Endpoint de envío de mensaje | Implementar el servicio que registra el mensaje y retorna confirmación de recepción.           | 4 | @GonzJunior18p | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.3 | Validación de campos del formulario | Implementar validaciones de formato y mensajes de error por campo inválido.                    | 2 | @Franz2308 | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.4 | Manejo de servicio de contacto no disponible | Implementar mensaje de error cuando el servicio de contacto no responda.                       | 1 | @GonzJunior18p | Done  |
+| US-LP09 | Conocer al equipo de la startup | TS-LP09.1 | Sección "Sobre el equipo" | Maquetar la sección con la información de los miembros de Axiom.                               | 2 | @lonybreux | Done  |
+| US-LP09 | Conocer al equipo de la startup | TS-LP09.2 | Adaptar sección de equipo a móvil | Ajustar el layout de la sección del equipo para dispositivos móviles.                          | 2 | @CaLoVM | Done  |
 
 #### *5.2.1.4. Development Evidence for Sprint Review*
 
