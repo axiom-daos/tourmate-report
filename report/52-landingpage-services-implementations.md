@@ -42,32 +42,22 @@ El objetivo principal de este Sprint es desarrollar el sitio web estático (Land
 ## Sprint Backlog
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description                                                                                    | Estimation (Hours) | Assigned To | Status |
-| --- | --- | --- | --- |------------------------------------------------------------------------------------------------| --- | --- |--------|
-| US-LP01 | Conocer la propuesta de valor | TS-LP01.1 | Setup base del proyecto Landing | Inicializar el repositorio con la estructura base HTML5/CSS (Tailwind) para la Landing Page.   | 2 | @lonybreux | Done   |
-| US-LP01 | Conocer la propuesta de valor | TS-LP01.2 | Implementar Hero Section | Desarrollar la sección principal con el propósito y beneficio central de TourMate.             | 4 | @lonybreux | Done  |
-| US-LP01 | Conocer la propuesta de valor | TS-LP01.3 | Adaptar Hero Section a móvil | Ajustar el layout de la sección principal con Flexbox/Grid para dispositivos móviles.          | 2 | @CaLoVM | Done  |
-| US-LP01 | Conocer la propuesta de valor | TS-LP01.4 | Manejo de error de contenido principal | Implementar mensaje de fallback cuando el contenido principal no esté disponible.              | 1 | @CaLoVM | Done  |
-| US-LP02 | Navegar entre secciones | TS-LP02.1 | Implementar Navbar | Crear el componente de navegación con enlaces a cada sección de la Landing.                    | 2 | @Franz2308 | Done  |
-| US-LP02 | Navegar entre secciones | TS-LP02.2 | Smooth Scroll con JS | Implementar script Vanilla JS para el desplazamiento suave entre secciones.                    | 2 | @Franz2308 | Done  |
-| US-LP02 | Navegar entre secciones | TS-LP02.3 | Menú responsive (hamburguesa) | Adaptar la navegación a un menú colapsable para dispositivos móviles.                          | 3 | @Franz2308 | Done  |
-| US-LP02 | Navegar entre secciones | TS-LP02.4 | Manejo de sección no disponible | Mostrar mensaje de error cuando una sección solicitada no esté disponible.                     | 1 | @AleDusty | Done  |
-| US-LP03 | Conocer beneficios para turistas | TS-LP03.1 | Diseñar sección de beneficios – Turista | Maquetar la sección con los beneficios orientados al segmento turista.                         | 3 | @GonzJunior18p | Done  |
-| US-LP03 | Conocer beneficios para turistas | TS-LP03.2 | Contenido de seguridad y navegación offline | Redactar e integrar el contenido sobre funcionalidades de seguridad y modo offline.            | 2 | @lonybreux | Done  |
-| US-LP03 | Conocer beneficios para turistas | TS-LP03.3 | CTA de registro – Turista | Implementar botón que redirige al proceso de registro del segmento turista.                    | 1 | @CaLoVM | Done  |
-| US-LP03 | Conocer beneficios para turistas | TS-LP03.4 | Manejo de error de contenido – Turista | Implementar mensaje de fallback si el contenido del segmento turista falla.                    | 1 | @CaLoVM | Done  |
-| US-LP04 | Conocer beneficios para agencias | TS-LP04.1 | Diseñar sección de beneficios – Agencia | Maquetar la sección con los beneficios orientados al segmento agencia.                         | 3 | @Franz2308 | Done  |
-| US-LP04 | Conocer beneficios para agencias | TS-LP04.2 | Contenido de monitoreo, alertas y gestión | Redactar e integrar el contenido sobre funcionalidades de monitoreo y gestión de expediciones. | 2 | @Franz2308 | Done  |
-| US-LP04 | Conocer beneficios para agencias | TS-LP04.3 | CTA de registro – Agencia | Implementar botón que redirige al proceso de registro del segmento agencia.                    | 1 | @AleDusty | Done  |
-| US-LP04 | Conocer beneficios para agencias | TS-LP04.4 | Manejo de error de contenido – Agencia | Implementar mensaje de fallback si el contenido del segmento agencia falla.                    | 1 | @GonzJunior18p | Done  |
-| US-LP05 | Conocer las funcionalidades principales | TS-LP05.1 | Sección de funcionalidades principales | Desarrollar grid/cards con las funcionalidades clave de TourMate.                              | 3 | @AleDusty | Done  |
-| US-LP05 | Conocer las funcionalidades principales | TS-LP05.2 | Contenido de operatividad offline | Integrar contenido claro sobre la compatibilidad y uso sin conexión.                           | 2 | @lonybreux | Done  |
-| US-LP05 | Conocer las funcionalidades principales | TS-LP05.3 | Manejo de error de contenido de funcionalidades | Implementar mensaje de fallback si el contenido de funcionalidades falla.                      | 1 | @CaLoVM | Done  |
-| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.1 | Formulario de contacto | Maquetar el formulario de contacto con los campos requeridos.                                  | 3 | @Franz2308 | Done  |
-| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.2 | Endpoint de envío de mensaje | Implementar el servicio que registra el mensaje y retorna confirmación de recepción.           | 4 | @GonzJunior18p | Done  |
-| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.3 | Validación de campos del formulario | Implementar validaciones de formato y mensajes de error por campo inválido.                    | 2 | @Franz2308 | Done  |
-| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.4 | Manejo de servicio de contacto no disponible | Implementar mensaje de error cuando el servicio de contacto no responda.                       | 1 | @GonzJunior18p | Done  |
-| US-LP09 | Conocer al equipo de la startup | TS-LP09.1 | Sección "Sobre el equipo" | Maquetar la sección con la información de los miembros de Axiom.                               | 2 | @lonybreux | Done  |
-| US-LP09 | Conocer al equipo de la startup | TS-LP09.2 | Adaptar sección de equipo a móvil | Ajustar el layout de la sección del equipo para dispositivos móviles.                          | 2 | @CaLoVM | Done  |
+| --- | --- |---------------------| --- |------------------------------------------------------------------------------------------------| --- | --- |--------|
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.1           | Setup base del proyecto Landing | Inicializar el repositorio con la estructura base HTML5/CSS para la Landing Page.              | 2 | @lonybreux | Done   |
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.2           | Implementar Hero Section | Desarrollar la sección principal con el propósito y beneficio central de TourMate.             | 4 | @lonybreux | Done  |
+| US-LP01 | Conocer la propuesta de valor | TS-LP01.3           | Adaptar Hero Section a móvil | Ajustar el layout de la sección principal con Flexbox/Grid para dispositivos móviles.          | 2 | @CaLoVM | Done  |
+| US-LP02 | Navegar entre secciones | TS-LP02.1           | Implementar Navbar | Crear el componente de navegación con enlaces a cada sección de la Landing.                    | 2 | @Franz2308 | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.1           | Diseñar sección de beneficios – Turista | Maquetar la sección con los beneficios orientados al segmento turista.                         | 3 | @GonzJunior18p | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.2           | Contenido de seguridad y navegación offline | Redactar e integrar el contenido sobre funcionalidades de seguridad y modo offline.            | 2 | @lonybreux | Done  |
+| US-LP03 | Conocer beneficios para turistas | TS-LP03.3           | CTA de registro – Turista | Implementar botón que redirige al proceso de registro del segmento turista.                    | 1 | @CaLoVM | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.1           | Diseñar sección de beneficios – Agencia | Maquetar la sección con los beneficios orientados al segmento agencia.                         | 3 | @Franz2308 | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.2           | Contenido de monitoreo, alertas y gestión | Redactar e integrar el contenido sobre funcionalidades de monitoreo y gestión de expediciones. | 2 | @Franz2308 | Done  |
+| US-LP04 | Conocer beneficios para agencias | TS-LP04.3           | CTA de registro – Agencia | Implementar botón que redirige al proceso de registro del segmento agencia.                    | 1 | @AleDusty | Done  |
+| US-LP05 | Conocer las funcionalidades principales | TS-LP05.1           | Sección de funcionalidades principales | Desarrollar grid/cards con las funcionalidades clave de TourMate.                              | 3 | @AleDusty | Done  |
+| US-LP05 | Conocer las funcionalidades principales | TS-LP05.2           | Contenido de operatividad offline | Integrar contenido claro sobre la compatibilidad y uso sin conexión.                           | 2 | @GonzJunior18p | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.1           | Formulario de contacto | Maquetar el formulario de contacto con los campos requeridos.                                  | 3 | @Franz2308 | Done  |
+| US-LP08 | Contactar al equipo de Tourmate | TS-LP08.2           | Endpoint de envío de mensaje | Implementar el servicio que registra el mensaje y retorna confirmación de recepción.           | 4 | @GonzJunior18p | Done  |
+| US-LP09 | Conocer al equipo de la startup | TS-LP09.1           | Sección "Sobre el equipo" | Maquetar la sección con la información de los miembros de Axiom.                               | 2 | @CaLoVM | Done  |
 
 #### *5.2.1.4. Development Evidence for Sprint Review*
 
