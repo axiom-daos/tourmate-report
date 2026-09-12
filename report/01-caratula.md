@@ -37,8 +37,8 @@
         <td align="center" >Carrillo Acho, Matias Renato</td>
       </tr>
       <tr>
-        <td align="center" >U202</td>
-        <td align="center" >XXXX</td>
+        <td align="center" >U202319057</td>
+        <td align="center" >Huingo Tello, Frank Anthony</td>
       </tr>
       <tr>
         <td align="center" >U202</td>
