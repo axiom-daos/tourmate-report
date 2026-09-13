@@ -41,8 +41,8 @@
         <td align="center" >Huingo Tello, Frank Anthony</td>
       </tr>
       <tr>
-        <td align="center" >U202</td>
-        <td align="center" >xxxxx</td>
+        <td align="center" >U20241F714</td>
+        <td align="center" >Quispe Palomino, Tony Jhunior</td>
       </tr>
       <tr>
         <td align="center" >U202419483</td>
