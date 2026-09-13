@@ -1,0 +1,91 @@
+@startuml
+
+package "tourmate.IAM.domain.model.valueObjects" {
+    Record UserId <<Value Object>> {
+        - value : UUID
+        + generate() : UserId {static}
+        + getStringValue() : String
+        + equals(other : UserId) : boolean
+    }
+    
+    Record AgencyId <<Value Object>> {
+        - value : UUID
+        + generate() : AgencyId {static}
+        + getStringValue() : String
+        + equals(other : AgencyId) : boolean
+    }
+    
+    Record PersonName <<Value Object>> {
+        - firstName : String
+        - lastName : String
+        + getFullName() : String
+    }
+    
+    Record EmailAddress <<Value Object>> {
+        - value : String
+        + getDomain() : String
+    }
+    
+    Record Password <<Value Object>> {
+        - value : String
+        + createFromPlainText(String plainText) : Password
+        + createFromHash(String hashFromDb) : Password
+        + matches(other: Password) : boolean
+    }
+    
+    Record ContactInfo <<Value Object>> {
+        - phone : String
+        - contactEmail : EmailAddress
+        - website : String
+        - address : String
+    }
+    
+    Record BusinessName <<Value Object>> {
+        - value : String
+    }
+    
+}
+
+package "tourmate.IAM.domain.model.aggregates" {
+    enum Role <<Enumeration>> {
+        ADMIN
+        TOURIST
+        AGENCY_OWNER
+        TOUR_GUIDE
+    }
+    
+    class User <<Aggregate Root>> {
+        - id : UserId
+        - name : PersonName
+        - email : EmailAddress
+        - password : Password
+        - role : Role
+        + getFullName() : String
+        + updateProfile(name : Optional<PersonName>, email : Optional<EmailAddress>) : void
+        + assignRole(role : Role) : void
+    }
+    
+    class Agency <<Aggregate Root>> {
+        - id: AgencyId
+        - ownerId : UserId
+        - businessName : BusinessName
+        - description : String
+        - contactInfo : ContactInfo
+        + updateProfile(businessName: Optional<BusinessName>,description : Optional<String>, contactInfo : Optional<ContactInfo>) : void
+    }
+}
+
+User "1" *-- "1" UserId : id
+User "1" *-- "1" PersonName : name
+User "1" *-- "1" EmailAddress : email
+User "1" *-- "1" Password : password
+User "1" *-- "1" Role : role
+
+Agency "1" *-- "1" AgencyId : id
+Agency "1" *-- "1" BusinessName : businessName
+Agency "1" *-- "1" ContactInfo : contactInfo
+Agency ..> UserId : references (ownerId)
+
+ContactInfo "1" *-- "1" EmailAddress : contactEmail
+
+@enduml

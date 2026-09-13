@@ -26,12 +26,12 @@ https://miro.com/app/board/uXjVHrbqRdA=/?share_link_id=127054225300
 
 ### 4.6.2. Software Architecture Context Level Diagram
 
-![ContexDiagram](../assets/images/contex-diagram.png)
+![ContexDiagram](../assets/images/context-level-diagram.png)
 
 ### 4.6.3. Software Architecture Container Level Diagrams
 
-![ContainerDiagram](../assets/images/container-diagram.png)
+![ContainerDiagram](../assets/images/container-level-diagram.png)
 
-### 4.6.4. Software Architecture Components Diagrams
+### 4.6.4. Software Architecture Component Level Diagrams
 
-![ComponentDiagram](../assets/images/component-diagram.png)
+![ComponentDiagram](../assets/images/component-level-diagram.png)
