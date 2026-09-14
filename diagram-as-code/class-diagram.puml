@@ -1,47 +1,39 @@
-@startuml
+@startuml "axios.tourmate"
 
 package "tourmate.IAM.domain.model.valueObjects" {
-    Record UserId <<Value Object>> {
-        - value : UUID
-        + generate() : UserId {static}
-        + getStringValue() : String
-        + equals(other : UserId) : boolean
-    }
-    
-    Record AgencyId <<Value Object>> {
-        - value : UUID
-        + generate() : AgencyId {static}
-        + getStringValue() : String
-        + equals(other : AgencyId) : boolean
-    }
     
     Record PersonName <<Value Object>> {
-        - firstName : String
-        - lastName : String
-        + getFullName() : String
+        - firstName: String
+        - lastName: String
+        + getFullName(): String
     }
     
     Record EmailAddress <<Value Object>> {
-        - value : String
-        + getDomain() : String
+        - value: String
+        + getDomain(): String
+    }
+    
+    Record PhoneNumber <<Value Object>> {
+        - value: String
+        + getCountryCode(): String
     }
     
     Record Password <<Value Object>> {
-        - value : String
-        + createFromPlainText(String plainText) : Password
-        + createFromHash(String hashFromDb) : Password
-        + matches(other: Password) : boolean
+        - value: String
+        + createFromPlainText(plainText: String): Password
+        + createFromHash(hashFromDb: String): Password
+        + matches(other: Password): boolean
     }
     
     Record ContactInfo <<Value Object>> {
-        - phone : String
-        - contactEmail : EmailAddress
-        - website : String
-        - address : String
+        - phoneNumber: PhoneNumber
+        - contactEmail: EmailAddress
+        - website: String
+        - address: String
     }
     
     Record BusinessName <<Value Object>> {
-        - value : String
+        - value: String
     }
     
 }
@@ -55,37 +47,416 @@ package "tourmate.IAM.domain.model.aggregates" {
     }
     
     class User <<Aggregate Root>> {
-        - id : UserId
-        - name : PersonName
-        - email : EmailAddress
-        - password : Password
-        - role : Role
-        + getFullName() : String
-        + updateProfile(name : Optional<PersonName>, email : Optional<EmailAddress>) : void
-        + assignRole(role : Role) : void
+        - id: UserId
+        - name: PersonName
+        - email: EmailAddress
+        - password: Password
+        - role: Role
+        + getFullName(): String
+        + changeName(newName: PersonName): void
+        + changeEmail(newEmail: EmailAddress): void
+        + changePassword(newPassword: Password): void
     }
     
-    class Agency <<Aggregate Root>> {
+    class Agency <<Aggregate>> {
         - id: AgencyId
-        - ownerId : UserId
-        - businessName : BusinessName
-        - description : String
-        - contactInfo : ContactInfo
-        + updateProfile(businessName: Optional<BusinessName>,description : Optional<String>, contactInfo : Optional<ContactInfo>) : void
+        - ownerId: UserId
+        - businessName: BusinessName
+        - description: String
+        - contactInfo: ContactInfo
+        + changeBusinessName(newBusinessName: BusinessName): void
+        + changeDescription(newDescription: String): void
+        + changeContactInfo(newContactInfo: ContactInfo): void
+    }
+    
+    class TourGuide <<Aggregate>> {
+        - id: UserId
+        - agencyId: AgencyId
+        - languages: List<String>
+        - phoneNumber: PhoneNumber
+        + addLanguage(newLanguage: String): void
+        + changePhoneNumber(newPhoneNumber: PhoneNumber): void
     }
 }
 
-User "1" *-- "1" UserId : id
-User "1" *-- "1" PersonName : name
-User "1" *-- "1" EmailAddress : email
-User "1" *-- "1" Password : password
-User "1" *-- "1" Role : role
+package "tourmate.Tour Management.domain.model.valueObjects" {
+    enum DifficultyLevel <<Enumeration>> {
+        EASY
+        MODERATE
+        HARD
+    }
+    
+    Record CheckpointId <<Value Object>> {
+        - value: UUID
+        + generate(): CheckpointId {static}
+        + getStringValue(): String
+        + equals(other: CheckpointId): boolean
+    }
+    
+    Record DepartureDateTime <<Value Object>> {
+        - value: LocalDateTime
+    }
+    
+    Record TourDetails <<Value Object>> {
+        - title: String
+        - description: String
+        - duration: String
+        - difficulty: DifficultyLevel
+        - price: Money
+    }
+    
+}
 
-Agency "1" *-- "1" AgencyId : id
-Agency "1" *-- "1" BusinessName : businessName
-Agency "1" *-- "1" ContactInfo : contactInfo
-Agency ..> UserId : references (ownerId)
+package "tourmate.Tour Management.domain.model.aggregates" {
+    class Tour <<Aggregate Root>>{
+        - id: TourId
+        - agencyId: AgencyId
+        - details: TourDetails
+        - checkpoints: List<Checkpoint>
+        - status: TourStatus
+        + publish(): void
+        + makeUnavailable(): void
+        + republish(): void
+        + changeDetails(newDetails: TourDetails): void
+        + addCheckpoint(checkpoint: Checkpoint): void
+        + removeCheckpoint(checkpointId: CheckpointId): void
+    }
+    
+    class TourSchedule <<Aggregate>> {
+        - id: TourScheduleId
+        - tourId: TourId
+        - departureDateTime: DepartureDateTime
+        - maxCapacity: int
+        - participants: List<Participant>
+        - status: TourScheduleStatus
+        + addParticipant(userId: UserId): void
+        + cancelParticipant(userId: UserId): void
+        + open(): void
+        + close(): void
+    }
+    
+    enum TourStatus <<Enumeration>> {
+        DRAFT
+        PUBLISHED
+        UNAVAILABLE
+    }
+    
+    enum TourScheduleStatus <<Enumeration>> {
+        OPENED
+        CLOSED
+    }
+}
 
-ContactInfo "1" *-- "1" EmailAddress : contactEmail
+package "tourmate.Tour Management.domain.model.entities" {
+    class Checkpoint <<Entity>> {
+        - id: CheckpointId
+        - name: String
+        - location: Coordinates
+        - order: int
+        - description: String
+        + changeName(newName : String) : void
+        + changeLocation(newLocation : Coordinates) : void
+        + changeOrder(newOrder : int) : void
+        + changeDescription(newDescription : String) : void
+    }
+    
+    class Participant <<Entity>> {
+        - id: UserId
+        - joinedAt: DateTime
+        + cancel(): void
+    }
+}
 
+package "tourmate.shared.domain.model.valueObjects" {
+    Record UserId <<Value Object>> {
+        - value: UUID
+        + generate(): UserId {static}
+        + getStringValue(): String
+        + equals(other: UserId): boolean
+    }
+    
+    Record AgencyId <<Value Object>> {
+        - value: UUID
+        + generate(): AgencyId {static}
+        + getStringValue(): String
+        + equals(other: AgencyId): boolean
+    }
+    
+    Record TourId <<Value Object>> {
+        - value: UUID
+        + generate(): TourId {static}
+        + getStringValue(): String
+        + equals(other: TourId): boolean
+    }
+    
+    Record Coordinates <<Value Object>> {
+        - latitude: double
+        - longitude: double
+        + distanceTo(other: Coordinates): double
+    }
+    
+    Record Currency <<Value Object>> {
+        - code: String
+    }
+        
+    Record Money <<Value Object>> {
+        - amount: BigDecimal
+        - currency: Currency
+        + add(money: Money): Money
+        + multiply(factor: BigDecimal): Money
+    }
+    
+    Record TourScheduleId <<Value Object>> {
+        - value: UUID
+        + generate(): TourScheduleId {static}
+        + getStringValue(): String
+        + equals(other: TourScheduleId): boolean
+    }
+    
+    Record ActiveTourId <<Value Object>> {
+        - value: UUID
+        + generate(): ActiveTourId {static}
+        + getStringValue(): String
+        + equals(other: ActiveTourId): boolean
+    }
+}
+
+package "tourmate.Tour Monitoring.domain.model.aggregates" {
+    class ActiveTour <<Aggregate Root>> {
+        - id: ActiveTourId
+        - tourScheduleId: TourScheduleId
+        - guideId: UserId
+        - status: ActiveTourStatus
+        - currentLocation: Coordinates
+        - startedAt: DateTime
+        - finishedAt: DateTime
+        + start(): void
+        + updateCurrentLocation(newLocation : Coordinates): void
+        + finish(): void
+    }
+    
+    enum ActiveTourStatus <<Enumeration>> {
+        IN_PROGRESS
+        FINISHED
+    }
+    
+}
+
+package "tourmate.Safety and Incident Management.domain.model.aggregates" {
+    class Incident <<Aggregate Root>> {
+        - id: IncidentId
+        - reportedByUserId: UserId
+        - activeTourId: ActiveTourId
+        - description: String
+        - location: Coordinates
+        - reportedAt: DateTime
+        - status: IncidentStatus
+        + resolve(): void
+    }
+    
+    enum IncidentStatus <<Enumeration>> {
+        REPORTED
+        RESOLVED
+    }
+}
+
+package "tourmate.Safety and Incident Management.domain.model.valueObject" {
+    Record IncidentId <<Value Object>> {
+        - value: UUID
+        + generate(): IncidentId {static}
+        + getStringValue(): String
+        + equals(other: IncidentId): boolean
+    }
+}
+
+package "tourmate.Subscriptions and Payment Management.domain.model.valueObjects" {
+    Record SubscriptionId <<Value Object>> {
+        - value: UUID
+        + generate(): SubscriptionId {static}
+        + getStringValue(): String
+        + equals(other: SubscriptionId): boolean
+    }
+    
+    Record PaymentId <<Value Object>> {
+        - value: UUID
+        + generate(): PaymentId {static}
+        + getStringValue(): String
+        + equals(other: PaymentId): boolean
+    }
+    
+    Record PlanId <<Value Object>> {
+        - value: UUID
+        + generate(): PlanId {static}
+        + getStringValue(): String
+        + equals(other: PlanId): boolean
+    }
+    
+    Record Feature <<Value Object>> {
+        - description : String
+        - value : String
+    }
+}
+
+package "tourmate.Subscriptions and Payment Management.domain.model.aggregates" {
+
+    class Subscription <<Aggregate>> {
+        - id: SubscriptionId
+        - agencyId: AgencyId
+        - planId: PlanId
+        - status: SubscriptionStatus
+        - activatedAt: DateTime
+        + cancel(): void
+    }
+    
+    enum SubscriptionStatus <<Enumeration>> {
+        ACTIVE
+        CANCELLED
+    }
+    
+    class Plan <<Aggregate>> {
+        - id: PlanId
+        - name: String
+        - price: Money
+        - features: List<Feature>
+        + changePrice(newPrice: Money): void
+        + addFeature(feature: Feature): void
+        + removeFeature(feature: Feature): void
+    }
+    
+    class Payment <<Aggregate Root>> {
+        - id: PaymentId
+        - agencyId: AgencyId
+        - planId: PlanId
+        - amount: Money
+        - status: PaymentStatus
+        - requestedAt: DateTime
+        + process(): void
+        + reject(): void
+    }
+    
+    enum PaymentStatus <<Enumeration>> {
+        REQUESTED
+        PROCESSED 
+        REJECTED
+    }
+    
+    
+}
+
+package "tourmate.Feedback and Tour Reviews.domain.model.valueObjects" {
+    Record CommentId <<Value Object>> {
+        - value: UUID
+        + generate(): CommentId {static}
+        + getStringValue(): String
+        + equals(other: CommentId): boolean
+    }
+    
+    Record ReviewId <<Value Object>> {
+        - value: UUID
+        + generate(): ReviewId {static}
+        + getStringValue(): String
+        + equals(other: ReviewId): boolean
+    }
+    
+    Record Rating <<Value Object>> {
+        - value: int
+        + equals(other: Rating): boolean
+    }
+}
+
+package "tourmate.Feedback and Tour Reviews.domain.model.entities" {
+    class Comment <<Entity>> {
+        - id: CommentId
+        - content: String
+        - createdAt: DateTime
+        + changeContent:(newContent: String): void
+    }
+}
+
+package "tourmate.Feedback and Tour Reviews.domain.model.aggregates" {
+    class Review <<Aggregate Root>> {
+        - id: ReviewId
+        - userId: UserId
+        - tourId: TourId
+        - rating: Rating
+        - comments: List<Comment>
+        - createdAt: DateTime
+        + addComment(content: String): void
+        + editComment(commentId: CommentId, newContent: String): void
+        + deleteComment(commentId: CommentId): void
+    }
+}
+
+User "1" *-- "1" UserId: id
+User "1" *-- "1" PersonName: name
+User "1" *-- "1" EmailAddress: email
+User "1" *-- "1" Password: password
+User "1" --> "1" Role: role
+
+Agency "1" *-- "1" AgencyId: id
+Agency "1" *-- "1" BusinessName: businessName
+Agency "1" *-- "1" ContactInfo: contactInfo
+Agency ..> UserId: references (ownerId)
+
+ContactInfo "1" *-- "1" EmailAddress: contactEmail
+
+Tour "1" *-- "1" TourId: id
+Tour "1" *-- "1" TourDetails: details
+Tour "1" *-- "1" TourStatus: status
+Tour "1" *-- "0..*" Checkpoint: checkpoints
+Tour ..> AgencyId: references (agencyId)
+
+Checkpoint "1" *-- "1" CheckpointId: id
+Checkpoint "1" *-- "1" Coordinates: location
+
+TourDetails "1" *-- "1" DifficultyLevel: difficulty
+TourDetails "1" *-- "1" Money: price
+
+TourGuide "1" *-- "1" UserId : id
+TourGuide ..> AgencyId : references (agencyId)
+TourGuide "1" *-- "1" PhoneNumber : phoneNumber
+
+TourSchedule "1" *-- "1" TourScheduleId : id
+TourSchedule ..> TourId : references (tourId)
+TourSchedule "1" *-- "1" DepartureDateTime : departureDateTime
+TourSchedule "1" *-- "1" TourScheduleStatus : status
+TourSchedule "1" *-- "0..*" Participant : participants
+
+Participant "1" *-- "1" UserId : userId
+
+Money "1" *-- "1" Currency: currency
+
+ActiveTour "1" *-- "1" ActiveTourId : id
+ActiveTour ..> TourScheduleId : references (tourScheduleId)
+ActiveTour ..> UserId : references (guideId)
+ActiveTour "1" *-- "1" ActiveTourStatus : status
+ActiveTour "1" *-- "1" Coordinates : currentLocation
+
+Incident "1" *-- "1" IncidentId : id
+Incident ..> ActiveTourId : references (activeTourId)
+Incident "1" *-- "1" IncidentStatus : status
+Incident "1" *-- "1" Coordinates : location
+
+Plan "1" *-- "1" PlanId : id
+Plan "1" *-- "1" Money : price
+Plan "1" *-- "0..*" Feature : features
+
+Subscription "1" *-- "1" SubscriptionId : id
+Subscription ..> AgencyId : references (agencyId)
+Subscription ..> PlanId : references (planId)
+Subscription "1" *-- "1" SubscriptionStatus : status
+
+Payment "1" *-- "1" PaymentId : id
+Payment ..> AgencyId : references (agencyId)
+Payment ..> PlanId : references (planId)
+Payment "1" *-- "1" Money : amount
+Payment "1" *-- "1" PaymentStatus : status
+
+Review "1" *-- "1" ReviewId : id
+Review ..> UserId : references (userId)
+Review ..> TourId : references (tourId)
+Review "1" *-- "1" Rating : rating
+Review "1" *-- "0..*" Comment : comments
+
+Comment "1" *-- "1" CommentId : id
 @enduml
