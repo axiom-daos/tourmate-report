@@ -3,60 +3,37 @@
 ### 4.7.1. Class Diagrams
 
 **Bounded Context: Shared**
-Agrupa los componentes y servicios transversales reutilizados por toda 
-la aplicación. Incluye `Layout`, `LanguageSwitcher` y `FooterContent` 
-como componentes de presentación comunes, junto con `BaseApi` y 
-`BaseEndpoint` como infraestructura base que extienden las APIs 
-específicas de cada bounded context
+Agrupa los Value Objects transversales reutilizados por todo el dominio de la aplicación. Incluye `Money`, `Currency`, `ActiveTourId`, 
+`Coordinates`, `TourId`, `TourScheduleId`, `AgencyId` y `UserId`.
 .
 ![Class Diagram](../assets/images/Tourmate_Shared_ClassDiagram.png)
 
-**Bounded Context: Safety & Monitoring**
-Supervisa la seguridad de los turistas durante la expedición mediante 
-monitoreo en tiempo real. Administra `Location`, `VitalSignReading`, 
-`Alert` e `Incident` a través de `SafetyStore`, permitiendo detectar 
-anomalías y exportar reportes operativos.
+**Bounded Context: Safety and Incident Management**
+Supervisa y documenta incidentes de los turistas o guias durante la expedición mediante monitoreo en tiempo real. Administra `Incident` y sus dos estados `REPORTED` y `RESOLVED`, permitiendo detectar anomalías y exportar reportes operativos.
 
-![Class Diagram](../assets/images/Tourmate_SafetyMonitoring_ClassDiagram.png)
+![Class Diagram](../assets/images/Tourmate_Safety_Incident_Management_ClassDiagram.png)
 
-**Bounded Context: Navigation & Exploration**
-Gestiona la ejecución de expediciones en campo y la experiencia del 
-turista durante el recorrido. Incluye `Expedition` como entidad central, 
-junto con `Progress`, `TouristExperience` y `Weather`, coordinados por 
-`NavigationStore` para navegación offline y registro multimedia.
+**Bounded Context: Tour Monitoring**
+Gestiona la información de tours en actividad mediante el aggregate root `ActiveTour`. Administra quien es el guia asignado, el estado del tour, la locación actual del grupo, a que hora inició y a que hora terminó. Permite empezar y finalizar los tours.
 
-![Class Diagram](../assets/images/Tourmate_NavigationExploration_ClassDiagram.png)
+![Class Diagram](../assets/images/Tourmate_TourMonitoring_ClassDiagram.png)
 
-**Bounded Context: Identity & Access**
-Gestiona el registro, autenticación y ciclo de vida de las cuentas de 
-usuario. Se centra en `User` y `Session`, administradas mediante 
-`IdentityStore` para operaciones de login, registro, recuperación de 
-contraseña y gestión de sesiones activas.
+**Bounded Context: Identity and Access Management**
+Gestiona el registro, ciclo de vida de las cuentas de usuario. Se centra en `User` como puerta de entrada para la creación de cuentas con roles definidos. `TourGuide` y `Agency` son aggregates centrados en un segmento objetivo distinto a un user común.
 
 ![Class Diagram](../assets/images/Tourmate_IdentityAccess_ClassDiagram.png)
 
 **Bounded Context: Tour Management**
-Controla la creación y administración del catálogo de tours por parte 
-de las agencias. La entidad principal es `Tour`, que se compone de 
-`Checkpoint` y se asocia con `Tourist` mediante asignaciones, todo 
-gestionado a través de `TourManagementStore`.
+Controla la creación y administración del catálogo de tours por parte de las agencias. La entidad principal es `Tour` que se compone de `Checkpoint` y se asocia con `TourSchedule` que se compone de `Participant` para la gestión de un tour programado con turistas participantes.
 
 ![Class Diagram](../assets/images/Tourmate_TourManagement_ClassDiagram.png)
 
-**Bounded Context: Notification & Profile**
-Administra los datos personales del usuario y la entrega de 
-notificaciones del sistema. Se basa en `Profile`, `NotificationPreferences` 
-y `Notification`, gestionados por `ProfileStore` para personalización 
-de la cuenta y configuración de canales de comunicación.
+**Bounded Context: Feedback and Tour Reviews**
+Administra los ratings y comentarios que puede hacer un turista luego de finalizar un tour. Se tiene a `Review` como punto de entrada para la creación de ratings y comentarios. Además se puede validar la información de un comentario con el entity `Comment` y manejar un estandar en rating que van de 0 a 5 puntos con el value object `Rating`.
 
-![Class Diagram](../assets/images/Tourmate_NotificationProfile_ClassDiagram.png)
+![Class Diagram](../assets/images/Tourmate_FeedbackTourReview_ClassDiagram.png)
 
-**Bounded Context: IoT**
-Permite la integración de dispositivos inteligentes y sensores durante las expediciones. Administra `IoTDevice` y `SensorReading` a través de `IoTStore`, habilitando el registro de datos en tiempo real y el envío de comandos a los dispositivos conectados. Se relaciona con el contexto de Safety & Monitoring para proveer lecturas de signos vitales y ubicación.
-
-![Class Diagram](../assets/images/iot-diagramClass.png)
-
-**Bounded Context: Subscriptions & Payment**  
-Gestiona los planes de suscripción y el procesamiento de pagos de los usuarios. Incluye `SubscriptionPlan`, `Subscription e Invoice`, administrados mediante `SubscriptionStore` para operaciones de contratación, cancelación y facturación. Se vincula con el contexto de Identity & Access para asociar las suscripciones a cada usuario registrado.
+**Bounded Context: Subscriptions and Payment Management**  
+Gestiona los planes de suscripción y el procesamiento de pagos de los usuarios. Incluye `Subscription`, `Plan` y `Payment`. 
 
 ![Class Diagram](../assets/images/subscription-classDiagram.png)
