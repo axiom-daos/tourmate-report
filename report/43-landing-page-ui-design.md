@@ -1,6 +1,13 @@
 ## 4.3 Landing Page UI Design
 ###  4.3.1 Landing Page Wireframe
+Para la landing page se realizaron low-fi Wireframes de cada una de las pantallas del sitio:
 
+![WF hero.png](../assets/images/WF%20hero.png)
+![WF intro.png](../assets/images/WF%20intro.png)
+![WF agentes.png](../assets/images/WF%20agentes.png)
+![WF viajes.png](../assets/images/WF%20viajes.png)
+![WF team.png](../assets/images/WF%20team.png)
+![WF footer.png](../assets/images/WF%20footer.png)
 
 ### 4.3.2 Landing Page Mock-up
 
