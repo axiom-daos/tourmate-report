@@ -49,8 +49,8 @@
         <td align="center" >Verastigue Martinez, Giancarlo Jose</td>
       </tr>
       <tr>
-        <td align="center" >U202 </td>
-        <td align="center" >xxxxxx </td>
+        <td align="center" >U20221G231 </td>
+        <td align="center" >Molina Vasquez, Manuel Alejandro</td>
       </tr>
     </tbody>
   </table>
