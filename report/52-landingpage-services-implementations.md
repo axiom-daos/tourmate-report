@@ -38,7 +38,7 @@ El objetivo principal de este Sprint es desarrollar el sitio web estático (Land
 
 **Trello link:** [https://trello.com/b/gCKcMjVR/tourmate-sprint-1)
 
-![Sprint Backlog 1](../assets/images/s1-sprint-backlog.png)
+![Sprint Backlog 1](./assets/images/s1-sprint-backlog.png)
 ## Sprint 1
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description                                                                                    | Estimation (Hours) | Assigned To | Status |
@@ -88,9 +88,51 @@ Durante el Sprint 1 el esfuerzo de desarrollo se enfocó exclusivamente en la cr
 
 #### *5.2.1.7. Software Deployment Evidence for Sprint Review*
 
-Para el despliegue continuo (CI/CD) de este Sprint, se configuró el entorno de GitHub Pages conectado directamente al repositorio de GitHub del Landing Page estático, permitiendo publicaciones automáticas y ultra-rápidas con cada PR fusionado en la rama main.
+#### Despliegue de la Landing Page
+El despliegue de la Landing Page de TourMate se realizó utilizando GitHub Pages, aprovechando sus capacidades para publicar sitios web estáticos directamente desde un repositorio. Este enfoque permitió una implementación sencilla, automatizada y accesible sin necesidad de servicios externos adicionales.
 
-![Software Deployment for Sprint 1](../assets/images/deployment.png)
+#### Infraestructura de Despliegue
+
+- **Repositorio de código fuente:** GitHub
+- **Plataforma de despliegue:** GitHub Pages
+- **Tipo de aplicación:** Landing Page estática (HTML, CSS, JavaScript)
+- **Acceso:** URL pública generada por GitHub
+
+#### Proceso de Despliegue
+
+1. **Creación del repositorio**
+    - Se creó un repositorio en GitHub que contiene todos los archivos de la Landing Page (HTML, CSS, imágenes y scripts).
+    - Se organizó el proyecto asegurando que el archivo principal sea `index.html`, requerido por GitHub Pages.
+
+   ![Deployment](./assets/images/Deployment-Create-Repository.png)
+
+2. **Subida del código**
+    - Se realizó el `push` del proyecto a la rama principal (`main`) del repositorio.
+    - Se verificó que todos los recursos estén correctamente enlazados (rutas relativas).
+
+   ![Deployment](./assets/images/Deployment-Push.png)
+
+3. **Configuración de GitHub Pages**
+    - En la sección *Settings* del repositorio, se habilitó **GitHub Pages**.
+    - Se seleccionó la rama `main` como fuente de despliegue.
+    - Se definió la carpeta raíz (`/root`) como directorio de publicación.
+
+   ![Deployment](./assets/images/Deployment-GHPages.png)
+
+4. **Publicación automática**
+    - GitHub Pages procesó automáticamente el contenido del repositorio.
+    - En pocos minutos, generó una URL pública donde la Landing Page quedó disponible.
+
+   ![Deployment](./assets/images/Deployment-URL.png)
+
+5. **Actualizaciones**
+    - Cada vez que se realiza un nuevo `push` a la rama `main`, GitHub Pages actualiza automáticamente la página.
+    - Esto permite mantener la Landing Page sincronizada con los cambios del repositorio sin intervención manual adicional.
+
+#### Resultado
+La Landing Page de TourMate fue desplegada exitosamente mediante GitHub Pages, permitiendo su acceso público a través de una URL estable. Esto facilita la presentación del producto a usuarios potenciales y valida la propuesta de valor del sistema de manera rápida y efectiva.
+
+URL: https://
 
 #### *5.2.1.8. Team Collaboration Insights during Sprint*
 
