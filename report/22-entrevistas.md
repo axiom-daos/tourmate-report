@@ -20,7 +20,6 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 **Perfil del entrevistado:** propietarios, directores de operaciones o guías principales de agencias que operen rutas de trekking, montañismo, expediciones o turismo de naturaleza en zonas remotas del Perú. Preferiblemente agencias medianas o pequeñas con operaciones activas en sierra, selva alta o circuitos andinos.
 
-
 ---
 
 **Preguntas de apertura y contexto**
@@ -59,7 +58,6 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 ##### Segmento 2: Turistas de Aventura
 
 **Perfil del entrevistado:** personas que hayan realizado al menos una actividad de turismo de aventura en el Perú en los últimos dos años (trekking, montañismo, expedición en selva o ruta de naturaleza en zonas remotas), ya sean nacionales o extranjeros residentes en el país.
-
 
 ---
 
@@ -128,56 +126,57 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 </div>
 <div align="center">
-    <img src="assets/images/entrevista-agencia-1.png" width="600">
+    <img src="../assets/images/entrevista-agencia-1.png" width="600">
 </div>
 
 **Resumen:** Mateo León Paredes, 25 años, opera como encargado logístico de transporte turístico desde Lima, gestionando hasta 10 vehículos y entre 80-120 turistas semanales en rutas hacia Cusco, Arequipa y selva central. Su mayor problema es el seguimiento de flota: el GPS instalado está desactualizado y pierde señal en sierra, por lo que todo depende de WhatsApp y un Excel manual, con zonas de hasta 2 horas sin cobertura que han generado fricciones comerciales con agencias clientes. Vivió un incidente crítico con 12 turistas extranjeros varados de noche sin señal, lo que evidenció la fragilidad total del sistema. Necesita una solución con funcionamiento offline, botón de emergencia para conductores y panel en tiempo real desde Lima, y estaría dispuesto a pagar entre 60-120 USD/mes si puede justificar el ROI ante el dueño, quien representa la principal barrera para adoptar nueva tecnología.
- 
+
 ---
 
+<div align="center">
 
-**Entrevista 2:**
----
+| Campo | Información |
+|-------|-------------|
+| Segmento | Dueño o responsable de agencia de turismo de aventura |
+| Nombres y apellidos | Mateo Escudero |
+| Edad | 22 años |
+| Distrito | Lima |
+| Ocupación | Guía en Adventure Perú |
+| Rutas atendidas | Cusco, Áncash y Madre de Dios |
+| Flota / Volumen | 10 guías, 40-70 turistas en temporada alta (4-7 grupos simultáneos) |
+| Inicio de la entrevista | 00:00 |
+| Duración | 00:11:05 |
+| URL del video | [Entrevista2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D) |
 
-![Entrevista 2](../assets/images/New-Entrevista-2.png)
+</div>
+<div align="center">
+    <img src="../assets/images/New-Entrevista-2.png" width="600">
+</div>
 
-| | |
-| :--- | :--- |
-| **Entrevistador:** | Tony Jhunior Quispe Palomino |
-| **Entrevistado:** | Mateo Escudero |
-| **Edad** | 22 años |
-| **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Inicio de la entrevista** | 0:00 |
-| **Duración** | 11:05 min |
-| **Enlace** | [Entrevista2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-<br>
-
-| |
-| :--- |
-| **Resumen:** Mateo Escudero, de 22 años y guía en Adventure Perú, apoya en la gestión de expediciones de turismo de aventura (principalmente trekking, montañismo y campamentos) en zonas como Cusco, Áncash y Madre de Dios. Nos comenta que la agencia maneja un equipo de 10 guías y atiende de 40 a 70 turistas en temporada alta, operando entre 4 y 7 grupos simultáneos. Actualmente, coordinan la operación mediante radios, llamadas, WhatsApp y hojas de cálculo o formularios básicos. Esto les genera dolores de cabeza importantes: la falta de señal de internet en las rutas de montaña dificulta la comunicación en tiempo real y la actualización oportuna de la ubicación de los grupos, además de provocar retrasos en la sincronización de datos y reportes dispersos. Asimismo, mencionó que se han enfrentado a situaciones críticas por mal de altura y fallas en la comunicación en zonas alejadas. Finalmente, muestra un gran interés en una solución tecnológica, señalando que se valoraría contar con mapas offline funcionales, un panel centralizado de monitoreo de grupos y un botón de pánico accesible incluso sin internet, considerando un rango de precio razonable de suscripción de 100 a 150 soles mensuales. Como principal barrera, destaca los costos, la necesidad de capacitación del personal y la falta de dispositivos avanzados en algunos guías. |
+**Resumen:** Mateo Escudero, de 22 años y guía en Adventure Perú, apoya en la gestión de expediciones de turismo de aventura (principalmente trekking, montañismo y campamentos) en zonas como Cusco, Áncash y Madre de Dios. Nos comenta que la agencia maneja un equipo de 10 guías y atiende de 40 a 70 turistas en temporada alta, operando entre 4 y 7 grupos simultáneos. Actualmente, coordinan la operación mediante radios, llamadas, WhatsApp y hojas de cálculo o formularios básicos. Esto les genera dolores de cabeza importantes: la falta de señal de internet en las rutas de montaña dificulta la comunicación en tiempo real y la actualización oportuna de la ubicación de los grupos, además de provocar retrasos en la sincronización de datos y reportes dispersos. Asimismo, mencionó que se han enfrentado a situaciones críticas por mal de altura y fallas en la comunicación en zonas alejadas. Finalmente, muestra un gran interés en una solución tecnológica, señalando que se valoraría contar con mapas offline funcionales, un panel centralizado de monitoreo de grupos y un botón de pánico accesible incluso sin internet, considerando un rango de precio razonable de suscripción de 100 a 150 soles mensuales. Como principal barrera, destaca los costos, la necesidad de capacitación del personal y la falta de dispositivos avanzados en algunos guías.
 
 ---
 
 ##### Segmento 2: Turistas de Aventura
 
-**Entrevista 4:**
----
+<div align="center">
 
-![Entrevista 4](../assets/images/New-Entrevista-4.png)
+| Campo | Información |
+|-------|-------------|
+| Segmento | Turista de Aventura |
+| Nombres y apellidos | Sofia Mendoza |
+| Edad | 20 años |
+| Distrito | Lima |
+| Ocupación / Actividad | Aficionada a actividades de aventura y excursiones |
+| Rutas atendidas | Lambayeque (bicicleta), Paracas |
+| Flota / Volumen | 3 veces al año aprox. |
+| Inicio de la entrevista | 00:00 |
+| Duración | 00:11:48 |
+| URL del video | [Entrevista4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBPxk5ihQP7Qpk1EiObhUKMAcqE0PkmidpljYmgsKZhw60?e=y94DfE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D) |
 
-| | |
-| :--- | :--- |
-| **Entrevistador:** | Tony Jhunior Quispe Palomino |
-| **Entrevistado:** | Sofia Mendoza |
-| **Edad** | 20 años |
-| **Segmento:** | Turista de Aventura |
-| **Inicio de la entrevista** | 0:00 |
-| **Duración** | 11:48 min |
-| **Enlace** | [Entrevista4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBPxk5ihQP7Qpk1EiObhUKMAcqE0PkmidpljYmgsKZhw60?e=y94DfE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+</div>
+<div align="center">
+    <img src="../assets/images/New-Entrevista-4.png" width="600">
+</div>
 
-<br>
-
-| |
-| :--- |
-| **Resumen:** Sofía Mendoza, de 20 años y aficionada a las actividades de aventura, nos comparte sea su experiencia participando en excursiones y viajes en el Perú, como sus recorridos en bicicleta en Lambayeque o sus visitas a la reserva de Paracas. Nos comenta que suele realizar estas actividades unas tres veces al año durante sus vacaciones y que prefiere organizarlas por cuenta propia o guiada cuando no tiene conocimiento previo del lugar. Respecto a sus principales preocupaciones y dolores de cabeza, destaca la falta de conectividad e internet en zonas remotas de montaña o rutas peligrosas, la dificultad para pedir ayuda o ubicarse ante imprevistos, y el mal estado de las carreteras debido a lluvias o bloqueos, recordando un incidente crítico por el clima cuando viajaba hacia la selva y las agencias no ofrecieron protocolos o advertencias de seguridad adecuados. Finalmente, muestra un gran interés en una solución tecnológica o dispositivo que le permita ver información contextual en tiempo real —como mapas, clima, historia del lugar y puntos de interés—, valorando positivamente que cuente con monitoreo o protocolos de emergencia avanzados, siempre y cuando sea accesible y no exceda su presupuesto.|
----
+**Resumen:** Sofía Mendoza, de 20 años y aficionada a las actividades de aventura, nos comparte su experiencia participando en excursiones y viajes en el Perú, como sus recorridos en bicicleta en Lambayeque o sus visitas a la reserva de Paracas. Nos comenta que suele realizar estas actividades unas tres veces al año durante sus vacaciones y que prefiere organizarlas por cuenta propia o guiada cuando no tiene conocimiento previo del lugar. Respecto a sus principales preocupaciones y dolores de cabeza, destaca la falta de conectividad e internet en zonas remotas de montaña o rutas peligrosas, la dificultad para pedir ayuda o ubicarse ante imprevistos, y el mal estado de las carreteras debido a lluvias o bloqueos, recordando un incidente crítico por el clima cuando viajaba hacia la selva y las agencias no ofrecieron protocolos o advertencias de seguridad adecuados. Finalmente, muestra un gran interés en una solución tecnológica o dispositivo que le permita ver información contextual en tiempo real —como mapas, clima, historia del lugar y puntos de interés—, valorando positivamente que cuente con monitoreo o protocolos de emergencia avanzados, siempre y cuando sea accesible y no exceda su presupuesto.
