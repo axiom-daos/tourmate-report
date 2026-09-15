@@ -39,13 +39,12 @@ El objetivo principal de este Sprint es desarrollar el sitio web estático (Land
 **Trello link:** [https://trello.com/b/gCKcMjVR/tourmate-sprint-1)
 
 ![Sprint Backlog 1](../assets/images/s1-sprint-backlog.png)
-## Sprint Backlog
+## Sprint 1
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description                                                                                    | Estimation (Hours) | Assigned To | Status |
 | --- | --- |---------------------| --- |------------------------------------------------------------------------------------------------| --- | --- |--------|
 | US-LP01 | Conocer la propuesta de valor | TS-LP01.1           | Setup base del proyecto Landing | Inicializar el repositorio con la estructura base HTML5/CSS para la Landing Page.              | 2 | @lonybreux | Done   |
 | US-LP01 | Conocer la propuesta de valor | TS-LP01.2           | Implementar Hero Section | Desarrollar la sección principal con el propósito y beneficio central de TourMate.             | 4 | @lonybreux | Done  |
-| US-LP01 | Conocer la propuesta de valor | TS-LP01.3           | Adaptar Hero Section a móvil | Ajustar el layout de la sección principal con Flexbox/Grid para dispositivos móviles.          | 2 | @CaLoVM | Done  |
 | US-LP02 | Navegar entre secciones | TS-LP02.1           | Implementar Navbar | Crear el componente de navegación con enlaces a cada sección de la Landing.                    | 2 | @Franz2308 | Done  |
 | US-LP03 | Conocer beneficios para turistas | TS-LP03.1           | Diseñar sección de beneficios – Turista | Maquetar la sección con los beneficios orientados al segmento turista.                         | 3 | @GonzJunior18p | Done  |
 | US-LP03 | Conocer beneficios para turistas | TS-LP03.2           | Contenido de seguridad y navegación offline | Redactar e integrar el contenido sobre funcionalidades de seguridad y modo offline.            | 2 | @lonybreux | Done  |
@@ -85,7 +84,7 @@ Durante este Sprint, el equipo logró implementar la versión inicial del Landin
 
 #### *5.2.1.6. Services Documentation Evidence for Sprint Review*
 
-N/A. Durante el Sprint 1 el esfuerzo de desarrollo se enfocó exclusivamente en la creación del sitio web estático promocional (Landing Page), por lo que aún no se han implementado APIs RESTful ni Endpoints backend que requieran ser documentados a través de Swagger/OpenAPI. Esta documentación se estructurará a partir del Sprint 2.
+Durante el Sprint 1 el esfuerzo de desarrollo se enfocó exclusivamente en la creación del sitio web estático promocional (Landing Page), por lo que aún no se han implementado APIs RESTful ni Endpoints backend que requieran ser documentados a través de Swagger/OpenAPI. Esta documentación se estructurará a partir del Sprint 2.
 
 #### *5.2.1.7. Software Deployment Evidence for Sprint Review*
 
