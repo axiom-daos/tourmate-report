@@ -109,26 +109,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ##### Segmento 1: Dueños o responsables de agencia de turismo de aventura
 
-**Entrevista 1:**
 
-![Entrevista 1](../assets/images/entrevista1.png)
-
-| |                                                       |
-| :--- |:------------------------------------------------------|
-| **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Nombres y apellidos:** | ----                                                  |
-| **Edad:** | 25 años                                               |
-| **Distrito:** | Lima                                                  |
-| **Ocupación:** | Encargado logístico de transporte turístico           |
-| **Rutas atendidas:** | Cusco, Arequipa y selva central                       |
-| **Flota / Volumen:** | Hasta 10 vehículos, 80-120 turistas semanales         |
-| **Inicio de la entrevista:** | 00:00                                                 |
-| **Duración:** | 00:11:30                                              |
-| **URL del video:** |                                |
-
-**Resumen:** Mateo León Paredes, 25 años, opera como encargado logístico de transporte turístico desde Lima, gestionando hasta 10 vehículos y entre 80-120 turistas semanales en rutas hacia Cusco, Arequipa y selva central. Su mayor problema es el seguimiento de flota: el GPS instalado está desactualizado y pierde señal en sierra, por lo que todo depende de WhatsApp y un Excel manual, con zonas de hasta 2 horas sin cobertura que han generado fricciones comerciales con agencias clientes. Vivió un incidente crítico con 12 turistas extranjeros varados de noche sin señal, lo que evidenció la fragilidad total del sistema. Necesita una solución con funcionamiento offline, botón de emergencia para conductores y panel en tiempo real desde Lima, y estaría dispuesto a pagar entre 60-120 USD/mes si puede justificar el ROI ante el dueño, quien representa la principal barrera para adoptar nueva tecnología.
-
----
 
 **Entrevista 2:**
 
@@ -164,7 +145,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 **Resumen:** Aarón Espinosa representa a una agencia pequeña enfocada en turismo de aventura, caminatas, trekking y visitas culturales en la sierra peruana (principalmente Cusco, Arequipa y alrededores). En temporadas altas llegan a coordinar entre 10 y 15 guías simultáneamente, atendiendo de 50 a 100 turistas al día distribuidos en 5 a 8 grupos en ruta. Actualmente, el monitoreo lo realizan mediante llamadas telefónicas, la función de ubicación compartida y grupos de WhatsApp, mientras que la información operativa la manejan de forma dispersa en hojas de Microsoft Excel y chats. Manifiesta que la pérdida total de señal móvil en zonas de altura y senderos aislados es sumamente frecuente; ante ello, no cuentan con contingencias técnicas y se limitan a esperar a que el guía recupere cobertura para reportar. Toda la supervisión de la condición física de los turistas recae exclusivamente en la observación presencial del guía. Entre los incidentes habituales reporta casos de descompensación por mal de altura y agotamiento físico extremo. Señala que la falta de conectividad dificulta actuar con rapidez desde la base, lo que deriva en reclamos de clientes y deteriora la reputación de la empresa. Aarón considera indispensable una solución que funcione sin señal móvil (almacenando datos localmente hasta reconectar), que centralice la ubicación y ofrezca comunicación directa con alertas tempranas. Como funcionalidades de valor agregado destaca los reportes de recorridos y el historial de incidentes. Estaría dispuesto a adoptar un modelo de suscripción mensual con un rango de pago estimado entre S/. 150 y S/. 300.
 
-**Entrevista:**
+**Entrevista 3:**
 
 ![Entrevista 7](../assets/images/Entrevista%207.png)
 
@@ -235,3 +216,22 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 **Resumen:**
 
 El análisis de la entrevista con Miller, un viajero que realiza trekking de manera ocasional, revela información clave sobre el comportamiento y las necesidades urgentes de los aventureros en zonas remotas. Aunque suele organizarse de forma independiente con amigos para rutas conocidas, Miller prefiere contratar agencias y guías para trayectos más complejos. Durante estas expediciones, su principal punto de dolor es la pérdida de señal celular, lo cual genera una gran incertidumbre sobre la ubicación exacta y la ruta a seguir. A esto se suma la percepción de que las agencias a menudo carecen de protocolos de emergencia claros frente a problemas de salud o fatiga extrema del grupo. Si bien actualmente intenta mitigar estos riesgos compartiendo su ubicación y descargando mapas sin conexión, estas herramientas terminan perdiendo su utilidad principal al no contar con cobertura de red.
+
+
+**Entrevista 7:**
+
+![Entrevista 7](../assets/images/entrevista7.png)
+
+| |                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Matias Renato Carrillo Acho                                                                                                                                                                                                                                                                  |
+| **Entrevistado:** | Alberto Joaquin Alfaro Mallma                                                                                                                                                                                                                                                                                                                              |
+| **Edad:** | 25 años                                                                                                                                                                                                                                                                                                                                      |
+| **Segmento:** | Turista de Aventura                                                                                                                                                                                                                                                                                                                          |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
+| **Duración:** | 06:25 min                                                                                                                                                                                                                                                                                                                                    |
+| **Enlace:** | [Entrevista-7](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAUJbSUxGQ-RrATzxOjZawRAVmvkpuEsfg7qOf-p29IYXk?e=BFlFkq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)|
+
+**Resumen:** Alberto Joaquin Alfaro Mallma, 25 años. Su ultimo viaje fue hacia la laguna 69 en la cordillera blanca, además señala que contrato a una agencia con guía incluido. Frecuentemente prefiere contratar a una agencia turistica para realizar viajes o tours, tambien señala que ha vivido percances durante el tour siendo uno de estos la falta de señal y comunicación. Menciona que la seguridad en tours depende exclusivamente de la agencia y de la preparación de los guías designados, además señala que utiliza mapas offlines, gps y relojes inteligentes como herramientas durante el tour.
+
+---
