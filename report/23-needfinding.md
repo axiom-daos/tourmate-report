@@ -13,13 +13,13 @@ Se ha elaborado una ficha de User Persona por cada segmento objetivo, utilizando
  
 **User Persona 1: Ana Lucía Quispe - Segmento de Dueños o Responsables de Agencias de Turismo de Aventura**
  
-![](assets/images/User-Persona1.png)
+![](../assets/images/User-Persona1.png)
 
 Representa al segmento de agencias y operadores de turismo de aventura. Este arquetipo encarna a la gerente de operaciones de una agencia mediana en Cusco, responsable de coordinar guías, supervisar tours simultáneos y garantizar la seguridad de los grupos en zonas remotas. Sus motivaciones giran en torno a la profesionalización operativa, la reducción del tiempo de respuesta ante emergencias y la diferenciación competitiva mediante el uso de tecnología. Sus principales frustraciones se relacionan con la pérdida de comunicación con los guías por horas, la dependencia de WhatsApp y radios analógicas, y la ausencia de herramientas digitales adaptadas al contexto y al presupuesto de una micro o pequeña empresa peruana.
 
 **User Persona 2: Marco Rodriguez - Segmento de Turistas de Aventura**
  
-![](assets/images/User-Persona2.png)
+![](../assets/images/User-Persona2.png)
 
 Representa al segmento de turistas de aventura nacionales y extranjeros. Este arquetipo encarna al viajero europeo experimentado, con alto poder adquisitivo, dominio tecnológico y pasión por las experiencias outdoor auténticas. Sus motivaciones se centran en vivir aventuras seguras y memorables, mantener informados a sus familiares durante el recorrido y enriquecer su experiencia con información cultural e histórica del entorno. Sus frustraciones más relevantes son la incertidumbre sobre su ubicación al perder señal GPS, la imposibilidad de avisar a su familia durante varios días, y la carencia de aplicaciones móviles que funcionen sin conectividad continua en zonas remotas del Perú.
 
@@ -66,10 +66,10 @@ Entre las principales diferencias se observa que las tareas relacionadas con la 
 El User Journey Mapping es una herramienta que permite visualizar de forma estructurada la experiencia del usuario a lo largo de su interacción con un producto o servicio. Realizamos los User Journey Maps en su versión As-Is para los tres segmentos objetivos.
 
 <b>User Journey Map del 1er segmento objetivo – agencias y operadores de turismo</b>
-![](assets/images/jm-segmento-1.png)
+![](../assets/images/jm-segmento-1.png)
 
 <b>User Journey Map del 2do segmento objetivo - turistas de aventura </b>
-![](assets/images/jm-segmento-2.png)
+![](../assets/images/jm-segmento-2.png)
 
 ### 2.3.4. Empathy Mapping
 
@@ -78,10 +78,10 @@ El Empathy Mapping es una herramienta que nos permite profundizar en la experien
 Para Tourmate, elaborar un Empathy Mapping para cada segmento objetivo fue clave para entender no solo cómo las agencias planifican la logística y cómo los turistas viven la experiencia outdoor, sino también cómo enfrentan la incertidumbre de la desconexión en zonas remotas, los retos de seguridad y la respuesta ante posibles emergencias. Esta comprensión más empática nos permite diseñar un ecosistema tecnológico que responda a sus necesidades reales, brindando tranquilidad y reduciendo los puntos de dolor presentes en la gestión actual de las rutas de aventura.
 
 <b>Empathy Mapping del 1er segmento objetivo – agencias y operadores de turismo</b>
-![](assets/images/Empathy-Map1.png)
+![](../assets/images/Empathy-Map1.png)
 
 <b>Empathy Mapping del 2do segmento objetivo – turistas de aventura </b>
-![](assets/images/Empathy-Map2.png)
+![](../assets/images/Empathy-Map2.png)
 
 ### 2.3.5. As-is Scenario Mapping.
 
