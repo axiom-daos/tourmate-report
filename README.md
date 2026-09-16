@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-  <img src="/assets/images/upc-logoo.png" alt="UPC Logo" width="80">
+  <img src="../assets/images/upc-logoo.png" alt="UPC Logo" width="80">
 </div>
 <br/>
 <h2 align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></h2>
