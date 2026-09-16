@@ -37,20 +37,20 @@
         <td align="center" >Carrillo Acho, Matias Renato</td>
       </tr>
       <tr>
-        <td align="center" >U202</td>
-        <td align="center" >XXXX</td>
+        <td align="center" >U202319057</td>
+        <td align="center" >Huingo Tello, Frank Anthony</td>
       </tr>
       <tr>
-        <td align="center" >U202</td>
-        <td align="center" >xxxxx</td>
+        <td align="center" >U20241F714</td>
+        <td align="center" >Quispe Palomino, Tony Jhunior</td>
       </tr>
       <tr>
         <td align="center" >U202419483</td>
         <td align="center" >Verastigue Martinez, Giancarlo Jose</td>
       </tr>
       <tr>
-        <td align="center" >U202 </td>
-        <td align="center" >xxxxxx </td>
+        <td align="center" >U20221G231 </td>
+        <td align="center" >Molina Vasquez, Manuel Alejandro</td>
       </tr>
     </tbody>
   </table>
