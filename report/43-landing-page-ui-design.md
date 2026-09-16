@@ -13,23 +13,23 @@ Para la landing page se realizaron low-fi Wireframes de cada una de las pantalla
 
 **Estructura general y lineamientos visuales**
 
-El Mock-Up de la landing page de Travesía se desarrolla con un nivel de fidelidad alta, empleando contenido real, imágenes representativas y componentes visuales funcionales, siguiendo una línea gráfica moderna orientada a los viajes, la conexión entre personas y las experiencias al aire libre.
+El Mock-Up de la landing page de Tourmate se desarrolla con un nivel de fidelidad alta, empleando contenido real, imágenes representativas y componentes visuales funcionales, siguiendo una línea gráfica moderna orientada a los viajes, la conexión entre personas y las experiencias al aire libre.
 
 **Aplicación del Branding**
 
-Se incorporan los elementos de identidad visual de Travesía, como el logotipo, el icono lineal de montaña, la paleta cromática y los mensajes principales de la marca. El logotipo se ubica en la parte superior izquierda dentro de la barra de navegación, fortaleciendo el reconocimiento de marca.
+Se incorporan los elementos de identidad visual de Tourmate, como el logotipo, el icono lineal de montaña, la paleta cromática y los mensajes principales de la marca. El logotipo se ubica en la parte superior izquierda dentro de la barra de navegación, fortaleciendo el reconocimiento de marca.
 
 La propuesta visual transmite confianza, cercanía y conexión con la naturaleza mediante el uso de verdes, tonos arena, blanco y terracota, asociados con los viajes, la exploración y las experiencias al aire libre.
 
 **Estructura visual:**
 
-- **Zona superior:** barra de navegación con el logotipo de Travesía, enlaces principales hacia las secciones de la landing page y botón de llamada a la acción “Conocer más”.
+- **Zona superior:** barra de navegación con el logotipo de Tourmate, enlaces principales hacia las secciones de la landing page y botón de llamada a la acción “Conocer más”.
 
 
-- **Sección principal (Hero):** mensaje central “Más camino. Menos ruido.”, acompañado por una imagen relacionada con viajes y naturaleza, un texto introductorio y los botones “Conoce Travesía” y “Descubre para quién es”.
+- **Sección principal (Hero):** mensaje central “Más camino. Menos ruido.”, acompañado por una imagen relacionada con viajes y naturaleza, un texto introductorio y los botones “Conoce Tourmate” y “Descubre para quién es”.
 
 
-- **Sección Nuestra idea:** presentación del propósito de Travesía mediante el mensaje “Todo empieza con una buena conexión”, acompañado de los conceptos “Más claridad”, “Más confianza” y “Más recuerdos”.
+- **Sección Nuestra idea:** presentación del propósito de Tourmate mediante el mensaje “Todo empieza con una buena conexión”, acompañado de los conceptos “Más claridad”, “Más confianza” y “Más recuerdos”.
 
 
 - **Sección Agencias y guías:** presentación de la propuesta dirigida a agencias y guías mediante el mensaje “Tu experiencia, bien acompañada.”, incluyendo una descripción, beneficios y una llamada a la acción.
@@ -44,7 +44,7 @@ La propuesta visual transmite confianza, cercanía y conexión con la naturaleza
 - **Zona de contacto:** sección con fondo terracota que presenta el mensaje “Hagamos del viaje algo más sencillo.”, un texto de cierre y el botón de llamada a la acción “Hablemos”.
 
 
-- **Zona inferior (Footer):** presentación de la identidad de Travesía, enlaces de navegación, correo de contacto y enlaces a redes sociales.
+- **Zona inferior (Footer):** presentación de la identidad de Tourmate, enlaces de navegación, correo de contacto y enlaces a redes sociales.
 
 **Aplicación de guía de estilos:**
 
@@ -71,7 +71,7 @@ La propuesta visual transmite confianza, cercanía y conexión con la naturaleza
 
 **Principios de diseño y arquitectura de la información:**
 
-El contenido se organiza de manera progresiva para conducir al usuario desde la presentación de Travesía hasta sus propuestas para agencias, guías y viajeros, finalizando con una llamada a la acción.
+El contenido se organiza de manera progresiva para conducir al usuario desde la presentación de Tourmate hasta sus propuestas para agencias, guías y viajeros, finalizando con una llamada a la acción.
 
 Se prioriza la claridad mediante títulos directos, textos breves y secciones diferenciadas. La jerarquía visual se establece mediante el tamaño de los títulos, el contraste de colores, las imágenes y la ubicación estratégica de los botones.
 
