@@ -1,6 +1,6 @@
 # 4.2. Information Architecture
 
-La arquitectura de información de Travesía está diseñada para un landing page de una sola página. El contenido se organiza mediante secciones verticales, navegación interna por anclas, llamadas a la acción y un pie de página con enlaces adicionales. La estructura permite presentar progresivamente la propuesta de valor, diferenciar el contenido según las principales audiencias y conducir al usuario hacia el contacto.
+La arquitectura de información de Tourmate está diseñada para un landing page de una sola página. El contenido se organiza mediante secciones verticales, navegación interna por anclas, llamadas a la acción y un pie de página con enlaces adicionales. La estructura permite presentar progresivamente la propuesta de valor, diferenciar el contenido según las principales audiencias y conducir al usuario hacia el contacto.
 
 No se observan pantallas independientes, autenticación, perfiles, áreas privadas, sistemas de búsqueda ni filtros. Por ello, la arquitectura se centra principalmente en la organización del contenido, el etiquetado, la navegación y la presentación de información dentro de una única página.
 
@@ -12,7 +12,7 @@ No se observan pantallas independientes, autenticación, perfiles, áreas privad
 
 La información del landing page se distribuye en las siguientes secciones principales:
 
-- **Inicio (`#inicio`)**: presenta la identidad de Travesía, el mensaje principal y las primeras llamadas a la acción.
+- **Inicio (`#inicio`)**: presenta la identidad de Tourmate, el mensaje principal y las primeras llamadas a la acción.
 - **Nuestra idea (`#vision`)**: explica el propósito de la propuesta y presenta los conceptos “Más claridad”, “Más confianza” y “Más recuerdos”.
 - **Agencias (`#agencias`)**: comunica el valor de la propuesta para agencias y guías.
 - **Viajeros (`#viajeros`)**: presenta el valor de la propuesta para las personas que desean viajar.
@@ -46,7 +46,7 @@ Se aplica una organización secuencial o narrativa mediante el orden vertical de
 
 **Presentación de la marca → Nuestra idea → Agencias/Viajeros → Team Development → Contacto → Footer**
 
-Esta secuencia acompaña al usuario desde el conocimiento inicial de Travesía hasta una posible acción de contacto.
+Esta secuencia acompaña al usuario desde el conocimiento inicial de Tourmate hasta una posible acción de contacto.
 
 ***Organización por audiencia (Audience-based)***
 
@@ -63,7 +63,7 @@ Esta organización permite que cada audiencia identifique rápidamente el conten
 
 El contenido también se organiza mediante diferentes temas:
 
-- Propuesta general de Travesía.
+- Propuesta general de Tourmate.
 - Claridad, confianza y recuerdos.
 - Servicios o beneficios para agencias y guías.
 - Experiencia para viajeros.
@@ -88,13 +88,13 @@ Sí está implementada a nivel de página. Existe una estructura principal compu
 
 #### 4.2.2. Labeling Systems
 
-Las etiquetas utilizadas en Travesía buscan identificar de forma directa las diferentes secciones y acciones disponibles en el landing page.
+Las etiquetas utilizadas en Tourmate buscan identificar de forma directa las diferentes secciones y acciones disponibles en el landing page.
 
 ***Etiquetas de navegación principal***
 
 | Etiqueta | Destino | Función |
 |---|---|---|
-| TRAVESÍA | `#inicio` | Identifica la marca y permite regresar al inicio |
+| TOURMATE | `#inicio` | Identifica la marca y permite regresar al inicio |
 | Agencias | `#agencias` | Dirige a la sección para agencias y guías |
 | Viajeros | `#viajeros` | Dirige a la sección para viajeros |
 | Team Development | `#team-development` | Dirige a la sección del equipo |
@@ -107,7 +107,7 @@ La navegación principal se encuentra dentro de un elemento `<nav>` que utiliza 
 
 | Etiqueta | Destino | Función |
 |---|---|---|
-| Conoce Travesía | `#vision` | Dirige a la explicación de la propuesta |
+| Conoce Tourmate | `#vision` | Dirige a la explicación de la propuesta |
 | Descubre para quién es | `#agencias` | Dirige hacia la segmentación principal por audiencia |
 | Hablemos | `#contacto` | Dirige al contacto desde la sección de agencias |
 | Quiero explorar | `#contacto` | Dirige al contacto desde la sección de viajeros |
@@ -134,7 +134,7 @@ Las etiquetas de las llamadas a la acción utilizan textos breves relacionados d
 | Categoría | Enlaces |
 |---|---|
 | Explora | Nuestra idea, Para agencias, Para viajeros |
-| Conversemos | hola@travesia.experience, Quiero conocer más |
+| Conversemos | hola@tourmate.experience, Quiero conocer más |
 | Síguenos | Instagram, LinkedIn, Facebook |
 
 Los enlaces de redes sociales existentes apuntan actualmente a `#inicio`. No se implementan destinos externos específicos para dichas redes.
@@ -147,7 +147,7 @@ Los metadatos del landing page se definen principalmente en `app/layout.tsx`.
 
 | Elemento | Valor actual | Propósito |
 |---|---|---|
-| `<title>` | `Travesía \| Gestión de experiencias al aire libre` | Define el título mostrado por el navegador y utilizado por los buscadores |
+| `<title>` | `Tourmate \| Gestión de experiencias al aire libre` | Define el título mostrado por el navegador y utilizado por los buscadores |
 | `description` | `La plataforma que conecta agencias, guías y viajeros para crear expediciones más claras, seguras y memorables.` | Resume el contenido principal del sitio |
 | `generator` | `v0.app` | Identifica la herramienta de generación del proyecto |
 | `lang` | `es` | Indica que el documento está en español |
@@ -201,7 +201,7 @@ La landing page implementa un sistema de navegación interna mediante enlaces a 
 
 | Enlace | Destino |
 |---|---|
-| TRAVESÍA | `#inicio` |
+| TOURMATE | `#inicio` |
 | Agencias | `#agencias` |
 | Viajeros | `#viajeros` |
 | Team Development | `#team-development` |
@@ -214,7 +214,7 @@ El documento utiliza `scroll-behavior: smooth`, por lo que el desplazamiento hac
 
 El hero contiene dos acciones principales:
 
-- **“Conoce Travesía”** → `#vision`
+- **“Conoce Tourmate”** → `#vision`
 - **“Descubre para quién es”** → `#agencias`
 
 Estas acciones conducen al usuario desde la introducción hacia la explicación de la propuesta y posteriormente hacia la segmentación por audiencia.
@@ -258,7 +258,7 @@ El footer funciona como un sistema de navegación complementario y se organiza e
 
 **Marca**
 
-- TRAVESÍA
+- Tourmate
 - “Viajes con sentido, conexiones más humanas.”
 
 **Explora**
@@ -269,7 +269,7 @@ El footer funciona como un sistema de navegación complementario y se organiza e
 
 **Conversemos**
 
-- `hola@travesia.experience` → enlace `mailto:`
+- `hola@tourmate.experience` → enlace `mailto:`
 - Quiero conocer más → `#contacto`
 
 **Síguenos**
@@ -280,7 +280,7 @@ El footer funciona como un sistema de navegación complementario y se organiza e
 
 El footer también muestra:
 
-- © 2026 Travesía
+- © 2026 Tourmate
 - “Experiencias para recordar.”
 
 ***Recorrido esperado del usuario***
