@@ -2,7 +2,7 @@
 
 A continuación se presenta el Product Backlog de Tourmate con la priorización y estimación de todas las historias identificadas. El orden refleja el valor para el negocio, priorizando las funcionalidades del Landing Page y las capacidades core de monitoreo y seguridad en campo.
 
-Para acceder al Product Backlog en la herramienta de gestión del equipo, visitar el siguiente enlace: [Product Backlog — Tourmate](https://trello.com/invite/b/6aa7135dcbb03c6075b9944b/ATTI3d6ca6c13b23e9df6f2ebe962e859d9aE7098EAF/tourmate-product-backlog)
+Para acceder al Product Backlog en la herramienta de gestión del equipo, visitar el siguiente enlace: [https://trello.com/b/gCKcMjVR/tourmate-sprint-1](https://trello.com/b/gCKcMjVR/tourmate-sprint-1)
 
 ![Product Backlog Tourmate](../assets/images/s1-sprint-backlog.png)
 
