@@ -32,10 +32,10 @@ A continuación se presenta el cuadro Competitive Analysis Landscape, en el cual
         <tr>
             <td rowspan="3" class="sub">PERFIL</td>
             <td rowspan="2" class="sub">Overview</td>
-            <td> Tourmate <img src="assets/images/Tourmate-logo.png"></td>
-            <td> TrekkSoft <img src="assets/images/trekk-soft.png"></td>
-            <td> Wayward <img src="assets/images/wayward.png"></td>
-            <td> AllTrails <img src="assets/images/all-trails.png"></td> 
+            <td> Tourmate <img src="../assets/images/Tourmate-logo.png"></td>
+            <td> TrekkSoft <img src="../assets/images/trekk-soft.png"></td>
+            <td> Wayward <img src="../assets/images/wayward.png"></td>
+            <td> AllTrails <img src="../assets/images/all-trails.png"></td> 
         </tr>
         <tr>
             <td>Plataforma web y móvil peruana que centraliza la gestión de tours de aventura para agencias y ofrece a turistas navegación offline, registro de experiencia e información contextual del recorrido, integrando un ecosistema IoT con wearables y checkpoints Bluetooth.</td>

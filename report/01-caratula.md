@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-  <img src="assets/images/upc-logoo.png" alt="UPC Logo" width="80">
+  <img src="../assets/images/upc-logoo.png" alt="UPC Logo" width="80">
 </div>
 <br/>
 <h2 align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></h2>
@@ -22,43 +22,27 @@
 
 <h2 align="center"><strong>Integrantes:</strong></h2>
 
+<table align="center" style="width: auto; margin: 0 auto;">
+<tr>
+<td>
 
-<div align="center">
-  <table align="center">
-    <thead>
-      <tr>
-        <th align="center" >Código </th>
-        <th align="center" >Nombre</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="center" >U202323010</td>
-        <td align="center" >Carrillo Acho, Matias Renato</td>
-      </tr>
-      <tr>
-        <td align="center" >U202319057</td>
-        <td align="center" >Huingo Tello, Frank Anthony</td>
-      </tr>
-      <tr>
-        <td align="center" >U20241F714</td>
-        <td align="center" >Quispe Palomino, Tony Jhunior</td>
-      </tr>
-      <tr>
-        <td align="center" >U202419483</td>
-        <td align="center" >Verastigue Martinez, Giancarlo Jose</td>
-      </tr>
-      <tr>
-        <td align="center" >U20221G231 </td>
-        <td align="center" >Molina Vasquez, Manuel Alejandro</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+| Código      | Nombre                               |
+|:-----------:|:-------------------------------------|
+| U202323010  | Carrillo Acho, Matias Renato         |
+| U202319057  | Huingo Tello, Frank Anthony          |
+| U20241F714  | Quispe Palomino, Tony Jhunior        |
+| U202419483  | Verastigue Martinez, Giancarlo Jose  |
+| U20221G231  | Molina Vasquez, Manuel Alejandro     |
+
+</td>
+</tr>
+</table>
 
 <h2 align="center"><strong>Período 202620</strong></h2>
 <h2 align="center"><strong>Setiembre 2026</strong></h2>
 
 <div style="page-break-before: always;"></div>
+
+</div>
 
 ---
