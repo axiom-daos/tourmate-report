@@ -20,7 +20,6 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 **Perfil del entrevistado:** propietarios, directores de operaciones o guías principales de agencias que operen rutas de trekking, montañismo, expediciones o turismo de naturaleza en zonas remotas del Perú. Preferiblemente agencias medianas o pequeñas con operaciones activas en sierra, selva alta o circuitos andinos.
 
-
 ---
 
 **Preguntas de apertura y contexto**
@@ -59,7 +58,6 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 ##### Segmento 2: Turistas de Aventura
 
 **Perfil del entrevistado:** personas que hayan realizado al menos una actividad de turismo de aventura en el Perú en los últimos dos años (trekking, montañismo, expedición en selva o ruta de naturaleza en zonas remotas), ya sean nacionales o extranjeros residentes en el país.
-
 
 ---
 
@@ -111,33 +109,9 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ##### Segmento 1: Dueños o responsables de agencia de turismo de aventura
 
-<div align="center">
-
-| Campo | Información |
-|-------|-------------|
-| Segmento | Dueño o responsable de agencia de turismo de aventura |
-| Nombres y apellidos | Mateo León Paredes |
-| Edad | 25 años |
-| Distrito | Lima |
-| Ocupación | Encargado logístico de transporte turístico |
-| Rutas atendidas | Cusco, Arequipa y selva central |
-| Flota / Volumen | Hasta 10 vehículos, 80-120 turistas semanales |
-| Inicio de la entrevista | 00:00 |
-| Duración | 00:11:30 |
-| URL del video | https://surl.li/aghnmp |
-
-</div>
-<div align="center">
-    <img src="assets/images/entrevista-agencia-1.png" width="600">
-</div>
-
-**Resumen:** Mateo León Paredes, 25 años, opera como encargado logístico de transporte turístico desde Lima, gestionando hasta 10 vehículos y entre 80-120 turistas semanales en rutas hacia Cusco, Arequipa y selva central. Su mayor problema es el seguimiento de flota: el GPS instalado está desactualizado y pierde señal en sierra, por lo que todo depende de WhatsApp y un Excel manual, con zonas de hasta 2 horas sin cobertura que han generado fricciones comerciales con agencias clientes. Vivió un incidente crítico con 12 turistas extranjeros varados de noche sin señal, lo que evidenció la fragilidad total del sistema. Necesita una solución con funcionamiento offline, botón de emergencia para conductores y panel en tiempo real desde Lima, y estaría dispuesto a pagar entre 60-120 USD/mes si puede justificar el ROI ante el dueño, quien representa la principal barrera para adoptar nueva tecnología.
- 
----
 
 
 **Entrevista 2:**
----
 
 ![Entrevista 2](../assets/images/New-Entrevista-2.png)
 
@@ -145,23 +119,53 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 | :--- | :--- |
 | **Entrevistador:** | Tony Jhunior Quispe Palomino |
 | **Entrevistado:** | Mateo Escudero |
-| **Edad** | 22 años |
+| **Edad:** | 22 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Inicio de la entrevista** | 0:00 |
-| **Duración** | 11:05 min |
-| **Enlace** | [Entrevista2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-<br>
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | 11:05 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D |
 
-| |
-| :--- |
-| **Resumen:** Mateo Escudero, de 22 años y guía en Adventure Perú, apoya en la gestión de expediciones de turismo de aventura (principalmente trekking, montañismo y campamentos) en zonas como Cusco, Áncash y Madre de Dios. Nos comenta que la agencia maneja un equipo de 10 guías y atiende de 40 a 70 turistas en temporada alta, operando entre 4 y 7 grupos simultáneos. Actualmente, coordinan la operación mediante radios, llamadas, WhatsApp y hojas de cálculo o formularios básicos. Esto les genera dolores de cabeza importantes: la falta de señal de internet en las rutas de montaña dificulta la comunicación en tiempo real y la actualización oportuna de la ubicación de los grupos, además de provocar retrasos en la sincronización de datos y reportes dispersos. Asimismo, mencionó que se han enfrentado a situaciones críticas por mal de altura y fallas en la comunicación en zonas alejadas. Finalmente, muestra un gran interés en una solución tecnológica, señalando que se valoraría contar con mapas offline funcionales, un panel centralizado de monitoreo de grupos y un botón de pánico accesible incluso sin internet, considerando un rango de precio razonable de suscripción de 100 a 150 soles mensuales. Como principal barrera, destaca los costos, la necesidad de capacitación del personal y la falta de dispositivos avanzados en algunos guías. |
+**Resumen:** Mateo Escudero, de 22 años y guía en Adventure Perú, apoya en la gestión de expediciones de turismo de aventura (principalmente trekking, montañismo y campamentos) en zonas como Cusco, Áncash y Madre de Dios. Nos comenta que la agencia maneja un equipo de 10 guías y atiende de 40 a 70 turistas en temporada alta, operando entre 4 y 7 grupos simultáneos. Actualmente, coordinan la operación mediante radios, llamadas, WhatsApp y hojas de cálculo o formularios básicos. Esto les genera dolores de cabeza importantes: la falta de señal de internet en las rutas de montaña dificulta la comunicación en tiempo real y la actualización oportuna de la ubicación de los grupos, además de provocar retrasos en la sincronización de datos y reportes dispersos. Asimismo, mencionó que se han enfrentado a situaciones críticas por mal de altura y fallas en la comunicación en zonas alejadas. Finalmente, muestra un gran interés en una solución tecnológica, señalando que se valoraría contar con mapas offline funcionales, un panel centralizado de monitoreo de grupos y un botón de pánico accesible incluso sin internet, considerando un rango de precio razonable de suscripción de 100 a 150 soles mensuales. Como principal barrera, destaca los costos, la necesidad de capacitación del personal y la falta de dispositivos avanzados en algunos guías.
+
+---
+
+**Entrevista 3:**
+
+![Enrevista 3](../assets/images/Enrevista%203.png)
+
+| |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Molina Vásquez Manuel Alejandro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Entrevistado:** | Aarón Espinosa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Edad:** | 21 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Segmento:** | Dueño o responsable de agencia de turismo de aventura                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Duración:** | 9:22 min                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Enlace:** | [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAofZYR8ATPSbWHvKq3vOSvAZ1mk5uCZxK_sr8rN9qoqI4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CzroE4) https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAofZYR8ATPSbWHvKq3vOSvAZ1mk5uCZxK_sr8rN9qoqI4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CzroE4  |
+
+**Resumen:** Aarón Espinosa representa a una agencia pequeña enfocada en turismo de aventura, caminatas, trekking y visitas culturales en la sierra peruana (principalmente Cusco, Arequipa y alrededores). En temporadas altas llegan a coordinar entre 10 y 15 guías simultáneamente, atendiendo de 50 a 100 turistas al día distribuidos en 5 a 8 grupos en ruta. Actualmente, el monitoreo lo realizan mediante llamadas telefónicas, la función de ubicación compartida y grupos de WhatsApp, mientras que la información operativa la manejan de forma dispersa en hojas de Microsoft Excel y chats. Manifiesta que la pérdida total de señal móvil en zonas de altura y senderos aislados es sumamente frecuente; ante ello, no cuentan con contingencias técnicas y se limitan a esperar a que el guía recupere cobertura para reportar. Toda la supervisión de la condición física de los turistas recae exclusivamente en la observación presencial del guía. Entre los incidentes habituales reporta casos de descompensación por mal de altura y agotamiento físico extremo. Señala que la falta de conectividad dificulta actuar con rapidez desde la base, lo que deriva en reclamos de clientes y deteriora la reputación de la empresa. Aarón considera indispensable una solución que funcione sin señal móvil (almacenando datos localmente hasta reconectar), que centralice la ubicación y ofrezca comunicación directa con alertas tempranas. Como funcionalidades de valor agregado destaca los reportes de recorridos y el historial de incidentes. Estaría dispuesto a adoptar un modelo de suscripción mensual con un rango de pago estimado entre S/. 150 y S/. 300.
+
+**Entrevista 3:**
+
+![Entrevista 7](../assets/images/Entrevista%207.png)
+
+| |                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Frank Anthony Huingo Tello                                                                                                                                                                                                                                                                                                             |
+| **Entrevistado:** | Carlos Gutierrez                                                                                                                                                                                                                                                                                                                      |
+| **Edad:** | 20 años                                                                                                                                                                                                                                                                                                                                      |
+| **Segmento:** | Dueño o responsable de agencia de turismo de aventura                                                                                                                                                                                                                                                                                                                      |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
+| **Duración:** | 5:05 min                                                                                                                                                                                                                                                                                                                                    |
+| **Enlace:** | [Entrevista-7](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319057_upc_edu_pe/IQBoi_IK-HcUQI1SdenjhHQkAbMGfRPdITIGilUq4MH0xug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RhDf3F)|
+
+**Resumen:** Carlos Gutiérrez representa a una agencia enfocada en tours de trekking y naturaleza, principalmente en los circuitos andinos del sur, como Cusco y Huaraz, trabajando con guías locales especializados. Durante temporada alta manejan entre 5 y 10 guías, aproximadamente 100 turistas al mes y hasta 3 grupos simultáneos activos en ruta. Actualmente, el seguimiento en campo se realiza mediante radios VHF en zonas sin señal y llamadas o WhatsApp cuando existe cobertura celular, mientras que los recorridos e incidentes se registran manualmente en bitácoras de papel y posteriormente se trasladan a hojas de Excel. Señala que la pérdida de señal es muy frecuente en quebradas y zonas de alta montaña, por lo que utilizan puntos de reporte obligatorios en campamentos o cumbres y dependen de los reportes del guía para conocer el estado de los pasajeros. Entre los principales problemas identifica la demora en la comunicación durante emergencias, especialmente ante casos de soroche y fatiga, así como las dificultades para actuar rápidamente cuando el guía se encuentra sin cobertura. Aunque cuentan con protocolos básicos de evacuación, considera que la falta de comunicación en tiempo real los vuelve lentos y puede generar reclamos por retrasos en la atención. Actualmente utilizan Excel para reservas y WhatsApp para la coordinación, pero no cuentan con software especializado debido principalmente al costo, la resistencia del personal a aplicaciones complejas y la falta de conectividad. Carlos considera que una plataforma de monitoreo en tiempo real sería sumamente valiosa para mejorar la tranquilidad y capacidad de respuesta de la agencia. Estaría dispuesto a pagar una suscripción mensual de entre $30 y $80, siempre que el costo sea adecuado para una agencia pequeña o mediana. Entre las funcionalidades indispensables desde el primer día destaca un botón SOS de emergencia, mapas offline y visualización básica de la ubicación de los grupos.
 
 ---
 
 ##### Segmento 2: Turistas de Aventura
 
 **Entrevista 4:**
----
 
 ![Entrevista 4](../assets/images/New-Entrevista-4.png)
 
@@ -169,15 +173,65 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 | :--- | :--- |
 | **Entrevistador:** | Tony Jhunior Quispe Palomino |
 | **Entrevistado:** | Sofia Mendoza |
-| **Edad** | 20 años |
+| **Edad:** | 20 años |
 | **Segmento:** | Turista de Aventura |
-| **Inicio de la entrevista** | 0:00 |
-| **Duración** | 11:48 min |
-| **Enlace** | [Entrevista4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBPxk5ihQP7Qpk1EiObhUKMAcqE0PkmidpljYmgsKZhw60?e=y94DfE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | 11:48 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBPxk5ihQP7Qpk1EiObhUKMAcqE0PkmidpljYmgsKZhw60?e=y94DfE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D |
 
-<br>
+**Resumen:** Sofía Mendoza, de 20 años y aficionada a las actividades de aventura, nos comparte su experiencia participando en excursiones y viajes en el Perú, como sus recorridos en bicicleta en Lambayeque o sus visitas a la reserva de Paracas. Nos comenta que suele realizar estas actividades unas tres veces al año durante sus vacaciones y que prefiere organizarlas por cuenta propia o guiada cuando no tiene conocimiento previo del lugar. Respecto a sus principales preocupaciones y dolores de cabeza, destaca la falta de conectividad e internet en zonas remotas de montaña o rutas peligrosas, la dificultad para pedir ayuda o ubicarse ante imprevistos, y el mal estado de las carreteras debido a lluvias o bloqueos, recordando un incidente crítico por el clima cuando viajaba hacia la selva y las agencias no ofrecieron protocolos o advertencias de seguridad adecuados. Finalmente, muestra un gran interés en una solución tecnológica o dispositivo que le permita ver información contextual en tiempo real —como mapas, clima, historia del lugar y puntos de interés—, valorando positivamente que cuente con monitoreo o protocolos de emergencia avanzados, siempre y cuando sea accesible y no exceda su presupuesto.
 
-| |
-| :--- |
-| **Resumen:** Sofía Mendoza, de 20 años y aficionada a las actividades de aventura, nos comparte sea su experiencia participando en excursiones y viajes en el Perú, como sus recorridos en bicicleta en Lambayeque o sus visitas a la reserva de Paracas. Nos comenta que suele realizar estas actividades unas tres veces al año durante sus vacaciones y que prefiere organizarlas por cuenta propia o guiada cuando no tiene conocimiento previo del lugar. Respecto a sus principales preocupaciones y dolores de cabeza, destaca la falta de conectividad e internet en zonas remotas de montaña o rutas peligrosas, la dificultad para pedir ayuda o ubicarse ante imprevistos, y el mal estado de las carreteras debido a lluvias o bloqueos, recordando un incidente crítico por el clima cuando viajaba hacia la selva y las agencias no ofrecieron protocolos o advertencias de seguridad adecuados. Finalmente, muestra un gran interés en una solución tecnológica o dispositivo que le permita ver información contextual en tiempo real —como mapas, clima, historia del lugar y puntos de interés—, valorando positivamente que cuente con monitoreo o protocolos de emergencia avanzados, siempre y cuando sea accesible y no exceda su presupuesto.|
+---
+
+**Entrevista 5:**
+
+![Entrevista 5](../assets/images/Entrevista%205.png)
+
+| |                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez                                                                                                                                                                                                                                                                                                              |
+| **Entrevistado:** | Romina Antonella Molina Vásquez                                                                                                                                                                                                                                                                                                              |
+| **Edad:** | 18 años                                                                                                                                                                                                                                                                                                                                      |
+| **Segmento:** | Turista de Aventura                                                                                                                                                                                                                                                                                                                          |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
+| **Duración:** | min                                                                                                                                                                                                                                                                                                                                          |
+| **Enlace:** | [Entrevista5](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAQPNKuz_cKS4krk8KnLmoKAaAOQuWIL6WmZXL4T30cJJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=B3HGgd) https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAQPNKuz_cKS4krk8KnLmoKAaAOQuWIL6WmZXL4T30cJJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=B3HGgd |
+
+**Resumen:** Romina Antonella es una usuaria joven que realiza actividades de aventura y trekking durante sus periodos vacacionales (aproximadamente una vez cada dos semanas). Suelen ser salidas en grupos de amigos de forma independiente en expediciones cortas (como caminatas hacia lagunas en Caraz), o mediante agencias turísticas cuando visita destinos tradicionales como Cusco y Machu Picchu. Durante sus recorridos no lleva equipamiento especializado; suele portar únicamente su teléfono móvil y audífonos, empleando la función nativa de ubicación compartida en tiempo real de WhatsApp para reportarse con sus padres. Manifiesta preocupación frente a la pérdida total de cobertura celular en zonas remotas, reconociendo la incertidumbre de no saber cómo comunicarse con sus familiares o pedir ayuda si ocurriese un accidente grave; ante ello, actualmente solo depende de la confianza en sus acompañantes. Si bien no ha presenciado emergencias extremas (solo incidentes médicos menores resueltos por guías locales), expresa que la información más valiosa que desearía tener disponible en todo momento son las alertas de riesgo y la identificación de zonas seguras ante peligros naturales (terremotos o avalanchas). Asimismo, documenta activamente sus recorridos tomando fotos, grabando videos y generando contenido para redes sociales en el trayecto. Respecto al uso de dispositivos wearables y tecnología de monitoreo biométrico y de geolocalización provista por una agencia, afirma que estaría totalmente dispuesta a usarlos si se le explican claramente su funcionamiento y propósitos. No le genera inconvenientes la privacidad de sus datos de salud o ubicación mientras este rastreo se limite estrictamente a la duración de la excursión. Aunque actualmente la adopción de tecnología avanzada no determina de forma crítica su elección de agencia (dada la escasa oferta tecnológica en el mercado local), considera que implementar estos sistemas sería una adición positiva y valiosa para modernizar el sector.
+
+**Entrevista 6:**
+
+![Entrevista 6](../assets/images/Entrevista-6.png)
+
+| |                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Giancarlo Verastigue Martinez                                                                                                                                                                                                                                                                                                                |
+| **Entrevistado:** | Miler Rodriguez                                                                                                                                                                                                                                                                                                                              |
+| **Edad:** | 22 años                                                                                                                                                                                                                                                                                                                                      |
+| **Segmento:** | Turista de Aventura                                                                                                                                                                                                                                                                                                                          |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
+| **Duración:** | 10:05 min                                                                                                                                                                                                                                                                                                                                    |
+| **Enlace:** | [Entrevista-6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDe0UWGvKUwRojgbs_XPIuJAclsUfNSUJK04_8jjCFOE7A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Szx6cw) https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDe0UWGvKUwRojgbs_XPIuJAclsUfNSUJK04_8jjCFOE7A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Szx6cw|
+
+**Resumen:**
+
+El análisis de la entrevista con Miller, un viajero que realiza trekking de manera ocasional, revela información clave sobre el comportamiento y las necesidades urgentes de los aventureros en zonas remotas. Aunque suele organizarse de forma independiente con amigos para rutas conocidas, Miller prefiere contratar agencias y guías para trayectos más complejos. Durante estas expediciones, su principal punto de dolor es la pérdida de señal celular, lo cual genera una gran incertidumbre sobre la ubicación exacta y la ruta a seguir. A esto se suma la percepción de que las agencias a menudo carecen de protocolos de emergencia claros frente a problemas de salud o fatiga extrema del grupo. Si bien actualmente intenta mitigar estos riesgos compartiendo su ubicación y descargando mapas sin conexión, estas herramientas terminan perdiendo su utilidad principal al no contar con cobertura de red.
+
+
+**Entrevista 7:**
+
+![Entrevista 7](../assets/images/entrevista7.png)
+
+| |                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entrevistador:** | Matias Renato Carrillo Acho                                                                                                                                                                                                                                                                  |
+| **Entrevistado:** | Alberto Joaquin Alfaro Mallma                                                                                                                                                                                                                                                                                                                              |
+| **Edad:** | 25 años                                                                                                                                                                                                                                                                                                                                      |
+| **Segmento:** | Turista de Aventura                                                                                                                                                                                                                                                                                                                          |
+| **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
+| **Duración:** | 06:25 min                                                                                                                                                                                                                                                                                                                                    |
+| **Enlace:** | [Entrevista-7](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAUJbSUxGQ-RrATzxOjZawRAVmvkpuEsfg7qOf-p29IYXk?e=BFlFkq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)|
+
+**Resumen:** Alberto Joaquin Alfaro Mallma, 25 años. Su ultimo viaje fue hacia la laguna 69 en la cordillera blanca, además señala que contrato a una agencia con guía incluido. Frecuentemente prefiere contratar a una agencia turistica para realizar viajes o tours, tambien señala que ha vivido percances durante el tour siendo uno de estos la falta de señal y comunicación. Menciona que la seguridad en tours depende exclusivamente de la agencia y de la preparación de los guías designados, además señala que utiliza mapas offlines, gps y relojes inteligentes como herramientas durante el tour.
+
 ---
