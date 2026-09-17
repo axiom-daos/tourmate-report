@@ -18,7 +18,7 @@ Ahora, aquí se va a explicar a paso a paso como se desarrollo el Big Picture Ev
 
 * Finalmente, en la sección de "Opportunities" identificamos todas las oportunidades de mejora:
 
-![Big Picture EventStorming](../assets/images/New-Big-Picture-Evenstorming.png)
+![Big Picture EventStorming](../assets/images/NewBigPictureEvenstorming.jpeg)
 
 Mediante este proceso, al identificar las oportunidades de mejora, logramos definir mejor el cómo vamos a desarrollar nuestra plataforma.
 
