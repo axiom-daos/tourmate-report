@@ -162,14 +162,18 @@ URL: https://axiom-daos.github.io/tourmate-landing/
 Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 1, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
 
 **Insights**
-![Team Insights Sprint 1](../assets/images/insights.png)
+![Team Insights Sprint 1](../assets/images/insights-landing.png)
+
+**Contributors**
+![Team Insights Sprint 1](../assets/images/contribuciones-landing.png)
 
 **Network graph**
 ![Team Insights Sprint 1](../assets/images/gitflow-sprint1.png)
 
-### Conclusiones
 
-## Sprint 1 – Landing Page y documentación del proyecto
+## Conclusiones
+
+### Sprint 1 – Landing Page y documentación del proyecto
 
 - **Sobre el análisis del problema y la investigación del usuario:** Se concluye que las entrevistas realizadas a dueños de agencias de tours y turistas de aventura permitieron identificar necesidades, expectativas y puntos de dolor relevantes para el desarrollo de SpotGo. La información recopilada fue fundamental para la definición de *User Personas*, *Empathy Maps* y *Journey Maps*, los cuales sirvieron como base para la priorización de funcionalidades y la elaboración del *Problem Statement*.
 
@@ -189,17 +193,17 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Newman, S. (2021). *Building Microservices: Designing Fine-Grained Systems* (2nd ed.). O'Reilly Media. Recuperado de [https://samnewman.io/books/building_microservices_2nd_edition](https://samnewman.io/books/building_microservices_2nd_edition)
 - Walls, C. (2022). *Spring in Action* (6th ed.). Manning Publications. Recuperado de [https://www.manning.com/books/spring-in-action-sixth-edition](https://www.manning.com/books/spring-in-action-sixth-edition)
 
-### Anexos
+## Anexos
 
 <div style="page-break-before: always;"></div>
 
-## Anexo A. Videos de exposiciones
+### Anexo A. Videos de exposiciones
 
 - Exposición AV1: https:
 
 <div style="page-break-before: always;"></div>
 
-## Anexo B. Videos de entrevistas
+### Anexo B. Videos de entrevistas
 
 - Entrevista 1 - Mateo Escudero, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D
 - Entrevista 2 - Aarón Espinosa, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAofZYR8ATPSbWHvKq3vOSvAZ1mk5uCZxK_sr8rN9qoqI4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CzroE4
@@ -208,24 +212,22 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Entrevista 5 - Romina Antonella Molina Vásquez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAQPNKuz_cKS4krk8KnLmoKAaAOQuWIL6WmZXL4T30cJJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=B3HGgd
 - Entrevista 6 - Miler Rodriguez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDe0UWGvKUwRojgbs_XPIuJAclsUfNSUJK04_8jjCFOE7A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Szx6cw
 
-<div style="page-break-before: always;"></div>
 
 
-## Anexo D. Materiales de ideación y diseño
+### Anexo D. Materiales de ideación y diseño
 
 - Lean UX Canvas del proyecto TourMate: https:/
 - Big Picture EventStorming y Design-Level EventStorming: https:
-- Wireframe de la landing page: https:
-- Mock-up de la landing page: https:
-- Wireframes de la aplicación web:
-- Wireflows de la aplicación web:
-- Mock-ups de la aplicación web:
-- Prototipo de la aplicación web:
-- Diagrama de clases del sistema:
+- Wireframe de la landing page: [https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1](https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1)
+- Mock-up de la landing page: [https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1](https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1)
+- Wireframes de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Wireflows de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Mock-ups de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Prototipo de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
 
-<div style="page-break-before: always;"></div>
 
-## Anexo E. Repositorios y despliegues
+
+### Anexo E. Repositorios y despliegues
 
 - Repositorio del informe del proyecto: https://github.com/axiom-daos/tourmate-report
 - Repositorio de la landing page: https://github.com/axiom-daos/tourmate-landing
@@ -235,7 +237,7 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Tablero del Sprint Backlog 1: https://trello.com/b/gCKcMjVR/tourmate-sprint-1
 
 
-## Anexo F. Herramientas utilizadas
+### Anexo F. Herramientas utilizadas
 
 - Trello, para gestión del backlog y tareas del proyecto: https://trello.com
 - Gherkin, para criterios de aceptación en formato Given-When-Then: https://cucumber.io/docs/gherkin/
@@ -250,9 +252,8 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Structurizr, para diagramas C4: https://structurizr.com
 - Vertabelo, para diagramas de base de datos: https://vertabelo.com
 
-<div style="page-break-before: always;"></div>
 
-## Anexo G. Referencias bibliográficas con enlace
+### Anexo G. Referencias bibliográficas con enlace
 
 - Guía para ejecutar Big Picture Event Storming: https://bit.ly/bpes-guide
 - Guía práctica de EventStorming remoto: https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/
