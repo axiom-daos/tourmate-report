@@ -3,9 +3,13 @@
 - URL del repositorio para el reporte del proyecto: https://github.com/axiom-daos/tourmate-report
 - URL del repositorio para la Landing Page: https://github.com/axiom-daos/tourmate-landing
 
+
+
 **AV1**
 
 Para el desarrollo del informe perteneciente a la entrega AV1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
+
+
 
 <div align="center">
 
@@ -20,5 +24,8 @@ Para el desarrollo del informe perteneciente a la entrega AV1, se dividió la im
 </div>
 
 El trabajo se desarrolló mediante commits continuos en el repositorio de la organización, asegurando trazabilidad y colaboración activa del equipo.
+
+*Report Insights AV1*
+![insigths-report-av1](../assets/images/commits-report1.png)
 
 ---
