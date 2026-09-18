@@ -34,4 +34,20 @@ https://miro.com/app/board/uXjVHrbqRdA=/?share_link_id=127054225300
 
 ### 4.6.4. Software Architecture Component Level Diagrams
 
-![ComponentDiagram](../assets/images/component-level-diagram.png)
+#### 4.6.4.1. Subscriptions and Payment Management Component Diagram
+![ComponentDiagram](../assets/images/subscriptions-payment-components.png)
+
+#### 4.6.4.2. Tour Monitoring Component Diagram
+![ComponentDiagram](../assets/images/tour-monitoring-components.png)
+
+#### 4.6.4.3. Safety Incident Component Diagram
+![ComponentDiagram](../assets/images/safety-incident-components.png)
+
+#### 4.6.4.4. Tour Management Component Diagram
+![ComponentDiagram](../assets/images/tour-management-components.png)
+
+#### 4.6.4.5. Feedback and Review Component Diagram
+![ComponentDiagram](../assets/images/feedback-review-components.png)
+
+#### 4.6.4.6. IAM Component Diagram
+![ComponentDiagram](../assets/images/iam-components.png)
