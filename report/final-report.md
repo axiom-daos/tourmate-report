@@ -46,7 +46,6 @@
 </div>
 
 ---
-
 # Registro de versiones del informe
 
 | Versión |   Fecha    |                Autor                | Descripción de modificación                                                           |
@@ -64,9 +63,13 @@
 - URL del repositorio para el reporte del proyecto: https://github.com/axiom-daos/tourmate-report
 - URL del repositorio para la Landing Page: https://github.com/axiom-daos/tourmate-landing
 
+
+
 **AV1**
 
 Para el desarrollo del informe perteneciente a la entrega AV1, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
+
+
 
 <div align="center">
 
@@ -82,8 +85,10 @@ Para el desarrollo del informe perteneciente a la entrega AV1, se dividió la im
 
 El trabajo se desarrolló mediante commits continuos en el repositorio de la organización, asegurando trazabilidad y colaboración activa del equipo.
 
+*Report Insights AV1*
+![insigths-report-av1](../assets/images/commits-report1.png)
+
 ---
-<div style="page-break-before: always;"></div>
 
 # Contenido
 # Tabla de Contenido 
@@ -180,8 +185,6 @@ El trabajo se desarrolló mediante commits continuos en el repositorio de la org
 ### Bibliografía
 ### Anexos
 
-<div style="page-break-before: always;"></div>
-
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET - EAC - Student Outcome 3,  capacidad de comunicarse efectivamente con un
@@ -190,8 +193,8 @@ rango de audiencias. .
 
 | Criterio específico | Acciones realizadas | Conclusiones | 
 | --- | --- | --- |
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Carrillo Acho, Matias Renato (U202323010)**<br>**AV1:** Práctica de modulación de voz y control de tiempos durante ensayos grupales, lo que permitió desarrollar la habilidad de exponer la problemática del negocio de manera persuasiva ante una audiencia evaluadora.<br><br>**Huingo Tello, Frank Anthony (U202319057)**<br>**AV1:** Organización y esquematización de las ideas clave mediante mapas mentales antes de la exposición, mejorando la articulación verbal para explicar decisiones de diseño a un público no técnico.<br><br>**Quispe Palomino, Tony Jhunior (U20241F714)**<br>**AV1:** Recepción y aplicación de feedback de los compañeros sobre claridad del discurso, mejorando su capacidad asertiva en la comunicación oral de los resultados de las entrevistas y el Needfinding.<br><br>**Verastigue Martinez, Giancarlo Jose (U202419483)**<br>**AV1:** Ejercicios de adaptación de terminología técnica para lograr explicar conceptos complejos de la arquitectura de software (DDD, C4) a diferentes tipos de stakeholders sin perder el rigor técnico en el discurso oral.<br><br>**Molina Vasquez, Manuel Alejandro (U20221G231)**<br>**AV1:** Simulaciones de presentación frente al grupo, desarrollando la capacidad de comunicar oralmente decisiones visuales o de UX mediante argumentos estructurados orientados a las necesidades del usuario. | **AV1:** El equipo ejerció liderazgo conjunto al coordinar responsabilidades y tomar decisiones colaborativas, permitiendo organizar el primer entregable y alinear AniTec con las necesidades de los usuarios. |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia. | **Carrillo Acho, Matias Renato (U202323010)**<br>**AV1:** Aplicación de iteraciones de revisión de textos para depurar inconsistencias, desarrollando así la capacidad de redactar de forma estructurada, técnica y sin ambigüedades en la sección introductoria.<br><br>**Huingo Tello, Frank Anthony (U202319057)**<br>**AV1:** Estudio y aplicación de buenas prácticas de redacción técnica para documentar artefactos (como modelos de datos), afinando la habilidad de escribir descripciones exactas y claras para públicos técnicos.<br><br>**Quispe Palomino, Tony Jhunior (U20241F714)**<br>**AV1:** Ejercicio de síntesis de la vasta información cualitativa obtenida de las entrevistas, perfeccionando la habilidad de transformar datos complejos en reportes ejecutivos escritos y de fácil comprensión.<br><br>**Verastigue Martinez, Giancarlo Jose (U202419483)**<br>**AV1:** Construcción y documentación en equipo del Lenguaje Ubicuo (EventStorming), lo que consolidó su capacidad para plasmar de forma escrita un lenguaje de negocio compartido entre perfiles técnicos y no técnicos.<br><br>**Molina Vasquez, Manuel Alejandro (U20221G231)**<br>**AV1:** Participación como revisor (proofreader) de la gramática y jerarquía de la información, practicando habilidades de control de calidad para garantizar que el entregable escrito cumpla con altos estándares formales. | **AV1:** La planificación y el trabajo colaborativo permitieron cumplir los objetivos dentro del plazo establecido, manteniendo comunicación constante y orientación hacia las necesidades de ganaderos y veterinarios. |
+| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Carrillo Acho, Matias Renato (U202323010)**<br>**AV1:** Práctica de modulación de voz y control de tiempos durante ensayos grupales, lo que permitió desarrollar la habilidad de exponer la problemática del negocio de manera persuasiva ante una audiencia evaluadora.<br><br>**Huingo Tello, Frank Anthony (U202319057)**<br>**AV1:** Organización y esquematización de las ideas clave mediante mapas mentales antes de la exposición, mejorando la articulación verbal para explicar decisiones de diseño a un público no técnico.<br><br>**Quispe Palomino, Tony Jhunior (U20241F714)**<br>**AV1:** Recepción y aplicación de feedback de los compañeros sobre claridad del discurso, mejorando su capacidad asertiva en la comunicación oral de los resultados de las entrevistas y el Needfinding.<br><br>**Verastigue Martinez, Giancarlo Jose (U202419483)**<br>**AV1:** Ejercicios de adaptación de terminología técnica para lograr explicar conceptos complejos de la arquitectura de software (DDD, C4) a diferentes tipos de stakeholders sin perder el rigor técnico en el discurso oral.<br><br>**Molina Vasquez, Manuel Alejandro (U20221G231)**<br>**AV1:** Simulaciones de presentación frente al grupo, desarrollando la capacidad de comunicar oralmente decisiones visuales o de UX mediante argumentos estructurados orientados a las necesidades del usuario. | **AV1:** El equipo ejerció liderazgo conjunto al coordinar responsabilidades y tomar decisiones colaborativas, permitiendo organizar el primer entregable y alinear TourMate con las necesidades de los usuarios. |
+| Comunica por escrito con efectividad a diferentes rangos de audiencia. | **Carrillo Acho, Matias Renato (U202323010)**<br>**AV1:** Aplicación de iteraciones de revisión de textos para depurar inconsistencias, desarrollando así la capacidad de redactar de forma estructurada, técnica y sin ambigüedades en la sección introductoria.<br><br>**Huingo Tello, Frank Anthony (U202319057)**<br>**AV1:** Estudio y aplicación de buenas prácticas de redacción técnica para documentar artefactos (como modelos de datos), afinando la habilidad de escribir descripciones exactas y claras para públicos técnicos.<br><br>**Quispe Palomino, Tony Jhunior (U20241F714)**<br>**AV1:** Ejercicio de síntesis de la vasta información cualitativa obtenida de las entrevistas, perfeccionando la habilidad de transformar datos complejos en reportes ejecutivos escritos y de fácil comprensión.<br><br>**Verastigue Martinez, Giancarlo Jose (U202419483)**<br>**AV1:** Construcción y documentación en equipo del Lenguaje Ubicuo (EventStorming), lo que consolidó su capacidad para plasmar de forma escrita un lenguaje de negocio compartido entre perfiles técnicos y no técnicos.<br><br>**Molina Vasquez, Manuel Alejandro (U20221G231)**<br>**AV1:** Participación como revisor (proofreader) de la gramática y jerarquía de la información, practicando habilidades de control de calidad para garantizar que el entregable escrito cumpla con altos estándares formales. | **AV1:** La planificación y el trabajo colaborativo permitieron cumplir los objetivos dentro del plazo establecido, manteniendo comunicación constante y orientació. |
 
 # Capítulo I: Introducción
 
@@ -451,7 +454,7 @@ El Lean UX Canvas es una herramienta utilizada en el marco del diseño centrado 
 
 ![Lean-UX-canvas-Tourmate](../assets/images/lean-ux-canvas.png)
 
-Enlace para acceder al Lean UX Canvas en Mural: [https:](https:)
+Enlace para acceder al Lean UX Canvas en Mural: [https://l1nq.com/oa73grw](https://l1nq.com/oa73grw)
 
 ---
 
@@ -803,7 +806,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura                                                                                                                                                                                                                                                                                                                      |
 | **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
 | **Duración:** | 5:05 min                                                                                                                                                                                                                                                                                                                                    |
-| **Enlace:** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319057_upc_edu_pe/IQBoi_IK-HcUQI1SdenjhHQkAbMGfRPdITIGilUq4MH0xug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RhDf3F](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319057_upc_edu_pe/IQBoi_IK-HcUQI1SdenjhHQkAbMGfRPdITIGilUq4MH0xug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RhDf3F)|
+| **Enlace:** | [Entrevista-7](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319057_upc_edu_pe/IQBoi_IK-HcUQI1SdenjhHQkAbMGfRPdITIGilUq4MH0xug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RhDf3F)|
 
 **Resumen:** Carlos Gutiérrez representa a una agencia enfocada en tours de trekking y naturaleza, principalmente en los circuitos andinos del sur, como Cusco y Huaraz, trabajando con guías locales especializados. Durante temporada alta manejan entre 5 y 10 guías, aproximadamente 100 turistas al mes y hasta 3 grupos simultáneos activos en ruta. Actualmente, el seguimiento en campo se realiza mediante radios VHF en zonas sin señal y llamadas o WhatsApp cuando existe cobertura celular, mientras que los recorridos e incidentes se registran manualmente en bitácoras de papel y posteriormente se trasladan a hojas de Excel. Señala que la pérdida de señal es muy frecuente en quebradas y zonas de alta montaña, por lo que utilizan puntos de reporte obligatorios en campamentos o cumbres y dependen de los reportes del guía para conocer el estado de los pasajeros. Entre los principales problemas identifica la demora en la comunicación durante emergencias, especialmente ante casos de soroche y fatiga, así como las dificultades para actuar rápidamente cuando el guía se encuentra sin cobertura. Aunque cuentan con protocolos básicos de evacuación, considera que la falta de comunicación en tiempo real los vuelve lentos y puede generar reclamos por retrasos en la atención. Actualmente utilizan Excel para reservas y WhatsApp para la coordinación, pero no cuentan con software especializado debido principalmente al costo, la resistencia del personal a aplicaciones complejas y la falta de conectividad. Carlos considera que una plataforma de monitoreo en tiempo real sería sumamente valiosa para mejorar la tranquilidad y capacidad de respuesta de la agencia. Estaría dispuesto a pagar una suscripción mensual de entre $30 y $80, siempre que el costo sea adecuado para una agencia pequeña o mediana. Entre las funcionalidades indispensables desde el primer día destaca un botón SOS de emergencia, mapas offline y visualización básica de la ubicación de los grupos.
 
@@ -876,7 +879,7 @@ El análisis de la entrevista con Miller, un viajero que realiza trekking de man
 | **Segmento:** | Turista de Aventura                                                                                                                                                                                                                                                                                                                          |
 | **Inicio de la entrevista:** | 0:00                                                                                                                                                                                                                                                                                                                                         |
 | **Duración:** | 06:25 min                                                                                                                                                                                                                                                                                                                                    |
-| **Enlace:** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAUJbSUxGQ-RrATzxOjZawRAVmvkpuEsfg7qOf-p29IYXk?e=BFlFkq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAUJbSUxGQ-RrATzxOjZawRAVmvkpuEsfg7qOf-p29IYXk?e=BFlFkq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)|
+| **Enlace:** | [Entrevista-7](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAUJbSUxGQ-RrATzxOjZawRAVmvkpuEsfg7qOf-p29IYXk?e=BFlFkq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)|
 
 **Resumen:** Alberto Joaquin Alfaro Mallma, 25 años. Su ultimo viaje fue hacia la laguna 69 en la cordillera blanca, además señala que contrato a una agencia con guía incluido. Frecuentemente prefiere contratar a una agencia turistica para realizar viajes o tours, tambien señala que ha vivido percances durante el tour siendo uno de estos la falta de señal y comunicación. Menciona que la seguridad en tours depende exclusivamente de la agencia y de la preparación de los guías designados, además señala que utiliza mapas offlines, gps y relojes inteligentes como herramientas durante el tour.
 
@@ -1045,15 +1048,15 @@ Ahora, aquí se va a explicar a paso a paso como se desarrollo el Big Picture Ev
 
 * Luego, ubicamos todos los Post-its, que representan los Eventos de Dominio (Domain Events) en sus respectivas etapas:
 
-![Big Picture EventStorming 2](../assets/images/New-Big-Picture-Evenstorming-2.png)
+![Big Picture EventStorming 2](../assets/images/NewBigPictureEvenstorming2.jpeg)
 
 * Después de esto, creamos la sección de "Problems", donde identificamos todos los problemas que se pueden presentar en las etapas del turismo:
 
-![Big Picture EventStorming 3](../assets/images/New-Big-Picture-Evenstorming-3.png)
+![Big Picture EventStorming 3](../assets/images/NewBigPictureEvenstorming3.jpeg)
 
 * Finalmente, en la sección de "Opportunities" identificamos todas las oportunidades de mejora:
 
-![Big Picture EventStorming](../assets/images/New-Big-Picture-Evenstorming.png)
+![Big Picture EventStorming](../assets/images/NewBigPictureEvenstorming.jpeg)
 
 Mediante este proceso, al identificar las oportunidades de mejora, logramos definir mejor el cómo vamos a desarrollar nuestra plataforma.
 
@@ -1201,6 +1204,17 @@ directa cuando aplican.
 | US-LP08 | Contactar al equipo de Tourmate | Como visitante, quiero contactar al equipo de Tourmate para resolver dudas relacionadas con la plataforma. | **Escenario 1: Mensaje enviado correctamente**<br>Dado que el visitante proporciona información válida en el formulario de contacto<br>Cuando envía la solicitud de contacto<br>Entonces el sistema registra el mensaje correctamente y retorna confirmación de recepción<br><br>**Escenario 2: Datos inválidos**<br>Dado que el visitante ingresa información con formato incorrecto<br>Cuando envía la solicitud de contacto<br>Entonces el sistema retorna un error indicando los campos con formato inválido<br><br>**Escenario 3: Servicio de contacto no disponible**<br>Dado que el servicio de contacto no se encuentra disponible<br>Cuando el visitante envía la solicitud<br>Entonces el sistema retorna un mensaje indicando que el servicio no está disponible temporalmente                                                                                                                                                   | EP06 |
 | US-LP09 | Conocer al equipo de la startup | Como visitante, quiero conocer al equipo detrás de Tourmate para construir confianza en la propuesta de valor. | **Escenario 1: Información del equipo disponible**<br>Dado que el visitante solicita el contenido del equipo<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema retorna información sobre los miembros del equipo de Axiom<br><br>**Escenario 2: Acceso desde dispositivo móvil**<br>Dado que el visitante accede al contenido del equipo desde un dispositivo móvil<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema retorna la información adaptada al tamaño del dispositivo<br><br>**Escenario 3: Contenido no disponible**<br>Dado que ocurre un fallo al entregar el contenido del equipo<br>Cuando el visitante solicita el contenido<br>Entonces el sistema retorna un mensaje indicando que el contenido no está disponible temporalmente                                                                                                                                                            | EP06 |
 | US-LP10 | Acceder a una demostración del sistema | Como visitante, quiero acceder a una demostración del sistema para comprender el funcionamiento de la plataforma antes de registrarme. | **Escenario 1: Demostración disponible**<br>Dado que el visitante solicita la demostración del sistema<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema provee acceso al recurso de demostración correctamente<br><br>**Escenario 2: Interacción con la demostración**<br>Dado que el visitante interactúa con la demostración<br>Cuando el sistema procesa cada interacción<br>Entonces el sistema responde correctamente a cada acción del visitante<br><br>**Escenario 3: Demostración no disponible**<br>Dado que el recurso de demostración no se encuentra disponible<br>Cuando el visitante solicita la demostración<br>Entonces el sistema retorna un mensaje indicando que el recurso no está disponible temporalmente                                                                                                                                                                                             | EP06 |
+| **EP07** | **RESTful API** | Agrupa los endpoints RESTful que exponen las funcionalidades del sistema a los componentes del frontend, dispositivos IoT y servicios externos, siguiendo los estándares de diseño de API REST. | — | — |
+| TS01 | Endpoint de registro y autenticación | Como developer, quiero exponer endpoints que registren usuarios y validen credenciales para que los clientes puedan crear cuentas y autenticarse de forma segura en la plataforma. | **Escenario 1: Registro exitoso**<br>Given que el request contiene un body con información válida y completa<br>When el cliente consume el endpoint POST /api/v1/users<br>Then el sistema retorna una respuesta con código 201 y los datos del usuario creado<br><br>**Escenario 2: Autenticación exitosa**<br>Given que el request contiene credenciales válidas y registradas<br>When el cliente consume el endpoint POST /api/v1/auth/login<br>Then el sistema retorna una respuesta con código 200 y el token de acceso generado<br><br>**Escenario 3: Correo duplicado en registro**<br>Given que el correo del request ya existe en el sistema<br>When el cliente consume el endpoint POST /api/v1/users<br>Then el sistema retorna una respuesta con código 409 indicando que el recurso ya existe<br><br>**Escenario 4: Token expirado**<br>Given que el token de acceso del cliente ha superado su tiempo de validez<br>When el cliente consume un endpoint protegido<br>Then el sistema retorna una respuesta con código 401 indicando que el token no es válido | EP07 |
+| TS02 | Endpoint de gestión de tours | Como developer, quiero exponer endpoints para la creación, consulta, actualización y eliminación de tours para que el frontend pueda administrar el catálogo de la agencia. | **Escenario 1: Creación exitosa**<br>Given que el request contiene información válida del tour y un token de acceso válido<br>When el cliente consume el endpoint POST /api/v1/tours<br>Then el sistema retorna una respuesta con código 201 y los datos del tour creado<br><br>**Escenario 2: Consulta exitosa**<br>Given que existen tours registrados y el token es válido<br>When el cliente consume el endpoint GET /api/v1/tours<br>Then el sistema retorna una respuesta con código 200 y la lista de tours disponibles<br><br>**Escenario 3: Tour no encontrado**<br>Given que el identificador del tour solicitado no existe<br>When el cliente consume el endpoint GET /api/v1/tours/{id}<br>Then el sistema retorna una respuesta con código 404 indicando que el recurso no existe<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS03 | Endpoint de gestión de expediciones | Como developer, quiero exponer endpoints para iniciar, consultar y finalizar expediciones para que el frontend pueda gestionar el ciclo de vida de cada recorrido activo. | **Escenario 1: Inicio exitoso**<br>Given que el request contiene un tourId válido y un token de guía autorizado<br>When el cliente consume el endpoint POST /api/v1/expeditions<br>Then el sistema retorna una respuesta con código 201 y los datos de la expedición iniciada<br><br>**Escenario 2: Consulta de checkpoints**<br>Given que existen registros de checkpoints para la expedición solicitada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/checkpoints<br>Then el sistema retorna una respuesta con código 200 y la lista de checkpoints con su estado<br><br>**Escenario 3: Finalización exitosa**<br>Given que la expedición se encuentra en estado activo<br>When el cliente consume el endpoint PUT /api/v1/expeditions/{id}/finish<br>Then el sistema retorna una respuesta con código 200 confirmando el cierre de la expedición<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS04 | Endpoint de monitoreo de ubicación | Como developer, quiero exponer endpoints que registren y expongan las ubicaciones de los turistas en tiempo real para que el frontend pueda supervisar la seguridad de los participantes durante la expedición. | **Escenario 1: Registro exitoso**<br>Given que el request contiene coordenadas válidas, el identificador del turista y un token válido<br>When el cliente consume el endpoint POST /api/v1/locations<br>Then el sistema retorna una respuesta con código 201 confirmando el registro de ubicación<br><br>**Escenario 2: Consulta exitosa**<br>Given que existen registros de ubicación para la expedición solicitada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/locations<br>Then el sistema retorna una respuesta con código 200 y los datos de ubicación de los participantes<br><br>**Escenario 3: Sin datos disponibles**<br>Given que no existen registros de ubicación para la expedición consultada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/locations<br>Then el sistema retorna una respuesta con código 200 y una lista vacía<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS05 | Endpoint de gestión de incidentes | Como developer, quiero exponer endpoints que registren y expongan los incidentes reportados durante las expediciones para que el administrador de agencia pueda responder oportunamente. | **Escenario 1: Registro exitoso**<br>Given que el request contiene información válida del incidente y un token válido<br>When el cliente consume el endpoint POST /api/v1/incidents<br>Then el sistema retorna una respuesta con código 201 y los datos del incidente registrado<br><br>**Escenario 2: Consulta exitosa**<br>Given que existen incidentes registrados para la expedición solicitada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/incidents<br>Then el sistema retorna una respuesta con código 200 y la lista de incidentes<br><br>**Escenario 3: Datos incompletos**<br>Given que el request omite campos obligatorios del incidente<br>When el cliente consume el endpoint POST /api/v1/incidents<br>Then el sistema retorna una respuesta con código 400 indicando los campos requeridos faltantes<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS06 | Endpoint de sincronización offline | Como developer, quiero exponer un endpoint que procese los datos almacenados localmente al recuperar conexión para que no se pierdan registros generados durante la expedición. | **Escenario 1: Sincronización exitosa**<br>Given que el request contiene datos válidos almacenados localmente<br>When el cliente consume el endpoint POST /api/v1/sync<br>Then el sistema procesa los datos correctamente y retorna una respuesta con código 200 confirmando la sincronización<br><br>**Escenario 2: Datos duplicados**<br>Given que el request contiene registros previamente sincronizados<br>When el cliente consume el endpoint POST /api/v1/sync<br>Then el sistema ignora los duplicados y retorna una respuesta con código 200 indicando los procesados y los omitidos<br><br>**Escenario 3: Error durante la sincronización**<br>Given que ocurre un fallo interno al procesar los datos<br>When el cliente consume el endpoint POST /api/v1/sync<br>Then el sistema retorna una respuesta con código 500 indicando que la sincronización no pudo completarse | EP07 |
+| TS07 | Endpoint de gestión de alertas | Como developer, quiero exponer endpoints que generen y expongan alertas ante anomalías detectadas para que el administrador de agencia y el guía de tour puedan responder oportunamente. | **Escenario 1: Alerta generada exitosamente**<br>Given que el sistema detecta una condición que supera los umbrales configurados<br>When el endpoint procesa los datos recibidos<br>Then el sistema registra la alerta y retorna una respuesta con código 201 con los datos de la alerta generada<br><br>**Escenario 2: Consulta de alertas activas**<br>Given que existen alertas activas para la expedición solicitada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/alerts<br>Then el sistema retorna una respuesta con código 200 y la lista de alertas activas<br><br>**Escenario 3: Parámetros inválidos**<br>Given que el request contiene datos con formato incorrecto<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 400 indicando los parámetros inválidos<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS08 | Endpoint de ingesta de telemetría IoT | Como developer, quiero exponer un endpoint que reciba y procese la telemetría enviada por los dispositivos wearables para que la información biométrica esté disponible para el monitoreo en tiempo real. | **Escenario 1: Ingesta exitosa**<br>Given que el request contiene telemetría válida proveniente de un dispositivo registrado<br>When el cliente consume el endpoint POST /api/v1/telemetry<br>Then el sistema registra la telemetría asociada al turista y retorna una respuesta con código 201<br><br>**Escenario 2: Dispositivo no registrado**<br>Given que el identificador del dispositivo no está registrado en el sistema<br>When el cliente consume el endpoint POST /api/v1/telemetry<br>Then el sistema retorna una respuesta con código 403 indicando que el dispositivo no está autorizado<br><br>**Escenario 3: Telemetría con formato inválido**<br>Given que el request contiene datos con formato incorrecto<br>When el cliente consume el endpoint POST /api/v1/telemetry<br>Then el sistema retorna una respuesta con código 400 indicando los parámetros inválidos<br><br>**Escenario 4: Solicitud sin credenciales del dispositivo**<br>Given que el request no contiene las credenciales del dispositivo<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación del dispositivo | EP07 |
+| TS09 | Endpoint de perfil y notificaciones | Como developer, quiero exponer endpoints para gestionar el perfil del usuario y sus preferencias de notificaciones para que el frontend pueda personalizar la experiencia de cada usuario. | **Escenario 1: Consulta de perfil exitosa**<br>Given que el request contiene un token válido del usuario autenticado<br>When el cliente consume el endpoint GET /api/v1/profile<br>Then el sistema retorna una respuesta con código 200 y los datos del perfil del usuario<br><br>**Escenario 2: Actualización de preferencias exitosa**<br>Given que el request contiene preferencias válidas y un token válido<br>When el cliente consume el endpoint PUT /api/v1/profile/preferences<br>Then el sistema retorna una respuesta con código 200 confirmando la actualización<br><br>**Escenario 3: Consulta de notificaciones**<br>Given que existen notificaciones registradas para el usuario autenticado<br>When el cliente consume el endpoint GET /api/v1/notifications<br>Then el sistema retorna una respuesta con código 200 y la lista de notificaciones<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
+| TS10 | Endpoint de exportación de reportes | Como developer, quiero exponer un endpoint que genere reportes exportables de las expediciones para que el administrador de agencia pueda analizar la información operativa. | **Escenario 1: Exportación exitosa**<br>Given que existen datos disponibles para la expedición solicitada<br>When el cliente consume el endpoint GET /api/v1/expeditions/{id}/reports/export<br>Then el sistema retorna una respuesta con código 200 y el archivo generado en el formato solicitado<br><br>**Escenario 2: Sin datos para exportar**<br>Given que no existen datos registrados para la expedición<br>When el cliente consume el endpoint de exportación<br>Then el sistema retorna una respuesta con código 404 indicando que no hay información disponible<br><br>**Escenario 3: Formato no soportado**<br>Given que el request especifica un formato de exportación no disponible<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 400 indicando los formatos soportados<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
 
 ## 3.2. Impact Mapping
 
@@ -1216,88 +1230,89 @@ El Impact Mapping es una herramienta de planificación estratégica que nos perm
 
 ### 3.3. Product Backlog
 
-A continuación se presenta el Product Backlog de Tourmate con la priorización y estimación de todas las historias identificadas. El orden refleja el valor para el negocio, priorizando las funcionalidades del Landing Page y las capacidades core de monitoreo y seguridad en campo.
+A continuación se presenta el Product Backlog de Tourmate con la priorización y estimación de todas las historias identificadas. El orden refleja el valor para el negocio, priorizando las funcionalidades del Landing Page, las historias de usuario de los distintos roles y las tareas técnicas de desarrollo.
 
 Para acceder al Product Backlog en la herramienta de gestión del equipo, visitar el siguiente enlace: [Product Backlog — Tourmate](https://trello.com/invite/b/6aa7135dcbb03c6075b9944b/ATTI3d6ca6c13b23e9df6f2ebe962e859d9aE7098EAF/tourmate-product-backlog)
-https://trello.com/invite/b/6aa7135dcbb03c6075b9944b/ATTI3d6ca6c13b23e9df6f2ebe962e859d9aE7098EAF/tourmate-product-backlog
 
-![Product Backlog Tourmate](../assets/images/s1-sprint-backlog.png)
+![Product Backlog Tourmate](../assets/images/New-Product-Backlog.png)
 
 | #Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :--- | :--- | :--- | :---: |
-| 1 | TS01 | Endpoint de registro de usuarios | Como developer, quiero exponer un endpoint que registre usuarios validando los datos del request para que los clientes puedan crear cuentas de forma segura en la plataforma. | 5 |
-| 2 | TS02 | Endpoint de autenticación | Como developer, quiero exponer un endpoint que valide credenciales y genere tokens de acceso para que los clientes puedan autenticarse y consumir recursos protegidos del sistema. | 5 |
-| 3 | US01 | Registro de turista | Como turista, quiero registrarme en la plataforma para acceder a los tours y funcionalidades disponibles del sistema. | 5 |
-| 4 | US02 | Registro de administrador de agencia | Como administrador de agencia, quiero registrar mi agencia en la plataforma para gestionar tours y monitorear a los turistas asignados. | 5 |
-| 5 | US03 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión de forma segura para acceder a las funcionalidades de la plataforma según mi rol. | 3 |
-| 6 | US05 | Verificación de correo electrónico | Como turista, quiero verificar mi correo electrónico tras el registro para confirmar la validez de mi cuenta. | 2 |
-| 7 | US04 | Recuperación de contraseña | Como usuario registrado, quiero recuperar mi contraseña para no perder el acceso a mi cuenta en la plataforma. | 3 |
-| 8 | US06 | Cambio de contraseña | Como usuario registrado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta. | 2 |
-| 9 | US48 | Cerrar sesión actual | Como usuario registrado, quiero cerrar mi sesión actual para proteger el acceso a mi cuenta cuando termino de utilizar la plataforma. | 1 |
-| 10 | US07 | Cierre de sesiones activas | Como usuario registrado, quiero cerrar todas mis sesiones activas en otros dispositivos para proteger mi cuenta. | 2 |
-| 11 | US49 | Desactivar cuenta personal | Como usuario registrado, quiero desactivar mi cuenta para dejar de utilizar la plataforma cuando lo considere necesario. | 2 |
-| 12 | TS03 | Endpoint de gestión de tours | Como developer, quiero exponer endpoints para la creación, consulta, actualización y eliminación de tours para que el frontend pueda administrar la información de las expediciones. | 5 |
-| 13 | US08 | Crear tour | Como administrador de agencia, quiero crear un tour para organizar rutas y ponerlas a disposición de los turistas. | 5 |
-| 14 | US09 | Editar tour | Como administrador de agencia, quiero editar la información de un tour para mantener actualizados los datos del recorrido. | 3 |
-| 15 | US10 | Eliminar tour | Como administrador de agencia, quiero eliminar un tour para mantener actualizado el catálogo de la agencia. | 2 |
-| 16 | US16 | Duplicar tour | Como administrador de agencia, quiero duplicar un tour existente para crear uno nuevo basado en una configuración previamente validada. | 3 |
-| 17 | US14 | Consultar tours de la agencia | Como administrador de agencia, quiero consultar todos los tours registrados por mi agencia para gestionarlos de forma centralizada. | 2 |
-| 18 | US11 | Asignar turistas a un tour | Como administrador de agencia, quiero asignar turistas a un tour para conformar el grupo de participantes del recorrido. | 5 |
-| 19 | US12 | Desasignar turista de un tour | Como administrador de agencia, quiero desasignar un turista de un tour para actualizar la composición del grupo. | 3 |
-| 20 | US15 | Consultar turistas asignados a un tour | Como administrador de agencia, quiero consultar la información de los turistas asignados a un tour para conocer la composición del grupo. | 2 |
-| 21 | US17 | Buscar tours | Como turista, quiero buscar tours mediante términos para localizar opciones acordes a mis intereses. | 3 |
-| 22 | US18 | Filtrar tours | Como turista, quiero filtrar los tours disponibles según criterios definidos para encontrar opciones ajustadas a mis preferencias. | 3 |
-| 23 | US19 | Consultar detalle del tour | Como turista, quiero acceder a la información completa de un tour para tomar una decisión informada antes de participar. | 2 |
-| 24 | US13 | Confirmar asistencia | Como turista, quiero confirmar mi asistencia a un tour para asegurar mi participación en el recorrido. | 2 |
-| 25 | US38 | Gestionar perfil personal | Como usuario registrado, quiero gestionar mi información personal para mantener actualizados los datos asociados a mi cuenta. | 2 |
-| 26 | US25 | Consultar información del recorrido | Como turista, quiero acceder a la información detallada del recorrido para prepararme adecuadamente antes y durante la expedición. | 2 |
-| 27 | US26 | Consultar clima del recorrido | Como turista, quiero consultar la información climática del recorrido para prepararme con el equipamiento adecuado. | 3 |
-| 28 | US20 | Visualizar ruta del tour | Como turista, quiero acceder a la ruta del tour para orientarme durante el recorrido. | 8 |
-| 29 | US21 | Descargar ruta offline | Como turista, quiero descargar la información de la ruta de un tour para utilizarla sin conexión durante el recorrido. | 8 |
-| 30 | US22 | Visualizar checkpoints del recorrido | Como turista, quiero conocer los checkpoints del tour para identificar mi progreso durante el recorrido. | 5 |
-| 31 | US23 | Visualizar progreso del recorrido | Como turista, quiero consultar mi avance en el tour para conocer cuánto resta por completar. | 5 |
-| 32 | US24 | Finalizar tour | Como turista, quiero marcar un tour como finalizado para cerrar formalmente mi participación en el recorrido. | 2 |
-| 33 | US27 | Registrar experiencia del recorrido | Como turista, quiero registrar notas e imágenes durante el tour para documentar mi experiencia. | 3 |
-| 34 | TS04 | Endpoint de monitoreo de ubicación | Como developer, quiero exponer endpoints que registren y expongan las ubicaciones de los turistas en tiempo real para que el frontend pueda supervisar la seguridad de los participantes durante la expedición. | 8 |
-| 35 | TS05 | Endpoint de gestión de incidentes | Como developer, quiero exponer endpoints que registren y expongan los incidentes reportados durante las expediciones para que el administrador de agencia pueda responder oportunamente. | 5 |
-| 36 | TS07 | Endpoint de gestión de alertas | Como developer, quiero exponer endpoints que generen y expongan alertas ante anomalías detectadas para que el administrador de agencia y el guía de tour puedan responder oportunamente. | 5 |
-| 37 | US28 | Monitorear ubicación de turistas | Como administrador de agencia, quiero consultar la ubicación de los turistas para supervisar su seguridad durante la expedición. | 8 |
-| 38 | US29 | Consultar estado general del grupo | Como administrador de agencia, quiero consultar el estado general de los turistas para detectar situaciones de riesgo durante la expedición. | 8 |
-| 39 | US30 | Recibir alertas por anomalías | Como administrador de agencia, quiero recibir alertas ante situaciones de riesgo para responder oportunamente durante las expediciones. | 5 |
-| 40 | US31 | Consultar estado de salud básico | Como guía de tour, quiero consultar alertas básicas del estado de salud de los turistas para actuar oportunamente ante posibles emergencias. | 5 |
-| 41 | US32 | Reportar incidentes | Como turista, quiero reportar incidentes para alertar oportunamente al personal responsable durante la expedición. | 3 |
-| 42 | US33 | Exportar reportes de expedición | Como administrador de agencia, quiero exportar reportes de las expediciones para analizar la información operativa. | 5 |
-| 43 | TS08 | Endpoint de exportación de reportes | Como developer, quiero exponer un endpoint que genere reportes exportables de las expediciones para que el administrador de agencia pueda analizar la información operativa. | 5 |
-| 44 | US34 | Iniciar expedición | Como guía de tour, quiero marcar el inicio de la expedición para activar el monitoreo y registro del recorrido. | 3 |
-| 45 | US35 | Registrar paso por checkpoint manual | Como guía de tour, quiero registrar manualmente el paso del grupo por un checkpoint para garantizar la trazabilidad cuando la detección automática no es posible. | 3 |
-| 46 | US36 | Reportar incidente desde el rol guía | Como guía de tour, quiero reportar incidentes detectados en campo para informar oportunamente al administrador de agencia. | 3 |
-| 47 | US37 | Comunicar estado del grupo | Como guía de tour, quiero comunicar periódicamente el estado del grupo al administrador de agencia para mantener la trazabilidad durante el recorrido. | 3 |
-| 48 | US38 | Finalizar expedición como guía | Como guía de tour, quiero marcar la finalización de la expedición para cerrar formalmente el monitoreo del recorrido. | 2 |
-| 49 | TS09 | Endpoint de ingesta de telemetría IoT | Como developer, quiero exponer un endpoint que reciba y procese la telemetría enviada por los dispositivos wearables para que la información biométrica esté disponible para el monitoreo en tiempo real. | 8 |
-| 50 | TS10 | Endpoint de gestión de dispositivos wearables | Como developer, quiero exponer endpoints para vincular, desvincular y consultar dispositivos wearables para que los turistas puedan administrar los dispositivos asociados a su cuenta. | 5 |
-| 51 | TS06 | Endpoint de sincronización offline | Como developer, quiero exponer un endpoint que procese los datos almacenados localmente al recuperar conexión para que no se pierdan registros generados durante la expedición. | 8 |
-| 52 | US39 | Vincular dispositivo wearable | Como turista, quiero vincular un dispositivo wearable a mi cuenta para que el sistema capture mis signos vitales durante la expedición. | 3 |
-| 53 | US40 | Recibir datos biométricos del wearable | Como turista, quiero que el sistema reciba los datos biométricos capturados por mi wearable para que sean utilizados en el monitoreo de mi salud durante la expedición. | 5 |
-| 54 | US41 | Detección automática por checkpoint Bluetooth | Como turista, quiero que el sistema detecte automáticamente mi paso por checkpoints Bluetooth para registrar mi progreso sin intervención manual. | 8 |
-| 55 | US42 | Sincronización asincrónica de telemetría | Como turista, quiero que los datos capturados durante la expedición se sincronicen automáticamente al recuperar la conexión para no perder ningún registro generado. | 8 |
-| 56 | US43 | Consultar estado del wearable | Como turista, quiero consultar el estado de mi wearable para verificar su nivel de batería y conectividad antes de iniciar el recorrido. | 2 |
-| 57 | US44 | Desvincular dispositivo wearable | Como turista, quiero desvincular un dispositivo wearable de mi cuenta para gestionar los dispositivos asociados a mi perfil. | 2 |
-| 58 | US46 | Recibir notificaciones | Como usuario registrado, quiero recibir notificaciones relevantes para mantenerme informado sobre eventos importantes relacionados con mi cuenta o expedición. | 5 |
-| 59 | US47 | Configurar preferencias de notificaciones | Como usuario registrado, quiero configurar las preferencias de notificaciones para recibir únicamente las que considero relevantes. | 3 |
-| 60 | US-LP01 | Conocer la propuesta de valor | Como visitante, quiero conocer la propuesta de valor de Tourmate para evaluar si la plataforma se ajusta a mis necesidades. | 3 |
-| 61 | US-LP02 | Navegar entre secciones de la landing | Como visitante, quiero acceder a las distintas secciones de la landing page para conocer las funcionalidades del sistema. | 2 |
-| 62 | US-LP03 | Conocer beneficios para turistas | Como visitante del segmento turista, quiero conocer los beneficios específicos de la plataforma para comprender cómo mejora mi experiencia durante las expediciones. | 2 |
-| 63 | US-LP04 | Conocer beneficios para administradores de agencia | Como visitante del segmento agencia, quiero conocer los beneficios específicos de la plataforma para comprender cómo mejora la gestión y monitoreo de expediciones. | 2 |
-| 64 | US-LP05 | Conocer las funcionalidades principales | Como visitante, quiero conocer las funcionalidades principales de la plataforma para entender el funcionamiento general del sistema. | 2 |
-| 65 | US-LP06 | Acceder al registro desde la landing | Como visitante, quiero acceder rápidamente al registro desde la landing page para comenzar a utilizar la plataforma. | 1 |
-| 66 | US-LP07 | Acceder a una demostración del sistema | Como visitante, quiero acceder a una demostración del sistema para comprender el funcionamiento de la plataforma antes de registrarme. | 3 |
-| 67 | US-LP08 | Conocer la compatibilidad offline | Como visitante, quiero conocer la compatibilidad offline de la plataforma para confiar en su funcionamiento en zonas sin cobertura. | 1 |
-| 68 | US-LP09 | Contactar al equipo de Tourmate | Como visitante, quiero contactar al equipo de Tourmate para resolver dudas relacionadas con la plataforma. | 3 |
-| 69 | US-LP10 | Conocer las medidas de seguridad de datos | Como visitante, quiero conocer cómo la plataforma protege la información personal para confiar en el sistema. | 1 |
-| 70 | US-LP11 | Conocer testimonios y casos de uso | Como visitante, quiero conocer testimonios y casos de uso reales para tomar una decisión informada sobre la plataforma. | 2 |
-| 71 | US-LP12 | Conocer el equipo de la startup | Como visitante, quiero conocer al equipo detrás de Tourmate para construir confianza en la propuesta de valor. | 2 |
+| 1 | US-LP01 | Conocer la propuesta de valor | Como visitante, quiero conocer la propuesta de valor de Tourmate para evaluar si la plataforma se ajusta a mis necesidades. | 3 |
+| 2 | US-LP02 | Navegar entre secciones de la landing | Como visitante, quiero acceder a las distintas secciones de la landing page para conocer las funcionalidades del sistema. | 2 |
+| 3 | US-LP03 | Conocer beneficios para turistas | Como visitante del segmento turista, quiero conocer los beneficios específicos de la plataforma para comprender cómo mejora mi experiencia durante las expediciones. | 2 |
+| 4 | US-LP04 | Conocer beneficios para administradores de agencia | Como visitante del segmento agencia, quiero conocer los beneficios específicos de la plataforma para comprender cómo mejora la gestión y monitoreo de expediciones. | 2 |
+| 5 | US-LP05 | Conocer las funcionalidades principales | Como visitante, quiero conocer las funcionalidades principales de la plataforma para entender el funcionamiento general del sistema. | 2 |
+| 6 | US-LP06 | Acceder al registro desde la landing | Como visitante, quiero acceder rápidamente al registro desde la landing page para comenzar a utilizar la plataforma. | 1 |
+| 7 | US-LP07 | Acceder a una demostración del sistema | Como visitante, quiero acceder a una demostración del sistema para comprender el funcionamiento de la plataforma antes de registrarme. | 3 |
+| 8 | US-LP08 | Conocer la compatibilidad offline | Como visitante, quiero conocer la compatibilidad offline de la plataforma para confiar en su funcionamiento en zonas sin cobertura. | 1 |
+| 9 | US-LP09 | Contactar al equipo de Tourmate | Como visitante, quiero contactar al equipo de Tourmate para resolver dudas relacionadas con la plataforma. | 3 |
+| 10 | US-LP10 | Conocer las medidas de seguridad de datos | Como visitante, quiero conocer cómo la plataforma protege la información personal para confiar en el sistema. | 1 |
+| 11 | US-LP11 | Conocer testimonios y casos de uso | Como visitante, quiero conocer testimonios y casos de uso reales para tomar una decisión informada sobre la plataforma. | 2 |
+| 12 | US-LP12 | Conocer el equipo de la startup | Como visitante, quiero conocer al equipo detrás de Tourmate para construir confianza en la propuesta de valor. | 2 |
+| 13 | US01 | Registro de turista | Como turista, quiero registrarme en la plataforma para acceder a los tours y funcionalidades disponibles del sistema. | 5 |
+| 14 | US02 | Registro de administrador de agencia | Como administrador de agencia, quiero registrar mi agencia en la plataforma para gestionar tours y monitorear a los turistas asignados. | 5 |
+| 15 | US03 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión de forma segura para acceder a las funcionalidades de la plataforma según mi rol. | 3 |
+| 16 | US04 | Recuperación de contraseña | Como usuario registrado, quiero recuperar mi contraseña para no perder el acceso a mi cuenta en la plataforma. | 3 |
+| 17 | US05 | Verificación de correo electrónico | Como turista, quiero verificar mi correo electrónico tras el registro para confirmar la validez de mi cuenta. | 2 |
+| 18 | US06 | Cambio de contraseña | Como usuario registrado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta. | 2 |
+| 19 | US07 | Cierre de sesiones activas | Como usuario registrado, quiero cerrar todas mis sesiones activas en otros dispositivos para proteger mi cuenta. | 2 |
+| 20 | US08 | Crear tour | Como administrador de agencia, quiero crear un tour para organizar rutas y ponerlas a disposición de los turistas. | 5 |
+| 21 | US09 | Editar tour | Como administrador de agencia, quiero editar la información de un tour para mantener actualizados los datos del recorrido. | 3 |
+| 22 | US10 | Eliminar tour | Como administrador de agencia, quiero eliminar un tour para mantener actualizado el catálogo de la agencia. | 2 |
+| 23 | US11 | Asignar turistas a un tour | Como administrador de agencia, quiero asignar turistas a un tour para conformar el grupo de participantes del recorrido. | 5 |
+| 24 | US12 | Desasignar turista de un tour | Como administrador de agencia, quiero desasignar un turista de un tour para actualizar la composición del grupo. | 3 |
+| 25 | US13 | Confirmar asistencia | Como turista, quiero confirmar mi asistencia a un tour para asegurar mi participación en el recorrido. | 2 |
+| 26 | US14 | Consultar tours de la agencia | Como administrador de agencia, quiero consultar todos los tours registrados por mi agencia para gestionarlos de forma centralizada. | 2 |
+| 27 | US15 | Consultar turistas asignados a un tour | Como administrador de agencia, quiero consultar la información de los turistas asignados a un tour para conocer la composición del grupo. | 2 |
+| 28 | US16 | Duplicar tour | Como administrador de agencia, quiero duplicar un tour existente para crear uno nuevo basado en una configuración previamente validada. | 3 |
+| 29 | US17 | Buscar tours | Como turista, quiero buscar tours mediante términos para localizar opciones acordes a mis intereses. | 3 |
+| 30 | US18 | Filtrar tours | Como turista, quiero filtrar los tours disponibles según criterios definidos para encontrar opciones ajustadas a mis preferencias. | 3 |
+| 31 | US19 | Consultar detalle del tour | Como turista, quiero acceder a la información completa de un tour para tomar una decisión informada antes de participar. | 2 |
+| 32 | US20 | Visualizar ruta del tour | Como turista, quiero acceder a la ruta del tour para orientarme durante el recorrido. | 8 |
+| 33 | US21 | Descargar ruta offline | Como turista, quiero descargar la información de la ruta de un tour para utilizarla sin conexión durante el recorrido. | 8 |
+| 34 | US22 | Visualizar checkpoints del recorrido | Como turista, quiero conocer los checkpoints del tour para identificar mi progreso durante el recorrido. | 5 |
+| 35 | US23 | Visualizar progreso del recorrido | Como turista, quiero consultar mi avance en el tour para conocer cuánto resta por completar. | 5 |
+| 36 | US24 | Finalizar tour | Como turista, quiero marcar un tour como finalizado para cerrar formalmente mi participación en el recorrido. | 2 |
+| 37 | US25 | Consultar información del recorrido | Como turista, quiero acceder a la información detallada del recorrido para prepararme adecuadamente antes y durante la expedición. | 2 |
+| 38 | US26 | Consultar clima del recorrido | Como turista, quiero consultar la información climática del recorrido para prepararme con el equipamiento adecuado. | 3 |
+| 39 | US27 | Registrar experiencia del recorrido | Como turista, quiero registrar notas e imágenes durante el tour para documentar mi experiencia. | 3 |
+| 40 | US28 | Monitorear ubicación de turistas | Como administrador de agencia, quiero consultar la ubicación de los turistas para supervisar su seguridad durante la expedición. | 8 |
+| 41 | US29 | Consultar estado general del grupo | Como administrador de agencia, quiero consultar el estado general de los turistas para detectar situaciones de riesgo durante la expedición. | 8 |
+| 42 | US30 | Recibir alertas por anomalías | Como administrador de agencia, quiero recibir alertas ante situaciones de riesgo para responder oportunamente durante las expediciones. | 5 |
+| 43 | US31 | Consultar estado de salud básico | Como guía de tour, quiero consultar alertas básicas del estado de salud de los turistas para actuar oportunamente ante posibles emergencias. | 5 |
+| 44 | US32 | Reportar incidentes | Como turista, quiero reportar incidentes para alertar oportunamente al personal responsable durante la expedición. | 3 |
+| 45 | US33 | Exportar reportes de expedición | Como administrador de agencia, quiero exportar reportes de las expediciones para analizar la información operativa. | 5 |
+| 46 | US34 | Iniciar expedición | Como guía de tour, quiero marcar el inicio de la expedición para activar el monitoreo y registro del recorrido. | 3 |
+| 47 | US35 | Registrar paso por checkpoint manual | Como guía de tour, quiero registrar manualmente el paso del grupo por un checkpoint para garantizar la trazabilidad cuando la detección automática no es posible. | 3 |
+| 48 | US36 | Reportar incidente desde el rol guía | Como guía de tour, quiero reportar incidentes detectados en campo para informar oportunamente al administrador de agencia. | 3 |
+| 49 | US37 | Comunicar estado del grupo | Como guía de tour, quiero comunicar periódicamente el estado del grupo al administrador de agencia para mantener la trazabilidad durante el recorrido. | 3 |
+| 50 | US38 | Gestionar perfil personal / Finalizar expedición | Como usuario registrado / guía, quiero gestionar mi perfil o finalizar la expedición para cerrar formalmente las actividades del sistema. | 2 |
+| 51 | US39 | Vincular dispositivo wearable | Como turista, quiero vincular un dispositivo wearable a mi cuenta para que el sistema capture mis signos vitales durante la expedición. | 3 |
+| 52 | US40 | Recibir datos biométricos del wearable | Como turista, quiero que el sistema reciba los datos biométricos capturados por mi wearable para que sean utilizados en el monitoreo de mi salud durante la expedición. | 5 |
+| 53 | US41 | Detección automática por checkpoint Bluetooth | Como turista, quiero que el sistema detecte automáticamente mi paso por checkpoints Bluetooth para registrar mi progreso sin intervención manual. | 8 |
+| 54 | US42 | Sincronización asincrónica de telemetría | Como turista, quiero que los datos capturados durante la expedición se sincronicen automáticamente al recuperar la conexión para no perder ningún registro generado. | 8 |
+| 55 | US43 | Consultar estado del wearable | Como turista, quiero consultar el estado de mi wearable para verificar su nivel de batería y conectividad antes de iniciar el recorrido. | 2 |
+| 56 | US44 | Desvincular dispositivo wearable | Como turista, quiero desvincular un dispositivo wearable de mi cuenta para gestionar los dispositivos asociados a mi perfil. | 2 |
+| 57 | US46 | Recibir notificaciones | Como usuario registrado, quiero recibir notificaciones relevantes para mantenerme informado sobre eventos importantes relacionados con mi cuenta o expedición. | 5 |
+| 58 | US47 | Configurar preferencias de notificaciones | Como usuario registrado, quiero configurar las preferencias de notificaciones para recibir únicamente las que considero relevantes. | 3 |
+| 59 | US48 | Cerrar sesión actual | Como usuario registrado, quiero cerrar mi sesión actual para proteger el acceso a mi cuenta cuando termino de utilizar la plataforma. | 1 |
+| 60 | US49 | Desactivar cuenta personal | Como usuario registrado, quiero desactivar mi cuenta para dejar de utilizar la plataforma cuando lo considere necesario. | 2 |
+| 61 | TS01 | Endpoint de registro de usuarios | Como developer, quiero exponer un endpoint que registre usuarios validando los datos del request para que los clientes puedan crear cuentas de forma segura en la plataforma. | 5 |
+| 62 | TS02 | Endpoint de autenticación y JWT | Como developer, quiero exponer un endpoint que valide credenciales y genere tokens de acceso JWT para que los clientes puedan autenticarse y consumir recursos protegidos del sistema. | 5 |
+| 63 | TS03 | Endpoint de gestión de tours | Como developer, quiero exponer endpoints para la creación, consulta, actualización y eliminación de tours para que el frontend pueda administrar la información de las expediciones. | 5 |
+| 64 | TS04 | Endpoint de monitoreo de ubicación | Como developer, quiero exponer endpoints que registren y expongan las ubicaciones de los turistas en tiempo real para que el frontend pueda supervisar la seguridad de los participantes durante la expedición. | 8 |
+| 65 | TS05 | Endpoint de gestión de incidentes | Como developer, quiero exponer endpoints que registren y expongan los incidentes reportados durante las expediciones para que el administrador de agencia pueda responder oportunamente. | 5 |
+| 66 | TS06 | Endpoint de sincronización offline | Como developer, quiero exponer un endpoint que procese los datos almacenados localmente al recuperar conexión para que no se pierdan registros generados durante la expedición. | 8 |
+| 67 | TS07 | Endpoint de gestión de alertas | Como developer, quiero exponer endpoints que generen y expongan alertas ante anomalías detectadas para que el administrador de agencia y el guía de tour puedan responder oportunamente. | 5 |
+| 68 | TS08 | Endpoint de exportación de reportes | Como developer, quiero exponer un endpoint que genere reportes exportables de las expediciones para que el administrador de agencia pueda analizar la información operativa. | 5 |
+| 69 | TS09 | Endpoint de ingesta de telemetría IoT | Como developer, quiero exponer un endpoint que reciba y procese la telemetría enviada por los dispositivos wearables para que la información biométrica esté disponible para el monitoreo en tiempo real. | 8 |
+| 70 | TS10 | Endpoint de gestión de dispositivos wearables | Como developer, quiero exponer endpoints para vincular, desvincular y consultar dispositivos wearables para que los turistas puedan administrar los dispositivos asociados a su cuenta. | 5 |
+| 71 | TS11 | Endpoint de gestión de perfiles de usuario | Como developer, quiero exponer endpoints para consultar y actualizar la información de perfiles de usuario para que las aplicaciones cliente mantengan actualizados los datos personales. | 3 |
+| 72 | TS12 | Endpoint de rutas y checkpoints offline | Como developer, quiero exponer endpoints que sirvan la estructura geométrica de rutas y metadatos de checkpoints para permitir la descarga y lectura local en mapas móviles. | 8 |
+| 73 | TS13 | Endpoint de motor de notificaciones push | Como developer, quiero exponer un servicio y endpoints de mensajería para disparar notificaciones en tiempo real a los clientes ante eventos críticos o alertas operativas. | 5 |
 
-## Capítulo IV: Product Design
+# Capítulo IV: Product Design
 ## 4.1. Style Guidelines
 ### 4.1.1. General Style Guidelines
 ### **Branding**
@@ -1989,68 +2004,12 @@ User Goal: Supervisar la posición y constantes vitales de los participantes en 
 User Goal: Finalizar administrativamente un tour completado, auditar los tiempos reales frente a los proyectados y generar informes técnicos en PDF y CSV para clientes y auditorías de seguridad.
 ![User Flow Diagrams 3.png](../assets/images/User%20Flow%20Diagrams%203.png)
 
-# 4.4. Web Applications UX/UI Design
+### 4.5. Web Applications Prototyping
+![Web Applications Prototyping.png](../assets/images/Web%20Applications%20Prototyping.png)
+Link del figma: [Enlace](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=tXUhENNxmbTL7x4j-1)
 
-
-
-## 4.4.1. Web Applications Wireframes
-
-![wirefrane 1.png](../assets/images/wirefrane%201.png)
-![wireframe 2.png](../assets/images/wireframe%202.png)
-![wireframe 3.png](../assets/images/wireframe%203.png)
-![wireframe 4.png](../assets/images/wireframe%204.png)
-![wireframe 5.png](../assets/images/wireframe%205.png)
-![wireframe6.png](../assets/images/wireframe6.png)
-![wireframe 7.png](../assets/images/wireframe%207.png)
-![wireframe 8.png](../assets/images/wireframe%208.png)
-![wireframe 9.png](../assets/images/wireframe%209.png)
-![wireframe 10.png](../assets/images/wireframe%2010.png)
-![wireframe 11.png](../assets/images/wireframe%2011.png)
-![wireframe 12.png](../assets/images/wireframe%2012.png)
-![wireframe 13.png](../assets/images/wireframe%2013.png)
-![wireframe 14.png](../assets/images/wireframe%2014.png)
-![wireframe 15.png](../assets/images/wireframe%2015.png)
-
-
-
-## 4.4.2. Web Applications Wireflow Diagrams
-
-User Goal: Crear una ruta comercial con puntos de control BLE preconfigurados, verificar el inventario de hardware IoT y conformar el grupo de turistas asignando dispositivos y un guía líder antes de la salida a campo.
-![wireflow 1.png](../assets/images/wireflow%201.png)
-
-User Goal: Supervisar la posición y constantes vitales de los participantes en rutas de baja conectividad, detectar desvíos o anomalías biométricas de manera oportuna y ejecutar el protocolo de emergencia hasta el cierre formal del incidente.
-![wireflow 2.png](../assets/images/wireflow%202.png)
-
-User Goal: Finalizar administrativamente un tour completado, auditar los tiempos reales frente a los proyectados y generar informes técnicos en PDF y CSV para clientes y auditorías de seguridad.
-![wireflow 3.png](../assets/images/wireflow%203.png)
-
-## 4.4.3. Web Applications Mock-ups
-![mock-up 1.png](../assets/images/mock-up%201.png)
-![mock-up 2.png](../assets/images/mock-up%202.png)
-![mock-up 3.png](../assets/images/mock-up%203.png)
-![mock-up 4.png](../assets/images/mock-up%204.png)
-![mock-up 5.png](../assets/images/mock-up%205.png)
-![mock-up 6.png](../assets/images/mock-up%206.png)
-![mock-up 7.png](../assets/images/mock-up%207.png)
-![mock-up 8.png](../assets/images/mock-up%208.png)
-![mock-up 9.png](../assets/images/mock-up%209.png)
-![mock-up 10.png](../assets/images/mock-up%2010.png)
-![mock-up 11.png](../assets/images/mock-up%2011.png)
-![mock-up 12.png](../assets/images/mock-up%2012.png)
-![mock-up 13.png](../assets/images/mock-up%2013.png)
-![mock-up 14.png](../assets/images/mock-up%2014.png)
-![mock-up 15.png](../assets/images/mock-up%2015.png)
-
-## 4.4.4. Web Applications User Flow Diagrams
-
-User Goal: Crear una ruta comercial con puntos de control BLE preconfigurados, verificar el inventario de hardware IoT y conformar el grupo de turistas asignando dispositivos y un guía líder antes de la salida a campo.
-![User Flow Diagrams 1.png](../assets/images/User%20Flow%20Diagrams%201.png)
-
-User Goal: Supervisar la posición y constantes vitales de los participantes en rutas de baja conectividad, detectar desvíos o anomalías biométricas de manera oportuna y ejecutar el protocolo de emergencia hasta el cierre formal del incidente.
-![User Flow Diagrams 2.png](../assets/images/User%20Flow%20Diagrams%202.png)
-
-User Goal: Finalizar administrativamente un tour completado, auditar los tiempos reales frente a los proyectados y generar informes técnicos en PDF y CSV para clientes y auditorías de seguridad.
-![User Flow Diagrams 3.png](../assets/images/User%20Flow%20Diagrams%203.png)
+![video user flow diagram.png](../assets/images/video%20user%20flow%20diagram.png)
+Link del video de la explicación del prototipo: [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQCuFKbOpmiiSJeRYyHyCHURAbzlqqLM2OWZEzgkSSqIqzo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pKQoRJ)
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -2088,7 +2047,23 @@ https://miro.com/app/board/uXjVHrbqRdA=/?share_link_id=127054225300
 
 ### 4.6.4. Software Architecture Component Level Diagrams
 
-![ComponentDiagram](../assets/images/component-level-diagram.png)
+#### 4.6.4.1. Subscriptions and Payment Management Component Diagram
+![ComponentDiagram](../assets/images/subscriptions-payment-components.png)
+
+#### 4.6.4.2. Tour Monitoring Component Diagram
+![ComponentDiagram](../assets/images/tour-monitoring-components.png)
+
+#### 4.6.4.3. Safety Incident Component Diagram
+![ComponentDiagram](../assets/images/safety-incident-components.png)
+
+#### 4.6.4.4. Tour Management Component Diagram
+![ComponentDiagram](../assets/images/tour-management-components.png)
+
+#### 4.6.4.5. Feedback and Review Component Diagram
+![ComponentDiagram](../assets/images/feedback-review-components.png)
+
+#### 4.6.4.6. IAM Component Diagram
+![ComponentDiagram](../assets/images/iam-components.png)
 
 ## 4.7. Software Object-Oriented Design
 
@@ -2135,7 +2110,23 @@ Gestiona los planes de suscripción y el procesamiento de pagos de los usuarios.
 
 El diseño de base de datos de Tourmate está estructurado en 6 bounded contexts con  tablas, siguiendo los principios de Domain-Driven Design para garantizar modularidad, escalabilidad y mantenibilidad. Cada contexto —Safety and Incident Management, Tour Monitoring, Identity and Access Management, Tour Management,  Feedback and Tour Reviews y Subscriptions and Payment Management— gestiona de forma autónoma una parte específica del sistema, pero todos están integrados mediante claves foráneas UUID que reflejan el flujo operativo del negocio: desde el registro del usuario y la configuración del tour, hasta la ejecución de la expedición, el monitoreo de seguridad en tiempo real y la creación de Reviews. Esta arquitectura desacoplada pero conectada logicamente garantiza trazabilidad completa del recorrido, monitoreo biométrico continuo, sincronización y una gestión eficiente de toda la operación de turismo de aventura.
 
-![Imagen de la base de datos](../assets/images/TourMate-db.png)
+#### 4.8.1.1. IAM Component Diagram
+![Imagen de la base de datos](../assets/images/db_IAM.png)
+
+#### 4.8.1.2. Tour Management Component Diagram
+![Imagen de la base de datos](../assets/images/db_TourManagement.png)
+
+#### 4.8.1.3. Tour Monitoring Component Diagram
+![Imagen de la base de datos](../assets/images/db_TourMonitoring.png)
+
+#### 4.8.1.4. Safety Incident Component Diagram
+![Imagen de la base de datos](../assets/images/db_SafetyIncidents.png)
+
+#### 4.8.1.5. Feedback and Review Component Diagram
+![Imagen de la base de datos](../assets/images/db_feedbackTour.png)
+
+#### 4.8.1.6. Subscriptions and Payment Management Component Diagram
+![Imagen de la base de datos](../assets/images/db_Subscriptions.png)
 
 <div style="page-break-before: always;"></div>
 
@@ -2162,6 +2153,11 @@ Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente 
 #### 5.1.2. Source Code Management
 
 El código fuente del proyecto se gestionará utilizando **Git** como sistema de control de versiones y **GitHub** como plataforma de alojamiento, bajo una organización pública. Se adoptará un enfoque estructurado que favorezca la colaboración, la modularidad y el despliegue continuo mediante repositorios independientes para cada componente del sistema.
+
+- **Report:** [https://github.com/axiom-daos/tourmate-report](https://github.com/axiom-daos/tourmate-report)
+- **Landing Page:** [https://github.com/axiom-daos/tourmate-landing](https://github.com/axiom-daos/tourmate-landing)
+- **Frontend Web Application:** [https://github.com/axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application)
+- **RESTful Web Services:** [https://github.com/axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform)
 
 #### Estrategia de Ramas (GitFlow)
 
@@ -2291,13 +2287,45 @@ El objetivo principal de este Sprint es desarrollar el sitio web estático (Land
 
 En la siguiente tabla se resumen los principales commits realizados en los repositorios de Axiom correspondientes al alcance del primer Sprint, aplicando Conventional Commits.
 
-| Repository             | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-|------------------------| --- | --- | --- | --- |--------------|
-| axiom/tourmate-landing | feature/struct | 0ea6e9e | feat: add initial structure | Implementa la estructura principal del proyecto así como el header y el footer. | 2026-09-11   |
-| axiom/tourmate-landing | feature/hero-trustedbar-drivers | a5693ee | feat: add structure and styles of hero, trustedbar and drivers section | Implementa las secciones de hero, trustedbar y drivers section. | 2026-09-11   |
-| axiom/tourmate-landing | feature/operators-stats | 58c8633 | feat: add operators and stats sections | Implementa las secciones de operators y stats | 2026-09-12   |
-| axiom/tourmate-landing | feature/pricing-faq | 11ed754 | feat: add pricing, testimonials and faq sections | Implementa las secciones de pricing, testimonials y faq | 2026-09-13   |
-| axiom/tourmate-landing | feature/cta-section-lang | e3a5413 | feat: add cta section and language features | Implementa la sección cta section y las language features | 2026-09-13   |
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| axiom/tourmate-landing | feature/plans-section | da1f6c1 | style: add smooth scrolling and enhance plans section layout and resp... | Añade desplazamiento suave (smooth scrolling) y mejora el diseño y la adaptabilidad de la sección de planes. | 2026-09-17 |
+| axiom/tourmate-landing | feature/plans-section | d820385 | feat: add plans section with pricing options for tourists and agencies | Implementa la sección de planes con las opciones de precios para turistas y agencias. | 2026-09-17 |
+| axiom/tourmate-landing | feature/team-development-section | b9d8364 | feat: add social media links for team members in the team section | Añade los enlaces a las redes sociales de los miembros en la sección del equipo. | 2026-09-16 |
+| axiom/tourmate-landing | feature/team-development-section | 0cb46b6 | style: enhance team section layout and responsiveness | Mejora el diseño y la adaptabilidad de la sección del equipo para dispositivos móviles. | 2026-09-16 |
+| axiom/tourmate-landing | feature/navigation | 9208502 | style: enhance navigation links with hover effects and transitions | Mejora los enlaces de navegación añadiendo efectos hover y transiciones visuales. | 2026-09-16 |
+| axiom/tourmate-landing | refactor | e4f16c0 | refactor: rename sections for clarity and consistency in index.html | Refactoriza y renombra las secciones en el archivo index.html para mantener consistencia y claridad. | 2026-09-16 |
+| axiom/tourmate-landing | main | 8b89273 | fix(i18n): move team-dev block out of nested plans object in en.json | Corrige la ubicación del bloque team-dev sacándolo del objeto anidado en el archivo de traducciones al inglés. | 2026-09-16 |
+| axiom/tourmate-landing | main | c343560 | chore: delete docs file | Elimina el archivo de documentación innecesario del repositorio. | 2026-09-16 |
+| axiom/tourmate-landing | feature/team-development-section | 83b3f1d | feat: add Matias Carrillo photo in team development section | Añade la fotografía de Matias Carrillo a la sección del equipo de desarrollo. | 2026-09-16 |
+| axiom/tourmate-landing | feature/inicio-section | 16c1f03 | fix: resolve i18n error in hero section | Resuelve un error de internacionalización (i18n) en la sección hero. | 2026-09-16 |
+| axiom/tourmate-landing | feature/team-development-section | c764aa8 | fix: delete team section styles and put it on global styles css | Elimina los estilos locales de la sección de equipo y los unifica en los estilos globales. | 2026-09-16 |
+| axiom/tourmate-landing | develop | 898542c | Merge branch 'feature/team-development-section' into develop | Integra los cambios de la rama de la sección de equipo de desarrollo en la rama develop. | 2026-09-16 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | aaa60ed | fix: delete test button in viajeros-turistas section | Elimina un botón de prueba que había quedado en la sección de viajeros/turistas. | 2026-09-16 |
+| axiom/tourmate-landing | develop | 99e6cd7 | Merge branch 'feature/inicio-section' into develop | Integra los cambios de la rama de la sección de inicio en la rama develop. | 2026-09-16 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | 2d01fd1 | fix: add agencias-viajeros section styles to global styles | Mueve y añade los estilos de la sección de agencias y viajeros a los estilos globales. | 2026-09-16 |
+| axiom/tourmate-landing | develop | 651f25e | Merge branch 'feature/agencias-viajeros-section' into develop | Integra los cambios de la rama de la sección de agencias y viajeros en la rama develop. | 2026-09-16 |
+| axiom/tourmate-landing | feature/inicio-section | 9da572d | Merge branch 'develop' into feature/inicio-section | Actualiza la rama de la sección de inicio con los últimos cambios de develop. | 2026-09-16 |
+| axiom/tourmate-landing | feature/vision-section | 79a74f9 | feat: add i18n to vision section | Implementa el soporte de múltiples idiomas (i18n) para la sección de visión. | 2026-09-16 |
+| axiom/tourmate-landing | feature/team-development-section | 7a20af0 | feat: add team development section with responsive design | Implementa la sección del equipo de desarrollo asegurando que su diseño sea responsivo. | 2026-09-15 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | f5d0426 | feat(landing): add agencias and viajeros sections with language support and structure | Añade la estructura y soporte de idiomas para las secciones de agencias y viajeros en la landing. | 2026-09-15 |
+| axiom/tourmate-landing | main | 0ede294 | feat(i18n): implement core i18n engine with language toggle and DOM translation support | Implementa el motor central de internacionalización, incluyendo el cambio de idioma y soporte de traducción en el DOM. | 2026-09-15 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | b12acba | feat(i18n): add Spanish translations for agencias and viajeros sections | Añade las traducciones al español para los textos de las secciones de agencias y viajeros. | 2026-09-15 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | 314f9f5 | feat(i18n): add English translations for agencias and viajeros sections | Añade las traducciones al inglés para los textos de las secciones de agencias y viajeros. | 2026-09-15 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | 54d6f63 | feat(styles): add agencia-viajeros section styles | Implementa los estilos visuales principales para la sección de agencias y viajeros. | 2026-09-15 |
+| axiom/tourmate-landing | feature/agencias-viajeros-section | d727252 | feat(assets): add viajeros-mockup.png | Agrega la imagen de mockup correspondiente a la sección de viajeros a los recursos del proyecto. | 2026-09-15 |
+| axiom/tourmate-landing | feature/inicio-section | c983833 | feat(landing): add hero-expedition.png | Agrega la imagen hero-expedition a los recursos del proyecto para la sección de inicio. | 2026-09-15 |
+| axiom/tourmate-landing | main | eea0313 | add | Añade archivos o cambios generales al repositorio. | 2026-09-15 |
+| axiom/tourmate-landing | main | 1da7469 | added the logo | Añade el archivo del logo oficial al proyecto. | 2026-09-15 |
+| axiom/tourmate-landing | feature/inicio-section | 672a92f | feat: add hero section and navigation to feature/inicio-section | Implementa la sección hero y la barra de navegación dentro de la rama de inicio. | 2026-09-15 |
+| axiom/tourmate-landing | feature/contact-footer | ab8aed9 | feat: add contact and footer sections with responsive design | Implementa las secciones de contacto y el footer garantizando un diseño adaptable a diferentes dispositivos. | 2026-09-14 |
+| axiom/tourmate-landing | feature/vision-section | a300ccd | feat: add vision section styles | Implementa y aplica los estilos visuales para la sección de visión. | 2026-09-14 |
+| axiom/tourmate-landing | feature/vision-section | 2e2e0c2 | Merge branch 'develop' into feature/vision-section | Actualiza la rama de la sección de visión con los cambios más recientes de la rama develop. | 2026-09-14 |
+| axiom/tourmate-landing | feature/vision-section | 65c74bd | feat: add vision section structure | Construye el marcado HTML y la estructura principal para la sección de visión. | 2026-09-14 |
+| axiom/tourmate-landing | main | 01f9539 | chore: add project directories | Crea y organiza los directorios y carpetas base del proyecto. | 2026-09-14 |
+| axiom/tourmate-landing | main | 1ad6c2b | add initial structure | Implementa la estructura base y los archivos iniciales del código. | 2026-09-14 |
+| axiom/tourmate-landing | main | 1607422 | Initial commit | Realiza el commit inicial configurando la base del repositorio. | 2026-09-01 |
 
 #### *5.2.1.5. Execution Evidence for Sprint Review*
 
@@ -2306,7 +2334,7 @@ Durante este Sprint, el equipo logró implementar la versión inicial del Landin
 *Figura  (Landing Page)*
 ![Landing Page](../assets/images/landing-page-full.png)
 
-**Landing Page Demonstration Video:** [https://upcedupe-my.sharepoint.com/)
+**Landing Page Demonstration Video:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDPy8lARpAQRp4FrzFWEwqxAe1KOWcMdKkZwhyLW45DKmo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jmEFH0](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDPy8lARpAQRp4FrzFWEwqxAe1KOWcMdKkZwhyLW45DKmo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jmEFH0)
 
 #### *5.2.1.6. Services Documentation Evidence for Sprint Review*
 
@@ -2364,15 +2392,19 @@ URL: https://axiom-daos.github.io/tourmate-landing/
 
 Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 1, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
 
-![Team Insights Sprint 1](../assets/images/insights.png)
+**Insights**
+![Team Insights Sprint 1](../assets/images/insights-landing.png)
 
+**Contributors**
+![Team Insights Sprint 1](../assets/images/contribuciones-landing.png)
+
+**Network graph**
 ![Team Insights Sprint 1](../assets/images/gitflow-sprint1.png)
 
 
+## Conclusiones
 
-### Conclusiones
-
-## Sprint 1 – Landing Page y documentación del proyecto
+### Sprint 1 – Landing Page y documentación del proyecto
 
 - **Sobre el análisis del problema y la investigación del usuario:** Se concluye que las entrevistas realizadas a dueños de agencias de tours y turistas de aventura permitieron identificar necesidades, expectativas y puntos de dolor relevantes para el desarrollo de SpotGo. La información recopilada fue fundamental para la definición de *User Personas*, *Empathy Maps* y *Journey Maps*, los cuales sirvieron como base para la priorización de funcionalidades y la elaboración del *Problem Statement*.
 
@@ -2392,17 +2424,17 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Newman, S. (2021). *Building Microservices: Designing Fine-Grained Systems* (2nd ed.). O'Reilly Media. Recuperado de [https://samnewman.io/books/building_microservices_2nd_edition](https://samnewman.io/books/building_microservices_2nd_edition)
 - Walls, C. (2022). *Spring in Action* (6th ed.). Manning Publications. Recuperado de [https://www.manning.com/books/spring-in-action-sixth-edition](https://www.manning.com/books/spring-in-action-sixth-edition)
 
-### Anexos
+## Anexos
 
 <div style="page-break-before: always;"></div>
 
-## Anexo A. Videos de exposiciones
+### Anexo A. Videos de exposiciones
 
-- Exposición AV1: https:
+- Exposición AV1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDffa4P9uW3SqlkTMvmZIkDAdNuNWS0YpS-94osKLniRPY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gXbFhx
 
 <div style="page-break-before: always;"></div>
 
-## Anexo B. Videos de entrevistas
+### Anexo B. Videos de entrevistas
 
 - Entrevista 1 - Mateo Escudero, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D
 - Entrevista 2 - Aarón Espinosa, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAofZYR8ATPSbWHvKq3vOSvAZ1mk5uCZxK_sr8rN9qoqI4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CzroE4
@@ -2411,34 +2443,32 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Entrevista 5 - Romina Antonella Molina Vásquez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAQPNKuz_cKS4krk8KnLmoKAaAOQuWIL6WmZXL4T30cJJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=B3HGgd
 - Entrevista 6 - Miler Rodriguez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDe0UWGvKUwRojgbs_XPIuJAclsUfNSUJK04_8jjCFOE7A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Szx6cw
 
-<div style="page-break-before: always;"></div>
 
 
-## Anexo D. Materiales de ideación y diseño
+### Anexo D. Materiales de ideación y diseño
 
-- Lean UX Canvas del proyecto TourMate: https:/
-- Big Picture EventStorming y Design-Level EventStorming: https:
-- Wireframe de la landing page: https:
-- Mock-up de la landing page: https:
-- Wireframes de la aplicación web:
-- Wireflows de la aplicación web:
-- Mock-ups de la aplicación web:
-- Prototipo de la aplicación web:
-- Diagrama de clases del sistema:
+- Lean UX Canvas del proyecto TourMate: 
+- Big Picture EventStorming y Design-Level EventStorming: [https://miro.com/app/board/uXjVHl1uCrg=/?share_link_id=456387536744](https://miro.com/app/board/uXjVHl1uCrg=/?share_link_id=456387536744)
+- Wireframe de la landing page: [https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1](https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1)
+- Mock-up de la landing page: [https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1](https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1)
+- Wireframes de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Wireflows de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Mock-ups de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Prototipo de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
 
-<div style="page-break-before: always;"></div>
 
-## Anexo E. Repositorios y despliegues
+
+### Anexo E. Repositorios y despliegues
 
 - Repositorio del informe del proyecto: https://github.com/axiom-daos/tourmate-report
 - Repositorio de la landing page: https://github.com/axiom-daos/tourmate-landing
+- Repositorio del Web Application: https://github.com/axiom-daos/tourmate-web-application
+- Repositorio del Backend: https://github.com/axiom-daos/tourmate-platform
 - Despliegue de la landing page: https://axiom-daos.github.io/tourmate-landing/
 - Tablero del Sprint Backlog 1: https://trello.com/b/gCKcMjVR/tourmate-sprint-1
 
 
-<div style="page-break-before: always;"></div>
-
-## Anexo F. Herramientas utilizadas
+### Anexo F. Herramientas utilizadas
 
 - Trello, para gestión del backlog y tareas del proyecto: https://trello.com
 - Gherkin, para criterios de aceptación en formato Given-When-Then: https://cucumber.io/docs/gherkin/
@@ -2453,9 +2483,8 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Structurizr, para diagramas C4: https://structurizr.com
 - Vertabelo, para diagramas de base de datos: https://vertabelo.com
 
-<div style="page-break-before: always;"></div>
 
-## Anexo G. Referencias bibliográficas con enlace
+### Anexo G. Referencias bibliográficas con enlace
 
 - Guía para ejecutar Big Picture Event Storming: https://bit.ly/bpes-guide
 - Guía práctica de EventStorming remoto: https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/
