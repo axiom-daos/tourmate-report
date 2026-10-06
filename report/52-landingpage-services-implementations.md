@@ -178,17 +178,41 @@ Todos los miembros del equipo han participado activamente en la implementación 
 
 
 
-### 5.2.1. Sprint 2
+### 5.2.2. Sprint 2
 
-#### *5.2.1.1. Sprint Planning 2*
+#### *5.2.2.1. Sprint Planning 2*
+Para el desarrollo del segundo sprint, nos centraremos en la implementación del frontend de nuestra aplicación web. Hemos diseñado tareas específicas basadas en las historias de usuario orientadas a la gestión de tours, el monitoreo en tiempo real, el soporte de rutas offline y la configuración de perfiles. Al subdividir cada historia de usuario en múltiples tareas técnicas, podemos distribuir la carga de trabajo de manera eficiente entre los desarrolladores del equipo, asegurando la construcción de una interfaz interactiva, escalable y lista para integrarse con nuestra API.
 
-                                                                                                                          |
+| **Sprint #** | 2 |
+| --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-28 |
+| **Time** | 4:00 PM |
+| **Location** | Reunión virtual |
+| **Prepared By** | Giancarlo Verastigue Martinez |
+| **Attendees** | Giancarlo Verastigue Martinez, Matias Carrillo Acho, Frank Anthony Huingo Tello, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+| **Sprint n – 1 Review Summary** | La Landing Page fue completada y desplegada exitosamente. Se lograron los objetivos de comunicar la propuesta de valor y habilitar las rutas de redirección hacia el registro para turistas y agencias. |
+| **Sprint n – 1 Retrospective Summary** | El equipo mantuvo una buena comunicación y uso de GitFlow. Se acordó mejorar la granularidad de las estimaciones dividiendo obligatoriamente cada Historia de Usuario en al menos dos tareas (Tasks) para un seguimiento más preciso. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | Our focus is on delivering the core frontend application for TourMate, including tour management, interactive live maps, offline capabilities, and user profiles. This will be confirmed when all UI components are built and functional mockups are ready. |
+| **Sprint 2 Velocity** | 133 Story Points (Velocidad estimada sumando la carga completa de las vistas e integraciones Frontend proyectadas para este ciclo). |
+| **Sum of Story Points** | 133 |
 
-#### *5.2.1.2. Aspect Leaders and Collaborators*
+#### *5.2.2.2. Aspect Leaders and Collaborators*
 
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para brindar claridad en la comunicación del equipo durante el desarrollo de las tareas de este Sprint.
 
+Para este segundo sprint, los aspectos se han definido en base a los módulos principales del Frontend: Gestión de Tours (Tour Management), Mapas y Monitoreo (Maps & Tracking), Capacidades Offline (Offline & Sync), y Perfiles y Alertas (Profile & Alerts).
 
-#### *5.2.1.3. Sprint Backlog 1*
+| Team Member (Last Name, First Name) | GitHub Username | Tour Management Views | Maps & Tracking UI | Offline & Sync Modules | Profile & Alerts Settings |
+|-------------------------------------|-----------------| --- | --- | --- | --- |
+| Verastigue Martinez, Giancarlo      | @CaLoVM         | C | C | C | L |
+| Carrillo Acho, Matias               | @lonybreux      | C | L | C | C |
+| Huingo Tello, Frank Anthony         | @Franz2308      | L | C | C | C |
+| Molina Vasquez, Manuel Alejandro    | @AleDusty       | L | C | C | C |
+| Quispe Palomino, Tony Jhunior       | @GonzJunior18p  | C | C | L | C |
+
+#### *5.2.2.3. Sprint Backlog 2*
 
 
 
@@ -270,23 +294,30 @@ Todos los miembros del equipo han participado activamente en la implementación 
 | US43 | Consultar historial de notificaciones | TS-F43.1 | Página dedicada al historial | Maquetar una sección de lista extendida con filtros y ordenación por fecha. | 2 | @Franz2308 | To Do |
 | US43 | Consultar historial de notificaciones | TS-F43.2 | Integración de listado completo | Consumir la API de notificaciones implementando infinite scroll o paginación estándar. | 2 | @GonzJunior18p | To Do |
 
-#### *5.2.1.4. Development Evidence for Sprint Review*
+#### *5.2.2.4. Development Evidence for Sprint Review*
 
 En la siguiente tabla se resumen los principales commits realizados en los repositorios de Axiom correspondientes al alcance del primer Sprint 2, aplicando Conventional Commits.
 
 
 
-#### *5.2.1.5. Execution Evidence for Sprint Review*
+#### *5.2.2.5. Execution Evidence for Sprint Review*
+
+En este segundo Sprint, el equipo se enfocó de lleno en la construcción y desarrollo del Frontend core de TourMate, logrando consolidar la interfaz de usuario y la interactividad de los módulos principales de la plataforma. Se alcanzó satisfactoriamente el objetivo del Sprint al entregar componentes visuales funcionales, responsivos y estructurados, dejándolos listos para su futura integración con la API REST.
+
+Entre los logros más destacados de este ciclo se encuentra el módulo de Gestión de Tours, donde se implementaron las vistas dinámicas para que las agencias puedan crear, editar, duplicar y administrar recorridos, además de gestionar la asignación de turistas. Asimismo, se avanzó significativamente en el módulo de Mapas y Monitoreo, integrando visores interactivos que permiten renderizar rutas (polylines), visualizar checkpoints y proyectar el progreso de la expedición en tiempo real.
+
+*Figura  (Home)*
+![Home](../assets/images/wepapp-home.png)
+
+**Web Application Demonstration Video:** [https:]()
+
+#### *5.2.2.6. Services Documentation Evidence for Sprint Review*
 
 
-
-#### *5.2.1.6. Services Documentation Evidence for Sprint Review*
-
-
-#### *5.2.1.7. Software Deployment Evidence for Sprint Review*
+#### *5.2.2.7. Software Deployment Evidence for Sprint Review*
 
 
-#### *5.2.1.8. Team Collaboration Insights during Sprint*
+#### *5.2.2.8. Team Collaboration Insights during Sprint*
 
 Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 2, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
 
