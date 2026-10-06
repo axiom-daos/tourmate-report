@@ -3,7 +3,29 @@
 
 El diseño de base de datos de Tourmate está estructurado en 6 bounded contexts con  tablas, siguiendo los principios de Domain-Driven Design para garantizar modularidad, escalabilidad y mantenibilidad. Cada contexto —Safety and Incident Management, Tour Monitoring, Identity and Access Management, Tour Management,  Feedback and Tour Reviews y Subscriptions and Payment Management— gestiona de forma autónoma una parte específica del sistema, pero todos están integrados mediante claves foráneas UUID que reflejan el flujo operativo del negocio: desde el registro del usuario y la configuración del tour, hasta la ejecución de la expedición, el monitoreo de seguridad en tiempo real y la creación de Reviews. Esta arquitectura desacoplada pero conectada logicamente garantiza trazabilidad completa del recorrido, monitoreo biométrico continuo, sincronización y una gestión eficiente de toda la operación de turismo de aventura.
 
-![Imagen de la base de datos](../assets/images/TourMate-db.png)
+**Bounded Context: Identity and Access Management**
+
+![IAM](../assets/images/IAM_database.png)
+
+**Bounded Context: Tour Management**
+
+![tour-management](../assets/images/tour-management-database.png)
+
+**Bounded Context: Tour Monitoring**
+
+![tour-monitoring](../assets/images/tour-monitoring.png)
+
+**Bounded Context: Safety and Incident Management**
+
+![safety-and-incident-management](../assets/images/safety-and-incident-management.png)
+
+**Bounded Context: Feedback and Tour Reviews**
+
+![feedback-and-tour-review](../assets/images/feedback-and-tour-review.png)
+
+**Bounded Context: Subscriptions and Payment Management**  
+
+![subscriptions-and-payment-management](../assets/images/subscriptions-and-payment-management.png)
 
 <div style="page-break-before: always;"></div>
 
