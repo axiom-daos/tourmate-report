@@ -217,9 +217,9 @@ Para este segundo sprint, los aspectos se han definido en base a los módulos pr
 
 
 
-**Trello link:** [https://trello.com/b/gCKcMjVR/tourmate-sprint-2)
+**Trello link:** [https://trello.com/b/5MJg6UUc/tourmate-sprint-2)
 
-![Sprint Backlog 1](../assets/images/s2-sprint-backlog.png)
+![Sprint Backlog 2](../assets/images/s2-sprint-backlog.png)
 ## Sprint 2
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
