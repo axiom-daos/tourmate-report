@@ -7,4 +7,24 @@ El diseño de base de datos de Tourmate está estructurado en 6 bounded contexts
 
 <div style="page-break-before: always;"></div>
 
+### 4.8.2 Database Dictionary
+
+| Entidad | Descripción |
+|---|---|
+| `users` | Usuarios de la plataforma |
+| `agencies` | Agencias de turismo registradas |
+| `tour_guides` | Perfil de guía asociado a un usuario y a una agencia |
+| `tours` | Catálogo de tours ofrecidos por las agencias |
+| `checkpoints` | Puntos de control/paradas que componen la ruta de un tour |
+| `tour_schedules` | Salidas programadas de un tour |
+| `participants` | Usuarios inscritos en una salida programada |
+| `active_tours` | Tours en ejecución, con seguimiento de ubicación en tiempo real |
+| `incidents` | Incidentes reportados durante un tour activo |
+| `plans` | Planes de suscripción disponibles para agencias |
+| `plan_features` | Características incluidas en cada plan |
+| `subscriptions` | Suscripción de una agencia a un plan |
+| `payments` | Pagos realizados por las agencias por un plan |
+| `reviews` | Calificaciones de usuarios sobre tours |
+| `comments` | Comentarios asociados a una reseña |
+
 ---
