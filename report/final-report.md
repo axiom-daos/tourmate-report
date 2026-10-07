@@ -55,11 +55,11 @@
 |   1.0   | 10/09/2026 |   Huingo Tello, Frank Anthony     | Desarrollo de los capítulo III y IV                               |
 |   1.0   | 10/09/2026 |   Molina Vasquez, Manuel Alejandro     | Desarrollo del capítulo IV                               |
 |   1.0   | 10/09/2026 |   Carrillo Acho, Matias Renato    | Desarrollo del capítulo IV                               |
-|   2.0   | 10/09/2026 |   Verastigue Martinez, Giancarlo Jose   |                   Desarollo capitulo 5.2          |
-|   2.0   | 10/09/2026 |   Quispe Palomino, Tony Jhunior   |                     Desarollo capitulo 5.2           |
-|   2.0   | 10/09/2026 |   Huingo Tello, Frank Anthony   |                   Desarollo capitulo 5.2          |
-|   2.0   | 10/09/2026 |   Molina Vasquez, Manuel Alejandro   |Desarollo capitulo 5.2                               |
-|   2.0   | 10/09/2026 |   Carrillo Acho, Matias Renato   |Desarollo capitulo 5.2                           |
+|   2.0   | 08/10/2026 |   Verastigue Martinez, Giancarlo Jose   |                   Desarollo capitulo 5.2          |
+|   2.0   | 10/10/2026 |   Quispe Palomino, Tony Jhunior   |                     Desarollo capitulo 5.2           |
+|   2.0   | 10/10/2026 |   Huingo Tello, Frank Anthony   |                   Desarollo capitulo 5.2          |
+|   2.0   | 10/10/2026 |   Molina Vasquez, Manuel Alejandro   |Desarollo capitulo 5.2                               |
+|   2.0   | 10/10/2026 |   Carrillo Acho, Matias Renato   |Desarollo capitulo 5.2                           |
 
 
 # Project Report Collaboration Insights
@@ -2898,9 +2898,10 @@ Todos los miembros del equipo han participado activamente en la implementación 
 
 ### Anexo A. Videos de exposiciones
 
-- Exposición AV1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDffa4P9uW3SqlkTMvmZIkDAdNuNWS0YpS-94osKLniRPY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gXbFhx
+- Exposición AV1: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDffa4P9uW3SqlkTMvmZIkDAdNuNWS0YpS-94osKLniRPY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gXbFhx](https://upcedupe-my.sharepoint.com/personal/u202323010_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202323010%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7760%2Daxiom%2Dexpo%2Dtb1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E81cc6660%2D9978%2D4eb4%2D9cf0%2Df7d9256d015a)
 
-- Exposición TB1:
+- Exposición TB1: [https://upcedupe-my.sharepoint.com/personal/u202323010_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202323010%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7760%2Daxiom%2Dexpo%2Dtb1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E81cc6660%2D9978%2D4eb4%2D9cf0%2Df7d9256d015a](https://upcedupe-my.sharepoint.com/personal/u202323010_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202323010%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7760%2Daxiom%2Dexpo%2Dtb1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E81cc6660%2D9978%2D4eb4%2D9cf0%2Df7d9256d015a)
+
 <div style="page-break-before: always;"></div>
 
 ### Anexo B. Videos de entrevistas
