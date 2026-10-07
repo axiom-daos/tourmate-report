@@ -10,7 +10,7 @@
 |   1.0   | 10/09/2026 |   Verastigue Martinez, Giancarlo Jose   | Desarrollo del capítulo V                               |
 |   2.0   | 10/09/2026 |   Verastigue Martinez, Giancarlo Jose   | Desarrollo capitulo 5.2                                                               |
 |   2.0   | 10/09/2026 |   Quispe Palomino, Tony Jhunior         | Desarrollo capitulo 5.2                                                               |
-|   2.0   | 10/09/2026 |   Huingo Tello, Frank Anthony           | Desarrollo capitulo 5.2, actualización del Student Outcome TB1 y documentación técnica |
+|   2.0   | 10/09/2026 |   Huingo Tello, Frank Anthony           | Desarollo capitulo 5.2                                                                |
 |   2.0   | 10/09/2026 |   Molina Vasquez, Manuel Alejandro      | Desarrollo capitulo 5.2                                                               |
 |   2.0   | 10/09/2026 |   Carrillo Acho, Matias Renato          | Desarrollo capitulo 5.2                                                               |
 
