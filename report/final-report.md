@@ -2104,25 +2104,51 @@ Gestiona los planes de suscripción y el procesamiento de pagos de los usuarios.
 
 El diseño de base de datos de Tourmate está estructurado en 6 bounded contexts con  tablas, siguiendo los principios de Domain-Driven Design para garantizar modularidad, escalabilidad y mantenibilidad. Cada contexto —Safety and Incident Management, Tour Monitoring, Identity and Access Management, Tour Management,  Feedback and Tour Reviews y Subscriptions and Payment Management— gestiona de forma autónoma una parte específica del sistema, pero todos están integrados mediante claves foráneas UUID que reflejan el flujo operativo del negocio: desde el registro del usuario y la configuración del tour, hasta la ejecución de la expedición, el monitoreo de seguridad en tiempo real y la creación de Reviews. Esta arquitectura desacoplada pero conectada logicamente garantiza trazabilidad completa del recorrido, monitoreo biométrico continuo, sincronización y una gestión eficiente de toda la operación de turismo de aventura.
 
-#### 4.8.1.1. IAM Component Diagram
-![Imagen de la base de datos](../assets/images/db_IAM.png)
+**Bounded Context: Identity and Access Management**
 
-#### 4.8.1.2. Tour Management Component Diagram
-![Imagen de la base de datos](../assets/images/db_TourManagement.png)
+![IAM](../assets/images/IAM_database.png)
 
-#### 4.8.1.3. Tour Monitoring Component Diagram
-![Imagen de la base de datos](../assets/images/db_TourMonitoring.png)
+**Bounded Context: Tour Management**
 
-#### 4.8.1.4. Safety Incident Component Diagram
-![Imagen de la base de datos](../assets/images/db_SafetyIncidents.png)
+![tour-management](../assets/images/tour-management-database.png)
 
-#### 4.8.1.5. Feedback and Review Component Diagram
-![Imagen de la base de datos](../assets/images/db_feedbackTour.png)
+**Bounded Context: Tour Monitoring**
 
-#### 4.8.1.6. Subscriptions and Payment Management Component Diagram
-![Imagen de la base de datos](../assets/images/db_Subscriptions.png)
+![tour-monitoring](../assets/images/tour-monitoring.png)
+
+**Bounded Context: Safety and Incident Management**
+
+![safety-and-incident-management](../assets/images/safety-and-incident-management.png)
+
+**Bounded Context: Feedback and Tour Reviews**
+
+![feedback-and-tour-review](../assets/images/feedback-and-tour-review.png)
+
+**Bounded Context: Subscriptions and Payment Management**  
+
+![subscriptions-and-payment-management](../assets/images/subscriptions-and-payment-management.png)
 
 <div style="page-break-before: always;"></div>
+
+### 4.8.2 Database Dictionary
+
+| Entidad | Descripción |
+|---|---|
+| `users` | Usuarios de la plataforma |
+| `agencies` | Agencias de turismo registradas |
+| `tour_guides` | Perfil de guía asociado a un usuario y a una agencia |
+| `tours` | Catálogo de tours ofrecidos por las agencias |
+| `checkpoints` | Puntos de control/paradas que componen la ruta de un tour |
+| `tour_schedules` | Salidas programadas de un tour |
+| `participants` | Usuarios inscritos en una salida programada |
+| `active_tours` | Tours en ejecución, con seguimiento de ubicación en tiempo real |
+| `incidents` | Incidentes reportados durante un tour activo |
+| `plans` | Planes de suscripción disponibles para agencias |
+| `plan_features` | Características incluidas en cada plan |
+| `subscriptions` | Suscripción de una agencia a un plan |
+| `payments` | Pagos realizados por las agencias por un plan |
+| `reviews` | Calificaciones de usuarios sobre tours |
+| `comments` | Comentarios asociados a una reseña |
 
 ---
 
@@ -2521,121 +2547,121 @@ En la siguiente tabla evidencia los commits realizados en los repositorios de Ax
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| axiom/tourmate-frontend | develop | a37c3c3[cite: 9] | Merge branch 'feature/fix' into develop # Please enter a commit message[cite: 9] | Integra la rama de correcciones hacia la rama de desarrollo (develop). | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | feature/api-endpoints | 560d09c[cite: 9] | feat(api-endpoints): update API base URLs for active tours, agencies, checkpoints, incidents, participants, payments, plans, subscriptions, tour guides, tour schedules, and users[cite: 9] | Actualiza las URLs base de la API para todos los módulos de gestión principales. | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | main | 7be53fc[cite: 9] | Merge pull request #2 from axiom-daos/feedback-and-tour-reviews2[cite: 9] | Integra el pull request #2 asociado al módulo de reseñas y feedback. | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | fix/reviews | 82d824f[cite: 9] | fix(reviews): fix store delete and create id synchronization issues[cite: 9] | Corrige problemas de sincronización de IDs al crear y eliminar elementos en el store de reseñas. | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | feature/accessibility | cf3a3f3[cite: 9] | feat(accessibility): improve accessibility features across various components[cite: 9] | Mejora las características de accesibilidad en múltiples componentes de la aplicación. | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | feature/review-list | 87aa8ee[cite: 9] | feat(review-list): enhance review list with improved UI, translations, and dynamic user/tour information[cite: 9] | Mejora la lista de reseñas agregando una interfaz optimizada, traducciones e información dinámica. | 2026-10-06[cite: 9] |
-| axiom/tourmate-frontend | feature/active-tour-list | 7eef9ac[cite: 9] | feat(active-tour-list): enhance active tour list with responsive card layout and sorting functionality[cite: 9] | Mejora la lista de tours activos implementando diseño responsivo de tarjetas y ordenamiento. | 2026-10-05[cite: 9] |
-| axiom/tourmate-frontend | feature/active-tour | 88f10a2[cite: 9] | feat(active-tour): enhance active tour form with improved validation and UI elements[cite: 9] | Mejora el formulario de tour activo incluyendo validaciones avanzadas y elementos de interfaz. | 2026-10-05[cite: 9] |
-| axiom/tourmate-frontend | feature/styles | 67fad92[cite: 9] | feat(styles): add feedback and reviews link in sidebar[cite: 9] | Añade enlaces visuales en la barra lateral para la sección de feedback y reseñas. | 2026-10-05[cite: 9] |
-| axiom/tourmate-frontend | fix/incident-form | a963a19[cite: 9] | fix(incident-form): dix duplicate import TranslatePipe[cite: 9] | Corrige la importación duplicada de TranslatePipe en el formulario de incidentes. | 2026-10-05[cite: 9] |
-| axiom/tourmate-frontend | develop | 618dc53[cite: 9] | Merge branch 'feature/desing' into develop[cite: 9] | Integra la rama con actualizaciones de diseño general hacia la rama develop. | 2026-10-05[cite: 9] |
-| axiom/tourmate-frontend | main | 8f28c87[cite: 10] | Merge pull request #1 from axiom-daos/feedback-and-tour-reviews2[cite: 10] | Integra el pull request #1 relacionado al sistema de retroalimentación de tours. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/reviews | 7a1f832[cite: 10] | feat(reviews): implement complete CRUD, i18n support, and UI design parity[cite: 10] | Implementa operaciones CRUD completas, soporte de idiomas y paridad de diseño para reseñas. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/tour-schedule | b1b9300[cite: 10] | (tour-schedule-list): change font weight to max capacity cell[cite: 10] | Modifica el peso de la fuente en la celda de capacidad máxima de la lista de horarios. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/tour-list | 877e82e[cite: 10] | feat: add tour-list cards grid[cite: 10] | Añade una estructura de cuadrícula de tarjetas (grid) para la vista de listado de tours. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/feedback | 9f4b701[cite: 10] | Merge remote-tracking branch 'origin/develop' into feedback-and-tour-reviews2[cite: 10] | Sincroniza la rama de reseñas con los últimos cambios remotos de develop. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/incident-list | 5a27732[cite: 10] | feat(incident-list): add translation support for incident list component[cite: 10] | Implementa soporte de traducciones para el componente de lista de incidentes. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/incident-form | 443edeb[cite: 10] | feat(incident-form): implement translation for incident form labels and placeholders[cite: 10] | Aplica traducciones en las etiquetas y textos temporales del formulario de incidentes. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/incident | 73294db[cite: 10] | feat(incident): add English and Spanish translations for incident management[cite: 10] | Agrega soporte en inglés y español para el gestor de incidentes. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/active-tour | b02edb6[cite: 10] | feat(active-tour): redesign active tour list with enhanced UI and new columns for tour title and guide name[cite: 10] | Rediseña la lista de tours activos agregando columnas de título y nombre del guía. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/active-tour | 19f91be[cite: 10] | feat(active-tour): enhance active tour list with tour title and guide name columns[cite: 10] | Optimiza las columnas de nombre de guía y título en el registro de tours. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/active-tour | 89ae3dc[cite: 10] | feat(active-tour): integrate TourGuide entity and update active tour management[cite: 10] | Integra la entidad de guía de turismo dentro de la gestión de tours activos. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/live-monitoring | 87f06bd[cite: 10] | feat(live-monitoring): add navigation to live monitoring and update translations[cite: 10] | Añade navegación y actualizaciones de texto al sistema de monitoreo en tiempo real. | 2026-10-05[cite: 10] |
-| axiom/tourmate-frontend | feature/reviews | c6bfde0[cite: 10] | feat(reviews): stabilize feedback and tour reviews UI and JSON server integration[cite: 10] | Estabiliza la vista de reseñas y su integración de datos con el servidor JSON. | 2026-10-04[cite: 10] |
-| axiom/tourmate-frontend | style/reviews | 7fd0fff[cite: 10, 11] | style(reviews): align review-form layout and solid dark buttons with team UI standards[cite: 10, 11] | Alinea los estilos del formulario de revisión y botones oscuros a los estándares del equipo. | 2026-10-04[cite: 10, 11] |
-| axiom/tourmate-frontend | fix/layout | cec70c4[cite: 10, 11] | fix: resolve merge conflicts with develop on layout and include feedback reviews navigation[cite: 10, 11] | Resuelve conflictos de integración de diseño en develop y añade la navegación de reseñas. | 2026-10-04[cite: 10, 11] |
-| axiom/tourmate-frontend | feature/reviews | 47527cb[cite: 11] | feat(reviews): fix mat-table rendering and integrate ReviewStore signals for feedback and tour reviews[cite: 11] | Arregla el renderizado de la tabla material e integra señales (signals) de ReviewStore. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/tour-list | d0093f2[cite: 11] | add status-tag-inactive in tour-list[cite: 11] | Añade la etiqueta visual de estado inactivo dentro del listado de tours. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/live-monitoring | 8c84e1f[cite: 11] | feat(live-monitoring): implement live monitoring component with participant management and route visualization[cite: 11] | Implementa el componente de monitoreo en vivo con visualización de participantes y rutas. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/agency | 0c0f5ac[cite: 11] | feat(agency): add Agency entity, assembler, and API endpoint for managing agencies[cite: 11] | Agrega entidades, adaptadores y rutas de API para administrar el módulo de agencias. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/tour-guide | 0434f68[cite: 11] | feat(tour-guide): add TourGuide entity, assembler, and API endpoint for managing tour guides[cite: 11] | Implementa la base de datos local y endpoints para administrar los guías turísticos. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/environment | cbaee66[cite: 11] | feat(environment, localization): update environment variables and add live monitoring translations for enhanced functionality[cite: 11] | Actualiza variables de entorno y añade traducciones del módulo de monitoreo. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/app | 53ff216[cite: 11] | feat(app): enhance application shell and localization support for improved user experience[cite: 11] | Refuerza la estructura general de la app (app shell) y mejora el manejo de localización. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/incident | d675610[cite: 11] | feat(incident): enhance incident form and list UI for improved usability and responsiveness[cite: 11] | Optimiza los componentes de formulario y lista de incidentes mejorando usabilidad y adaptabilidad. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/tour | 6efac0d[cite: 11] | feat(tour): enhance tour form and list UI for improved usability and responsiveness[cite: 11] | Optimiza los componentes de interfaz para la gestión general de listado y formularios de tour. | 2026-10-04[cite: 11] |
-| axiom/tourmate-frontend | feature/active-tour | 404d7bd[cite: 12] | feat(active-tour): redesign active tour form and list for improved usability and responsiveness[cite: 12] | Aplica rediseño general a los formularios de administración de tours activos. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | feature/core | c59b001[cite: 12] | feat(about, home, not-found): enhance UI components and layout for improved user experience[cite: 12] | Añade y mejora las vistas estáticas principales como Home, About y vista de errores 404. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | refactor/tour | a00f9f5[cite: 12] | refactor(tour): remove TourSchedule entity and related components for simplification[cite: 12] | Simplifica el sistema eliminando la entidad compleja TourSchedule y sus dependencias. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | refactor/tour | 8c02bd7[cite: 12] | refactor(tour): update import paths for TourSchedule and streamline tour response structure[cite: 12] | Arregla rutas de importación afectadas y optimiza la estructura de respuestas. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | refactor/tour | 7a0d396[cite: 12] | refactor(tour): update import paths for TourSchedule and streamline tour response structure[cite: 12] | Consolida los ajustes en rutas de importaciones tras la eliminación de módulos previos. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | feature/environment | c1efc6f[cite: 12] | feat(environment): add new API endpoints for subscriptions, active tours, and payments[cite: 12] | Conecta las variables de entorno para manejar llamadas sobre pagos, suscripciones y tours. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | refactor/routes | c3c7810[cite: 12] | refactor(routes): update tour monitoring paths for consistency[cite: 12] | Estandariza la estructura de rutas (URLs internas) para el área de monitoreo. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | feature/tour-monitoring | 4a06b66[cite: 12] | Merge branch 'develop' into feature/tour-monitoring[cite: 12] | Actualiza la rama de monitoreo con las bases más recientes provenientes de develop. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | develop | 0494a5d[cite: 12] | Merge branch 'feature/subscriptions-and-payment-management' into develop[cite: 12] | Integra todo el desarrollo de suscripciones y pagos hacia la rama principal de pruebas. | 2026-10-04[cite: 12] |
-| axiom/tourmate-frontend | refactor/incident-form | 83cddba[cite: 12] | refactor(incident-form): remove unused NgIf import[cite: 12] | Limpia el código eliminando importaciones de NgIf sin utilizar en incidentes. | 2026-10-03[cite: 12] |
-| axiom/tourmate-frontend | fix/subscription | cfeaf37[cite: 12] | fix(subscription): replace mat-error with error-banner to avoid unnecessary form-field dependency[cite: 12] | Cambia el sistema de alertas de error nativo por componentes globales tipo banner. | 2026-10-03[cite: 12] |
-| axiom/tourmate-frontend | feature/subscriptions | 1585b1c[cite: 12] | Merge branch 'develop' into feature/subscriptions-and-payment-management[cite: 12] | Sincroniza la rama de pagos y suscripciones antes de integrarla definitivamente. | 2026-10-03[cite: 12] |
-| axiom/tourmate-frontend | feature/layout | 477d197[cite: 12] | feat: add left sidebar with main content[cite: 12] | Construye la estructura visual de navegación lateral izquierda (sidebar) para usuarios logueados. | 2026-10-03[cite: 12] |
-| axiom/tourmate-frontend | chore/subscription | 5977824[cite: 13] | chore(subscription): clean up unused imports and optimize component declarations[cite: 13] | Optimiza y purga el código sin usar en los componentes del módulo de suscripciones. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | fix/subscription | b8bd5d9[cite: 13] | fix(subscription): resolve text spacing, horizontal overflow, and footer overlap[cite: 13] | Soluciona desbordamientos horizontales de texto y colisiones visuales con el pie de página. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/subscription | c2b6db4[cite: 13] | feat(subscription): integrate subscription navigation and i18n translations[cite: 13] | Habilita traducciones en múltiples idiomas y enlaces directos para el gestor de suscripciones. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/subscription | 095526a[cite: 13] | feat(subscription): add subscription dashboard and plan selection views with routing[cite: 13] | Añade vistas principales para elegir planes de agencia con su enrutado correspondiente. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/subscription | db2856e[cite: 13] | feat(subscription): implement SubscriptionStore with Angular signals and state management[cite: 13] | Establece un store reactivo usando Angular Signals para controlar los datos de pagos locales. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/subscription | 6e43cd7[cite: 13] | feat(subscription): add response contracts, assemblers, endpoints and API facade[cite: 13] | Crea interfaces base, mapeadores y la fachada para consumir APIs financieras. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/subscription | 92a4fca[cite: 13] | feat(subscription): add domain entities and value objects for plans, subscriptions and payments[cite: 13] | Modela las entidades de negocio asociadas a los pagos y planes de suscripción. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | fix/routes | df60668[cite: 13] | fix(routes): add management deleted route[cite: 13] | Restaura una ruta de administración accidentalmente eliminada. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/safety | be9671e[cite: 13] | Merge branch 'develop' into feature/safety-and-incident-management[cite: 13] | Mantiene actualizada la rama de incidentes de seguridad absorbiendo bases de develop. | 2026-10-03[cite: 13] |
-| axiom/tourmate-frontend | feature/safety | e8bb0ec[cite: 13, 14] | feat(safety): update incident list component with English translations[cite: 13, 14] | Incorpora archivos de internacionalización (inglés) a la tabla de reportes de anomalías. | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | feature/safety | a24bfbf[cite: 13, 14] | feat(safety): update incident list component with English translations[cite: 13, 14] | Ajustes secundarios de traducciones en el listado de fallos y problemas. | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | feature/safety | d0c7506[cite: 13, 14] | feat(safety): update incident list component with English translations[cite: 13, 14] | Refuerza la cobertura del idioma en toda la grilla de alertas. | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | feature/safety | e36389f[cite: 13, 14] | feat(safety): update incident form component with improved layout and English translations[cite: 13, 14] | Repara y traduce los diseños internos del formulario de creación de advertencias. | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | feature/safety | cdbc4dd[cite: 13, 14] | feat(safety): enhance styling and layout for incident form component[cite: 13, 14] | Potencia la apariencia gráfica y estructura base de formularios vinculados a la seguridad del tour. | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | chore | f04ccc8[cite: 13, 14] | chore: stop tracking environment files[cite: 13, 14] | Excluye del repositorio en línea los archivos de entorno (variables sensibles). | 2026-10-03[cite: 13, 14] |
-| axiom/tourmate-frontend | chore | 65817c7[cite: 14] | update .gitignore[cite: 14] | Configura el sistema de exclusiones de git para ignorar binarios y configuraciones locales. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | f7ed4ac[cite: 14] | feat: add tour schedule form[cite: 14] | Añade el formulario especializado en registrar calendarios de visitas turísticas. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | b4a0d95[cite: 14] | feat: add tour schedule list view[cite: 14] | Construye la vista visual para leer los cronogramas registrados. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | acf7063[cite: 14] | feat: add tour schedules http methods in tour-management-store[cite: 14] | Expande el store central habilitando lógica de llamadas HTTP hacia calendarios. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | 2b5a2fa[cite: 14] | feat: add tour schedules http methods in tour-management-api[cite: 14] | Crea la conexión interna para que Angular invoque los endpoints. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | 8a153e7[cite: 14] | feat: add tour schedule api endpoint[cite: 14] | Enruta el endpoint consumible hacia el área de cronograma. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | 936ae0e[cite: 14] | feat: add tour schedule assembler[cite: 14] | Diseña adaptadores (assemblers) que formatean los esquemas recibidos. | 2026-10-03[cite: 14] |
-| axiom/tourmate-frontend | feature/tour-schedule | 392d147[cite: 15] | feat: add tour schedule domain model[cite: 15] | Modela matemáticamente o define lógicamente cómo interactúan las fechas. | 2026-10-03[cite: 15] |
-| axiom/tourmate-frontend | feature/tour-schedule | 0885af5[cite: 15] | feat: add tour schedule response[cite: 15] | Tipa correctamente las respuestas del servidor orientadas al módulo. | 2026-10-03[cite: 15] |
-| axiom/tourmate-frontend | feature/tour | 6c94e6f[cite: 15] | feat: add tour form view[cite: 15] | Implementa y expone al navegador el formulario base de expediciones y tours genéricos. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | be26205[cite: 15] | feat(safety): simplify routing for safety and incident management[cite: 15] | Redirige más fácilmente las URLs a los submódulos de seguridad acortando los paths. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 8e999ef[cite: 15] | feat(safety): add routing for incident list and form components[cite: 15] | Enlaza los componentes visuales de listar/crear con sus direcciones web internas en Angular. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 662813a[cite: 15] | feat(safety): add incident list component with table actions and pagination[cite: 15] | Dota a la tabla de anomalías de soporte visual para cambiar de páginas y presionar botones. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | b66820a[cite: 15] | feat(safety): add incident list component with table layout and actions[cite: 15] | Completa la plantilla principal HTML para visualizar reportes. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 3a34f5f[cite: 15] | feat(safety): add CSS styles for incident list layout[cite: 15] | Adiciona capas de CSS para dejar limpio y ordenado el diseño tabular. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 646fe82[cite: 15] | feat(safety): implement incident form component for creating and editing incidents[cite: 15] | Construye un elemento TS capaz de manejar eventos de creación de avisos manuales. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | b98b880[cite: 15] | feat(safety): add incident management form layout in incident-form.html[cite: 15] | Estructura los inputs y contenedores para avisos y pánicos de tour. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 0196b88[cite: 15] | feat(safety): add CSS styles for incident management form layout[cite: 15] | Aplica hojas de estilo de manera focalizada para el área de reportes. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | fix/safety | 95b33d7[cite: 15] | fix(safety): update default incident status from REPORTED to OPEN[cite: 15] | Homologa los valores estándar (modificando reportado por abierto) en la lógica empresarial. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/safety | 4d18cb7[cite: 15] | feat(safety): add route for safety and incident management module[cite: 15] | Introduce la ruta padre en el proyecto orientada netamente al área de seguridad de campo. | 2026-10-02[cite: 15] |
-| axiom/tourmate-frontend | feature/active-tour | 7ead078[cite: 16] | add max capacity column to active tours list[cite: 16] | Renderiza una celda con el indicador del aforo o cantidad límite permitida por grupo turístico. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/active-tour | c8eb5e6[cite: 16] | add tour schedule association to active tours[cite: 16] | Liga o amarra las entidades de tours disponibles a sus fechas y horas establecidas en calendario. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | 48a18e6[cite: 16] | feat(safety): implement IncidentStore with Angular signals and state management[cite: 16] | Utiliza reactividad moderna de Angular para almacenar temporalmente reportes de anomalías. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | 7999ac8[cite: 16] | feat(safety): implement IncidentApi infrastructure facade[cite: 16] | Instala el servicio de consumo REST diseñado expresamente para incidentes. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | eadac6b[cite: 16] | feat(safety): create IncidentApiEndpoint for REST operations[cite: 16] | Conecta el endpoint oficial que recibirá notificaciones y reportes generados. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | refactor/safety | 07b51a0[cite: 16] | refactor(safety): implement IncidentAssembler for data mapping[cite: 16] | Refina y limpia cómo la data externa se mapea a los modelos del frontend en incidentes. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | refactor/safety | fdaeecf[cite: 16] | refactor(safety): add incident response and resource contracts[cite: 16] | Clarifica mediante contratos (interfaces) qué estructura devuelve el servidor. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | 35dc5b9[cite: 16] | feat(safety): implement Incident aggregate root entity[cite: 16] | Genera el objeto de negocio principal que regirá sobre eventos y advertencias. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | 8f09151[cite: 16] | feat(safety): add IncidentStatus enumeration[cite: 16] | Inserta una enumeración (ENUM) para estandarizar etiquetas (abierto, resuelto, ignorado). | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/safety | 0d78263[cite: 16] | feat(safety): add IncidentId value object[cite: 16] | Configura patrones de diseño implementando ID específicos e inmutables para reportes. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/participants | 46d187d[cite: 16] | add participants management functionality with CRUD operations[cite: 16] | Dota al panel del guía con opciones completas para modificar o remover integrantes del viaje. | 2026-10-02[cite: 16] |
-| axiom/tourmate-frontend | feature/participants | 036d469[cite: 16, 17] | add participant entity, assembler, and API endpoint for CRUD operations[cite: 16, 17] | Complementa las opciones visuales mapeando toda su respectiva lógica hacia la base de datos externa. | 2026-10-02[cite: 16, 17] |
-| axiom/tourmate-frontend | feature/tour | 9c2cd9e[cite: 16, 17] | feat: add tour list view[cite: 16, 17] | Configura el contenedor general que alberga múltiples expediciones resumidas. | 2026-10-02[cite: 16, 17] |
-| axiom/tourmate-frontend | feature/tour-schedule | b27f929[cite: 16, 17] | add tour schedules management functionality with CRUD operations[cite: 16, 17] | Incluye vistas funcionales e interactivas de calendarios operativos al administrador. | 2026-10-02[cite: 16, 17] |
-| axiom/tourmate-frontend | feature/environment | 104a018[cite: 16, 17] | add tour guides endpoint path to environment configurations[cite: 16, 17] | Provee a la aplicación central de la URL adecuada para ubicar empleados. | 2026-10-02[cite: 16, 17] |
-| axiom/tourmate-frontend | feature/tour-guide | f51cbc0[cite: 17] | add tour guide management functionality with CRUD operations[cite: 17] | Permite a la agencia crear, consultar, modificar y remover guías de su equipo desde el panel. | 2026-10-02[cite: 17] |
-| axiom/tourmate-frontend | feature/tour-guide | 83857df[cite: 17] | add tour guide entity, assembler, and response definitions[cite: 17] | Habilita todo el flujo tipado en Typescript para recibir data de guías con exactitud. | 2026-10-02[cite: 17] |
-| axiom/tourmate-frontend | feature/tour | 938779b[cite: 17] | feat: add tour-management store with loadTours function[cite: 17] | Introduce en memoria global una rutina optimizada para cargar listados asíncronos. | 2026-10-02[cite: 17] |
-| axiom/tourmate-frontend | feature/tour | 09042f5[cite: 17] | feat: add tour management api and tours api endpoint[cite: 17] | Finaliza el flujo de comunicación vinculando los archivos locales TS a la red de backend. | 2026-10-01[cite: 17] |
-| axiom/tourmate-frontend | feature/tour | c5e2257[cite: 17] | feat: add tour-assembler[cite: 17] | Acondiciona y formatea el JSON puro enviado por TourMate al modelo local esperado. | 2026-10-01[cite: 17] |
-| axiom/tourmate-frontend | feature/tour | ab11ae8[cite: 17] | feat: add tour entity model[cite: 17] | Describe propiedades como latitud, nombre, descripción para el modelo principal de ruta. | 2026-10-01[cite: 17] |
-| axiom/tourmate-frontend | feature/tour | 8a208d7[cite: 18] | feat: add BaseResource and BaseResponse in tours-response[cite: 18] | Implementa clases universales genéricas para que todos los fetch cuenten con metadatos. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | feature/tour | 6eaf560[cite: 18] | feat: add tour-response interface[cite: 18] | Desarrolla la máscara técnica obligatoria para entender la carga JSON orientada a tours. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | chore/db | 6be8f5e[cite: 18] | chore(server/db.json): fix tours json structure[cite: 18] | Alinea y arregla los objetos estáticos mockeados utilizados en pruebas de red locales. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | feature/active-tour | edc07b4[cite: 18] | rename active tours entity and assembler to singular form; update types and routes accordingly[cite: 18] | Mejora la convención de nombramiento pasándolo a singular en todo el ecosistema de tours en tránsito. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | chore/db | 4ef601d[cite: 18] | chore(server/db.json): fix tours and tour_schedules status field[cite: 18] | Corrige datos de simulación inválidos reemplazando estados obsoletos en el archivo db.json. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | chore/db | decf51c[cite: 18] | update user and agency IDs in db.json for consistency and clarity[cite: 18] | Asegura que la información de agencias y perfiles simulados guarden relación íntegra entre sí. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | feature/active-tour | 560e199[cite: 18] | add active tours entity, assembler, and response definitions[cite: 18] | Crea la base estructural TS para diferenciar y manipular expediciones que actualmente están en ruta. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | refactor/core | eb07343[cite: 18] | refactor JSON keys for consistency in naming conventions[cite: 18] | Reemplaza o modifica nombres de atributos generales (ej. camelCase) para facilitar su mantenimiento. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | refactor/core | b33165a[cite: 18] | refactor JSON keys for consistency and clarity[cite: 18] | Continúa los procesos de limpieza semántica en archivos fuente principales. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | feature/core | 4f9460a[cite: 18] | add initial project structure with core components, styles, and routing[cite: 18] | Configura la cascada de directorios, librerías, y módulos de diseño básicos para iniciar. | 2026-10-01[cite: 18] |
-| axiom/tourmate-frontend | main | e3fbdca[cite: 18] | initial structure[cite: 18] | Crea y registra la versión fundacional del repositorio. | 2026-09-30[cite: 18] |
+| axiom/tourmate-web-application | develop | a37c3c3 | Merge branch 'feature/fix' into develop # Please enter a commit message | Integra la rama de correcciones hacia la rama de desarrollo (develop). | 2026-10-06 |
+| axiom/tourmate-web-application | feature/api-endpoints | 560d09c | feat(api-endpoints): update API base URLs for active tours, agencies, checkpoints, incidents, participants, payments, plans, subscriptions, tour guides, tour schedules, and users | Actualiza las URLs base de la API para todos los módulos de gestión principales. | 2026-10-06 |
+| axiom/tourmate-web-application | main | 7be53fc | Merge pull request #2 from axiom-daos/feedback-and-tour-reviews2 | Integra el pull request #2 asociado al módulo de reseñas y feedback. | 2026-10-06 |
+| axiom/tourmate-web-application | fix/reviews | 82d824f | fix(reviews): fix store delete and create id synchronization issues | Corrige problemas de sincronización de IDs al crear y eliminar elementos en el store de reseñas. | 2026-10-06 |
+| axiom/tourmate-web-application | feature/accessibility | cf3a3f3 | feat(accessibility): improve accessibility features across various components | Mejora las características de accesibilidad en múltiples componentes de la aplicación. | 2026-10-06 |
+| axiom/tourmate-web-application | feature/review-list | 87aa8ee | feat(review-list): enhance review list with improved UI, translations, and dynamic user/tour information | Mejora la lista de reseñas agregando una interfaz optimizada, traducciones e información dinámica. | 2026-10-06 |
+| axiom/tourmate-web-application | feature/active-tour-list | 7eef9ac | feat(active-tour-list): enhance active tour list with responsive card layout and sorting functionality | Mejora la lista de tours activos implementando diseño responsivo de tarjetas y ordenamiento. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/active-tour | 88f10a2 | feat(active-tour): enhance active tour form with improved validation and UI elements | Mejora el formulario de tour activo incluyendo validaciones avanzadas y elementos de interfaz. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/styles | 67fad92 | feat(styles): add feedback and reviews link in sidebar | Añade enlaces visuales en la barra lateral para la sección de feedback y reseñas. | 2026-10-05 |
+| axiom/tourmate-web-application | fix/incident-form | a963a19 | fix(incident-form): dix duplicate import TranslatePipe | Corrige la importación duplicada de TranslatePipe en el formulario de incidentes. | 2026-10-05 |
+| axiom/tourmate-web-application | develop | 618dc53 | Merge branch 'feature/desing' into develop | Integra la rama con actualizaciones de diseño general hacia la rama develop. | 2026-10-05 |
+| axiom/tourmate-web-application | main | 8f28c87 | Merge pull request #1 from axiom-daos/feedback-and-tour-reviews2 | Integra el pull request #1 relacionado al sistema de retroalimentación de tours. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/reviews | 7a1f832 | feat(reviews): implement complete CRUD, i18n support, and UI design parity | Implementa operaciones CRUD completas, soporte de idiomas y paridad de diseño para reseñas. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/tour-schedule | b1b9300 | (tour-schedule-list): change font weight to max capacity cell | Modifica el peso de la fuente en la celda de capacidad máxima de la lista de horarios. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/tour-list | 877e82e | feat: add tour-list cards grid | Añade una estructura de cuadrícula de tarjetas (grid) para la vista de listado de tours. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/feedback | 9f4b701 | Merge remote-tracking branch 'origin/develop' into feedback-and-tour-reviews2 | Sincroniza la rama de reseñas con los últimos cambios remotos de develop. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/incident-list | 5a27732 | feat(incident-list): add translation support for incident list component | Implementa soporte de traducciones para el componente de lista de incidentes. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/incident-form | 443edeb | feat(incident-form): implement translation for incident form labels and placeholders | Aplica traducciones en las etiquetas y textos temporales del formulario de incidentes. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/incident | 73294db | feat(incident): add English and Spanish translations for incident management | Agrega soporte en inglés y español para el gestor de incidentes. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/active-tour | b02edb6 | feat(active-tour): redesign active tour list with enhanced UI and new columns for tour title and guide name | Rediseña la lista de tours activos agregando columnas de título y nombre del guía. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/active-tour | 19f91be | feat(active-tour): enhance active tour list with tour title and guide name columns | Optimiza las columnas de nombre de guía y título en el registro de tours. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/active-tour | 89ae3dc | feat(active-tour): integrate TourGuide entity and update active tour management | Integra la entidad de guía de turismo dentro de la gestión de tours activos. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/live-monitoring | 87f06bd | feat(live-monitoring): add navigation to live monitoring and update translations | Añade navegación y actualizaciones de texto al sistema de monitoreo en tiempo real. | 2026-10-05 |
+| axiom/tourmate-web-application | feature/reviews | c6bfde0 | feat(reviews): stabilize feedback and tour reviews UI and JSON server integration | Estabiliza la vista de reseñas y su integración de datos con el servidor JSON. | 2026-10-04 |
+| axiom/tourmate-web-application | style/reviews | 7fd0fff | style(reviews): align review-form layout and solid dark buttons with team UI standards | Alinea los estilos del formulario de revisión y botones oscuros a los estándares del equipo. | 2026-10-04 |
+| axiom/tourmate-web-application | fix/layout | cec70c4 | fix: resolve merge conflicts with develop on layout and include feedback reviews navigation | Resuelve conflictos de integración de diseño en develop y añade la navegación de reseñas. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/reviews | 47527cb | feat(reviews): fix mat-table rendering and integrate ReviewStore signals for feedback and tour reviews | Arregla el renderizado de la tabla material e integra señales (signals) de ReviewStore. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/tour-list | d0093f2 | add status-tag-inactive in tour-list | Añade la etiqueta visual de estado inactivo dentro del listado de tours. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/live-monitoring | 8c84e1f | feat(live-monitoring): implement live monitoring component with participant management and route visualization | Implementa el componente de monitoreo en vivo con visualización de participantes y rutas. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/agency | 0c0f5ac | feat(agency): add Agency entity, assembler, and API endpoint for managing agencies | Agrega entidades, adaptadores y rutas de API para administrar el módulo de agencias. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/tour-guide | 0434f68 | feat(tour-guide): add TourGuide entity, assembler, and API endpoint for managing tour guides | Implementa la base de datos local y endpoints para administrar los guías turísticos. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/environment | cbaee66 | feat(environment, localization): update environment variables and add live monitoring translations for enhanced functionality | Actualiza variables de entorno y añade traducciones del módulo de monitoreo. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/app | 53ff216 | feat(app): enhance application shell and localization support for improved user experience | Refuerza la estructura general de la app (app shell) y mejora el manejo de localización. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/incident | d675610 | feat(incident): enhance incident form and list UI for improved usability and responsiveness | Optimiza los componentes de formulario y lista de incidentes mejorando usabilidad y adaptabilidad. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/tour | 6efac0d | feat(tour): enhance tour form and list UI for improved usability and responsiveness | Optimiza los componentes de interfaz para la gestión general de listado y formularios de tour. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/active-tour | 404d7bd | feat(active-tour): redesign active tour form and list for improved usability and responsiveness | Aplica rediseño general a los formularios de administración de tours activos. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/core | c59b001 | feat(about, home, not-found): enhance UI components and layout for improved user experience | Añade y mejora las vistas estáticas principales como Home, About y vista de errores 404. | 2026-10-04 |
+| axiom/tourmate-web-application | refactor/tour | a00f9f5 | refactor(tour): remove TourSchedule entity and related components for simplification | Simplifica el sistema eliminando la entidad compleja TourSchedule y sus dependencias. | 2026-10-04 |
+| axiom/tourmate-web-application | refactor/tour | 8c02bd7 | refactor(tour): update import paths for TourSchedule and streamline tour response structure | Arregla rutas de importación afectadas y optimiza la estructura de respuestas. | 2026-10-04 |
+| axiom/tourmate-web-application | refactor/tour | 7a0d396 | refactor(tour): update import paths for TourSchedule and streamline tour response structure | Consolida los ajustes en rutas de importaciones tras la eliminación de módulos previos. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/environment | c1efc6f | feat(environment): add new API endpoints for subscriptions, active tours, and payments | Conecta las variables de entorno para manejar llamadas sobre pagos, suscripciones y tours. | 2026-10-04 |
+| axiom/tourmate-web-application | refactor/routes | c3c7810 | refactor(routes): update tour monitoring paths for consistency | Estandariza la estructura de rutas (URLs internas) para el área de monitoreo. | 2026-10-04 |
+| axiom/tourmate-web-application | feature/tour-monitoring | 4a06b66 | Merge branch 'develop' into feature/tour-monitoring | Actualiza la rama de monitoreo con las bases más recientes provenientes de develop. | 2026-10-04 |
+| axiom/tourmate-web-application | develop | 0494a5d | Merge branch 'feature/subscriptions-and-payment-management' into develop | Integra todo el desarrollo de suscripciones y pagos hacia la rama principal de pruebas. | 2026-10-04 |
+| axiom/tourmate-web-application | refactor/incident-form | 83cddba | refactor(incident-form): remove unused NgIf import | Limpia el código eliminando importaciones de NgIf sin utilizar en incidentes. | 2026-10-03 |
+| axiom/tourmate-web-application | fix/subscription | cfeaf37 | fix(subscription): replace mat-error with error-banner to avoid unnecessary form-field dependency | Cambia el sistema de alertas de error nativo por componentes globales tipo banner. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscriptions | 1585b1c | Merge branch 'develop' into feature/subscriptions-and-payment-management | Sincroniza la rama de pagos y suscripciones antes de integrarla definitivamente. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/layout | 477d197 | feat: add left sidebar with main content | Construye la estructura visual de navegación lateral izquierda (sidebar) para usuarios logueados. | 2026-10-03 |
+| axiom/tourmate-web-application | chore/subscription | 5977824 | chore(subscription): clean up unused imports and optimize component declarations | Optimiza y purga el código sin usar en los componentes del módulo de suscripciones. | 2026-10-03 |
+| axiom/tourmate-web-application | fix/subscription | b8bd5d9 | fix(subscription): resolve text spacing, horizontal overflow, and footer overlap | Soluciona desbordamientos horizontales de texto y colisiones visuales con el pie de página. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscription | c2b6db4 | feat(subscription): integrate subscription navigation and i18n translations | Habilita traducciones en múltiples idiomas y enlaces directos para el gestor de suscripciones. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscription | 095526a | feat(subscription): add subscription dashboard and plan selection views with routing | Añade vistas principales para elegir planes de agencia con su enrutado correspondiente. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscription | db2856e | feat(subscription): implement SubscriptionStore with Angular signals and state management | Establece un store reactivo usando Angular Signals para controlar los datos de pagos locales. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscription | 6e43cd7 | feat(subscription): add response contracts, assemblers, endpoints and API facade | Crea interfaces base, mapeadores y la fachada para consumir APIs financieras. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/subscription | 92a4fca | feat(subscription): add domain entities and value objects for plans, subscriptions and payments | Modela las entidades de negocio asociadas a los pagos y planes de suscripción. | 2026-10-03 |
+| axiom/tourmate-web-application | fix/routes | df60668 | fix(routes): add management deleted route | Restaura una ruta de administración accidentalmente eliminada. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | be9671e | Merge branch 'develop' into feature/safety-and-incident-management | Mantiene actualizada la rama de incidentes de seguridad absorbiendo bases de develop. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | e8bb0ec | feat(safety): update incident list component with English translations | Incorpora archivos de internacionalización (inglés) a la tabla de reportes de anomalías. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | a24bfbf | feat(safety): update incident list component with English translations | Ajustes secundarios de traducciones en el listado de fallos y problemas. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | d0c7506 | feat(safety): update incident list component with English translations | Refuerza la cobertura del idioma en toda la grilla de alertas. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | e36389f | feat(safety): update incident form component with improved layout and English translations | Repara y traduce los diseños internos del formulario de creación de advertencias. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/safety | cdbc4dd | feat(safety): enhance styling and layout for incident form component | Potencia la apariencia gráfica y estructura base de formularios vinculados a la seguridad del tour. | 2026-10-03 |
+| axiom/tourmate-web-application | chore | f04ccc8 | chore: stop tracking environment files | Excluye del repositorio en línea los archivos de entorno (variables sensibles). | 2026-10-03 |
+| axiom/tourmate-web-application | chore | 65817c7 | update .gitignore | Configura el sistema de exclusiones de git para ignorar binarios y configuraciones locales. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | f7ed4ac | feat: add tour schedule form | Añade el formulario especializado en registrar calendarios de visitas turísticas. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | b4a0d95 | feat: add tour schedule list view | Construye la vista visual para leer los cronogramas registrados. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | acf7063 | feat: add tour schedules http methods in tour-management-store | Expande el store central habilitando lógica de llamadas HTTP hacia calendarios. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | 2b5a2fa | feat: add tour schedules http methods in tour-management-api | Crea la conexión interna para que Angular invoque los endpoints. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | 8a153e7 | feat: add tour schedule api endpoint | Enruta el endpoint consumible hacia el área de cronograma. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | 936ae0e | feat: add tour schedule assembler | Diseña adaptadores (assemblers) que formatean los esquemas recibidos. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | 392d147 | feat: add tour schedule domain model | Modela matemáticamente o define lógicamente cómo interactúan las fechas. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour-schedule | 0885af5 | feat: add tour schedule response | Tipa correctamente las respuestas del servidor orientadas al módulo. | 2026-10-03 |
+| axiom/tourmate-web-application | feature/tour | 6c94e6f | feat: add tour form view | Implementa y expone al navegador el formulario base de expediciones y tours genéricos. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | be26205 | feat(safety): simplify routing for safety and incident management | Redirige más fácilmente las URLs a los submódulos de seguridad acortando los paths. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 8e999ef | feat(safety): add routing for incident list and form components | Enlaza los componentes visuales de listar/crear con sus direcciones web internas en Angular. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 662813a | feat(safety): add incident list component with table actions and pagination | Dota a la tabla de anomalías de soporte visual para cambiar de páginas y presionar botones. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | b66820a | feat(safety): add incident list component with table layout and actions | Completa la plantilla principal HTML para visualizar reportes. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 3a34f5f | feat(safety): add CSS styles for incident list layout | Adiciona capas de CSS para dejar limpio y ordenado el diseño tabular. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 646fe82 | feat(safety): implement incident form component for creating and editing incidents | Construye un elemento TS capaz de manejar eventos de creación de avisos manuales. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | b98b880 | feat(safety): add incident management form layout in incident-form.html | Estructura los inputs y contenedores para avisos y pánicos de tour. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 0196b88 | feat(safety): add CSS styles for incident management form layout | Aplica hojas de estilo de manera focalizada para el área de reportes. | 2026-10-02 |
+| axiom/tourmate-web-application | fix/safety | 95b33d7 | fix(safety): update default incident status from REPORTED to OPEN | Homologa los valores estándar (modificando reportado por abierto) en la lógica empresarial. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 4d18cb7 | feat(safety): add route for safety and incident management module | Introduce la ruta padre en el proyecto orientada netamente al área de seguridad de campo. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/active-tour | 7ead078 | add max capacity column to active tours list | Renderiza una celda con el indicador del aforo o cantidad límite permitida por grupo turístico. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/active-tour | c8eb5e6 | add tour schedule association to active tours | Liga o amarra las entidades de tours disponibles a sus fechas y horas establecidas en calendario. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 48a18e6 | feat(safety): implement IncidentStore with Angular signals and state management | Utiliza reactividad moderna de Angular para almacenar temporalmente reportes de anomalías. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 7999ac8 | feat(safety): implement IncidentApi infrastructure facade | Instala el servicio de consumo REST diseñado expresamente para incidentes. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | eadac6b | feat(safety): create IncidentApiEndpoint for REST operations | Conecta el endpoint oficial que recibirá notificaciones y reportes generados. | 2026-10-02 |
+| axiom/tourmate-web-application | refactor/safety | 07b51a0 | refactor(safety): implement IncidentAssembler for data mapping | Refina y limpia cómo la data externa se mapea a los modelos del frontend en incidentes. | 2026-10-02 |
+| axiom/tourmate-web-application | refactor/safety | fdaeecf | refactor(safety): add incident response and resource contracts | Clarifica mediante contratos (interfaces) qué estructura devuelve el servidor. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 35dc5b9 | feat(safety): implement Incident aggregate root entity | Genera el objeto de negocio principal que regirá sobre eventos y advertencias. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 8f09151 | feat(safety): add IncidentStatus enumeration | Inserta una enumeración (ENUM) para estandarizar etiquetas (abierto, resuelto, ignorado). | 2026-10-02 |
+| axiom/tourmate-web-application | feature/safety | 0d78263 | feat(safety): add IncidentId value object | Configura patrones de diseño implementando ID específicos e inmutables para reportes. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/participants | 46d187d | add participants management functionality with CRUD operations | Dota al panel del guía con opciones completas para modificar o remover integrantes del viaje. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/participants | 036d469 | add participant entity, assembler, and API endpoint for CRUD operations | Complementa las opciones visuales mapeando toda su respectiva lógica hacia la base de datos externa. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour | 9c2cd9e | feat: add tour list view | Configura el contenedor general que alberga múltiples expediciones resumidas. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour-schedule | b27f929 | add tour schedules management functionality with CRUD operations | Incluye vistas funcionales e interactivas de calendarios operativos al administrador. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/environment | 104a018 | add tour guides endpoint path to environment configurations | Provee a la aplicación central de la URL adecuada para ubicar empleados. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour-guide | f51cbc0 | add tour guide management functionality with CRUD operations | Permite a la agencia crear, consultar, modificar y remover guías de su equipo desde el panel. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour-guide | 83857df | add tour guide entity, assembler, and response definitions | Habilita todo el flujo tipado en Typescript para recibir data de guías con exactitud. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour | 938779b | feat: add tour-management store with loadTours function | Introduce en memoria global una rutina optimizada para cargar listados asíncronos. | 2026-10-02 |
+| axiom/tourmate-web-application | feature/tour | 09042f5 | feat: add tour management api and tours api endpoint | Finaliza el flujo de comunicación vinculando los archivos locales TS a la red de backend. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/tour | c5e2257 | feat: add tour-assembler | Acondiciona y formatea el JSON puro enviado por TourMate al modelo local esperado. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/tour | ab11ae8 | feat: add tour entity model | Describe propiedades como latitud, nombre, descripción para el modelo principal de ruta. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/tour | 8a208d7 | feat: add BaseResource and BaseResponse in tours-response | Implementa clases universales genéricas para que todos los fetch cuenten con metadatos. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/tour | 6eaf560 | feat: add tour-response interface | Desarrolla la máscara técnica obligatoria para entender la carga JSON orientada a tours. | 2026-10-01 |
+| axiom/tourmate-web-application | chore/db | 6be8f5e | chore(server/db.json): fix tours json structure | Alinea y arregla los objetos estáticos mockeados utilizados en pruebas de red locales. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/active-tour | edc07b4 | rename active tours entity and assembler to singular form; update types and routes accordingly | Mejora la convención de nombramiento pasándolo a singular en todo el ecosistema de tours en tránsito. | 2026-10-01 |
+| axiom/tourmate-web-application | chore/db | 4ef601d | chore(server/db.json): fix tours and tour_schedules status field | Corrige datos de simulación inválidos reemplazando estados obsoletos en el archivo db.json. | 2026-10-01 |
+| axiom/tourmate-web-application | chore/db | decf51c | update user and agency IDs in db.json for consistency and clarity | Asegura que la información de agencias y perfiles simulados guarden relación íntegra entre sí. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/active-tour | 560e199 | add active tours entity, assembler, and response definitions | Crea la base estructural TS para diferenciar y manipular expediciones que actualmente están en ruta. | 2026-10-01 |
+| axiom/tourmate-web-application | refactor/core | eb07343 | refactor JSON keys for consistency in naming conventions | Reemplaza o modifica nombres de atributos generales (ej. camelCase) para facilitar su mantenimiento. | 2026-10-01 |
+| axiom/tourmate-web-application | refactor/core | b33165a | refactor JSON keys for consistency and clarity | Continúa los procesos de limpieza semántica en archivos fuente principales. | 2026-10-01 |
+| axiom/tourmate-web-application | feature/core | 4f9460a | add initial project structure with core components, styles, and routing | Configura la cascada de directorios, librerías, y módulos de diseño básicos para iniciar. | 2026-10-01 |
+| axiom/tourmate-web-application | main | e3fbdca | initial structure | Crea y registra la versión fundacional del repositorio. | 2026-09-30 |
 
 #### *5.2.2.5. Execution Evidence for Sprint Review*
 
@@ -2830,8 +2856,8 @@ firebase init
 ```
 Durante el asistente de inicialización, se aplicaron las siguientes configuraciones críticas para una SPA:
 * **Feature:** `Hosting: Configure files for Firebase Hosting...`
-* **Project Setup:** `Use an existing project` (Se seleccionó el proyecto `tourmate-frontend` creado en el paso 2).
-* **Public directory:** `dist/tourmate-frontend/browser` (Apuntando directamente a los archivos estáticos compilados por Angular).
+* **Project Setup:** `Use an existing project` (Se seleccionó el proyecto `tourmate-web-application` creado en el paso 2).
+* **Public directory:** `dist/tourmate-web-application/browser` (Apuntando directamente a los archivos estáticos compilados por Angular).
 * **Single-page app configuration:** `Y` (Para reescribir todas las rutas hacia `index.html`, evitando errores 404 al navegar).
 * **GitHub Actions deploy:** `N` (Despliegue manual para este Sprint).
 * **Overwrite index.html:** `N` (Para preservar el archivo generado por el build de Angular).
@@ -2892,9 +2918,11 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Newman, S. (2021). *Building Microservices: Designing Fine-Grained Systems* (2nd ed.). O'Reilly Media. Recuperado de [https://samnewman.io/books/building_microservices_2nd_edition](https://samnewman.io/books/building_microservices_2nd_edition)
 - Walls, C. (2022). *Spring in Action* (6th ed.). Manning Publications. Recuperado de [https://www.manning.com/books/spring-in-action-sixth-edition](https://www.manning.com/books/spring-in-action-sixth-edition)
 
+<div style="page-break-before: always;"></div>
+
 ## Anexos
 
-<div style="page-break-before: always;"></div>
+
 
 ### Anexo A. Videos de exposiciones
 
@@ -2902,7 +2930,6 @@ Todos los miembros del equipo han participado activamente en la implementación 
 
 - Exposición TB1: [https://upcedupe-my.sharepoint.com/personal/u202323010_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202323010%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7760%2Daxiom%2Dexpo%2Dtb1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E81cc6660%2D9978%2D4eb4%2D9cf0%2Df7d9256d015a](https://upcedupe-my.sharepoint.com/personal/u202323010_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202323010%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7760%2Daxiom%2Dexpo%2Dtb1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E81cc6660%2D9978%2D4eb4%2D9cf0%2Df7d9256d015a)
 
-<div style="page-break-before: always;"></div>
 
 ### Anexo B. Videos de entrevistas
 
@@ -2922,8 +2949,8 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - Wireframe de la landing page: [https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1](https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1)
 - Mock-up de la landing page: [https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1](https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1)
 - Wireframes de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-- Wireflows de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-- Mock-ups de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Wireflows de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
+- Mock-ups de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
 - Prototipo de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
 
 
