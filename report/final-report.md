@@ -57,7 +57,7 @@
 |   1.0   | 10/09/2026 |   Carrillo Acho, Matias Renato    | Desarrollo del capítulo IV                               |
 |   2.0   | 10/09/2026 |   Verastigue Martinez, Giancarlo Jose   |                   Desarollo capitulo 5.2          |
 |   2.0   | 10/09/2026 |   Quispe Palomino, Tony Jhunior   |                     Desarollo capitulo 5.2           |
-|   2.0   | 10/09/2026 |   Huingo Tello, Frank Anthony   | Actualización del Student Outcome TB1 y documentación técnica |
+|   2.0   | 10/09/2026 |   Huingo Tello, Frank Anthony   | Desarrollo capitulo 5.2, actualización del Student Outcome TB1 y documentación técnica |
 |   2.0   | 10/09/2026 |   Molina Vasquez, Manuel Alejandro   |Desarollo capitulo 5.2                               |
 |   2.0   | 10/09/2026 |   Carrillo Acho, Matias Renato   |Desarollo capitulo 5.2                           |
 
