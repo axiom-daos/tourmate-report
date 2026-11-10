@@ -649,6 +649,118 @@ Todos los miembros del equipo han participado activamente en la implementación 
 
 
 
+### 5.2.3. Sprint 3
+
+#### *5.2.3.1. Sprint Planning 3*
+
+Para el desarrollo del tercer sprint, nuestro esfuerzo se dividirá y centrará en dos aspectos fundamentales para la plataforma. Por el lado del frontend (Web Application), terminaremos de implementar la lógica de negocio pendiente, asegurando que la interactividad y los flujos de datos en las vistas sean precisos. Por el lado del backend (Web Services), nos enfocaremos en la construcción de nuestra API RESTful, implementando los endpoints CRUD reales y los controladores necesarios. Esta evolución nos permitirá migrar de los servicios simulados (MockAPI) a nuestra propia infraestructura backend, integrando ambas capas para consolidar el funcionamiento real de TourMate.
+
+| **Sprint #** | 3 |
+| --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-10-30 |
+| **Time** | 4:00 PM |
+| **Location** | Reunión virtual |
+| **Prepared By** | Giancarlo Verastigue Martinez |
+| **Attendees** | Giancarlo Verastigue Martinez, Matias Carrillo Acho, Frank Anthony Huingo Tello, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+| **Sprint n – 1 Review Summary** | El Frontend de la aplicación web fue estructurado exitosamente y conectado a servicios simulados (MockAPI). Se lograron los objetivos visuales, de navegación y de diseño responsivo para los módulos de gestión de tours, monitoreo en vivo y perfiles. |
+| **Sprint n – 1 Retrospective Summary** | El equipo mantuvo un excelente ritmo de trabajo gracias a la división detallada de tareas. Se acordó que para este nuevo ciclo es crítico priorizar la construcción del backend real para reemplazar los mocks y evitar cuellos de botella en la integración final de la lógica de negocio. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | Our focus is on finalizing the frontend business logic and developing the backend RESTful API with core CRUD operations for TourMate. This will be confirmed when frontend components successfully consume the real backend endpoints and business rules are fully functional. |
+| **Sprint 3 Velocity** | 120 Story Points (Velocidad estimada sumando la carga de finalización de lógica Frontend y la construcción completa de los controladores y servicios Backend proyectados para este ciclo). |
+| **Sum of Story Points** | 120 |
+
+#### *5.2.3.2. Aspect Leaders and Collaborators*
+
+
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para brindar claridad en la comunicación del equipo durante el desarrollo de las tareas de este Sprint.
+
+Para este tercer sprint, los aspectos se han redefinido para alinearse con los objetivos duales del ciclo: finalizar el lado cliente y construir el backend real. Por ello, las áreas clave son: Lógica de Negocio Frontend (Frontend Business Logic), Servicios de Tours y Monitoreo (Tours & Tracking API), Servicios de Seguridad e Incidentes (Safety & Incidents API), y Arquitectura Core y Perfiles (Core API & Profiles).
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend Business Logic | Tours & Tracking API | Safety & Incidents API | Core API & Profiles |
+|-------------------------------------|-----------------| --- | --- | --- | --- |
+| Verastigue Martinez, Giancarlo      | @CaLoVM         | C | L | C | C |
+| Carrillo Acho, Matias               | @lonybreux      | C | C | L | C |
+| Huingo Tello, Frank Anthony         | @Franz2308      | L | C | C | C |
+| Molina Vasquez, Manuel Alejandro    | @AleDusty       | L | C | C | C |
+| Quispe Palomino, Tony Jhunior       | @GonzJunior18p  | C | C | C | L |
+
+#### *5.2.3.3. Sprint Backlog 3*
+
+
+**Trello link:** [https://trello.com/](https://trello.com)
+
+![Sprint Backlog 3](../assets/images/s3-sprint-backlog.png)
+
+| User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | To Do |
+| US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
+| US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
+| US14 | Desasignar turista de un tour | TS-B14.2 | Validación de expedición en curso | Agregar lógica para denegar o requerir confirmación extra si se intenta desasignar con la expedición iniciada. | 2 | @Franz2308 | To Do |
+| US15 | Confirmar asistencia | TS-B15.1 | Lógica de confirmación de estado | Desarrollar el servicio para actualizar y persistir el estado de confirmación de asistencia del participante. | 2 | @GonzJunior18p | To Do |
+| US15 | Confirmar asistencia | TS-B15.2 | Manejo de cancelaciones | Implementar regla de negocio que permita cancelar asistencia notificando al administrador correspondiente. | 3 | @lonybreux | To Do |
+| US16 | Buscar y filtrar tours | TS-B16.1 | Implementar consultas JPQL/SQL dinámicas | Crear repositorios con soporte de filtros paramétricos para búsquedas complejas de tours. | 4 | @CaLoVM | To Do |
+| US16 | Buscar y filtrar tours | TS-B16.2 | Optimización y paginación de resultados | Aplicar soporte de paginación (ej. Pageable) a los resultados devueltos por la base de datos. | 3 | @AleDusty | To Do |
+| US19 | Iniciar expedición | TS-B19.1 | Transición de estado a 'IN_PROGRESS' | Implementar servicio para actualizar el estado del schedule y generar el registro histórico de la expedición. | 3 | @Franz2308 | To Do |
+| US19 | Iniciar expedición | TS-B19.2 | Validación de permisos de guía | Verificar mediante control de roles que únicamente el guía asignado pueda disparar el evento de inicio. | 2 | @GonzJunior18p | To Do |
+| US20 | Visualizar ruta del tour | TS-B20.1 | Modelo de datos de ruta y waypoints | Configurar entidades espaciales y mapeos de JPA para almacenar secuencias de coordenadas ordenadas. | 4 | @lonybreux | To Do |
+| US20 | Visualizar ruta del tour | TS-B20.2 | Servicio de serialización geográfica | Preparar los datos y construir respuestas en formato JSON eficiente para el motor de mapas del cliente. | 3 | @CaLoVM | To Do |
+| US23 | Visualizar progreso del recorrido | TS-B23.1 | Motor de cálculo de avance | Crear un servicio interno que evalúe y calcule el porcentaje de avance en base a checkpoints validados. | 3 | @AleDusty | To Do |
+| US23 | Visualizar progreso del recorrido | TS-B23.2 | Eventos de finalización automática | Implementar triggers para marcar hitos de avance o detectar el 100% para notificar el cierre. | 2 | @Franz2308 | To Do |
+| US25 | Registrar experiencia del recorrido | TS-B25.1 | Repositorio de notas y experiencias | Configurar la entidad, relaciones y el acceso a datos para las anotaciones textuales de cada turista. | 2 | @GonzJunior18p | To Do |
+| US25 | Registrar experiencia del recorrido | TS-B25.2 | Validaciones de contexto activo | Restringir y validar que el registro de experiencias se asocie obligatoriamente a una expedición en curso. | 2 | @lonybreux | To Do |
+| US28 | Finalizar expedición | TS-B28.1 | Transición de estado a 'FINISHED' | Desarrollar servicio para cerrar formalmente el tour, detener rastreos y asentar el evento. | 3 | @CaLoVM | To Do |
+| US28 | Finalizar expedición | TS-B28.2 | Consolidación de reporte final | Implementar lógica para consolidar métricas de la expedición (avance logrado, horas, incidencias). | 3 | @AleDusty | To Do |
+| US29 | Monitorear ubicación de turistas | TS-B29.1 | Servicio de ingesta de coordenadas | Desarrollar la lógica optimizada para persistir en lote (batch) o streaming las coordenadas recibidas. | 5 | @Franz2308 | To Do |
+| US29 | Monitorear ubicación de turistas | TS-B29.2 | Agrupación de ubicaciones por tour | Construir consultas de alta velocidad que retornen únicamente la última coordenada conocida por turista. | 4 | @GonzJunior18p | To Do |
+| US30 | Consultar estado general del grupo | TS-B30.1 | Agregación de métricas de grupo | Crear un Data Transfer Object (DTO) y servicio para resumir el estado de salud y posición de todo el grupo. | 4 | @lonybreux | To Do |
+| US30 | Consultar estado general del grupo | TS-B30.2 | Cacheo de estado en tiempo real | Configurar un mecanismo de caché en memoria (ej. Redis) para soportar accesos concurrentes de monitoreo. | 4 | @CaLoVM | To Do |
+| US32 | Consultar estado de salud básico | TS-B32.1 | Motor de umbrales biométricos | Desarrollar algoritmos base para clasificar los signos vitales obtenidos como valores normales o de riesgo. | 3 | @AleDusty | To Do |
+| US32 | Consultar estado de salud básico | TS-B32.2 | Servicio de consulta de salud | Mapear la última lectura biométrica registrada para ser expuesta rápidamente al rol del guía. | 2 | @Franz2308 | To Do |
+| US33 | Reportar incidente | TS-B33.1 | Persistencia de incidentes de seguridad | Modelar la entidad, el repositorio y el servicio de creación para guardar los reportes de anomalías (SOS). | 3 | @GonzJunior18p | To Do |
+| US33 | Reportar incidente | TS-B33.2 | Despacho de notificaciones a agencia | Configurar eventos de dominio para alertar internamente a la agencia inmediatamente al crearse un reporte. | 3 | @lonybreux | To Do |
+| TS02 | Endpoint de gestión de tours | TS-B02.1 | API REST Controllers de Tours | Construir y exponer formalmente los endpoints GET, POST, PUT, DELETE asociándolos a los servicios creados. | 4 | @CaLoVM | To Do |
+| TS02 | Endpoint de gestión de tours | TS-B02.2 | Documentación OpenAPI de Tours | Anotar los controladores con definiciones Swagger para tipar respuestas y requerimientos JSON. | 2 | @AleDusty | To Do |
+| TS03 | Endpoint de gestión de expediciones | TS-B03.1 | API REST Controllers de Expediciones | Exponer las rutas HTTP correspondientes para el control del ciclo de vida (iniciar, finalizar) de expediciones. | 4 | @Franz2308 | To Do |
+| TS03 | Endpoint de gestión de expediciones | TS-B03.2 | Manejo global de excepciones | Configurar controladores de consejo (Advices) para devolver códigos HTTP correctos (400, 401, 404, 409). | 3 | @GonzJunior18p | To Do |
+| TS04 | Endpoint de monitoreo de ubicación | TS-B04.1 | API REST Controllers de Localización | Implementar el endpoint POST preparado para alta concurrencia desde los dispositivos de campo. | 4 | @lonybreux | To Do |
+| TS04 | Endpoint de monitoreo de ubicación | TS-B04.2 | Endpoint GET de estado geoespacial | Construir la interfaz de salida HTTP para que la UI de monitoreo consuma posiciones en vivo (polling). | 3 | @CaLoVM | To Do |
+| TS07 | Endpoint de gestión de alertas | TS-B07.1 | API REST Controllers de Alertas | Configurar y exponer las rutas REST encargadas de servir el registro activo de alertas generadas. | 3 | @AleDusty | To Do |
+| TS07 | Endpoint de gestión de alertas | TS-B07.2 | Validación de payloads (DTOs) | Aplicar decoradores de validación estricta a las cargas útiles de entrada para garantizar la integridad. | 2 | @Franz2308 | To Do |
+| TS09 | Endpoint de perfil y notificaciones | TS-B09.1 | API REST Controllers de Perfiles | Implementar los endpoints seguros que permitan exponer y actualizar la información de cuenta del usuario logueado. | 3 | @GonzJunior18p | To Do |
+| TS09 | Endpoint de perfil y notificaciones | TS-B09.2 | Endpoints de historial de notificaciones | Exponer el listado de eventos de sistema ordenados para alimentar el panel de notificaciones frontend. | 3 | @lonybreux | To Do |
+
+#### *5.2.3.4. Development Evidence for Sprint Review*
+
+
+
+#### *5.2.3.5. Execution Evidence for Sprint Review*
+
+
+
+#### *5.2.3.6. Services Documentation Evidence for Sprint Review*
+
+
+#### *5.2.3.7. Software Deployment Evidence for Sprint Review*
+
+
+
+#### *5.2.3.8. Team Collaboration Insights during Sprint*
+
+Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
+
+**Insights**
+![Team Insights Sprint 2](../assets/images/insights3.png)
+
+**Contributors**
+![Team Insights Sprint 2](../assets/images/contribuciones3.png)
+
+**Commits**
+![Team Insights Sprint 2](../assets/images/commits3.png)
+
+
+
 
 ## Conclusiones
 
