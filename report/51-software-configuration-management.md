@@ -110,25 +110,105 @@ Para mantener la legibilidad y calidad del código, todo el equipo aplicará **n
 
 
 #### 5.1.4. Software Deployment Configuration
-En esta sección se describe la configuración del despliegue de la solución TourMate, detallando los pasos necesarios para publicar los productos digitales a partir de sus repositorios de código fuente.
 
-Para el presente proyecto, el despliegue se realiza utilizando GitHub como plataforma de alojamiento, aprovechando el servicio de **GitHub Pages** para la publicación de contenido estático.
+En esta sección se describe la arquitectura y configuración técnica del despliegue de las soluciones cliente de TourMate, detallando los entornos, herramientas y pasos necesarios para compilar y publicar los productos de software a partir de sus respectivos repositorios de código fuente.
 
-#### Landing Page
+El ecosistema cliente de TourMate se compone de dos productos digitales diferenciados:
+1. **Landing Page y Documentación del Proyecto:** Alojados en **GitHub Pages** para publicación estática directa desde el repositorio.
+2. **Frontend Web Application (Web App):** Desplegado en **Firebase Hosting** (Google Cloud Platform) para soportar el ciclo de vida de una Single Page Application (SPA) con enrutamiento dinámico, distribución global por CDN y certificados SSL automatizados.
 
-El despliegue de la Landing Page y del reporte del proyecto se realiza mediante GitHub Pages, siguiendo los siguientes pasos:
+---
 
-1. Creación del repositorio en GitHub bajo la organización del equipo.
-2. Configuración de la rama de despliegue (main o gh-pages).
-3. Subida del código fuente mediante commits y push al repositorio remoto.
-4. Activación de GitHub Pages desde la configuración del repositorio.
-5. Selección de la rama y carpeta raíz como fuente de publicación.
-6. Generación automática de la URL pública del sitio.
+#### 5.1.4.1. Despliegue de la Landing Page (GitHub Pages)
 
-Una vez configurado, cada actualización enviada al repositorio se refleja automáticamente en la versión publicada del sitio.
+El despliegue de la Landing Page institucional se gestiona directamente desde su repositorio de control de versiones mediante GitHub Pages:
 
-#### Consideraciones
+1. **Configuración del Repositorio:** El código fuente se encuentra alojado en la organización oficial en el repositorio `tourmate-landing`.
+2. **Definición de Rama de Despliegue:** Se configura la rama `main` como rama fuente de publicación en la configuración del repositorio (*Settings $\rightarrow$ Pages*).
+3. **Estructura de Publicación:** Se selecciona el directorio raíz (`/root`) donde se aloja el archivo `index.html` y los recursos estáticos vinculados con rutas relativas.
+4. **Automatización:** Cada nuevo commit confirmado y enviado mediante `git push` a la rama `main` dispara el flujo de publicación automático de GitHub Pages.
+5. **URL Pública de Producción:** [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
 
-- El despliegue está orientado a contenido estático (HTML, CSS, JavaScript).
-- No se requiere infraestructura adicional ni servidores externos.
-- El acceso al sitio es público mediante una URL generada por GitHub Pages.
+---
+
+#### 5.1.4.2. Despliegue del Frontend Web Application (Firebase Hosting)
+
+La aplicación web principal de TourMate es una Single Page Application (SPA) desarrollada con **Angular 19** y **Angular Material**. Debido a los requerimientos de enrutamiento del lado del cliente (Angular Router / HTML5 History API) y rendimiento, se eligió **Firebase Hosting** como plataforma de infraestructura en la nube.
+
+##### Infraestructura y Requisitos Previos
+
+- **Repositorio de Código Fuente:** `https://github.com/axiom-daos/tourmate-web-application`
+- **Plataforma Cloud:** Firebase Hosting (Google Cloud Platform)
+- **ID del Proyecto Firebase:** `tourmate-frontend` (`tourmate-e66ff`)
+- **Herramientas requeridas:** Node.js (v20+), Angular CLI (`@angular/cli`), Firebase Tools (`firebase-tools`).
+
+##### Archivos de Configuración de Despliegue
+
+Para garantizar que todas las rutas de Angular (ej. `/tours`, `/login`, `/dashboard`, `/profile`) se resuelvan correctamente sin generar errores HTTP 404 en el servidor, se configuró el archivo `firebase.json` en la raíz del proyecto frontend con reglas de reescritura (*rewrites*):
+
+```json
+{
+  "hosting": {
+    "public": "dist/tourmate-web-app/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+```
+
+Adicionalmente, el archivo `.firebaserc` asocia el espacio de trabajo local con el proyecto en la nube:
+
+```json
+{
+  "projects": {
+    "default": "tourmate-e66ff"
+  }
+}
+```
+
+##### Flujo de Despliegue Paso a Paso
+
+1. **Instalación de la CLI de Firebase:**
+   ```bash
+   npm install -g firebase-tools
+   ```
+2. **Autenticación en Firebase:**
+   Se inicia sesión con las credenciales del equipo para autorizar el acceso a la plataforma:
+   ```bash
+   firebase login
+   ```
+3. **Inicialización y Vinculación del Entorno:**
+   Se vincula el repositorio local con el proyecto cloud existente:
+   ```bash
+   firebase use tourmate-e66ff
+   ```
+4. **Compilación para Producción (Build):**
+   Se ejecuta la compilación optimizada con Angular CLI, aplicando *tree-shaking*, minificación de bundles, optimización de estilos SCSS y generación de artefactos en la carpeta de distribución:
+   ```bash
+   npm run build -- --configuration production
+   ```
+5. **Despliegue a la Nube (Deploy):**
+   Se transfieren los artefactos compilados a los servidores CDN de Firebase Hosting:
+   ```bash
+   firebase deploy --only hosting
+   ```
+6. **Verificación en Entorno Real:**
+   El despliegue finaliza proporcionando la URL pública segura bajo HTTPS, accesible globalmente por los evaluadores y usuarios finales.
+   - **URL Pública Web Application:** [https://tourmate-e66ff.web.app/](https://tourmate-e66ff.web.app/)
+
+---
+
+#### 5.1.4.3. Consideraciones Técnicas de Despliegue
+
+- **Gestión de Rutas SPA (HTML5 PushState):** La regla de reescritura `** -> /index.html` redirige cualquier solicitud no estática hacia el archivo base de la aplicación Angular, permitiendo que el enrutador del cliente gestione la navegación interna sin provocar pérdidas de estado ni errores de página no encontrada.
+- **Seguridad y Certificados SSL:** Ambas plataformas (GitHub Pages y Firebase Hosting) aprovisionan y renuevan automáticamente certificados SSL/TLS, garantizando que todo el tráfico viaje cifrado bajo HTTPS.
+- **Red de Distribución de Contenido (CDN):** Los activos estáticos compilados (HTML, JavaScript, CSS, imágenes) se distribuyen en puntos de presencia (PoPs) globales de la red de Google Cloud / Fastly, reduciendo la latencia de primer contenido (*First Contentful Paint*).
