@@ -241,3 +241,45 @@ Para priorizar las oportunidades de mejora encontradas, se empleó la escala est
 | **8** | **Estética y diseño minimalista** | La tarjeta de resumen del tour contenía exceso de texto secundario que dificultaba escanear rápidamente la información clave (precio, duración, dificultad). | **2** | Rediseñar las tarjetas aplicando arquitectura de información limpia con *badges* destacados para dificultad, duración y precio. |
 | **9** | **Ayudar a reconocer, diagnosticar y recuperarse de errores** | Los mensajes de error de la API mostraban descripciones técnicas genéricas (ej. *Error 400 Bad Request*) sin explicar qué campo falló. | **3** | Interceptar respuestas HTTP de error en el frontend para mostrar mensajes amigables y contextuales (ej. *"La fecha de inicio debe ser posterior al día de hoy"*). |
 | **10** | **Ayuda y documentación** | En el apartado de bitácoras y monitoreo de emergencias, los usuarios primerizos no tenían una guía introductoria sobre el significado de cada estado. | **1** | Incorporar tooltips informativos y un botón flotante de ayuda rápida con preguntas frecuentes sobre el funcionamiento del monitoreo. |
+
+---
+
+### 5.4. Video About-the-Product
+
+El video *About-the-Product* constituye el artefacto audiovisual de validación demostrativa de la plataforma TourMate. Su objetivo principal es exponer el valor de negocio, la interacción de los usuarios y la operatividad técnica de los servicios implementados a lo largo de los tres Sprints de desarrollo, integrando el frontend en Angular con los servicios backend RESTful en Spring Boot.
+
+#### Ficha Técnica del Video de Producto
+
+| Parámetro | Detalle |
+| :--- | :--- |
+| **Título del Video:** | TourMate - Plataforma Web para Gestión y Monitoreo Seguro de Turismo de Aventura |
+| **Duración:** | [MM:SS] min *(Recomendado entre 3 y 5 minutos)* |
+| **Fecha de Producción:** | [DD/MM/AAAA] |
+| **Plataforma / Enlace:** | [Enlace al video en YouTube / OneDrive / SharePoint] |
+| **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+
+---
+
+#### Estructura y Guion de Escenas del Video
+
+```mermaid
+flowchart LR
+    A["Escena 1<br>Propuesta de Valor & Landing"] --> B["Escena 2<br>Autenticación & Perfiles (IAM)"]
+    B --> C["Escena 3<br>Planes & Checkout (Suscripciones)"]
+    C --> D["Escena 4<br>Gestión & Monitoreo en Vivo (Tours)"]
+    D --> E["Escena 5<br>Reporte de Alertas & Emergencias"]
+    E --> F["Escena 6<br>Feedback, Reseñas & Cierre"]
+```
+
+1. **Escena 1: Presentación y Propuesta de Valor (0:00 - 0:45)**  
+   Demostración de la *Landing Page* institucional de TourMate, explicando la problemática de seguridad y coordinación que enfrentan las agencias de turismo de aventura y los turistas en rutas de trekking sin señal celular continua.
+2. **Escena 2: Autenticación y Gestión de Identidad (0:45 - 1:30)**  
+   Demostración del flujo de inicio de sesión (*Sign-in*) y registro (*Sign-up*) con asignación de roles de usuario (Agencia, Guía, Turista, Administrador) y emisión de credenciales seguras mediante tokens JWT en Spring Boot.
+3. **Escena 3: Catálogo de Planes y Checkout Interactivo (1:30 - 2:30)**  
+   Visualización interactiva del catálogo de planes de suscripción para operadores turísticos, comparación de funcionalidades por nivel (básico, profesional, empresarial), simulación de pasarela de pago segura y emisión automática del comprobante de recibo fiscal digital con opción de impresión.
+4. **Escena 4: Creación de Tours y Monitoreo de Expedición en Vivo (2:30 - 3:45)**  
+   Recorrido por la creación y programación de tours, asignación de guías de campo y visualización en tiempo real del mapa de expedición con telemetría de ubicación y checkpoints georreferenciados.
+5. **Escena 5: Bitácora de Seguridad y Reporte de Incidentes (3:45 - 4:30)**  
+   Simulación de una alerta de emergencia reportada desde la expedición, visualización en el dashboard de control de la agencia con coordenadas exactas, nivel de severidad y registro de resolución de incidentes.
+6. **Escena 6: Calificaciones, Reseñas Turísticas y Cierre (4:30 - Conclusión)**  
+   Registro y consulta de reseñas turísticas por parte de los participantes tras culminar el recorrido, demostrando la integración completa y la robustez de los servicios desarrollados en el ciclo de vida del proyecto.

@@ -92,10 +92,13 @@
 #### 5.3.1. Diseño de Entrevistas
 #### 5.3.2. Registro de Entrevistas
 #### 5.3.3. Evaluaciones según heurísticas
-
+### 5.4. Video About-the-Product
 
 ## Conclusiones
 ### Conclusiones y recomendaciones
+#### Sprint 1 – Landing Page y documentación del proyecto
+#### Sprint 2 – Web Application Frontend y Servicios Mock
+#### Sprint 3 – Backend RESTful, Arquitectura DDD y Validación Heurística
 
 ### Bibliografía
 ### Anexos
