@@ -214,8 +214,7 @@ Para este segundo sprint, los aspectos se han definido en base a los módulos pr
 
 #### *5.2.2.3. Sprint Backlog 2*
 
-
-
+El objetivo principal de este segundo Sprint es desarrollar e implementar la primera versión completamente funcional de la aplicación web (*Frontend Web Application*) de TourMate utilizando Angular y Angular Material, orientada a los dos segmentos principales de usuarios: turistas y agencias operadoras. A lo largo de este ciclo, el equipo se enfoca en materializar las interfaces de usuario interactivas para la gestión integral de paquetes turísticos (creación, edición, visualización detallada y eliminación estructurada de tours correspondientes a la épica EP02), el catálogo dinámico con filtrado de expediciones, la visualización de rutas geográficas mediante componentes de mapas y el diseño base de los tableros de control (*dashboards*) para el turista y la agencia. Todas las User Stories asignadas a este Sprint han sido descompuestas en tareas de ingeniería frontend (*Engineering Tasks* identificadas como `TS-Fxx.x`), abarcando maquetación de vistas, lógica de componentes reactivos, validación en tiempo real de formularios y consumo de servicios simulados (mocking de API).
 
 **Trello link:** [https://trello.com/b/5MJg6UUc](https://trello.com/b/5MJg6UUc)
 
@@ -687,6 +686,7 @@ Para este tercer sprint, los aspectos se han redefinido para alinearse con los o
 
 #### *5.2.3.3. Sprint Backlog 3*
 
+El objetivo principal de este tercer Sprint es construir, integrar y desplegar los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en 36 tareas de ingeniería backend (*Engineering Tasks* bajo la nomenclatura `TS-Bxx.x`), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, repositorios JPA y documentación viva bajo OpenAPI/Swagger.
 
 **Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
