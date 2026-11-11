@@ -90,4 +90,154 @@ Las entrevistas de validación constituyen la principal técnica de investigaci�
 ---
 
 #### 5.3.2. Registro de Entrevistas
+
+En esta sección se documentan las entrevistas de validación realizadas a los usuarios objetivo de ambos segmentos tras interactuar con la plataforma TourMate. Cada registro incluye los datos del participante, la evidencia audiovisual de la sesión y una síntesis estructurada del feedback cualitativo recibido sobre la funcionalidad, usabilidad y valor de la solución.
+
+##### Segmento 1: Dueños o Responsables de Agencias de Turismo de Aventura
+
+**Entrevista de Validación 1:**
+
+![Entrevista de Validación 1](../assets/images/validation-interview-1.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | Frank Anthony Huingo Tello |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó (gestión de tours, catálogo, monitoreo de expedición o suscripciones), qué aspectos valoró positivamente de la plataforma, qué dudas o dificultades de interacción experimentó durante la prueba, y recomendaciones de mejora brindadas para el siguiente ciclo].
+
+---
+
+**Entrevista de Validación 2:**
+
+![Entrevista de Validación 2](../assets/images/validation-interview-2.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+
+---
+
+**Entrevista de Validación 3:**
+
+![Entrevista de Validación 3](../assets/images/validation-interview-3.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+
+---
+
+##### Segmento 2: Turistas de Aventura
+
+**Entrevista de Validación 4:**
+
+![Entrevista de Validación 4](../assets/images/validation-interview-4.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Turista de Aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+
+---
+
+**Entrevista de Validación 5:**
+
+![Entrevista de Validación 5](../assets/images/validation-interview-5.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Turista de Aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+
+---
+
+**Entrevista de Validación 6:**
+
+![Entrevista de Validación 6](../assets/images/validation-interview-6.png)
+
+| | |
+| :--- | :--- |
+| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
+| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
+| **Edad:** | [Edad] años |
+| **Segmento:** | Turista de Aventura |
+| **Fecha:** | [DD/MM/2026] |
+| **Inicio de la entrevista:** | 0:00 |
+| **Duración:** | [MM:SS] min |
+| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+
+**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+
+---
+
 #### 5.3.3. Evaluaciones según heurísticas
+
+A partir de las sesiones de interacción y entrevistas de validación realizadas con los usuarios de ambos segmentos (agencias y turistas), se llevó a cabo una **evaluación heurística consolidada** basada en los diez principios generales para el diseño de interfaces de usuario propuestos por **Jakob Nielsen**.
+
+Para priorizar las oportunidades de mejora encontradas, se empleó la escala estándar de severidad de Nielsen:
+- **0 - Sin problema:** No se considera un problema de usabilidad.
+- **1 - Problema cosmético:** No interfiere en la tarea; solo se corrige si sobra tiempo.
+- **2 - Problema menor:** Dificultad leve de uso; baja prioridad de resolución.
+- **3 - Problema mayor:** Dificultad importante; afecta la experiencia y debe corregirse con alta prioridad.
+- **4 - Catástrofe de usabilidad:** Impide al usuario completar la tarea esencial; resolución imperativa.
+
+---
+
+##### Matriz Consolidada de Evaluación Heurística (TourMate Web Application)
+
+| N° | Principio Heurístico de Nielsen | Problema / Hallazgo Detectado en la Validación | Severidad | Propuesta de Solución / Mejora de Diseño |
+|:---:|:---|:---|:---:|:---|
+| **1** | **Visibilidad del estado del sistema** | Al guardar o editar un tour, el usuario no recibía confirmación visual inmediata del procesamiento ni del guardado exitoso en el backend. | **2** | Implementar notificaciones tipo *snackbar* / *toast* reactivas y *spinners* de carga durante las peticiones asíncronas HTTP. |
+| **2** | **Coincidencia entre el sistema y el mundo real** | Algunos términos técnicos en la vista de monitoreo de expedición resultaban poco familiares para los guías y turistas. | **1** | Adecuar la terminología hacia el lenguaje ubicuo del turismo de aventura (ej. reemplazar *lat/lng payload* por *Punto de Control*, *Waypoints* y *Altitud*). |
+| **3** | **Control y libertad del usuario** | En el formulario de creación de tours no existía una opción clara para cancelar o descartar los cambios sin tener que recargar el navegador. | **3** | Agregar un botón explícito de *"Cancelar / Descartar"* con modal de confirmación para evitar pérdida accidental de datos. |
+| **4** | **Consistencia y estándares** | El botón de acción principal (*CTA*) presentaba variaciones de color y posición entre la vista del catálogo y la vista de detalle del tour. | **2** | Estandarizar la jerarquía visual de botones con los tokens de diseño definidos en la guía de estilos de Angular Material. |
+| **5** | **Prevención de errores** | En los campos de capacidad de turistas y precio por persona se permitían valores negativos o caracteres no numéricos antes de enviar el formulario. | **3** | Incorporar validadores reactivos en tiempo real (`Validators.min`, `Validators.pattern`) que deshabiliten el botón de envío ante entradas no válidas. |
+| **6** | **Reconocimiento antes que recuerdo** | Para asignar guías a un tour, el administrador debía recordar y escribir el identificador manualmente en lugar de seleccionarlo. | **3** | Reemplazar el campo de texto libre por un componente de selección desplegable (`mat-select`) con búsqueda predictiva y avatares de guías disponibles. |
+| **7** | **Flexibilidad y eficiencia de uso** | Usuarios recurrentes de agencias solicitaron atajos o una opción de duplicar tours existentes para no llenar todos los campos desde cero. | **2** | Añadir la acción de *"Clonar / Duplicar Tour"* en la tabla de gestión de tours para agilizar la creación de expediciones similares. |
+| **8** | **Estética y diseño minimalista** | La tarjeta de resumen del tour contenía exceso de texto secundario que dificultaba escanear rápidamente la información clave (precio, duración, dificultad). | **2** | Rediseñar las tarjetas aplicando arquitectura de información limpia con *badges* destacados para dificultad, duración y precio. |
+| **9** | **Ayudar a reconocer, diagnosticar y recuperarse de errores** | Los mensajes de error de la API mostraban descripciones técnicas genéricas (ej. *Error 400 Bad Request*) sin explicar qué campo falló. | **3** | Interceptar respuestas HTTP de error en el frontend para mostrar mensajes amigables y contextuales (ej. *"La fecha de inicio debe ser posterior al día de hoy"*). |
+| **10** | **Ayuda y documentación** | En el apartado de bitácoras y monitoreo de emergencias, los usuarios primerizos no tenían una guía introductoria sobre el significado de cada estado. | **1** | Incorporar tooltips informativos y un botón flotante de ayuda rápida con preguntas frecuentes sobre el funcionamiento del monitoreo. |
