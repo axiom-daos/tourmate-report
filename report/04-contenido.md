@@ -62,6 +62,13 @@
 #### 4.6.4. Software Architecture Components Diagrams
 ### 4.7. Software Object-Oriented Design
 #### 4.7.1. Class Diagrams
+##### 4.7.1.1. Bounded Context: Shared Kernel
+##### 4.7.1.2. Bounded Context: Identity and Access Management
+##### 4.7.1.3. Bounded Context: Tour Management
+##### 4.7.1.4. Bounded Context: Tour Monitoring
+##### 4.7.1.5. Bounded Context: Safety and Incident Management
+##### 4.7.1.6. Bounded Context: Feedback and Tour Reviews
+##### 4.7.1.7. Bounded Context: Subscriptions and Payment Management
 ### 4.8. Database Design
 #### 4.8.1. Database Diagrams
 
@@ -85,10 +92,13 @@
 #### 5.3.1. Diseño de Entrevistas
 #### 5.3.2. Registro de Entrevistas
 #### 5.3.3. Evaluaciones según heurísticas
-
+### 5.4. Video About-the-Product
 
 ## Conclusiones
 ### Conclusiones y recomendaciones
+#### Sprint 1 – Landing Page y documentación del proyecto
+#### Sprint 2 – Web Application Frontend y Servicios Mock
+#### Sprint 3 – Backend RESTful, Arquitectura DDD y Validación Heurística
 
 ### Bibliografía
 ### Anexos

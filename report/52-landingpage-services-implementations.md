@@ -214,8 +214,7 @@ Para este segundo sprint, los aspectos se han definido en base a los módulos pr
 
 #### *5.2.2.3. Sprint Backlog 2*
 
-
-
+El objetivo principal de este segundo Sprint es desarrollar e implementar la primera versión completamente funcional de la aplicación web (*Frontend Web Application*) de TourMate utilizando Angular y Angular Material, orientada a los dos segmentos principales de usuarios: turistas y agencias operadoras. A lo largo de este ciclo, el equipo se enfoca en materializar las interfaces de usuario interactivas para la gestión integral de paquetes turísticos (creación, edición, visualización detallada y eliminación estructurada de tours correspondientes a la épica EP02), el catálogo dinámico con filtrado de expediciones, la visualización de rutas geográficas mediante componentes de mapas y el diseño base de los tableros de control (*dashboards*) para el turista y la agencia. Todas las User Stories asignadas a este Sprint han sido descompuestas en tareas de ingeniería frontend (*Engineering Tasks* identificadas como `TS-Fxx.x`), abarcando maquetación de vistas, lógica de componentes reactivos, validación en tiempo real de formularios y consumo de servicios simulados (mocking de API).
 
 **Trello link:** [https://trello.com/b/5MJg6UUc](https://trello.com/b/5MJg6UUc)
 
@@ -649,6 +648,248 @@ Todos los miembros del equipo han participado activamente en la implementación 
 
 
 
+### 5.2.3. Sprint 3
+
+#### *5.2.3.1. Sprint Planning 3*
+
+Para el desarrollo del tercer sprint, nuestro esfuerzo se dividirá y centrará en dos aspectos fundamentales para la plataforma. Por el lado del frontend (Web Application), terminaremos de implementar la lógica de negocio pendiente, asegurando que la interactividad y los flujos de datos en las vistas sean precisos. Por el lado del backend (Web Services), nos enfocaremos en la construcción de nuestra API RESTful, implementando los endpoints CRUD reales y los controladores necesarios. Esta evolución nos permitirá migrar de los servicios simulados (MockAPI) a nuestra propia infraestructura backend, integrando ambas capas para consolidar el funcionamiento real de TourMate.
+
+| **Sprint #** | 3 |
+| --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-10-30 |
+| **Time** | 4:00 PM |
+| **Location** | Reunión virtual |
+| **Prepared By** | Giancarlo Verastigue Martinez |
+| **Attendees** | Giancarlo Verastigue Martinez, Matias Carrillo Acho, Frank Anthony Huingo Tello, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+| **Sprint n – 1 Review Summary** | El Frontend de la aplicación web fue estructurado exitosamente y conectado a servicios simulados (MockAPI). Se lograron los objetivos visuales, de navegación y de diseño responsivo para los módulos de gestión de tours, monitoreo en vivo y perfiles. |
+| **Sprint n – 1 Retrospective Summary** | El equipo mantuvo un excelente ritmo de trabajo gracias a la división detallada de tareas. Se acordó que para este nuevo ciclo es crítico priorizar la construcción del backend real para reemplazar los mocks y evitar cuellos de botella en la integración final de la lógica de negocio. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | Our focus is on finalizing the frontend business logic and developing the backend RESTful API with core CRUD operations for TourMate. This will be confirmed when frontend components successfully consume the real backend endpoints and business rules are fully functional. |
+| **Sprint 3 Velocity** | 120 Story Points (Velocidad estimada sumando la carga de finalización de lógica Frontend y la construcción completa de los controladores y servicios Backend proyectados para este ciclo). |
+| **Sum of Story Points** | 120 |
+
+#### *5.2.3.2. Aspect Leaders and Collaborators*
+
+
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para brindar claridad en la comunicación del equipo durante el desarrollo de las tareas de este Sprint.
+
+Para este tercer sprint, los aspectos se han redefinido para alinearse con los objetivos duales del ciclo: finalizar el lado cliente y construir el backend real. Por ello, las áreas clave son: Lógica de Negocio Frontend (Frontend Business Logic), Servicios de Tours y Monitoreo (Tours & Tracking API), Servicios de Seguridad e Incidentes (Safety & Incidents API), y Arquitectura Core y Perfiles (Core API & Profiles).
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend Business Logic | Tours & Tracking API | Safety & Incidents API | Core API & Profiles |
+|-------------------------------------|-----------------| --- | --- | --- | --- |
+| Verastigue Martinez, Giancarlo      | @CaLoVM         | C | L | C | C |
+| Carrillo Acho, Matias               | @lonybreux      | C | C | L | C |
+| Huingo Tello, Frank Anthony         | @Franz2308      | L | C | C | C |
+| Molina Vasquez, Manuel Alejandro    | @AleDusty       | L | C | C | C |
+| Quispe Palomino, Tony Jhunior       | @GonzJunior18p  | C | C | C | L |
+
+#### *5.2.3.3. Sprint Backlog 3*
+
+El objetivo principal de este tercer Sprint es construir, integrar y desplegar los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en 36 tareas de ingeniería backend (*Engineering Tasks* bajo la nomenclatura `TS-Bxx.x`), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, repositorios JPA y documentación viva bajo OpenAPI/Swagger.
+
+**Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
+
+![Sprint Backlog 3](../assets/images/s3-sprint-backlog.png)
+
+| User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | To Do |
+| US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
+| US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
+| US14 | Desasignar turista de un tour | TS-B14.2 | Validación de expedición en curso | Agregar lógica para denegar o requerir confirmación extra si se intenta desasignar con la expedición iniciada. | 2 | @Franz2308 | To Do |
+| US15 | Confirmar asistencia | TS-B15.1 | Lógica de confirmación de estado | Desarrollar el servicio para actualizar y persistir el estado de confirmación de asistencia del participante. | 2 | @GonzJunior18p | To Do |
+| US15 | Confirmar asistencia | TS-B15.2 | Manejo de cancelaciones | Implementar regla de negocio que permita cancelar asistencia notificando al administrador correspondiente. | 3 | @lonybreux | To Do |
+| US16 | Buscar y filtrar tours | TS-B16.1 | Implementar consultas JPQL/SQL dinámicas | Crear repositorios con soporte de filtros paramétricos para búsquedas complejas de tours. | 4 | @CaLoVM | To Do |
+| US16 | Buscar y filtrar tours | TS-B16.2 | Optimización y paginación de resultados | Aplicar soporte de paginación (ej. Pageable) a los resultados devueltos por la base de datos. | 3 | @AleDusty | To Do |
+| US19 | Iniciar expedición | TS-B19.1 | Transición de estado a 'IN_PROGRESS' | Implementar servicio para actualizar el estado del schedule y generar el registro histórico de la expedición. | 3 | @Franz2308 | To Do |
+| US19 | Iniciar expedición | TS-B19.2 | Validación de permisos de guía | Verificar mediante control de roles que únicamente el guía asignado pueda disparar el evento de inicio. | 2 | @GonzJunior18p | To Do |
+| US20 | Visualizar ruta del tour | TS-B20.1 | Modelo de datos de ruta y waypoints | Configurar entidades espaciales y mapeos de JPA para almacenar secuencias de coordenadas ordenadas. | 4 | @lonybreux | To Do |
+| US20 | Visualizar ruta del tour | TS-B20.2 | Servicio de serialización geográfica | Preparar los datos y construir respuestas en formato JSON eficiente para el motor de mapas del cliente. | 3 | @CaLoVM | To Do |
+| US23 | Visualizar progreso del recorrido | TS-B23.1 | Motor de cálculo de avance | Crear un servicio interno que evalúe y calcule el porcentaje de avance en base a checkpoints validados. | 3 | @AleDusty | To Do |
+| US23 | Visualizar progreso del recorrido | TS-B23.2 | Eventos de finalización automática | Implementar triggers para marcar hitos de avance o detectar el 100% para notificar el cierre. | 2 | @Franz2308 | To Do |
+| US25 | Registrar experiencia del recorrido | TS-B25.1 | Repositorio de notas y experiencias | Configurar la entidad, relaciones y el acceso a datos para las anotaciones textuales de cada turista. | 2 | @GonzJunior18p | To Do |
+| US25 | Registrar experiencia del recorrido | TS-B25.2 | Validaciones de contexto activo | Restringir y validar que el registro de experiencias se asocie obligatoriamente a una expedición en curso. | 2 | @lonybreux | To Do |
+| US28 | Finalizar expedición | TS-B28.1 | Transición de estado a 'FINISHED' | Desarrollar servicio para cerrar formalmente el tour, detener rastreos y asentar el evento. | 3 | @CaLoVM | To Do |
+| US28 | Finalizar expedición | TS-B28.2 | Consolidación de reporte final | Implementar lógica para consolidar métricas de la expedición (avance logrado, horas, incidencias). | 3 | @AleDusty | To Do |
+| US29 | Monitorear ubicación de turistas | TS-B29.1 | Servicio de ingesta de coordenadas | Desarrollar la lógica optimizada para persistir en lote (batch) o streaming las coordenadas recibidas. | 5 | @Franz2308 | To Do |
+| US29 | Monitorear ubicación de turistas | TS-B29.2 | Agrupación de ubicaciones por tour | Construir consultas de alta velocidad que retornen únicamente la última coordenada conocida por turista. | 4 | @GonzJunior18p | To Do |
+| US30 | Consultar estado general del grupo | TS-B30.1 | Agregación de métricas de grupo | Crear un Data Transfer Object (DTO) y servicio para resumir el estado de salud y posición de todo el grupo. | 4 | @lonybreux | To Do |
+| US30 | Consultar estado general del grupo | TS-B30.2 | Cacheo de estado en tiempo real | Configurar un mecanismo de caché en memoria (ej. Redis) para soportar accesos concurrentes de monitoreo. | 4 | @CaLoVM | To Do |
+| US32 | Consultar estado de salud básico | TS-B32.1 | Motor de umbrales biométricos | Desarrollar algoritmos base para clasificar los signos vitales obtenidos como valores normales o de riesgo. | 3 | @AleDusty | To Do |
+| US32 | Consultar estado de salud básico | TS-B32.2 | Servicio de consulta de salud | Mapear la última lectura biométrica registrada para ser expuesta rápidamente al rol del guía. | 2 | @Franz2308 | To Do |
+| US33 | Reportar incidente | TS-B33.1 | Persistencia de incidentes de seguridad | Modelar la entidad, el repositorio y el servicio de creación para guardar los reportes de anomalías (SOS). | 3 | @GonzJunior18p | To Do |
+| US33 | Reportar incidente | TS-B33.2 | Despacho de notificaciones a agencia | Configurar eventos de dominio para alertar internamente a la agencia inmediatamente al crearse un reporte. | 3 | @lonybreux | To Do |
+| TS02 | Endpoint de gestión de tours | TS-B02.1 | API REST Controllers de Tours | Construir y exponer formalmente los endpoints GET, POST, PUT, DELETE asociándolos a los servicios creados. | 4 | @CaLoVM | To Do |
+| TS02 | Endpoint de gestión de tours | TS-B02.2 | Documentación OpenAPI de Tours | Anotar los controladores con definiciones Swagger para tipar respuestas y requerimientos JSON. | 2 | @AleDusty | To Do |
+| TS03 | Endpoint de gestión de expediciones | TS-B03.1 | API REST Controllers de Expediciones | Exponer las rutas HTTP correspondientes para el control del ciclo de vida (iniciar, finalizar) de expediciones. | 4 | @Franz2308 | To Do |
+| TS03 | Endpoint de gestión de expediciones | TS-B03.2 | Manejo global de excepciones | Configurar controladores de consejo (Advices) para devolver códigos HTTP correctos (400, 401, 404, 409). | 3 | @GonzJunior18p | To Do |
+| TS04 | Endpoint de monitoreo de ubicación | TS-B04.1 | API REST Controllers de Localización | Implementar el endpoint POST preparado para alta concurrencia desde los dispositivos de campo. | 4 | @lonybreux | To Do |
+| TS04 | Endpoint de monitoreo de ubicación | TS-B04.2 | Endpoint GET de estado geoespacial | Construir la interfaz de salida HTTP para que la UI de monitoreo consuma posiciones en vivo (polling). | 3 | @CaLoVM | To Do |
+| TS07 | Endpoint de gestión de alertas | TS-B07.1 | API REST Controllers de Alertas | Configurar y exponer las rutas REST encargadas de servir el registro activo de alertas generadas. | 3 | @AleDusty | To Do |
+| TS07 | Endpoint de gestión de alertas | TS-B07.2 | Validación de payloads (DTOs) | Aplicar decoradores de validación estricta a las cargas útiles de entrada para garantizar la integridad. | 2 | @Franz2308 | To Do |
+| TS09 | Endpoint de perfil y notificaciones | TS-B09.1 | API REST Controllers de Perfiles | Implementar los endpoints seguros que permitan exponer y actualizar la información de cuenta del usuario logueado. | 3 | @GonzJunior18p | To Do |
+| TS09 | Endpoint de perfil y notificaciones | TS-B09.2 | Endpoints de historial de notificaciones | Exponer el listado de eventos de sistema ordenados para alimentar el panel de notificaciones frontend. | 3 | @lonybreux | To Do |
+
+#### *5.2.3.4. Development Evidence for Sprint Review*
+
+Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente entre el frontend (`tourmate-web-application`) y el backend (`tourmate-platform`). 
+
+A continuación, se presentan las tablas consolidadas de commits representativos realizados durante el ciclo de desarrollo del Sprint 3 por cada miembro del equipo:
+
+##### Repositorio Backend: `tourmate-platform`
+
+| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `a01a307` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management' into develop | @Franz2308 |
+| `c15d41d` | Fix | Subscriptions & Payment Management | fix(subscription): configure resilient deserialization and ignore unknown payload properties | @Franz2308 |
+| `df57ebd` | Merge | Feedback and Tour Reviews | Merge branch 'feature/feedback-and-tour-reviews' into develop | @GonzJunior18p |
+| `1bc5d06` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): make review and comment request resources ignore unknown properties | @GonzJunior18p |
+| `868aaaa` | Chore | Infrastructure / DevOps | chore: add compose.yaml for PostgreSQL runtime containerization | @CarrilloMatias |
+| `279ea83` | Chore | Configuration | chore: remove docker compose from tracking | @CarrilloMatias |
+| `b42bfcc` | Feat | Tour Management | feat: add tour controller with full CRUD endpoints | @CarrilloMatias |
+| `4d37d6a` | Feat | Tour Management | feat: add tour transforms and resource assemblers | @CarrilloMatias |
+| `b0c70e9` | Feat | Tour Management | feat: add tour resources and OpenAPI schema definitions | @CarrilloMatias |
+| `cf184ac` | Feat | Tour Management | feat: add tour services implementations and application layer | @CarrilloMatias |
+| `69565db` | Feat | Tour Management | feat: add tour query service interface | @CarrilloMatias |
+| `8d2931b` | Feat | Tour Management | feat: add tour command service interface | @CarrilloMatias |
+| `9313dc5` | Feat | Subscriptions & Payment Management | feat(subscription): add subscription plans database seeder for runtime bootstrap | @Franz2308 |
+| `a3a473e` | Feat | Subscriptions & Payment Management | feat(subscription): implement rest controllers and resource assemblers for plans, subscriptions, and payments | @Franz2308 |
+| `de9f352` | Feat | Subscriptions & Payment Management | feat(subscription): declare rest request and response resources with openapi schema documentation | @Franz2308 |
+| `55faaba` | Feat | Subscriptions & Payment Management | feat(subscription): implement command and query application services with result handling | @Franz2308 |
+| `708e7b5` | Feat | Subscriptions & Payment Management | feat(subscription): implement repository adapters connecting domain contracts with jpa persistence | @Franz2308 |
+| `81492c0` | Refactor | Tour Monitoring | Refactor ActiveToursController and resources to standardize terminology and improve documentation clarity | @CaLoVM |
+| `3a44f6b` | Merge | Tour Monitoring | Merge branch 'feature/tour-monitoring' into develop | @CaLoVM |
+| `2c33f15` | Feat | Safety and Incident Management | feat: add detailed documentation for UpdateIncidentResource parameters | @AleDusty |
+| `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
+| `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
+
+##### Repositorio Frontend: `tourmate-web-application`
+
+| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
+| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
+| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
+| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
+| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
+| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
+| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
+| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
+| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
+| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
+| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
+| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
+| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
+| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
+| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
+| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
+| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
+
+---
+
+#### *5.2.3.5. Execution Evidence for Sprint Review*
+
+Para validar la correcta ejecución de los servicios backend desarrollados en Spring Boot 3 y su persistencia en PostgreSQL, se estableció un protocolo de verificación en tres niveles: persistencia de datos relacionales, ejecución de endpoints mediante clientes REST (Postman / REST Client) y verificación visual mediante la interfaz Swagger UI.
+
+##### Guía Metodológica de Ejecución para el Equipo
+
+1. **Verificación de Persistencia Relacional (PostgreSQL / pgAdmin):**  
+   Confirmar la creación automática de tablas mediante Hibernate JPA (`spring.jpa.hibernate.ddl-auto=update`), verificando las relaciones de clave foránea, índices y la presencia de datos sembrados (seeder) en las tablas `plans`, `subscriptions`, `payments`, `users`, `roles`, `active_tours`, `incidents`, `reviews`, `comments`, `tours` y `tour_schedules`.
+2. **Ejecución de Peticiones RESTful:**  
+   Probar las operaciones de creación (POST) verificando el código de respuesta HTTP `201 Created` junto con el encabezado `Location` o el recurso devuelto en formato JSON. Asimismo, validar las operaciones de lectura (GET) con código HTTP `200 OK`, validando el correcto mapeo de Value Objects (coordenadas, monedas y fechas ISO-8601).
+3. **Manejo Resiliente de Errores:**  
+   Probar peticiones con identificadores inexistentes para confirmar la emisión de códigos HTTP `404 Not Found`, y peticiones con payloads incompletos para validar códigos HTTP `400 Bad Request` gestionados por el `GlobalExceptionHandler`.
+
+##### Evidencias de Ejecución
+
+**Evidencia de Persistencia en Base de Datos PostgreSQL:**
+
+*A continuación, se documenta la estructura de tablas relacionales generadas y pobladas automáticamente durante la inicialización de la plataforma:*
+
+![Tablas de Base de Datos PostgreSQL](../assets/images/sprint3-database-evidence.png)
+*Figura 5.X. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
+
+**Evidencia de Ejecución de Servicios REST (Peticiones POST y GET):**
+
+*A continuación, se presentan las capturas de peticiones REST ejecutadas de forma satisfactoria sobre los controladores de la plataforma:*
+
+![Ejecución de Petición REST - Creación Exitosa](../assets/images/sprint3-postman-execution-1.png)
+*Figura 5.X. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
+
+![Ejecución de Petición REST - Consulta de Recursos](../assets/images/sprint3-postman-execution-2.png)
+*Figura 5.X. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
+
+---
+
+#### *5.2.3.6. Services Documentation Evidence for Sprint Review*
+
+El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.0**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui`. La documentación se encuentra accesible localmente en la ruta `http://localhost:8092/swagger-ui/index.html` y en el entorno desplegado en la nube.
+
+##### Características Clave de la Documentación OpenAPI Implementada:
+
+* **Categorización por Bounded Contexts:** Los controladores REST están etiquetados mediante la anotación `@Tag` (ej. `ActiveTours`, `Plans`, `Subscriptions`, `Payments`, `Incidents`, `Reviews`, `Comments`, `Tours`, `Users`, `Roles`), agrupando lógicamente las operaciones del sistema.
+* **Especificación de Contratos de Datos (Schemas / DTOs):** Cada DTO de entrada (*Request*) y salida (*Response*) está tipado con `@Schema`, documentando tipos de datos, ejemplos representativos (`example`) y restricciones de obligatoriedad (`requiredMode`).
+* **Códigos de Estado HTTP Documentados:** Se documentan explícitamente los códigos de respuesta esperados mediante `@ApiResponses` y `@ApiResponse` (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`).
+* **Seguridad y Autorización:** Se incorpora el esquema de seguridad global `bearerAuth` (`@SecurityRequirement(name = "bearerAuth")`), indicando qué endpoints exigen cabeceras HTTP `Authorization: Bearer <token_jwt>` para su consumo.
+
+![Interfaz Swagger UI de la Plataforma TourMate](../assets/images/sprint3-swagger-ui-overview.png)
+*Figura 5.X. Catálogo de servicios RESTful y esquemas OpenAPI interactivos en Swagger UI.*
+
+---
+
+#### *5.2.3.7. Software Deployment Evidence for Sprint Review*
+
+Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+
+##### Arquitectura de Despliegue:
+
+```mermaid
+flowchart LR
+    A["Cliente Frontend<br>(Angular SPA / Firebase Hosting)"] -->|HTTPS / JSON API| B["Servicio Backend REST<br>(Spring Boot / Render Cloud)"]
+    B -->|JDBC Connection Pool| C[("Base de Datos Gestionada<br>(PostgreSQL Cloud / Render)")]
+    D["Desarrollo Local<br>(Docker Compose)"] -.->|compose.yaml| E[("Contenedor Local<br>tourmate-db:5432")]
+```
+
+##### Pasos Técnicos para el Despliegue del Backend en Render / Cloud:
+
+1. **Aprovisionamiento de la Base de Datos Gestionada:**  
+   Se crea una instancia gestionada de PostgreSQL en Render (`tourmate-db`), obteniendo los parámetros de conexión seguros (Host, Puerto, Database Name, Usuario y Contraseña).
+2. **Contenerización y Configuración de Docker:**  
+   Se utiliza el archivo `compose.yaml` para levantar contenedores locales idénticos al entorno productivo, asegurando paridad de entornos de desarrollo y producción (*12-Factor App methodology*).
+3. **Inyección de Variables de Entorno Productivas:**  
+   En el panel de configuración de Render, se definen las variables de entorno sin exponer secretos en el repositorio:
+   * `SPRING_PROFILES_ACTIVE=prod`
+   * `DATABASE_URL=jdbc:postgresql://<render_postgres_host>:5432/tour_mate`
+   * `DATABASE_USER=<render_user>`
+   * `DATABASE_PASSWORD=<render_password>`
+   * `PORT=8092`
+   * `AUTHORIZATION_JWT_SECRET=<secret_key>`
+4. **Compilación y Construcción del Artefacto:**  
+   El motor de construcción ejecuta `./mvnw clean package -DskipTests` y levanta el servicio ejecutando el binario JAR generado (`java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar`).
+5. **Verificación de Disponibilidad (*Health Check*):**  
+   Se valida el acceso al endpoint de documentación en vivo y la correcta ejecución de las migraciones/tablas en la base de datos remota.
+
+![Evidencia de Despliegue en Render](../assets/images/sprint3-deployment-render-evidence.png)
+*Figura 5.X. Panel de administración del servicio web y base de datos desplegados en la plataforma Render en estado "Live".*
+
+---
+
+#### *5.2.3.8. Team Collaboration Insights during Sprint*
+
+Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
+
+**Insights**
+![Team Insights Sprint 2](../assets/images/insights3.png)
+
+**Contributors**
+![Team Insights Sprint 2](../assets/images/contribuciones3.png)
+
+**Commits**
+![Team Insights Sprint 2](../assets/images/commits3.png)
+
+
+
 
 ## Conclusiones
 
@@ -661,6 +902,29 @@ Todos los miembros del equipo han participado activamente en la implementación 
 - **Sobre la documentación y modelado del proyecto:** La construcción del reporte técnico permitió consolidar los hallazgos del *Problem Statement*, *Needfinding*, *User Personas*, *Empathy Maps*, *Journey Maps*, *Event Storming* y *Ubiquitous Language*, generando una visión integral del dominio del negocio. Asimismo, el uso de metodologías como *Domain-Driven Design (DDD)* facilitó la identificación de *Bounded Contexts* y responsabilidades del sistema desde etapas tempranas.
 
 - **Sobre la definición de requerimientos:** La especificación inicial de *User Stories* y criterios de aceptación permitió transformar necesidades de usuarios en funcionalidades concretas, proporcionando una guía estructurada para el desarrollo de los siguientes sprints y reduciendo ambigüedades en la planificación técnica.
+
+### Sprint 2 – Web Application Frontend y Servicios Mock
+
+- **Sobre la arquitectura Single Page Application (SPA) en Angular:** La adopción de Angular 19 con componentes independientes (*Standalone Components*), señales reactivas (*Angular Signals*) e inyección de dependencias moderna permitió estructurar una aplicación altamente modular, desacoplada y mantenible. La separación por capas (dominio, aplicación, infraestructura y presentación) en cada *Bounded Context* garantizó que las reglas de negocio del frontend permanecieran independientes de los mecanismos de transporte HTTP.
+
+- **Sobre la estrategia de desacoplamiento con MockAPI:** El uso de servicios simulados en la nube (*MockAPI.io*) durante la etapa intermedia de desarrollo posibilitó avanzar en la construcción de interfaces de usuario complejas y flujos interactivos (tales como la gestión de planes, el dashboard de suscripciones y el monitoreo en vivo) sin bloquearse por la disponibilidad inmediata de los servicios backend, validando la lógica de presentación de forma temprana.
+
+- **Sobre la experiencia de usuario y accesibilidad:** La implementación de un sistema de diseño consistente con Angular Material, complementado con internacionalización dinámica (*ngx-translate*) en inglés y español y diseño responsivo adaptativo, mejoró significativamente la usabilidad de la plataforma tanto en dispositivos de escritorio para las agencias como en pantallas móviles para guías y turistas.
+
+### Sprint 3 – Backend RESTful, Arquitectura DDD y Validación Heurística
+
+- **Sobre la arquitectura orientada al dominio (DDD) y CQRS en Spring Boot:** La implementación del backend con Spring Boot 3 y Java 21 bajo los patrones de *Domain-Driven Design* y la segregación de responsabilidades de comando y consulta (*CQRS*) demostró ser altamente eficaz para modelar la complejidad del negocio. La encapsulación de la lógica en Agregados, Entidades y *Value Objects* inmutables garantizó la consistencia de los datos y simplificó la trazabilidad de operaciones críticas como el procesamiento de pagos, el control de expediciones activas y el reporte de incidentes.
+
+- **Sobre la persistencia relacional con PostgreSQL y JPA/Hibernate:** La integración de Spring Data JPA con PostgreSQL proporcionó una capa de persistencia robusta y escalable. El uso de convertidores JPA personalizados y ensambladores de persistencia evitó la fuga de modelos relacionales hacia el dominio, asegurando transacciones atómicas y facilitando la inicialización del sistema mediante seeders automáticos.
+
+- **Sobre la estandarización de contratos y documentación OpenAPI:** La adopción rigurosa de OpenAPI 3.0 / Swagger UI permitió formalizar los contratos de comunicación entre el frontend y el backend, reduciendo la fricción durante la integración. Asimismo, la configuración de deserialización resiliente en Jackson y el esquema de seguridad basado en tokens JWT (`bearerAuth`) consolidaron una plataforma segura y preparada para entornos productivos.
+
+- **Sobre la validación empírica y evaluación heurística:** Las entrevistas de validación realizadas a usuarios reales y la posterior evaluación según las 10 Heurísticas de Nielsen permitieron contrastar las hipótesis iniciales de diseño frente a la realidad operativa del turismo de aventura. Los hallazgos obtenidos evidenciaron fortalezas en la claridad del monitoreo en vivo y la gestión de planes, así como áreas puntuales de optimización en retroalimentación de errores y simplificación visual de bitácoras de campo.
+
+### Conclusiones y Recomendaciones Generales
+
+- **Coordinación y sincronización de contratos tempranos:** Como lección aprendida fundamental para futuras entregas, se recomienda formalizar los contratos de datos (DTOs) en las fases iniciales del sprint mediante especificaciones *API-First*, reduciendo el esfuerzo de homologación y permitiendo una integración continua más fluida entre los desarrolladores de frontend y backend.
+- **Evolución hacia microservicios y telemetría en tiempo real:** Se recomienda que las futuras versiones de TourMate incorporen comunicación bidireccional vía WebSockets o Server-Sent Events (SSE) para el monitoreo de ubicación en vivo y la recepción inmediata de alertas críticas de seguridad, así como la paquetización de cada *Bounded Context* en contenedores Docker independientes orquestados en la nube.
 
 ### Bibliografía
 
