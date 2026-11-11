@@ -102,16 +102,16 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 | | |
 | :--- | :--- |
 | **Entrevistador:** | Frank Anthony Huingo Tello |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
-| **Edad:** | [Edad] años |
+| **Entrevistado:** | Carlos Gutierrez |
+| **Cargo / Agencia:** | Responsable operativo de Agencia de Turismo de Aventura (Trekking y Montañismo) |
+| **Edad:** | 20 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 9:07 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319057_upc_edu_pe/IQCKEmttzH5dQry3cq63kqcnAYH04uQeaWWmC9FCgY6ubTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HrRfsH |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó (gestión de tours, catálogo, monitoreo de expedición o suscripciones), qué aspectos valoró positivamente de la plataforma, qué dudas o dificultades de interacción experimentó durante la prueba, y recomendaciones de mejora brindadas para el siguiente ciclo].
+**Resumen:** En esta sesión de validación, Carlos Gutiérrez (20 años), responsable de operaciones en rutas de trekking y alta montaña en el sur del país, interactuó con la versión funcional de la plataforma TourMate para evaluar su aplicabilidad en escenarios reales. Durante la prueba, navegó por el panel de administración de la agencia, validando el flujo de creación y configuración de paquetes turísticos, la asignación de cupos y fechas de salida programadas, y el módulo de visualización de expediciones activas. Carlos destacó positivamente la centralización de la información operativa en un único dashboard, señalando que reduce drásticamente los tiempos muertos frente a su método tradicional de bitácoras físicas y reportes dispersos por radio VHF. Asimismo, valoró la claridad en la visualización de rutas mediante waypoints y la estructura transparente de los planes de suscripción para agencias. En cuanto a oportunidades de mejora, recomendó incorporar alertas visuales más inmediatas al guardar cambios en los tours y permitir la duplicación rápida de expediciones frecuentes para optimizar el flujo de trabajo diario. Concluyó confirmando su alta disposición de adopción de la herramienta, resaltando que brindará mayor certidumbre y control sobre los grupos en campo.
 
 ---
 
