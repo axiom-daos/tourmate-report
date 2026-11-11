@@ -688,7 +688,7 @@ Para este tercer sprint, los aspectos se han redefinido para alinearse con los o
 #### *5.2.3.3. Sprint Backlog 3*
 
 
-**Trello link:** [https://trello.com/](https://trello.com)
+**Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
 ![Sprint Backlog 3](../assets/images/s3-sprint-backlog.png)
 
