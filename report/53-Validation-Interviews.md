@@ -1,4 +1,4 @@
-### 5.1. Validation Interviews
+### 5.3. Validation Interviews
 
 #### 5.3.1. Diseño de Entrevistas
 
