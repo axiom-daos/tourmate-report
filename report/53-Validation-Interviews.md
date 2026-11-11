@@ -115,25 +115,27 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 
 ---
 
+
 **Entrevista de Validación 2:**
 
-![Entrevista de Validación 2](../assets/images/validation-interview-2.png)
+![Entrevista de Validación 2](../assets/images/Entrevista-validacion-mateo.jpeg)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Tony Jhunior Quispe Palomino |
+| **Entrevistado:** | Mateo Escudero |
+| **Cargo / Agencia:** | Guía y responsable de expediciones en Adventure Perú (Trekking, Montañismo y Turismo de Aventura) |
+| **Edad:** | 22 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 10/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 16 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCaP2RPTVfcS6Xf_WfVFIOHAQRGU5mXHN-oZEgRdLmhF5A?e=bjfHIv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+**Resumen:** En esta segunda entrevista de validación se presentó la plataforma TourMate a Mateo Escudero, de 22 años, guía y responsable de expediciones en Adventure Perú, quien previamente había identificado dificultades para coordinar grupos turísticos en zonas de conectividad limitada. La sesión estuvo orientada a evaluar las funcionalidades de la aplicación web, incluyendo la gestión y planificación de tours, programación de horarios, supervisión de expediciones activas, visualización de rutas y checkpoints, administración de participantes, registro de incidentes, planes de suscripción y gestión de comentarios y reseñas. La validación se centró en determinar si la centralización de la información permitiría mejorar la coordinación operativa frente al uso tradicional de radios, WhatsApp y hojas de cálculo. Asimismo, se abordó la utilidad de los mecanismos de seguridad, las alertas y la sincronización de registros sin conexión, considerando las condiciones de las rutas de montaña donde opera su agencia. Finalmente, se consultó sobre la facilidad de uso de la plataforma, las funcionalidades prioritarias para una implementación real y la viabilidad de un modelo de suscripción mensual, tomando como referencia el presupuesto de S/100 a S/150 mencionado en la primera entrevista. Estos aspectos permiten orientar la identificación de oportunidades de mejora y evaluar la adecuación de TourMate a las necesidades de las agencias de turismo de aventura.
 
 ---
+
 
 **Entrevista de Validación 3:**
 
