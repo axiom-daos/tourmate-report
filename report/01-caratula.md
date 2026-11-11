@@ -39,7 +39,7 @@
 </table>
 
 <h2 align="center"><strong>Período 202620</strong></h2>
-<h2 align="center"><strong>Setiembre 2026</strong></h2>
+<h2 align="center"><strong>Noviembre 2026</strong></h2>
 
 <div style="page-break-before: always;"></div>
 
