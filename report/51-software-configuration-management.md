@@ -10,10 +10,11 @@ Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente 
 | UX/UI Design                          | Figma                    | Diseño de la guía de estilo, prototipos de baja fidelidad (wireframes) y alta fidelidad (mockups). |
 | User Flows & Wireflows                | LucidChart               | Elaboración de Wireflows y User Flows.                                          |
 | Class Diagrams & Data Base Design     | PlantUML                 | Elaboración de diagramas de clases y diseño de base de datos.                   |
-| Software Development (Backend)        | JetBrains Rider          | IDE para el desarrollo de Web Services bajo estilo RESTful utilizando ASP.NET Core y C#. |
-| Software Development (Frontend)       | JetBrains WebStorm       | IDE para el desarrollo de la Web Application con Vue Framework, PrimeVue (HTML5, CSS3, JS). |
-| Software Development (Landing Page)   | Visual Studio Code       | IDE para el desarrollo de la Landing Page con HTML5, CSS y JS.                  |
+| Software Development (Backend)        | IntelliJ IDEA / VS Code  | IDE para el desarrollo de Web Services bajo estilo RESTful utilizando Java 21, Spring Boot 3.x, Spring Data JPA y PostgreSQL. |
+| Software Development (Frontend)       | Visual Studio Code       | IDE para el desarrollo de la Web Application SPA con Angular 19, TypeScript, Angular Material y SCSS. |
+| Software Development (Landing Page)   | Visual Studio Code       | IDE para el desarrollo de la Landing Page con HTML5, CSS3 y JavaScript vanilla. |
 | Version Control                       | GitHub                   | Alojamiento de repositorios y gestión de versiones aplicando GitFlow y Conventional Commits. |
+| Continuous Deployment & Hosting       | Firebase Hosting / GitHub Pages | Alojamiento y entrega continua de la aplicación Web Frontend y la Landing Page. |
 | Documentation                         | Markdown                 | Documentación del reporte del proyecto.                                         |
 
 #### 5.1.2. Source Code Management
@@ -25,18 +26,61 @@ El código fuente del proyecto se gestionará utilizando **Git** como sistema de
 - **Frontend Web Application:** [https://github.com/axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application)
 - **RESTful Web Services:** [https://github.com/axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform)
 
-#### Estrategia de Ramas (GitFlow)
+#### Estrategia de Ramas y Flujo de Colaboración (GitFlow Workflow)
 
-Se implementará un flujo de trabajo basado en GitFlow con el objetivo de garantizar la estabilidad y trazabilidad del desarrollo:
+Para asegurar la integridad, trazabilidad y estabilidad del código fuente a lo largo del ciclo de vida del desarrollo, el equipo adopta el modelo **GitFlow** como flujo de trabajo estándar de ramificación (*branching*) y colaboración. Este flujo define reglas estrictas para el aislamiento de funcionalidades, la integración continua y el despliegue seguro a producción:
 
-- **main**: Rama principal que contiene únicamente código estable, probado y desplegado en producción. Cada versión liberada deberá estar debidamente etiquetada.
+```mermaid
+gitGraph
+    commit id: "v0.1.0" tag: "v0.1.0"
+    branch develop
+    checkout develop
+    commit id: "init-develop"
+    branch feature/tour-mgmt
+    checkout feature/tour-mgmt
+    commit id: "feat: tour entity"
+    commit id: "feat: tour service"
+    checkout develop
+    merge feature/tour-mgmt id: "PR #1 merge"
+    branch feature/tour-tracking
+    checkout feature/tour-tracking
+    commit id: "feat: tracking gps"
+    checkout develop
+    merge feature/tour-tracking id: "PR #2 merge"
+    branch release/v1.0.0
+    checkout release/v1.0.0
+    commit id: "chore: bump version"
+    checkout main
+    merge release/v1.0.0 id: "release v1.0.0" tag: "v1.0.0"
+    checkout develop
+    merge release/v1.0.0 id: "sync develop"
+    checkout main
+    branch hotfix/fix-auth
+    checkout hotfix/fix-auth
+    commit id: "fix: token auth"
+    checkout main
+    merge hotfix/fix-auth id: "merge hotfix" tag: "v1.0.1"
+    checkout develop
+    merge hotfix/fix-auth id: "sync hotfix"
+```
 
-- **develop**: Rama de integración continua donde se consolidan los avances del desarrollo antes de su liberación a producción.
+##### Roles y Ciclo de Vida de las Ramas
 
-- **feature/[nombre]**: Ramas temporales creadas a partir de *develop* para el desarrollo de nuevas funcionalidades o User Stories  
-  (ej. *feature/order-registration*). Una vez finalizadas, se integran nuevamente a *develop* mediante un Pull Request (PR).
+1. **Ramas Principales (Permanentes):**
+   - **`main`**: Alberga exclusivamente el código en estado de producción. Todo commit en esta rama corresponde a una versión estable, probada y empaquetada, acompañada de un tag semántico (ej. `v1.0.0`). Los desarrolladores tienen prohibido realizar commits directos sobre `main`.
+   - **`develop`**: Rama base de integración continua. Refleja el estado consolidado de las funcionalidades desarrolladas para el próximo Sprint o entrega. Todo el trabajo nuevo se desprende de `develop` y se reintegra a ella tras pasar por revisión de código.
 
-- **hotfix/[nombre]**: Ramas destinadas a la corrección de errores críticos detectados en producción (*main*), que requieren una solución inmediata.
+2. **Ramas de Soporte (Temporales / Efímeras):**
+   - **`feature/[nombre-funcionalidad]`**: Ramas creadas exclusivamente a partir de `develop` para desarrollar una User Story o tarea de ingeniería específica (ej. `feature/US13-tour-assignment`, `feature/subscriptions-and-payment-management`). Al concluirse y superar las pruebas locales, se solicita su fusión hacia `develop` mediante un Pull Request. Una vez fusionada, la rama remota se elimina.
+   - **`release/[versión]`**: Ramas destinadas a la estabilización previa a un hito o entrega de Sprint (ej. `release/sprint-3`). Permiten pulir documentación, corregir detalles menores de configuración y preparar los metadatos de versión sin bloquear el trabajo de nuevas features en `develop`. Al finalizar, se fusiona tanto a `main` (creando el tag) como de regreso a `develop`.
+   - **`hotfix/[nombre-incidencia]`**: Ramas críticas generadas a partir de `main` para solventar errores severos detectados en producción que no pueden esperar al siguiente ciclo de desarrollo. Una vez solucionado el fallo, se integran inmediatamente a `main` y a `develop`.
+
+##### Políticas de Colaboración y Revisión de Código (Code Review)
+
+- **Pull Requests (PR) Obligatorios:** Ningún miembro del equipo puede fusionar código directamente sobre `develop` o `main`. Todo cambio debe tramitarse mediante un Pull Request en GitHub.
+- **Revisión por Pares (Peer Review):** Todo PR requiere al menos una aprobación explícita de un compañero de equipo antes del merge, verificando el cumplimiento de la guía de estilos, la arquitectura DDD/Clean Architecture y la ausencia de deuda técnica.
+- **Trazabilidad y Conventional Commits:** Los títulos de los PR y los commits deben referenciar la tarea o User Story correspondiente y adherirse a Conventional Commits.
+- **Resolución de Conflictos:** En caso de conflicto de integración, el autor de la rama feature debe actualizar su rama con la última versión de `develop` (`git merge develop` o `git rebase develop`) y resolver los conflictos localmente antes de solicitar la fusión.
 
 #### Convención de Commits (Conventional Commits)
 
