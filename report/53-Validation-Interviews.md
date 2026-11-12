@@ -159,24 +159,28 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 
 ##### Segmento 2: Turistas de Aventura
 
+
 **Entrevista de Validación 4:**
 
-![Entrevista de Validación 4](../assets/images/validation-interview-4.png)
+![Entrevista de Validación 4](../assets/images/Video-validacion-segmento2.jpeg)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Edad:** | [Edad] años |
-| **Segmento:** | Turista de Aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Entrevistador:** | Tony Jhunior Quispe Palomino |
+| **Entrevistado:** | Kristel Miluska Hurtado Gaspar |
+| **Edad:** | 23 años |
+| **Segmento:** | Turistas de Aventura |
+| **Fecha:** | 11/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 16:26 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQDsQqslkcl0TKivHfx5khsWAXnladEhIC5YmP03iaH2okM?e=fQr6pu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+**Resumen:**
+
+La entrevista de validación se realizó a Kristel Miluska Hurtado Gaspar, de aproximadamente 23 años y procedente del Callao, perteneciente al segmento de Turistas de Aventura. Durante la sesión se presentó el frontend de la aplicación web TourMate, desarrollado por el equipo Axiom, con el propósito de evaluar la propuesta tecnológica desde la perspectiva de los turistas. Se mostraron las principales funcionalidades de la plataforma, incluyendo el catálogo y la gestión de tours, la programación de salidas, el monitoreo de expediciones, la visualización de rutas y checkpoints, el registro de incidentes, las reseñas de los usuarios y los perfiles. Posteriormente, se abordaron aspectos relacionados con la facilidad de uso, la claridad de la información y la utilidad del seguimiento durante las actividades de aventura. Asimismo, se exploró la percepción sobre las funcionalidades propuestas, como los mapas sin conexión a internet, el monitoreo mediante dispositivos wearables, las alertas de seguridad, el botón de emergencia y la generación de un diario digital del recorrido. La validación permitió abordar aspectos importantes para el segmento, como la seguridad del turista, la privacidad de sus datos personales, la facilidad de acceso a las funciones de emergencia y la importancia de contar con información confiable sobre las rutas. Estos criterios servirán como referencia para evaluar posibles mejoras en la interfaz, la experiencia del usuario y las funcionalidades de seguridad de TourMate.
 
 ---
+
 
 **Entrevista de Validación 5:**
 
