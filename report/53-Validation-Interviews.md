@@ -138,22 +138,21 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 
 
 **Entrevista de Validación 3:**
-
-![Entrevista de Validación 3](../assets/images/validation-interview-3.png)
+![Entrevista de Validación 3.png](../assets/images/Entrevista%20de%20Validaci%C3%B3n%203.png)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez |
+| **Entrevistado:** | Sebastián Rojas ||
+| **Cargo / Agencia:** | Manager de una agencia de turismo. |
+| **Edad:** | 29 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 11:55 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQDiXpUGhKUlRYlM5PIDGRelAaj4EeGX2tt505uHNBNHIQ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=LKK1Jz] |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+**Resumen:** En esta tercera entrevista, Sebastián Rojas, un manager de una agencia de turismo de 29 años, señala que la aplicación TourMate optimiza notablemente la gestión y el monitoreo en vivo de las expediciones frente a los métodos tradicionales, logrando una alineación operativa de entre el 90 y el 100 por ciento al facilitar eventos personalizados, planes de facturación y el control detallado de los puntos de control o checkpoints para garantizar la seguridad de los usuarios. Asimismo, destaca que el sistema de alertas automáticas, calificado con un sólido 9 sobre 10, y la sincronización asincrónica funcionan de manera excelente ante la falta de señal en las rutas peruanas, mientras que el modelo de suscripción se adapta de forma muy adecuada al presupuesto y capacidad de intervención de una MYPE turística local. Finalmente, considera como funcionalidades indispensables desde el primer día la gestión y el monitoreo en tiempo real de los tours, dejando las reseñas y comentarios para fases posteriores, y valora muy positivamente el uso del historial de rutas pasadas para estructurar itinerarios más eficientes que optimicen el tiempo limitado de los clientes..
 
 ---
 
@@ -184,20 +183,20 @@ La entrevista de validación se realizó a Kristel Miluska Hurtado Gaspar, de ap
 
 **Entrevista de Validación 5:**
 
-![Entrevista de Validación 5](../assets/images/validation-interview-5.png)
+![validation-interview-5.png](../assets/images/validation-interview-5.png)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez] |
+| **Entrevistado:** | Kevyn Huerta |
+| **Edad:** | 22 años |
 | **Segmento:** | Turista de Aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 08/11/2026] |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 10:00 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAG25-_TphrT5U-4sAxeMWXAdn-ONSl-8y605TanyfME5E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qB9log |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+**Resumen:** En esta cuarta entrevista, Kein Huerta, un estudiante de 22 años que practica trekking vacacionalmente, señala que la aplicación TourMate ofrece funciones muy interesantes y especializadas para esta actividad frente a los mapas convencionales, destacando la utilidad de los mapas sin conexión y la visualización de puntos seguros para una mejor orientación. Asimismo, valora positivamente el monitoreo de salud y ubicación mediante dispositivos provistos por la agencia para ganar tranquilidad, no muestra preocupaciones respecto a la privacidad de sus datos debido a la utilidad práctica de estos, y resalta que el botón de pánico es una herramienta clave para obtener una ubicación exacta y optimizar los tiempos de rescate ante emergencias. Igualmente, considera muy valioso el resumen digital automático al finalizar el recorrido para evaluar el desempeño físico, afirma que esta tecnología influye positivamente en la decisión de elegir una agencia de turismo, destaca la importancia de recibir alertas meteorológicas y advertencias de terreno en tiempo real para prevenir riesgos, y opina que la generación automática de un diario de viaje digital es excelente tanto para conservar recuerdos y compartir la experiencia con familiares como para planificar mejor futuras expediciones..
 
 ---
 
