@@ -737,11 +737,58 @@ El objetivo principal de este tercer Sprint se dividió en dos frentes complemen
 
 #### *5.2.3.4. Development Evidence for Sprint Review*
 
-Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente entre el frontend (`tourmate-web-application`) y el backend (`tourmate-platform`). 
+Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente a través de los tres repositorios que conforman la plataforma TourMate: la página de aterrizaje institucional (`tourmate-landing`), la aplicación web de cara al usuario (`tourmate-web-application`) y los servicios backend RESTful (`tourmate-platform`).
 
-A continuación, se presentan las tablas consolidadas de commits representativos realizados durante el ciclo de desarrollo del Sprint 3 por cada miembro del equipo:
+A continuación, se presentan las secciones correspondientes a la evidencia de desarrollo y commits organizados por repositorio:
 
-##### Repositorio Backend: `tourmate-platform`
+##### 1. Repositorio Landing Page: `tourmate-landing`
+
+*Trazabilidad de modificaciones y despliegue continuo en la Landing Page orientados a la incorporación de recursos multimedia (videos About-the-Team y About-the-Product) y ajustes de diseño responsivo.*
+
+| Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `[hash]` | Feat | Multimedia / About-the-Team | feat(landing): embed responsive video player and layout for About-the-Team section | @Franz2308 |
+| `[hash]` | Feat | Multimedia / About-the-Product | feat(landing): integrate interactive modal dialog for About-the-Product showcase | @CaLoVM |
+| `[hash]` | Style | UI / Responsive Design | style(landing): optimize media query breakpoints and video aspect-ratio for mobile devices | @GonzJunior18p |
+| `[hash]` | Docs | Content & Copywriting | docs(landing): update team profile bios, roles and product value proposition copy | @AleDusty |
+
+*Evidencia Gráfica de Commits - Repositorio Landing Page:*
+
+<!-- Espacio reservado para captura de historial de commits del repositorio Landing Page -->
+> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-landing`]*
+
+##### 2. Repositorio Frontend: `tourmate-web-application`
+
+*Trazabilidad de desarrollo en la aplicación Single Page Application construida en Angular 19, cubriendo la lógica de negocio, integración con servicios REST y componentes de presentación.*
+
+| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
+| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
+| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
+| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
+| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
+| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
+| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
+| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
+| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
+| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
+| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
+| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
+| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
+| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
+| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
+| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
+| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
+
+*Evidencia Gráfica de Commits - Repositorio Frontend:*
+
+<!-- Espacio reservado para captura de historial de commits del repositorio Frontend -->
+> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-web-application`]*
+
+##### 3. Repositorio Backend: `tourmate-platform`
+
+*Trazabilidad de desarrollo en la API RESTful construida con Spring Boot 3 y arquitectura Domain-Driven Design (DDD), cubriendo controladores, casos de uso, agregados del dominio y persistencia JPA.*
 
 | Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
@@ -768,27 +815,10 @@ A continuación, se presentan las tablas consolidadas de commits representativos
 | `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
 | `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
 
-##### Repositorio Frontend: `tourmate-web-application`
+*Evidencia Gráfica de Commits - Repositorio Backend:*
 
-| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
-| :--- | :---: | :--- | :--- | :---: |
-| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
-| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
-| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
-| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
-| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
-| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
-| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
-| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
-| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
-| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
-| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
-| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
-| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
-| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
-| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
-| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
-| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
+<!-- Espacio reservado para captura de historial de commits del repositorio Backend -->
+> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-platform`]*
 
 ---
 
@@ -845,6 +875,23 @@ El backend de TourMate cuenta con documentación interactiva estandarizada bajo 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
 Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+
+##### Tabla Resumen de Despliegue de la Plataforma TourMate
+
+A fin de facilitar la evaluación de los entregables y garantizar el acceso directo a los servicios en producción, se consolida la siguiente matriz con las URLs públicas de despliegue y repositorios asociados:
+
+| Componente | Entorno / Plataforma | URL de Producción | Repositorio GitHub | Estado |
+| :--- | :--- | :--- | :--- | :---: |
+| **Landing Page** | GitHub Pages / Hosting | `https://axiom-daos.github.io/tourmate-landing/` | [axiom-daos/tourmate-landing](https://github.com/axiom-daos/tourmate-landing) | *Por verificar* |
+| **Frontend Web Application** | Firebase Hosting / Cloud | `https://tourmate-e66ff.web.app` | [axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application) | *Por verificar* |
+| **Backend RESTful API & Swagger UI** | Render Cloud Services | `https://[url-render-servicio]/swagger-ui/index.html` | [axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform) | *En despliegue* |
+
+> [!IMPORTANT]
+> **Credenciales de Acceso para Evaluación (Cuentas Demo):**  
+> Para la revisión de los módulos protegidos por autenticación en la aplicación web y la API, se reservan las siguientes credenciales de prueba:
+> * **Usuario / Correo Electrónico:** `[Pendiente de confirmación por el equipo - ej. admin@tourmate.pe]`
+> * **Contraseña:** `[Pendiente de confirmación por el equipo]`
+> * **Rol Asignado:** Administrador de Agencia / Turista / Guía
 
 ##### Arquitectura de Despliegue:
 
