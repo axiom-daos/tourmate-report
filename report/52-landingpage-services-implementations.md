@@ -161,7 +161,7 @@ El despliegue de la Landing Page de TourMate se realizó utilizando GitHub Pages
 #### Resultado
 La Landing Page de TourMate fue desplegada exitosamente mediante GitHub Pages, permitiendo su acceso público a través de una URL estable. Esto facilita la presentación del producto a usuarios potenciales y valida la propuesta de valor del sistema de manera rápida y efectiva.
 
-URL: https://axiom-daos.github.io/tourmate-landing/
+URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
 
 #### *5.2.1.8. Team Collaboration Insights during Sprint*
 
@@ -840,38 +840,78 @@ El backend de TourMate cuenta con documentación interactiva estandarizada bajo 
 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
-Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+Durante este tercer Sprint, el proceso de despliegue (Deployment) marcó un hito fundamental para el proyecto con la puesta en producción de nuestra primera versión real del Web Service y su respectiva base de datos relacional. Además, se dio continuidad a los despliegues de la Landing Page y la Web Application, aplicando un enfoque de entrega continua e iterativa para integrar las correcciones solicitadas por el docente y la nueva lógica de negocio. A continuación, se detallan las actividades, configuraciones en los proveedores de nube y los procesos realizados para cada uno de los productos de software.
 
-##### Arquitectura de Despliegue:
+#### 1. Landing Page (GitHub Pages)
+Nuestra Landing Page ya se encontraba configurada y desplegada en GitHub Pages desde el primer sprint. Para esta tercera iteración, los trabajos se centraron en aplicar las mejoras recomendadas por el docente y en la integración de los videos promocionales y explicativos: *"About the Product"* y *"About the Team"*.
 
-```mermaid
-flowchart LR
-    A["Cliente Frontend<br>(Angular SPA / Firebase Hosting)"] -->|HTTPS / JSON API| B["Servicio Backend REST<br>(Spring Boot / Render Cloud)"]
-    B -->|JDBC Connection Pool| C[("Base de Datos Gestionada<br>(PostgreSQL Cloud / Render)")]
-    D["Desarrollo Local<br>(Docker Compose)"] -.->|compose.yaml| E[("Contenedor Local<br>tourmate-db:5432")]
-```
+**Proceso de Despliegue:**
+Dado que la integración continua (CI/CD) ya estaba configurada nativamente con el repositorio, no fue necesario realizar configuraciones adicionales en la nube. El despliegue de esta nueva versión fue completamente automático:
+1.  Se integraron los cambios y nuevos recursos multimedia en la rama de desarrollo.
+2.  Se realizó el *Merge* hacia la rama `main`.
+3.  GitHub Actions detectó los cambios y disparó automáticamente el *build* y despliegue del sitio estático.
 
-##### Pasos Técnicos para el Despliegue del Backend en Render / Cloud:
+*GitHub Actions - Landing Page*
+![GitHub Actions](../assets/images/landing-deploy-3.png)
+*Landing - About the product.*
+![Landing - About the product](../assets/images/landing-ap.png)
 
-1. **Aprovisionamiento de la Base de Datos Gestionada:**  
-   Se crea una instancia gestionada de PostgreSQL en Render (`tourmate-db`), obteniendo los parámetros de conexión seguros (Host, Puerto, Database Name, Usuario y Contraseña).
-2. **Contenerización y Configuración de Docker:**  
-   Se utiliza el archivo `compose.yaml` para levantar contenedores locales idénticos al entorno productivo, asegurando paridad de entornos de desarrollo y producción (*12-Factor App methodology*).
-3. **Inyección de Variables de Entorno Productivas:**  
-   En el panel de configuración de Render, se definen las variables de entorno sin exponer secretos en el repositorio:
-   * `SPRING_PROFILES_ACTIVE=prod`
-   * `DATABASE_URL=jdbc:postgresql://<render_postgres_host>:5432/tour_mate`
-   * `DATABASE_USER=<render_user>`
-   * `DATABASE_PASSWORD=<render_password>`
-   * `PORT=8092`
-   * `AUTHORIZATION_JWT_SECRET=<secret_key>`
-4. **Compilación y Construcción del Artefacto:**  
-   El motor de construcción ejecuta `./mvnw clean package -DskipTests` y levanta el servicio ejecutando el binario JAR generado (`java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar`).
-5. **Verificación de Disponibilidad (*Health Check*):**  
-   Se valida el acceso al endpoint de documentación en vivo y la correcta ejecución de las migraciones/tablas en la base de datos remota.
+*Landing - About the team*
+![Landing - Abouth the team](../assets/images/landing-at.png)
 
-![Evidencia de Despliegue en Render](../assets/images/sprint3-deployment-render-evidence.png)
-*Figura 5.X. Panel de administración del servicio web y base de datos desplegados en la plataforma Render en estado "Live".*
+URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
+
+#### 2. Web Application - Frontend (Firebase Hosting)
+La aplicación web interactiva (Frontend desarrollado en Angular) ya contaba con su infraestructura configurada en Firebase Hosting desde el Sprint 2. En este ciclo, se implementó la lógica de negocio restante y se aplicaron mejoras de usabilidad (UI/UX) basadas en el feedback del docente.
+
+**Proceso de Despliegue:**
+Al tratarse de una actualización sobre un servicio ya aprovisionado, el despliegue consistió en la compilación local optimizada y la subida de los nuevos artefactos mediante la interfaz de línea de comandos (CLI) de Firebase:
+1.  **Build:** Se compiló el proyecto para producción ejecutando `ng build`, generando los archivos estáticos optimizados en la carpeta `dist`.
+2.  **Deploy:** Se ejecutó el comando `firebase deploy --only hosting` para subir la nueva versión a los servidores de Google.
+
+*Web - build sprint 3.*
+![Web - build sprint 3](../assets/images/web-build-2.png)
+
+*Web - deploy sprint 3.*
+![Web - deploy sprint 3](../assets/images/web-deploy-2.png)
+
+*Web.*
+![Web - deploy sprint 3](../assets/images/web-sprint3.png)
+
+URL: [https://tourmate-e66ff.web.app/home](https://tourmate-e66ff.web.app/home)
+
+
+#### 3. Web Services y Base de Datos (Render)
+El avance más significativo en infraestructura durante este Sprint fue el despliegue de nuestro backend real, el cual incluye todos los endpoints CRUD de la aplicación. Para alojar tanto la base de datos como la API RESTful, se seleccionó el proveedor de nube **Render**, utilizando sus planes gratuitos (Free Tier).
+
+**Paso 1: Despliegue de la Base de Datos (PostgreSQL)**
+*   Se creó una cuenta en Render y se accedió al Dashboard principal.
+*   Se creó el proyecto Tour Mate
+*   Se seleccionó la opción **New > PostgreSQL**.
+*   Se configuró el nombre de la instancia (`tour_mate`), el usuario y se dejo la región preseleccionada automaticamente.
+*   Render aprovisionó la base de datos y proporcionó la cadena de conexión interna (`Internal Database URL`) y externa (`External Database URL`), necesarias para conectar nuestro Web Service.
+
+*Tour Mate DB Render*
+![Tour Mate DB Render](../assets/images/tourmate-db-render.png)
+
+
+**Paso 2: Despliegue del Web Service (Backend API)**
+*   En el Dashboard de Render, se seleccionó **New > Web Service**.
+*   Se vinculó la cuenta de GitHub del equipo y se seleccionó el repositorio que contiene el código fuente del backend.
+*   Se configuró el entorno de ejecución y los comandos de construcción (Build Command) y ejecución (Start Command).
+*   **Variables de Entorno (Environment Variables):** Se configuraron las variables críticas de entorno, especialmente la cadena de conexión a la base de datos creada en el Paso 1 (`DATABASE_URL`), para garantizar que el backend apunte correctamente a la instancia productiva.
+*   Se procedió con el despliegue manual. Render clonó el repositorio, construyó la aplicación y la expuso en una URL pública con certificado SSL automático (`https://tourmate-platform.onrender.com`).
+
+*Web service enviroment*
+![Web service enviroment](../assets/images/render-enviroment.png)
+
+*Web service deploy*
+![Web service Deploy](../assets/images/render-deploy.png)
+
+*Web service swagger*
+![Web service swagger](../assets/images/web-services-swagger.png)
+
+URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ---
 
@@ -879,14 +919,25 @@ flowchart LR
 
 Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
 
-**Insights**
-![Team Insights Sprint 2](../assets/images/insights3.png)
+**Landing:**
+![Landing Sprint 3](../assets/images/landing-sprint3.png)
 
-**Contributors**
-![Team Insights Sprint 2](../assets/images/contribuciones3.png)
 
-**Commits**
-![Team Insights Sprint 2](../assets/images/commits3.png)
+**Web Application:**
+
+*Insights*
+![Web insights](../assets/images/web-sprint3-1.png)
+
+*Contributors*
+![Web contributors](../assets/images/web-sprint3-2.png)
+
+**Web Service:**
+
+*Insights*
+![Web service insigths](../assets/images/back-sprint3-1.png)
+
+*Contributors*
+![Web service contributors](../assets/images/back-sprint3-2.png)
 
 
 
