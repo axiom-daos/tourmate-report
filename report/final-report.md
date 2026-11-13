@@ -3197,10 +3197,10 @@ A continuación, se proporcionan las cuentas de demostración configuradas para 
 
 | Rol de Usuario | Entorno de Aplicación | Usuario / Correo Electrónico | Contraseña de Prueba | Alcance y Flujo de Evaluación |
 | :--- | :--- | :--- | :--- | :--- |
-| **Administrador del Sistema (`ROLE_ADMIN`)** | Frontend Web & Backend API | `carlos.quispe@tourmate.pe` | `SecurePass123!` | Acceso a métricas globales, catálogos y auditoría transversal del sistema. |
-| **Dueño de Agencia (`ROLE_AGENCY_OWNER`)** | Frontend Web & Backend API | `maria.huaman@tourmate.pe` | `SecurePass123!` | Gestión completa de suscripciones, planes comerciales y catálogo de tours. |
-| **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `jorge.ramos@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
-| **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `diego.castillo@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
+| **Administrador del Sistema (`ROLE_ADMIN`)** | Frontend Web & Backend API | `demo.admin@tourmate.pe` | `SecurePass123!` | Acceso a métricas globales, catálogos y auditoría transversal del sistema. |
+| **Dueño de Agencia (`ROLE_AGENCY_OWNER`)** | Frontend Web & Backend API | `demo.agency@tourmate.pe` | `SecurePass123!` | Gestión completa de suscripciones, planes comerciales y catálogo de tours. |
+| **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `demo.guide@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
+| **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `demo.tourist@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
 
 ##### Arquitectura de Despliegue:
 
