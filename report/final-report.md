@@ -3576,7 +3576,7 @@ El video *About-the-Product* constituye el artefacto audiovisual de validación 
 | **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
 
 ![TourMate - About the Product](../assets/images/About-The-Producto-foto.jpeg)
-*Figura 5.X. Captura representativa del video de demostración About the Product.*
+*Figura 5.31. Captura representativa del video de demostración About the Product.*
 
 ---
 
