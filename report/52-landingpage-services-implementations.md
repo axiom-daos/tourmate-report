@@ -862,7 +862,25 @@ La aplicación web interactiva desarrollada en Angular 19 (`tourmate-web-applica
 *   **Módulo de Suscripciones y Pagos:** Selección interactiva de planes de agencia, simulación de pasarela de pago y generación de recibo digital.
 *   **Módulo de Reseñas y Perfiles:** Registro de calificaciones por estrellas, comentarios colaborativos y panel de administración de perfil.
 
-*(Espacio asignado para la incorporación de capturas de interfaces de usuario en tiempo de ejecución de la Web Application)*
+A continuación, se presentan las capturas de pantalla de los módulos funcionales ejecutándose en tiempo real sobre la aplicación web desarrollada en Angular 19:
+
+![Pantalla de Inicio de la Web Application](../assets/images/tourmate-inicio.jpeg)
+*Figura 5.14. Pantalla principal y panel de control de la Web Application TourMate en producción.*
+
+![Gestión de Tours y Expediciones](../assets/images/tourmate-gestion-tours.jpeg)
+*Figura 5.15. Módulo de Gestión de Tours: creación de itinerarios, waypoints geográficos y asignación operativa.*
+
+![Monitoreo en Tiempo Real de Expediciones](../assets/images/tourmate-monitoreo.jpeg)
+*Figura 5.16. Módulo de Monitoreo: telemetría en vivo, seguimiento de expediciones activas y geolocalización.*
+
+![Monitoreo de Seguridad e Incidentes](../assets/images/tourmate-incidentes.jpeg)
+*Figura 5.17. Módulo de Seguridad: registro de incidentes, niveles de severidad y protocolos de contingencia.*
+
+![Gestión de Suscripciones y Facturación](../assets/images/tourmate-facturacion.jpeg)
+*Figura 5.18. Módulo de Suscripciones: selección de planes de agencia, simulación de facturación y estados transaccionales.*
+
+![Reseñas y Calificaciones de Tours](../assets/images/tourmate-comentarios.jpeg)
+*Figura 5.19. Módulo de Feedback: valoraciones por estrellas y testimonios de usuarios en la plataforma.*
 
 ##### 3. Evidencia de Ejecución de Web Services y Base de Datos (Backend Spring Boot & PostgreSQL)
 Para certificar el correcto funcionamiento de la arquitectura backend bajo DDD y CQRS, se ejecutó un protocolo de pruebas sobre los controladores REST y el motor de persistencia relacional:
@@ -876,19 +894,19 @@ Para certificar el correcto funcionamiento de la arquitectura backend bajo DDD y
 *A continuación, se documenta la estructura de tablas relacionales generadas y pobladas automáticamente durante la inicialización de la plataforma:*
 
 ![Tablas de Base de Datos PostgreSQL](../assets/images/sprint3-database-evidence.png)
-*Figura 5.8. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
+*Figura 5.14. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
 
 **Ejecución de Petición HTTP POST (Creación Exitosa):**
 
 *A continuación, se presentan las capturas de peticiones REST ejecutadas de forma satisfactoria sobre los controladores de la plataforma:*
 
 ![Ejecución de Petición REST - Creación Exitosa](../assets/images/sprint3-postman-execution-1.png)
-*Figura 5.9. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
+*Figura 5.15. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
 
 **Ejecución de Petición HTTP GET (Consulta de Recursos):**
 
 ![Ejecución de Petición REST - Consulta de Recursos](../assets/images/sprint3-postman-execution-2.png)
-*Figura 5.10. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
+*Figura 5.16. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
 
 ##### 4. Video de Demostración y Ejecución del Sprint 3
 Siguiendo los lineamientos de evaluación del Sprint Review, se estableció el registro audiovisual técnico demostrando la operatividad integrada de los tres productos (Landing Page, Web Application y Backend RESTful con PostgreSQL):
@@ -918,31 +936,31 @@ A continuación, se documenta la totalidad de los controladores y endpoints inte
 Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
 
 ![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.11. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+*Figura 5.17. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
 
 **2. Endpoints de Usuarios, Tokens e Incidentes:**  
 Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
 
 ![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
-*Figura 5.12. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+*Figura 5.18. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
 
 **3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
 Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
 
 ![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
-*Figura 5.13. Endpoints interactivos documentados para Plans y Active Tours.*
+*Figura 5.19. Endpoints interactivos documentados para Plans y Active Tours.*
 
 **4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
 Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
 
 ![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
-*Figura 5.14. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+*Figura 5.20. Endpoints interactivos documentados para Payments, Reviews y Comments.*
 
 **5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
 Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
 
 ![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
-*Figura 5.15. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
+*Figura 5.21. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
@@ -983,13 +1001,13 @@ Dado que la integración continua (CI/CD) ya estaba configurada nativamente con 
 3.  GitHub Actions detectó los cambios y disparó automáticamente el *build* y despliegue del sitio estático.
 
 ![Despliegue de Landing Page con GitHub Actions](../assets/images/landing-deploy-3.png)
-*Figura 5.16. Flujo de despliegue automatizado de la Landing Page mediante GitHub Actions.*
+*Figura 5.22. Flujo de despliegue automatizado de la Landing Page mediante GitHub Actions.*
 
 ![Sección About the Product en Landing Page](../assets/images/landing-ap.png)
-*Figura 5.17. Sección integrada About the Product en la Landing Page con reproductor de video.*
+*Figura 5.23. Sección integrada About the Product en la Landing Page con reproductor de video.*
 
 ![Sección About the Team en Landing Page](../assets/images/landing-at.png)
-*Figura 5.18. Sección integrada About the Team en la Landing Page con perfil del equipo.*
+*Figura 5.24. Sección integrada About the Team en la Landing Page con perfil del equipo.*
 
 URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
 
@@ -1002,13 +1020,13 @@ Al tratarse de una actualización sobre un servicio ya aprovisionado, el desplie
 2.  **Deploy:** Se ejecutó el comando `firebase deploy --only hosting` para subir la nueva versión a los servidores de Google.
 
 ![Compilación de Producción en Angular CLI](../assets/images/web-build-2.png)
-*Figura 5.19. Compilación y optimización de producción de la Web Application mediante Angular CLI.*
+*Figura 5.25. Compilación y optimización de producción de la Web Application mediante Angular CLI.*
 
 ![Despliegue en Firebase Hosting](../assets/images/web-deploy-2.png)
-*Figura 5.20. Despliegue exitoso del frontend distribuido en los servidores de Firebase Hosting.*
+*Figura 5.26. Despliegue exitoso del frontend distribuido en los servidores de Firebase Hosting.*
 
 ![Interfaz de Web Application Desplegada](../assets/images/web-sprint3.png)
-*Figura 5.21. Interfaz funcional de la Web Application desplegada en producción sobre Firebase Hosting.*
+*Figura 5.27. Interfaz funcional de la Web Application desplegada en producción sobre Firebase Hosting.*
 
 URL: [https://tourmate-e66ff.web.app/home](https://tourmate-e66ff.web.app/home)
 
@@ -1022,7 +1040,7 @@ Para el despliegue del backend real y la base de datos relacional de TourMate se
 3. Una vez aprovisionada la instancia, Render generó la cadena de conexión interna (`Internal Database URL`) con soporte SSL activo (`sslmode=require`), utilizada para enlazar el backend de forma segura y sin exponer credenciales en la red pública.
 
 ![Instancia de Base de Datos PostgreSQL en Render](../assets/images/tourmate-db-render.png)
-*Figura 5.22. Aprovisionamiento e instancia de base de datos PostgreSQL `tour_mate` en Render.*
+*Figura 5.28. Aprovisionamiento e instancia de base de datos PostgreSQL `tour_mate` en Render.*
 
 **Paso 2: Despliegue del Web Service (Backend Spring Boot)**
 1. Se seleccionó **New > Web Service** y se vinculó directamente el repositorio de GitHub `axiom-daos/tourmate-platform`.
@@ -1037,13 +1055,13 @@ Para el despliegue del backend real y la base de datos relacional de TourMate se
 4. Render ejecutó el despliegue continuo mediante build automático, asignando el dominio seguro con certificado SSL: `https://tourmate-platform.onrender.com`.
 
 ![Configuración de Variables de Entorno en Render](../assets/images/render-enviroment.png)
-*Figura 5.23. Variables de entorno configuradas para la conexión a base de datos y puertos en Render.*
+*Figura 5.29. Variables de entorno configuradas para la conexión a base de datos y puertos en Render.*
 
 ![Despliegue y Build Exitoso del Web Service](../assets/images/render-deploy.png)
-*Figura 5.24. Log de construcción y despliegue exitoso del servicio backend en Render.*
+*Figura 5.30. Log de construcción y despliegue exitoso del servicio backend en Render.*
 
 ![Verificación de Swagger UI en Producción](../assets/images/web-services-swagger.png)
-*Figura 5.25. Verificación de la disponibilidad de la API y Swagger UI en el dominio de producción.*
+*Figura 5.31. Verificación de la disponibilidad de la API y Swagger UI en el dominio de producción.*
 
 URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
@@ -1057,22 +1075,22 @@ Durante el Sprint 3, el equipo mantuvo una participación activa y coordinada a 
 La actividad en la página de aterrizaje se concentró en la integración de los videos institucionales (*About-the-Team* y *About-the-Product*), la adaptación responsiva para dispositivos móviles y la actualización de los textos de la propuesta de valor. La gráfica refleja commits organizados y revisiones puntuales que permitieron desplegar las mejoras de forma continua vía GitHub Pages.
 
 ![Métricas de Colaboración - Landing Page Sprint 3](../assets/images/landing-sprint3.png)
-*Figura 5.26. Registro de actividad y frecuencia de commits en el repositorio de la Landing Page.*
+*Figura 5.32. Registro de actividad y frecuencia de commits en el repositorio de la Landing Page.*
 
 ##### 2. Repositorio Frontend (`tourmate-web-application`)
 El desarrollo de la aplicación web en Angular reflejó un ritmo constante de trabajo para culminar la lógica de negocio pendiente. Las gráficas de *Pulse* y *Contributors* evidencian una distribución equilibrada de tareas entre los desarrolladores para los módulos de suscripciones, monitoreo de expediciones, reporte de incidentes y reseñas, integrando las ramas de características mediante Pull Requests hacia la rama `develop`.
 
 ![Métricas de Actividad - Web Application Sprint 3](../assets/images/web-sprint3-1.png)
-*Figura 5.27. Frecuencia y ritmo de contribuciones en la aplicación web durante el Sprint 3.*
+*Figura 5.33. Frecuencia y ritmo de contribuciones en la aplicación web durante el Sprint 3.*
 
 ![Contribuciones por Desarrollador - Web Application](../assets/images/web-sprint3-2.png)
-*Figura 5.28. Distribución de commits y aportes de código por integrante en el frontend.*
+*Figura 5.34. Distribución de commits y aportes de código por integrante en el frontend.*
 
 ##### 3. Repositorio Backend (`tourmate-platform`)
 El repositorio del Web Service en Spring Boot registró la mayor densidad de actividad técnica del sprint. Los picos de contribución corresponden a la estructuración de la arquitectura DDD por capas (controladores REST, servicios de aplicación, agregados del dominio y adaptadores de persistencia JPA). Las métricas confirman la participación colaborativa de los integrantes en la implementación de sus respectivos Bounded Contexts y la preparación del despliegue en Render.
 
 ![Métricas de Actividad - Web Service Sprint 3](../assets/images/back-sprint3-1.png)
-*Figura 5.29. Frecuencia de commits y picos de desarrollo en la API RESTful durante el Sprint 3.*
+*Figura 5.35. Frecuencia de commits y picos de desarrollo en la API RESTful durante el Sprint 3.*
 
 ![Contribuciones por Desarrollador - Web Service](../assets/images/back-sprint3-2.png)
-*Figura 5.30. Registro de aportes y líneas de código por desarrollador en el backend.*
+*Figura 5.36. Registro de aportes y líneas de código por desarrollador en el backend.*
