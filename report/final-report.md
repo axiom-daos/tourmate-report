@@ -3035,10 +3035,11 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 
 | Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
-| `[hash]` | Feat | Multimedia / About-the-Team | feat(landing): embed responsive video player and layout for About-the-Team section | @Franz2308 |
-| `[hash]` | Feat | Multimedia / About-the-Product | feat(landing): integrate interactive modal dialog for About-the-Product showcase | @CaLoVM |
-| `[hash]` | Style | UI / Responsive Design | style(landing): optimize media query breakpoints and video aspect-ratio for mobile devices | @GonzJunior18p |
-| `[hash]` | Docs | Content & Copywriting | docs(landing): update team profile bios, roles and product value proposition copy | @AleDusty |
+| `73850a1` | Fix | Layout & Conflicts | fix: resolve merge conflict in index.html | @CarrilloMatias |
+| `8c37b66` | Merge | Multimedia / Landing Videos | Merge pull request #1 from axiom-daos/feature/landing-video-sections | @GonzJunior18p |
+| `25dcc2f` | Feat | Multimedia / About-the-Product | feat(landing): add product presentation video | @GonzJunior18p |
+| `b94eec2` | Feat | Multimedia / About-the-Team & Sections | feat(landing): update landing page with video sections | @GonzJunior18p |
+| `641f9f3` | Feat | Navigation & Call to Action | feat: update join button link to external home page with target and rel attributes | @CaLoVM |
 
 ##### 2. Repositorio Frontend: `tourmate-web-application`
 
@@ -3046,6 +3047,15 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 
 | Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
+| `71c65bb` | Merge | Infrastructure / Fix | Merge branch 'feature/fix' into develop | @CaLoVM |
+| `2272a67` | Fix | Environment / API Config | fix(environment): update tourmate provider API base URL for development and production environments | @CaLoVM |
+| `8f57e28` | Fix | Endpoints & Gateway | fix(api-endpoints): update API base URL to use tourmate provider endpoint for comments, incidents, payments, plans, reviews, and subscriptions | @CaLoVM |
+| `50f8878` | Fix | Profiles & IAM | fix(profiles): update profile role constants and API base URL for consistency | @CaLoVM |
+| `21eacb0` | Fix | Safety Monitoring | fix(safety-monitoring): update API base URL to use tourmate provider endpoint | @CaLoVM |
+| `106e1c5` | Fix | Tour Management | fix(tours-api): update API base URL for tourmate provider endpoint | @CaLoVM |
+| `38281aa` | Fix | IAM / Assemblers | fix(assemblers): normalize user and tour guide IDs and roles for consistency | @CaLoVM |
+| `0ce0bc7` | Fix | Localization / i18n | fix(localization): update role keys in English and Spanish translation files | @CaLoVM |
+| `2e705bb` | Fix | Active Tours | fix(active-tours): update finishedAt to allow null and adjust guideId handling | @CaLoVM |
 | `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
 | `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
 | `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
@@ -3061,6 +3071,12 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 | `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
 | `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
 | `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
+| `8089825` | Feat | Safety Monitoring | feat(safety-monitoring): enhance Spanish localization for safety monitoring features | @AleDusty |
+| `033cc7f` | Feat | Safety Dashboard | feat(safety-dashboard): add SafetyDashboard component for managing incidents and safety data | @AleDusty |
+| `f80b3d3` | Feat | Safety Monitoring | feat(safety-monitoring): implement safety monitoring store with location and telemetry management | @AleDusty |
+| `58c6272` | Feat | Safety & Incidents | feat(incident-list): enhance incident resolution with user prompt for notes | @AleDusty |
+| `def8543` | Feat | Safety & Incidents | feat(incident-store): enhance offline incident synchronization with duplicate checks and automatic retries | @AleDusty |
+| `b1d6f79` | Feat | Safety & Incidents | feat(incident-list): enhance UI with sync button, offline banner, and status badges | @AleDusty |
 | `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
 | `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
 
@@ -3070,6 +3086,16 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 
 | Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
+| `693b63a` | Merge | Tour Management | Merge branch 'feature/tour-management' into develop | @CarrilloMatias |
+| `a7e602c` | Feat | Tour Management | feat: add addCheckpoint function in tour controller | @CarrilloMatias |
+| `441f794` | Feat | Tour Management | feat: add add checkpoint command from resource assembler | @CarrilloMatias |
+| `66a6d19` | Feat | Tour Management | feat: add addCheckpointResource | @CarrilloMatias |
+| `6a47617` | Feat | Tour Management | feat: add handle function with add checkpoint command implementation | @CarrilloMatias |
+| `e7812d9` | Feat | Tour Management | feat: add handle function to add a checkpoint command in tour command service interface | @CarrilloMatias |
+| `f7546bf` | Refactor | Tour Management | refactor: map checkpoint persistence entities with tour persistence entity | @CarrilloMatias |
+| `67d0b74` | Feat | Tour Management | feat: add command to add a checkpoint | @CarrilloMatias |
+| `6640ea0` | Merge | Core / Fix | Merge branch 'feature/fix' into develop | @CaLoVM |
+| `82d9671` | Feat | DevOps / Infrastructure | feat: add Dockerfile for building and running the application, update ActiveToursController and Roles | @CaLoVM |
 | `a01a307` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management' into develop | @Franz2308 |
 | `c15d41d` | Fix | Subscriptions & Payment Management | fix(subscription): configure resilient deserialization and ignore unknown payload properties | @Franz2308 |
 | `df57ebd` | Merge | Feedback and Tour Reviews | Merge branch 'feature/feedback-and-tour-reviews' into develop | @GonzJunior18p |
@@ -3089,43 +3115,71 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 | `708e7b5` | Feat | Subscriptions & Payment Management | feat(subscription): implement repository adapters connecting domain contracts with jpa persistence | @Franz2308 |
 | `81492c0` | Refactor | Tour Monitoring | Refactor ActiveToursController and resources to standardize terminology and improve documentation clarity | @CaLoVM |
 | `3a44f6b` | Merge | Tour Monitoring | Merge branch 'feature/tour-monitoring' into develop | @CaLoVM |
+| `d04a1fb` | Feat | Tour Monitoring | Add ActiveToursController with CRUD operations for ActiveTour resources | @CaLoVM |
+| `9d95082` | Feat | Tour Monitoring | Add ActiveTour command and query services for create, update, and delete operations | @CaLoVM |
 | `2c33f15` | Feat | Safety and Incident Management | feat: add detailed documentation for UpdateIncidentResource parameters | @AleDusty |
 | `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
 | `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
+| `71bbce3` | Feat | Safety and Incident Management | feat: add SafetyMonitoringController for managing safety monitoring and locations CRUD operations | @AleDusty |
+| `d97ca14` | Feat | Safety and Incident Management | feat: add IncidentsController for managing incident CRUD operations | @AleDusty |
+| `22665d6` | Feat | Safety and Incident Management | feat: add IncidentRepositoryAdapter for incident data access | @AleDusty |
 
 ---
 
 #### *5.2.3.5. Execution Evidence for Sprint Review*
 
-Para validar la correcta ejecución de los servicios backend desarrollados en Spring Boot 3 y su persistencia en PostgreSQL, se estableció un protocolo de verificación en tres niveles: persistencia de datos relacionales, ejecución de endpoints mediante clientes REST (Postman / REST Client) y verificación visual mediante la interfaz Swagger UI.
+Durante el tercer Sprint, la validación de la solución se estructuró a través de la ejecución integrada de los tres productos de software que componen la plataforma TourMate: la Landing Page institucional, la Web Application (Frontend Angular) y los Web Services RESTful con persistencia relacional en PostgreSQL. A continuación, se detallan los resultados y evidencias de ejecución en cada frente tecnológico:
 
-##### Guía Metodológica de Ejecución para el Equipo
+##### 1. Evidencia de Ejecución de la Landing Page
+La Landing Page institucional (`tourmate-landing`) fue validada en producción, verificando la carga asíncrona de los reproductores multimedia embebidos para las secciones *About-the-Team* y *About-the-Product*, la correcta navegación entre anclas y la adaptabilidad responsiva en pantallas de escritorio y dispositivos móviles:
 
-1. **Verificación de Persistencia Relacional (PostgreSQL / pgAdmin):**  
-   Confirmar la creación automática de tablas mediante Hibernate JPA (`spring.jpa.hibernate.ddl-auto=update`), verificando las relaciones de clave foránea, índices y la presencia de datos sembrados (seeder) en las tablas `plans`, `subscriptions`, `payments`, `users`, `roles`, `active_tours`, `incidents`, `reviews`, `comments`, `tours` y `tour_schedules`.
-2. **Ejecución de Peticiones RESTful:**  
-   Probar las operaciones de creación (POST) verificando el código de respuesta HTTP `201 Created` junto con el encabezado `Location` o el recurso devuelto en formato JSON. Asimismo, validar las operaciones de lectura (GET) con código HTTP `200 OK`, validando el correcto mapeo de Value Objects (coordenadas, monedas y fechas ISO-8601).
-3. **Manejo Resiliente de Errores:**  
-   Probar peticiones con identificadores inexistentes para confirmar la emisión de códigos HTTP `404 Not Found`, y peticiones con payloads incompletos para validar códigos HTTP `400 Bad Request` gestionados por el `GlobalExceptionHandler`.
+*   **Sección About-the-Team:** Reproducción fluida del video institucional y renderizado dinámico de tarjetas de desarrolladores.
+*   **Sección About-the-Product:** Despliegue interactivo del modal de video demostrativo y enlaces directos hacia el catálogo comercial de planes.
+*   **Internacionalización (i18n):** Conmutación instantánea de textos entre español e inglés sin recarga de página.
 
-##### Evidencias de Ejecución
+*(Espacio asignado para la incorporación de capturas de ejecución funcional de la Landing Page en producción)*
 
-**Evidencia de Persistencia en Base de Datos PostgreSQL:**
+##### 2. Evidencia de Ejecución de la Web Application (Frontend)
+La aplicación web interactiva desarrollada en Angular 19 (`tourmate-web-application`) fue ejecutada en el entorno de pruebas y producción (Firebase Hosting), interactuando con los contratos de datos de la API:
+
+*   **Módulo de Gestión de Tours y Checkpoints:** Creación de tours con itinerarios, waypoints geográficos y asignación de guías líderes.
+*   **Módulo de Monitoreo de Expediciones e Incidentes:** Visualización en vivo del estado de expediciones activas y registro de reportes de anomalías en campo.
+*   **Módulo de Suscripciones y Pagos:** Selección interactiva de planes de agencia, simulación de pasarela de pago y generación de recibo digital.
+*   **Módulo de Reseñas y Perfiles:** Registro de calificaciones por estrellas, comentarios colaborativos y panel de administración de perfil.
+
+*(Espacio asignado para la incorporación de capturas de interfaces de usuario en tiempo de ejecución de la Web Application)*
+
+##### 3. Evidencia de Ejecución de Web Services y Base de Datos (Backend Spring Boot & PostgreSQL)
+Para certificar el correcto funcionamiento de la arquitectura backend bajo DDD y CQRS, se ejecutó un protocolo de pruebas sobre los controladores REST y el motor de persistencia relacional:
+
+*   **Persistencia Relacional (PostgreSQL en Render):** Verificación de la inicialización de esquemas mediante Hibernate JPA (`ddl-auto=update`), creación de llaves foráneas y ejecución de seeders de catálogo (`plans`, `roles`, `users`).
+*   **Peticiones REST POST (Creación de Recursos):** Verificación de respuestas con código de estado HTTP `201 Created` y payload serializado en JSON.
+*   **Peticiones REST GET (Consulta y Listado):** Verificación de respuestas con código de estado HTTP `200 OK` retornando colecciones de entidades y Value Objects.
+
+**Persistencia en Base de Datos PostgreSQL:**
 
 *A continuación, se documenta la estructura de tablas relacionales generadas y pobladas automáticamente durante la inicialización de la plataforma:*
 
 ![Tablas de Base de Datos PostgreSQL](../assets/images/sprint3-database-evidence.png)
 *Figura 5.8. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
 
-**Evidencia de Ejecución de Servicios REST (Peticiones POST y GET):**
+**Ejecución de Petición HTTP POST (Creación Exitosa):**
 
 *A continuación, se presentan las capturas de peticiones REST ejecutadas de forma satisfactoria sobre los controladores de la plataforma:*
 
 ![Ejecución de Petición REST - Creación Exitosa](../assets/images/sprint3-postman-execution-1.png)
 *Figura 5.9. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
 
+**Ejecución de Petición HTTP GET (Consulta de Recursos):**
+
 ![Ejecución de Petición REST - Consulta de Recursos](../assets/images/sprint3-postman-execution-2.png)
 *Figura 5.10. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
+
+##### 4. Video de Demostración y Ejecución del Sprint 3
+Siguiendo los lineamientos de evaluación del Sprint Review, se estableció el registro audiovisual técnico demostrando la operatividad integrada de los tres productos (Landing Page, Web Application y Backend RESTful con PostgreSQL):
+
+**Sprint 3 Live Demonstration Video:** `[Pendiente de inserción de enlace por el equipo - OneDrive / SharePoint]`  
+*(Nota: El equipo insertará aquí el enlace definitivo de la grabación del Sprint 3 una vez completada la demostración técnica).*
 
 ---
 
