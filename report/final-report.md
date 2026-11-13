@@ -3131,17 +3131,49 @@ Para validar la correcta ejecución de los servicios backend desarrollados en Sp
 
 #### *5.2.3.6. Services Documentation Evidence for Sprint Review*
 
-El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.0**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui`. La documentación se encuentra accesible localmente en la ruta `http://localhost:8092/swagger-ui/index.html` y en el entorno desplegado en la nube.
+El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.1**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui` y desplegada públicamente en la nube en el entorno de producción de Render:  
+**URL de Swagger UI en Producción:** [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ##### Características Clave de la Documentación OpenAPI Implementada:
 
-* **Categorización por Bounded Contexts:** Los controladores REST están etiquetados mediante la anotación `@Tag` (ej. `ActiveTours`, `Plans`, `Subscriptions`, `Payments`, `Incidents`, `Reviews`, `Comments`, `Tours`, `Users`, `Roles`), agrupando lógicamente las operaciones del sistema.
+* **Categorización por Bounded Contexts y Controladores:** Los controladores REST están etiquetados mediante la anotación `@Tag` (`Users`, `Tokens`, `Incidents`, `Plans`, `ActiveTours`, `Payments`, `Reviews`, `Comments`, `Safety Monitoring`, `Roles`, `Subscriptions`, `Tours`), agrupando lógicamente las operaciones del sistema.
 * **Especificación de Contratos de Datos (Schemas / DTOs):** Cada DTO de entrada (*Request*) y salida (*Response*) está tipado con `@Schema`, documentando tipos de datos, ejemplos representativos (`example`) y restricciones de obligatoriedad (`requiredMode`).
 * **Códigos de Estado HTTP Documentados:** Se documentan explícitamente los códigos de respuesta esperados mediante `@ApiResponses` y `@ApiResponse` (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`).
 * **Seguridad y Autorización:** Se incorpora el esquema de seguridad global `bearerAuth` (`@SecurityRequirement(name = "bearerAuth")`), indicando qué endpoints exigen cabeceras HTTP `Authorization: Bearer <token_jwt>` para su consumo.
 
-![Interfaz Swagger UI de la Plataforma TourMate](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.X. Catálogo de servicios RESTful y esquemas OpenAPI interactivos en Swagger UI.*
+##### Catálogo de Servicios RESTful y Endpoints Desplegados en Producción:
+
+A continuación, se documenta la totalidad de los controladores y endpoints interactivos expuestos en Swagger UI en el servicio activo en la nube:
+
+**1. Vista Panorámica General de la Plataforma y Autenticación:**  
+Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
+
+![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
+*Figura 5.X. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+
+**2. Endpoints de Usuarios, Tokens e Incidentes:**  
+Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
+
+![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
+*Figura 5.X. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+
+**3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
+Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
+
+![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
+*Figura 5.X. Endpoints interactivos documentados para Plans y Active Tours.*
+
+**4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
+Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
+
+![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
+*Figura 5.X. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+
+**5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
+Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
+
+![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
+*Figura 5.X. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
