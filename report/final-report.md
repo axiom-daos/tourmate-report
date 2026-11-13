@@ -98,9 +98,6 @@ El trabajo se desarrolló mediante commits continuos en el repositorio de la org
 *Report Insights AV1*
 ![insigths-report-av1](../assets/images/commits-report1.png)
 
-*Report Insights AV2*
-![insigths-report-av2](../assets/images/commits-report2.png)
-
 ---
 
 # Contenido
