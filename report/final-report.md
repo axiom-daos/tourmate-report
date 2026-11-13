@@ -2978,6 +2978,7 @@ El objetivo principal de este tercer Sprint se dividió en dos frentes complemen
 **Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
 ![Sprint Backlog 3](../assets/images/s3-sprint-backlog.png)
+*Figura 5.7. Vista panorámica del Sprint Backlog 3 en Trello reflejando las tareas de desarrollo y flujo Scrum.*
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3114,17 +3115,17 @@ Para validar la correcta ejecución de los servicios backend desarrollados en Sp
 *A continuación, se documenta la estructura de tablas relacionales generadas y pobladas automáticamente durante la inicialización de la plataforma:*
 
 ![Tablas de Base de Datos PostgreSQL](../assets/images/sprint3-database-evidence.png)
-*Figura 5.X. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
+*Figura 5.8. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
 
 **Evidencia de Ejecución de Servicios REST (Peticiones POST y GET):**
 
 *A continuación, se presentan las capturas de peticiones REST ejecutadas de forma satisfactoria sobre los controladores de la plataforma:*
 
 ![Ejecución de Petición REST - Creación Exitosa](../assets/images/sprint3-postman-execution-1.png)
-*Figura 5.X. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
+*Figura 5.9. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
 
 ![Ejecución de Petición REST - Consulta de Recursos](../assets/images/sprint3-postman-execution-2.png)
-*Figura 5.X. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
+*Figura 5.10. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
 
 ---
 
@@ -3148,37 +3149,37 @@ A continuación, se documenta la totalidad de los controladores y endpoints inte
 Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
 
 ![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.X. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+*Figura 5.11. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
 
 **2. Endpoints de Usuarios, Tokens e Incidentes:**  
 Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
 
 ![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
-*Figura 5.X. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+*Figura 5.12. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
 
 **3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
 Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
 
 ![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
-*Figura 5.X. Endpoints interactivos documentados para Plans y Active Tours.*
+*Figura 5.13. Endpoints interactivos documentados para Plans y Active Tours.*
 
 **4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
 Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
 
 ![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
-*Figura 5.X. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+*Figura 5.14. Endpoints interactivos documentados para Payments, Reviews y Comments.*
 
 **5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
 Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
 
 ![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
-*Figura 5.X. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
+*Figura 5.15. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
-Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+Durante este tercer Sprint, el proceso de despliegue (Deployment) marcó un hito fundamental para el proyecto con la puesta en producción de nuestra primera versión real del Web Service y su respectiva base de datos relacional. Además, se dio continuidad a los despliegues de la Landing Page y la Web Application, aplicando un enfoque de entrega continua e iterativa para integrar las correcciones solicitadas por el docente y la nueva lógica de negocio. A continuación, se detallan las actividades, configuraciones en los proveedores de nube y los procesos realizados para cada uno de los productos de software.
 
 ##### Tabla Resumen de Despliegue de la Plataforma TourMate
 
@@ -3201,14 +3202,7 @@ A continuación, se proporcionan las cuentas de demostración configuradas para 
 | **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `demo.guide@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
 | **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `demo.tourist@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
 
-##### Arquitectura de Despliegue:
-
-```mermaid
-flowchart LR
-    A["Cliente Frontend<br>(Angular SPA / Firebase Hosting)"] -->|HTTPS / JSON API| B["Servicio Backend REST<br>(Spring Boot / Render Cloud)"]
-    B -->|JDBC Connection Pool| C[("Base de Datos Gestionada<br>(PostgreSQL Cloud / Render)")]
-    D["Desarrollo Local<br>(Docker Compose)"] -.->|compose.yaml| E[("Contenedor Local<br>tourmate-db:5432")]
-```
+##### Detalle de Despliegue por Componente:
 
 #### 1. Landing Page (GitHub Pages)
 Nuestra Landing Page ya se encontraba configurada y desplegada en GitHub Pages desde el primer sprint. Para esta tercera iteración, los trabajos se centraron en aplicar las mejoras recomendadas por el docente y en la integración de los videos promocionales y explicativos: *"About the Product"* y *"About the Team"*.
@@ -3219,13 +3213,14 @@ Dado que la integración continua (CI/CD) ya estaba configurada nativamente con 
 2.  Se realizó el *Merge* hacia la rama `main`.
 3.  GitHub Actions detectó los cambios y disparó automáticamente el *build* y despliegue del sitio estático.
 
-*GitHub Actions - Landing Page*
-![GitHub Actions](../assets/images/landing-deploy-3.png)
-*Landing - About the product.*
-![Landing - About the product](../assets/images/landing-ap.png)
+![Despliegue de Landing Page con GitHub Actions](../assets/images/landing-deploy-3.png)
+*Figura 5.16. Flujo de despliegue automatizado de la Landing Page mediante GitHub Actions.*
 
-*Landing - About the team*
-![Landing - Abouth the team](../assets/images/landing-at.png)
+![Sección About the Product en Landing Page](../assets/images/landing-ap.png)
+*Figura 5.17. Sección integrada About the Product en la Landing Page con reproductor de video.*
+
+![Sección About the Team en Landing Page](../assets/images/landing-at.png)
+*Figura 5.18. Sección integrada About the Team en la Landing Page con perfil del equipo.*
 
 URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
 
@@ -3237,47 +3232,49 @@ Al tratarse de una actualización sobre un servicio ya aprovisionado, el desplie
 1.  **Build:** Se compiló el proyecto para producción ejecutando `ng build`, generando los archivos estáticos optimizados en la carpeta `dist`.
 2.  **Deploy:** Se ejecutó el comando `firebase deploy --only hosting` para subir la nueva versión a los servidores de Google.
 
-*Web - build sprint 3.*
-![Web - build sprint 3](../assets/images/web-build-2.png)
+![Compilación de Producción en Angular CLI](../assets/images/web-build-2.png)
+*Figura 5.19. Compilación y optimización de producción de la Web Application mediante Angular CLI.*
 
-*Web - deploy sprint 3.*
-![Web - deploy sprint 3](../assets/images/web-deploy-2.png)
+![Despliegue en Firebase Hosting](../assets/images/web-deploy-2.png)
+*Figura 5.20. Despliegue exitoso del frontend distribuido en los servidores de Firebase Hosting.*
 
-*Web.*
-![Web - deploy sprint 3](../assets/images/web-sprint3.png)
+![Interfaz de Web Application Desplegada](../assets/images/web-sprint3.png)
+*Figura 5.21. Interfaz funcional de la Web Application desplegada en producción sobre Firebase Hosting.*
 
 URL: [https://tourmate-e66ff.web.app/home](https://tourmate-e66ff.web.app/home)
 
 
 #### 3. Web Services y Base de Datos (Render)
-El avance más significativo en infraestructura durante este Sprint fue el despliegue de nuestro backend real, el cual incluye todos los endpoints CRUD de la aplicación. Para alojar tanto la base de datos como la API RESTful, se seleccionó el proveedor de nube **Render**, utilizando sus planes gratuitos (Free Tier).
+Para el despliegue del backend real y la base de datos relacional de TourMate se utilizó la plataforma en la nube **Render**, aprovisionando tanto la instancia de PostgreSQL como el servicio web RESTful desarrollado en Spring Boot 3 con Java 21.
 
 **Paso 1: Despliegue de la Base de Datos (PostgreSQL)**
-*   Se creó una cuenta en Render y se accedió al Dashboard principal.
-*   Se creó el proyecto Tour Mate
-*   Se seleccionó la opción **New > PostgreSQL**.
-*   Se configuró el nombre de la instancia (`tour_mate`), el usuario y se dejo la región preseleccionada automaticamente.
-*   Render aprovisionó la base de datos y proporcionó la cadena de conexión interna (`Internal Database URL`) y externa (`External Database URL`), necesarias para conectar nuestro Web Service.
+1. En el dashboard de Render se creó un nuevo servicio seleccionando **New > PostgreSQL** dentro del proyecto TourMate.
+2. Se asignó como nombre de base de datos `tour_mate` y un usuario administrador, seleccionando la región de Oregon con PostgreSQL versión 16.
+3. Una vez aprovisionada la instancia, Render generó la cadena de conexión interna (`Internal Database URL`) con soporte SSL activo (`sslmode=require`), utilizada para enlazar el backend de forma segura y sin exponer credenciales en la red pública.
 
-*Tour Mate DB Render*
-![Tour Mate DB Render](../assets/images/tourmate-db-render.png)
+![Instancia de Base de Datos PostgreSQL en Render](../assets/images/tourmate-db-render.png)
+*Figura 5.22. Aprovisionamiento e instancia de base de datos PostgreSQL `tour_mate` en Render.*
 
+**Paso 2: Despliegue del Web Service (Backend Spring Boot)**
+1. Se seleccionó **New > Web Service** y se vinculó directamente el repositorio de GitHub `axiom-daos/tourmate-platform`.
+2. Se configuraron los comandos de construcción y arranque de la aplicación:
+   * **Build Command:** `mvn clean package -DskipTests` (compila el proyecto y empaqueta el artefacto `.jar`).
+   * **Start Command:** `java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar` (inicia el servicio web en el puerto configurado).
+3. **Variables de Entorno (Environment Variables):** Se inyectaron en el panel de Render las variables necesarias para la conexión y seguridad:
+   * `DATABASE_URL`: Cadena de conexión JDBC hacia la instancia PostgreSQL aprovisionada en el Paso 1.
+   * `DATABASE_USER` y `DATABASE_PASSWORD`: Credenciales de acceso a la base de datos.
+   * `PORT`: Puerto de escucha del servicio (`8092`), mapeado automáticamente al dominio HTTPS de Render.
+   * `JWT_SECRET`: Clave secreta para la firma y validación de tokens de autenticación.
+4. Render ejecutó el despliegue continuo mediante build automático, asignando el dominio seguro con certificado SSL: `https://tourmate-platform.onrender.com`.
 
-**Paso 2: Despliegue del Web Service (Backend API)**
-*   En el Dashboard de Render, se seleccionó **New > Web Service**.
-*   Se vinculó la cuenta de GitHub del equipo y se seleccionó el repositorio que contiene el código fuente del backend.
-*   Se configuró el entorno de ejecución y los comandos de construcción (Build Command) y ejecución (Start Command).
-*   **Variables de Entorno (Environment Variables):** Se configuraron las variables críticas de entorno, especialmente la cadena de conexión a la base de datos creada en el Paso 1 (`DATABASE_URL`), para garantizar que el backend apunte correctamente a la instancia productiva.
-*   Se procedió con el despliegue manual. Render clonó el repositorio, construyó la aplicación y la expuso en una URL pública con certificado SSL automático (`https://tourmate-platform.onrender.com`).
+![Configuración de Variables de Entorno en Render](../assets/images/render-enviroment.png)
+*Figura 5.23. Variables de entorno configuradas para la conexión a base de datos y puertos en Render.*
 
-*Web service enviroment*
-![Web service enviroment](../assets/images/render-enviroment.png)
+![Despliegue y Build Exitoso del Web Service](../assets/images/render-deploy.png)
+*Figura 5.24. Log de construcción y despliegue exitoso del servicio backend en Render.*
 
-*Web service deploy*
-![Web service Deploy](../assets/images/render-deploy.png)
-
-*Web service swagger*
-![Web service swagger](../assets/images/web-services-swagger.png)
+![Verificación de Swagger UI en Producción](../assets/images/web-services-swagger.png)
+*Figura 5.25. Verificación de la disponibilidad de la API y Swagger UI en el dominio de producción.*
 
 URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
@@ -3285,27 +3282,31 @@ URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tou
 
 #### *5.2.3.8. Team Collaboration Insights during Sprint*
 
-Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
+Durante el Sprint 3, el equipo mantuvo una participación activa y coordinada a través de la organización de GitHub `axiom-daos`. A continuación, se presenta el análisis de las métricas de colaboración y contribución por cada repositorio del proyecto:
 
-**Landing:**
-![Landing Sprint 3](../assets/images/landing-sprint3.png)
+##### 1. Repositorio Landing Page (`tourmate-landing`)
+La actividad en la página de aterrizaje se concentró en la integración de los videos institucionales (*About-the-Team* y *About-the-Product*), la adaptación responsiva para dispositivos móviles y la actualización de los textos de la propuesta de valor. La gráfica refleja commits organizados y revisiones puntuales que permitieron desplegar las mejoras de forma continua vía GitHub Pages.
 
+![Métricas de Colaboración - Landing Page Sprint 3](../assets/images/landing-sprint3.png)
+*Figura 5.26. Registro de actividad y frecuencia de commits en el repositorio de la Landing Page.*
 
-**Web Application:**
+##### 2. Repositorio Frontend (`tourmate-web-application`)
+El desarrollo de la aplicación web en Angular reflejó un ritmo constante de trabajo para culminar la lógica de negocio pendiente. Las gráficas de *Pulse* y *Contributors* evidencian una distribución equilibrada de tareas entre los desarrolladores para los módulos de suscripciones, monitoreo de expediciones, reporte de incidentes y reseñas, integrando las ramas de características mediante Pull Requests hacia la rama `develop`.
 
-*Insights*
-![Web insights](../assets/images/web-sprint3-1.png)
+![Métricas de Actividad - Web Application Sprint 3](../assets/images/web-sprint3-1.png)
+*Figura 5.27. Frecuencia y ritmo de contribuciones en la aplicación web durante el Sprint 3.*
 
-*Contributors*
-![Web contributors](../assets/images/web-sprint3-2.png)
+![Contribuciones por Desarrollador - Web Application](../assets/images/web-sprint3-2.png)
+*Figura 5.28. Distribución de commits y aportes de código por integrante en el frontend.*
 
-**Web Service:**
+##### 3. Repositorio Backend (`tourmate-platform`)
+El repositorio del Web Service en Spring Boot registró la mayor densidad de actividad técnica del sprint. Los picos de contribución corresponden a la estructuración de la arquitectura DDD por capas (controladores REST, servicios de aplicación, agregados del dominio y adaptadores de persistencia JPA). Las métricas confirman la participación colaborativa de los integrantes en la implementación de sus respectivos Bounded Contexts y la preparación del despliegue en Render.
 
-*Insights*
-![Web service insigths](../assets/images/back-sprint3-1.png)
+![Métricas de Actividad - Web Service Sprint 3](../assets/images/back-sprint3-1.png)
+*Figura 5.29. Frecuencia de commits y picos de desarrollo en la API RESTful durante el Sprint 3.*
 
-*Contributors*
-![Web service contributors](../assets/images/back-sprint3-2.png)
+![Contribuciones por Desarrollador - Web Service](../assets/images/back-sprint3-2.png)
+*Figura 5.30. Registro de aportes y líneas de código por desarrollador en el backend.*
 
 ---
 
