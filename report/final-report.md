@@ -3505,10 +3505,13 @@ El video *About-the-Product* constituye el artefacto audiovisual de validación 
 | Parámetro | Detalle |
 | :--- | :--- |
 | **Título del Video:** | TourMate - Plataforma Web para Gestión y Monitoreo Seguro de Turismo de Aventura |
-| **Duración:** | [MM:SS] min *(Recomendado entre 3 y 5 minutos)* |
-| **Fecha de Producción:** | [DD/MM/AAAA] |
-| **Plataforma / Enlace:** | [Enlace al video en YouTube / OneDrive / SharePoint] |
+| **Duración:** | 4:30 min |
+| **Fecha de Producción:** | Noviembre 2026 |
+| **Plataforma / Enlace:** | [TourMate – About the Product (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAPtJVrqwuGTZCCC9fHlhMBARrVqF87HanSRUyzDOXRLus?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IhZXfd) |
 | **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+
+![TourMate - About the Product](../assets/images/About-The-Producto-foto.jpeg)
+*Figura 5.X. Captura representativa del video de demostración About the Product.*
 
 ---
 
