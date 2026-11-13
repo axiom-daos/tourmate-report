@@ -98,9 +98,6 @@ El trabajo se desarrolló mediante commits continuos en el repositorio de la org
 *Report Insights AV1*
 ![insigths-report-av1](../assets/images/commits-report1.png)
 
-*Report Insights AV2*
-![insigths-report-av2](../assets/images/commits-report2.png)
-
 ---
 
 # Contenido
@@ -2981,11 +2978,14 @@ El objetivo principal de este tercer Sprint se dividió en dos frentes complemen
 **Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
 ![Sprint Backlog 3](../assets/images/s3-sprint-backlog.png)
+*Figura 5.7. Vista panorámica del Sprint Backlog 3 en Trello reflejando las tareas de desarrollo y flujo Scrum.*
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11 | Integración multimedia y diseño responsivo de video About-the-Team | Desarrollar el componente responsivo con contenedor 16:9 y controles de reproducción para presentar al equipo de Axiom en la Landing Page, garantizando adaptabilidad en dispositivos móviles y de escritorio. | 5 | @Franz2308 | Done |
-| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12 | Integración de modal interactivo y vinculación de video About-the-Product | Implementar el modal/lightbox con overlay interactivo para reproducir el video demostrativo del producto y propuesta de valor de TourMate, vinculando los llamados a la acción posteriores hacia la selección de planes y registro. | 5 | @CaLoVM | Done |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11.1 | Integración multimedia de video About-the-Team | Desarrollar el contenedor multimedia e insertar el video institucional en la sección del equipo. | 3 | @Franz2308 | Done |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11.2 | Optimización y adaptabilidad móvil de video | Ajustar relación de aspecto responsiva (16:9) y controles de reproducción para dispositivos móviles. | 2 | @Franz2308 | Done |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12.1 | Integración de modal interactivo About-the-Product | Implementar el componente modal interactivo con overlay para reproducir el video demostrativo del producto. | 3 | @CaLoVM | Done |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12.2 | Vinculación con Call-to-Action y registro | Conectar los botones de acción del modal para redirigir fluidamente al flujo de planes y registro. | 2 | @CaLoVM | Done |
 | US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | Done |
 | US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
@@ -3115,17 +3115,17 @@ Para validar la correcta ejecución de los servicios backend desarrollados en Sp
 *A continuación, se documenta la estructura de tablas relacionales generadas y pobladas automáticamente durante la inicialización de la plataforma:*
 
 ![Tablas de Base de Datos PostgreSQL](../assets/images/sprint3-database-evidence.png)
-*Figura 5.X. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
+*Figura 5.8. Esquema de tablas generadas por JPA/Hibernate en la base de datos PostgreSQL `tour_mate`.*
 
 **Evidencia de Ejecución de Servicios REST (Peticiones POST y GET):**
 
 *A continuación, se presentan las capturas de peticiones REST ejecutadas de forma satisfactoria sobre los controladores de la plataforma:*
 
 ![Ejecución de Petición REST - Creación Exitosa](../assets/images/sprint3-postman-execution-1.png)
-*Figura 5.X. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
+*Figura 5.9. Ejecución de petición HTTP POST devolviendo código de estado 201 Created con el DTO serializado en JSON.*
 
 ![Ejecución de Petición REST - Consulta de Recursos](../assets/images/sprint3-postman-execution-2.png)
-*Figura 5.X. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
+*Figura 5.10. Ejecución de petición HTTP GET devolviendo código de estado 200 OK con el listado de recursos persistidos.*
 
 ---
 
@@ -3149,37 +3149,37 @@ A continuación, se documenta la totalidad de los controladores y endpoints inte
 Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
 
 ![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.X. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+*Figura 5.11. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
 
 **2. Endpoints de Usuarios, Tokens e Incidentes:**  
 Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
 
 ![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
-*Figura 5.X. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+*Figura 5.12. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
 
 **3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
 Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
 
 ![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
-*Figura 5.X. Endpoints interactivos documentados para Plans y Active Tours.*
+*Figura 5.13. Endpoints interactivos documentados para Plans y Active Tours.*
 
 **4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
 Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
 
 ![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
-*Figura 5.X. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+*Figura 5.14. Endpoints interactivos documentados para Payments, Reviews y Comments.*
 
 **5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
 Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
 
 ![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
-*Figura 5.X. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
+*Figura 5.15. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
-Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+Durante este tercer Sprint, el proceso de despliegue (Deployment) marcó un hito fundamental para el proyecto con la puesta en producción de nuestra primera versión real del Web Service y su respectiva base de datos relacional. Además, se dio continuidad a los despliegues de la Landing Page y la Web Application, aplicando un enfoque de entrega continua e iterativa para integrar las correcciones solicitadas por el docente y la nueva lógica de negocio. A continuación, se detallan las actividades, configuraciones en los proveedores de nube y los procesos realizados para cada uno de los productos de software.
 
 ##### Tabla Resumen de Despliegue de la Plataforma TourMate
 
@@ -3202,51 +3202,111 @@ A continuación, se proporcionan las cuentas de demostración configuradas para 
 | **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `demo.guide@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
 | **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `demo.tourist@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
 
-##### Arquitectura de Despliegue:
+##### Detalle de Despliegue por Componente:
 
-```mermaid
-flowchart LR
-    A["Cliente Frontend<br>(Angular SPA / Firebase Hosting)"] -->|HTTPS / JSON API| B["Servicio Backend REST<br>(Spring Boot / Render Cloud)"]
-    B -->|JDBC Connection Pool| C[("Base de Datos Gestionada<br>(PostgreSQL Cloud / Render)")]
-    D["Desarrollo Local<br>(Docker Compose)"] -.->|compose.yaml| E[("Contenedor Local<br>tourmate-db:5432")]
-```
+#### 1. Landing Page (GitHub Pages)
+Nuestra Landing Page ya se encontraba configurada y desplegada en GitHub Pages desde el primer sprint. Para esta tercera iteración, los trabajos se centraron en aplicar las mejoras recomendadas por el docente y en la integración de los videos promocionales y explicativos: *"About the Product"* y *"About the Team"*.
 
-##### Pasos Técnicos para el Despliegue del Backend en Render / Cloud:
+**Proceso de Despliegue:**
+Dado que la integración continua (CI/CD) ya estaba configurada nativamente con el repositorio, no fue necesario realizar configuraciones adicionales en la nube. El despliegue de esta nueva versión fue completamente automático:
+1.  Se integraron los cambios y nuevos recursos multimedia en la rama de desarrollo.
+2.  Se realizó el *Merge* hacia la rama `main`.
+3.  GitHub Actions detectó los cambios y disparó automáticamente el *build* y despliegue del sitio estático.
 
-1. **Aprovisionamiento de la Base de Datos Gestionada:**  
-   Se crea una instancia gestionada de PostgreSQL en Render (`tourmate-db`), obteniendo los parámetros de conexión seguros (Host, Puerto, Database Name, Usuario y Contraseña).
-2. **Contenerización y Configuración de Docker:**  
-   Se utiliza el archivo `compose.yaml` para levantar contenedores locales idénticos al entorno productivo, asegurando paridad de entornos de desarrollo y producción (*12-Factor App methodology*).
-3. **Inyección de Variables de Entorno Productivas:**  
-   En el panel de configuración de Render, se definen las variables de entorno sin exponer secretos en el repositorio:
-   * `SPRING_PROFILES_ACTIVE=prod`
-   * `DATABASE_URL=jdbc:postgresql://<render_postgres_host>:5432/tour_mate`
-   * `DATABASE_USER=<render_user>`
-   * `DATABASE_PASSWORD=<render_password>`
-   * `PORT=8092`
-   * `AUTHORIZATION_JWT_SECRET=<secret_key>`
-4. **Compilación y Construcción del Artefacto:**  
-   El motor de construcción ejecuta `./mvnw clean package -DskipTests` y levanta el servicio ejecutando el binario JAR generado (`java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar`).
-5. **Verificación de Disponibilidad (*Health Check*):**  
-   Se valida el acceso al endpoint de documentación en vivo y la correcta ejecución de las migraciones/tablas en la base de datos remota.
+![Despliegue de Landing Page con GitHub Actions](../assets/images/landing-deploy-3.png)
+*Figura 5.16. Flujo de despliegue automatizado de la Landing Page mediante GitHub Actions.*
 
-![Evidencia de Despliegue en Render](../assets/images/sprint3-deployment-render-evidence.png)
-*Figura 5.X. Panel de administración del servicio web y base de datos desplegados en la plataforma Render en estado "Live".*
+![Sección About the Product en Landing Page](../assets/images/landing-ap.png)
+*Figura 5.17. Sección integrada About the Product en la Landing Page con reproductor de video.*
+
+![Sección About the Team en Landing Page](../assets/images/landing-at.png)
+*Figura 5.18. Sección integrada About the Team en la Landing Page con perfil del equipo.*
+
+URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
+
+#### 2. Web Application - Frontend (Firebase Hosting)
+La aplicación web interactiva (Frontend desarrollado en Angular) ya contaba con su infraestructura configurada en Firebase Hosting desde el Sprint 2. En este ciclo, se implementó la lógica de negocio restante y se aplicaron mejoras de usabilidad (UI/UX) basadas en el feedback del docente.
+
+**Proceso de Despliegue:**
+Al tratarse de una actualización sobre un servicio ya aprovisionado, el despliegue consistió en la compilación local optimizada y la subida de los nuevos artefactos mediante la interfaz de línea de comandos (CLI) de Firebase:
+1.  **Build:** Se compiló el proyecto para producción ejecutando `ng build`, generando los archivos estáticos optimizados en la carpeta `dist`.
+2.  **Deploy:** Se ejecutó el comando `firebase deploy --only hosting` para subir la nueva versión a los servidores de Google.
+
+![Compilación de Producción en Angular CLI](../assets/images/web-build-2.png)
+*Figura 5.19. Compilación y optimización de producción de la Web Application mediante Angular CLI.*
+
+![Despliegue en Firebase Hosting](../assets/images/web-deploy-2.png)
+*Figura 5.20. Despliegue exitoso del frontend distribuido en los servidores de Firebase Hosting.*
+
+![Interfaz de Web Application Desplegada](../assets/images/web-sprint3.png)
+*Figura 5.21. Interfaz funcional de la Web Application desplegada en producción sobre Firebase Hosting.*
+
+URL: [https://tourmate-e66ff.web.app/home](https://tourmate-e66ff.web.app/home)
+
+
+#### 3. Web Services y Base de Datos (Render)
+Para el despliegue del backend real y la base de datos relacional de TourMate se utilizó la plataforma en la nube **Render**, aprovisionando tanto la instancia de PostgreSQL como el servicio web RESTful desarrollado en Spring Boot 3 con Java 21.
+
+**Paso 1: Despliegue de la Base de Datos (PostgreSQL)**
+1. En el dashboard de Render se creó un nuevo servicio seleccionando **New > PostgreSQL** dentro del proyecto TourMate.
+2. Se asignó como nombre de base de datos `tour_mate` y un usuario administrador, seleccionando la región de Oregon con PostgreSQL versión 16.
+3. Una vez aprovisionada la instancia, Render generó la cadena de conexión interna (`Internal Database URL`) con soporte SSL activo (`sslmode=require`), utilizada para enlazar el backend de forma segura y sin exponer credenciales en la red pública.
+
+![Instancia de Base de Datos PostgreSQL en Render](../assets/images/tourmate-db-render.png)
+*Figura 5.22. Aprovisionamiento e instancia de base de datos PostgreSQL `tour_mate` en Render.*
+
+**Paso 2: Despliegue del Web Service (Backend Spring Boot)**
+1. Se seleccionó **New > Web Service** y se vinculó directamente el repositorio de GitHub `axiom-daos/tourmate-platform`.
+2. Se configuraron los comandos de construcción y arranque de la aplicación:
+   * **Build Command:** `mvn clean package -DskipTests` (compila el proyecto y empaqueta el artefacto `.jar`).
+   * **Start Command:** `java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar` (inicia el servicio web en el puerto configurado).
+3. **Variables de Entorno (Environment Variables):** Se inyectaron en el panel de Render las variables necesarias para la conexión y seguridad:
+   * `DATABASE_URL`: Cadena de conexión JDBC hacia la instancia PostgreSQL aprovisionada en el Paso 1.
+   * `DATABASE_USER` y `DATABASE_PASSWORD`: Credenciales de acceso a la base de datos.
+   * `PORT`: Puerto de escucha del servicio (`8092`), mapeado automáticamente al dominio HTTPS de Render.
+   * `JWT_SECRET`: Clave secreta para la firma y validación de tokens de autenticación.
+4. Render ejecutó el despliegue continuo mediante build automático, asignando el dominio seguro con certificado SSL: `https://tourmate-platform.onrender.com`.
+
+![Configuración de Variables de Entorno en Render](../assets/images/render-enviroment.png)
+*Figura 5.23. Variables de entorno configuradas para la conexión a base de datos y puertos en Render.*
+
+![Despliegue y Build Exitoso del Web Service](../assets/images/render-deploy.png)
+*Figura 5.24. Log de construcción y despliegue exitoso del servicio backend en Render.*
+
+![Verificación de Swagger UI en Producción](../assets/images/web-services-swagger.png)
+*Figura 5.25. Verificación de la disponibilidad de la API y Swagger UI en el dominio de producción.*
+
+URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ---
 
 #### *5.2.3.8. Team Collaboration Insights during Sprint*
 
-Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
+Durante el Sprint 3, el equipo mantuvo una participación activa y coordinada a través de la organización de GitHub `axiom-daos`. A continuación, se presenta el análisis de las métricas de colaboración y contribución por cada repositorio del proyecto:
 
-**Insights**
-![Team Insights Sprint 2](../assets/images/insights3.png)
+##### 1. Repositorio Landing Page (`tourmate-landing`)
+La actividad en la página de aterrizaje se concentró en la integración de los videos institucionales (*About-the-Team* y *About-the-Product*), la adaptación responsiva para dispositivos móviles y la actualización de los textos de la propuesta de valor. La gráfica refleja commits organizados y revisiones puntuales que permitieron desplegar las mejoras de forma continua vía GitHub Pages.
 
-**Contributors**
-![Team Insights Sprint 2](../assets/images/contribuciones3.png)
+![Métricas de Colaboración - Landing Page Sprint 3](../assets/images/landing-sprint3.png)
+*Figura 5.26. Registro de actividad y frecuencia de commits en el repositorio de la Landing Page.*
 
-**Commits**
-![Team Insights Sprint 2](../assets/images/commits3.png)
+##### 2. Repositorio Frontend (`tourmate-web-application`)
+El desarrollo de la aplicación web en Angular reflejó un ritmo constante de trabajo para culminar la lógica de negocio pendiente. Las gráficas de *Pulse* y *Contributors* evidencian una distribución equilibrada de tareas entre los desarrolladores para los módulos de suscripciones, monitoreo de expediciones, reporte de incidentes y reseñas, integrando las ramas de características mediante Pull Requests hacia la rama `develop`.
+
+![Métricas de Actividad - Web Application Sprint 3](../assets/images/web-sprint3-1.png)
+*Figura 5.27. Frecuencia y ritmo de contribuciones en la aplicación web durante el Sprint 3.*
+
+![Contribuciones por Desarrollador - Web Application](../assets/images/web-sprint3-2.png)
+*Figura 5.28. Distribución de commits y aportes de código por integrante en el frontend.*
+
+##### 3. Repositorio Backend (`tourmate-platform`)
+El repositorio del Web Service en Spring Boot registró la mayor densidad de actividad técnica del sprint. Los picos de contribución corresponden a la estructuración de la arquitectura DDD por capas (controladores REST, servicios de aplicación, agregados del dominio y adaptadores de persistencia JPA). Las métricas confirman la participación colaborativa de los integrantes en la implementación de sus respectivos Bounded Contexts y la preparación del despliegue en Render.
+
+![Métricas de Actividad - Web Service Sprint 3](../assets/images/back-sprint3-1.png)
+*Figura 5.29. Frecuencia de commits y picos de desarrollo en la API RESTful durante el Sprint 3.*
+
+![Contribuciones por Desarrollador - Web Service](../assets/images/back-sprint3-2.png)
+*Figura 5.30. Registro de aportes y líneas de código por desarrollador en el backend.*
 
 ---
 
@@ -3367,83 +3427,88 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 
 ---
 
+
 **Entrevista de Validación 2:**
 
-![Entrevista de Validación 2](../assets/images/validation-interview-2.png)
+![Entrevista de Validación 2](../assets/images/Entrevista-validacion-mateo.jpeg)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Tony Jhunior Quispe Palomino |
+| **Entrevistado:** | Mateo Escudero |
+| **Cargo / Agencia:** | Guía y responsable de expediciones en Adventure Perú (Trekking, Montañismo y Turismo de Aventura) |
+| **Edad:** | 22 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 10/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 16 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCaP2RPTVfcS6Xf_WfVFIOHAQRGU5mXHN-oZEgRdLmhF5A?e=bjfHIv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+**Resumen:** En esta segunda entrevista de validación se presentó la plataforma TourMate a Mateo Escudero, de 22 años, guía y responsable de expediciones en Adventure Perú, quien previamente había identificado dificultades para coordinar grupos turísticos en zonas de conectividad limitada. La sesión estuvo orientada a evaluar las funcionalidades de la aplicación web, incluyendo la gestión y planificación de tours, programación de horarios, supervisión de expediciones activas, visualización de rutas y checkpoints, administración de participantes, registro de incidentes, planes de suscripción y gestión de comentarios y reseñas. La validación se centró en determinar si la centralización de la información permitiría mejorar la coordinación operativa frente al uso tradicional de radios, WhatsApp y hojas de cálculo. Asimismo, se abordó la utilidad de los mecanismos de seguridad, las alertas y la sincronización de registros sin conexión, considerando las condiciones de las rutas de montaña donde opera su agencia. Finalmente, se consultó sobre la facilidad de uso de la plataforma, las funcionalidades prioritarias para una implementación real y la viabilidad de un modelo de suscripción mensual, tomando como referencia el presupuesto de S/100 a S/150 mencionado en la primera entrevista. Estos aspectos permiten orientar la identificación de oportunidades de mejora y evaluar la adecuación de TourMate a las necesidades de las agencias de turismo de aventura.
 
 ---
 
-**Entrevista de Validación 3:**
 
-![Entrevista de Validación 3](../assets/images/validation-interview-3.png)
+**Entrevista de Validación 3:**
+![Entrevista de Validación 3.png](../assets/images/Entrevista%20de%20Validaci%C3%B3n%203.png)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Cargo / Agencia:** | [Rol / Nombre de la Agencia de Turismo] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez |
+| **Entrevistado:** | Sebastián Rojas |
+| **Cargo / Agencia:** | Manager de una agencia de turismo. |
+| **Edad:** | 29 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 11:55 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQDiXpUGhKUlRYlM5PIDGRelAaj4EeGX2tt505uHNBNHIQ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=LKK1Jz |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: contexto del entrevistado, funcionalidades de la aplicación web que evaluó, aspectos destacados de la solución, principales observaciones de usabilidad identificadas y feedback sobre la disposición de pago/adopción del servicio].
+**Resumen:** En esta tercera entrevista, Sebastián Rojas, un manager de una agencia de turismo de 29 años, señala que la aplicación TourMate optimiza notablemente la gestión y el monitoreo en vivo de las expediciones frente a los métodos tradicionales, logrando una alineación operativa de entre el 90 y el 100 por ciento al facilitar eventos personalizados, planes de facturación y el control detallado de los puntos de control o checkpoints para garantizar la seguridad de los usuarios. Asimismo, destaca que el sistema de alertas automáticas, calificado con un sólido 9 sobre 10, y la sincronización asincrónica funcionan de manera excelente ante la falta de señal en las rutas peruanas, mientras que el modelo de suscripción se adapta de forma muy adecuada al presupuesto y capacidad de intervención de una MYPE turística local. Finalmente, considera como funcionalidades indispensables desde el primer día la gestión y el monitoreo en tiempo real de los tours, dejando las reseñas y comentarios para fases posteriores, y valora muy positivamente el uso del historial de rutas pasadas para estructurar itinerarios más eficientes que optimicen el tiempo limitado de los clientes..
 
 ---
 
 ##### Segmento 2: Turistas de Aventura
 
+
 **Entrevista de Validación 4:**
 
-![Entrevista de Validación 4](../assets/images/validation-interview-4.png)
+![Entrevista de Validación 4](../assets/images/Video-validacion-segmento2.jpeg)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Edad:** | [Edad] años |
-| **Segmento:** | Turista de Aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Entrevistador:** | Tony Jhunior Quispe Palomino |
+| **Entrevistado:** | Kristel Miluska Hurtado Gaspar |
+| **Edad:** | 23 años |
+| **Segmento:** | Turistas de Aventura |
+| **Fecha:** | 11/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 16:26 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQDsQqslkcl0TKivHfx5khsWAXnladEhIC5YmP03iaH2okM?e=fQr6pu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+**Resumen:**
+
+La entrevista de validación se realizó a Kristel Miluska Hurtado Gaspar, de aproximadamente 23 años y procedente del Callao, perteneciente al segmento de Turistas de Aventura. Durante la sesión se presentó el frontend de la aplicación web TourMate, desarrollado por el equipo Axiom, con el propósito de evaluar la propuesta tecnológica desde la perspectiva de los turistas. Se mostraron las principales funcionalidades de la plataforma, incluyendo el catálogo y la gestión de tours, la programación de salidas, el monitoreo de expediciones, la visualización de rutas y checkpoints, el registro de incidentes, las reseñas de los usuarios y los perfiles. Posteriormente, se abordaron aspectos relacionados con la facilidad de uso, la claridad de la información y la utilidad del seguimiento durante las actividades de aventura. Asimismo, se exploró la percepción sobre las funcionalidades propuestas, como los mapas sin conexión a internet, el monitoreo mediante dispositivos wearables, las alertas de seguridad, el botón de emergencia y la generación de un diario digital del recorrido. La validación permitió abordar aspectos importantes para el segmento, como la seguridad del turista, la privacidad de sus datos personales, la facilidad de acceso a las funciones de emergencia y la importancia de contar con información confiable sobre las rutas. Estos criterios servirán como referencia para evaluar posibles mejoras en la interfaz, la experiencia del usuario y las funcionalidades de seguridad de TourMate.
 
 ---
 
+
 **Entrevista de Validación 5:**
 
-![Entrevista de Validación 5](../assets/images/validation-interview-5.png)
+![validation-interview-5.png](../assets/images/validation-interview-5.png)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez |
+| **Entrevistado:** | Kevyn Huerta |
+| **Edad:** | 22 años |
 | **Segmento:** | Turista de Aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 10:00 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAG25-_TphrT5U-4sAxeMWXAdn-ONSl-8y605TanyfME5E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qB9log |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+**Resumen:** En esta cuarta entrevista, Kevyn Huerta, un estudiante de 22 años que practica trekking vacacionalmente, señala que la aplicación TourMate ofrece funciones muy interesantes y especializadas para esta actividad frente a los mapas convencionales, destacando la utilidad de los mapas sin conexión y la visualización de puntos seguros para una mejor orientación. Asimismo, valora positivamente el monitoreo de salud y ubicación mediante dispositivos provistos por la agencia para ganar tranquilidad, no muestra preocupaciones respecto a la privacidad de sus datos debido a la utilidad práctica de estos, y resalta que el botón de pánico es una herramienta clave para obtener una ubicación exacta y optimizar los tiempos de rescate ante emergencias. Igualmente, considera muy valioso el resumen digital automático al finalizar el recorrido para evaluar el desempeño físico, afirma que esta tecnología influye positivamente en la decisión de elegir una agencia de turismo, destaca la importancia de recibir alertas meteorológicas y advertencias de terreno en tiempo real para prevenir riesgos, y opina que la generación automática de un diario de viaje digital es excelente tanto para conservar recuerdos y compartir la experiencia con familiares como para planificar mejor futuras expediciones..
 
 ---
 
@@ -3511,7 +3576,7 @@ El video *About-the-Product* constituye el artefacto audiovisual de validación 
 | **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
 
 ![TourMate - About the Product](../assets/images/About-The-Producto-foto.jpeg)
-*Figura 5.X. Captura representativa del video de demostración About the Product.*
+*Figura 5.31. Captura representativa del video de demostración About the Product.*
 
 ---
 
