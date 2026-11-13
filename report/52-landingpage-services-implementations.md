@@ -694,10 +694,8 @@ El objetivo principal de este tercer Sprint se dividió en dos frentes complemen
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11.1 | Integración multimedia de video About-the-Team | Desarrollar el componente responsivo con contenedor 16:9 y controles de reproducción para presentar al equipo de Axiom en la Landing Page. | 3 | @Franz2308 | Done |
-| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11.2 | Optimización y adaptabilidad móvil de video | Validar la reproducción fluida en navegadores móviles/escritorio y agregar fallback accesible ante fallas de red. | 2 | @GonzJunior18p | Done |
-| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12.1 | Integración de modal interactivo About-the-Product | Implementar el modal/lightbox con overlay interactivo para reproducir el video demostrativo del producto y propuesta de valor de TourMate. | 3 | @CaLoVM | Done |
-| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12.2 | Vinculación con Call-to-Action y registro | Vincular los llamados a la acción posteriores a la visualización del video hacia la vista de selección de planes y registro. | 2 | @AleDusty | Done |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11 | Integración multimedia y diseño responsivo de video About-the-Team | Desarrollar el componente responsivo con contenedor 16:9 y controles de reproducción para presentar al equipo de Axiom en la Landing Page, garantizando adaptabilidad en dispositivos móviles y de escritorio. | 5 | @Franz2308 | Done |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12 | Integración de modal interactivo y vinculación de video About-the-Product | Implementar el modal/lightbox con overlay interactivo para reproducir el video demostrativo del producto y propuesta de valor de TourMate, vinculando los llamados a la acción posteriores hacia la selección de planes y registro. | 5 | @CaLoVM | Done |
 | US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | Done |
 | US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
@@ -752,11 +750,6 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 | `[hash]` | Style | UI / Responsive Design | style(landing): optimize media query breakpoints and video aspect-ratio for mobile devices | @GonzJunior18p |
 | `[hash]` | Docs | Content & Copywriting | docs(landing): update team profile bios, roles and product value proposition copy | @AleDusty |
 
-*Evidencia Gráfica de Commits - Repositorio Landing Page:*
-
-<!-- Espacio reservado para captura de historial de commits del repositorio Landing Page -->
-> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-landing`]*
-
 ##### 2. Repositorio Frontend: `tourmate-web-application`
 
 *Trazabilidad de desarrollo en la aplicación Single Page Application construida en Angular 19, cubriendo la lógica de negocio, integración con servicios REST y componentes de presentación.*
@@ -780,11 +773,6 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 | `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
 | `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
 | `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
-
-*Evidencia Gráfica de Commits - Repositorio Frontend:*
-
-<!-- Espacio reservado para captura de historial de commits del repositorio Frontend -->
-> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-web-application`]*
 
 ##### 3. Repositorio Backend: `tourmate-platform`
 
@@ -814,11 +802,6 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 | `2c33f15` | Feat | Safety and Incident Management | feat: add detailed documentation for UpdateIncidentResource parameters | @AleDusty |
 | `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
 | `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
-
-*Evidencia Gráfica de Commits - Repositorio Backend:*
-
-<!-- Espacio reservado para captura de historial de commits del repositorio Backend -->
-> *[Captura pendiente de inserción: Historial de commits en GitHub del repositorio `tourmate-platform`]*
 
 ---
 
@@ -886,12 +869,16 @@ A fin de facilitar la evaluación de los entregables y garantizar el acceso dire
 | **Frontend Web Application** | Firebase Hosting / Cloud | https://tourmate-e66ff.web.app/home | [axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application) | *Desplegado* |
 | **Backend RESTful API & Swagger UI** | Render Cloud Services | https://tourmate-platform.onrender.com/swagger-ui/index.html# | [axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform) | *Desplegado* |
 
-> [!IMPORTANT]
-> **Credenciales de Acceso para Evaluación (Cuentas Demo):**  
-> Para la revisión de los módulos protegidos por autenticación en la aplicación web y la API, se reservan las siguientes credenciales de prueba:
-> * **Usuario / Correo Electrónico:** [Pendiente de confirmación por el equipo - ej. admin@tourmate.pe]
-> * **Contraseña:** [Pendiente de confirmación por el equipo]
-> * **Rol Asignado:** Administrador de Agencia / Turista / Guía
+##### Credenciales de Acceso para Evaluación (Cuentas Demo)
+
+A continuación, se proporcionan las cuentas de demostración configuradas para la evaluación de los diferentes roles del sistema, tanto en el consumo directo de la API RESTful (a través de Swagger UI) como en la interacción de las interfaces de usuario:
+
+| Rol de Usuario | Entorno de Aplicación | Usuario / Correo Electrónico | Contraseña de Prueba | Alcance y Flujo de Evaluación |
+| :--- | :--- | :--- | :--- | :--- |
+| **Administrador del Sistema (`ROLE_ADMIN`)** | Frontend Web & Backend API | `carlos.quispe@tourmate.pe` | `SecurePass123!` | Acceso a métricas globales, catálogos y auditoría transversal del sistema. |
+| **Dueño de Agencia (`ROLE_AGENCY_OWNER`)** | Frontend Web & Backend API | `maria.huaman@tourmate.pe` | `SecurePass123!` | Gestión completa de suscripciones, planes comerciales y catálogo de tours. |
+| **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `jorge.ramos@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
+| **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `diego.castillo@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
 
 ##### Detalle de Despliegue por Componente:
 
