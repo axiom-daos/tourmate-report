@@ -1226,7 +1226,9 @@ directa cuando aplican.
 | US-LP07 | Conocer testimonios y casos de uso | Como visitante, quiero conocer testimonios y casos de uso reales para tomar una decisión informada sobre la plataforma. | **Escenario 1: Testimonios disponibles**<br>Dado que el visitante solicita el contenido de testimonios<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema retorna los testimonios y casos de uso registrados<br><br>**Escenario 2: Sin testimonios disponibles**<br>Dado que no existen testimonios registrados<br>Cuando el visitante solicita el contenido<br>Entonces el sistema retorna un mensaje indicando que no hay testimonios disponibles por el momento<br><br>**Escenario 3: Contenido no disponible**<br>Dado que ocurre un fallo al entregar el contenido de testimonios<br>Cuando el visitante solicita la información<br>Entonces el sistema retorna un mensaje indicando que el contenido no está disponible temporalmente                                                                                                                                                                                   | EP06 |
 | US-LP08 | Contactar al equipo de Tourmate | Como visitante, quiero contactar al equipo de Tourmate para resolver dudas relacionadas con la plataforma. | **Escenario 1: Mensaje enviado correctamente**<br>Dado que el visitante proporciona información válida en el formulario de contacto<br>Cuando envía la solicitud de contacto<br>Entonces el sistema registra el mensaje correctamente y retorna confirmación de recepción<br><br>**Escenario 2: Datos inválidos**<br>Dado que el visitante ingresa información con formato incorrecto<br>Cuando envía la solicitud de contacto<br>Entonces el sistema retorna un error indicando los campos con formato inválido<br><br>**Escenario 3: Servicio de contacto no disponible**<br>Dado que el servicio de contacto no se encuentra disponible<br>Cuando el visitante envía la solicitud<br>Entonces el sistema retorna un mensaje indicando que el servicio no está disponible temporalmente                                                                                                                                                   | EP06 |
 | US-LP09 | Conocer al equipo de la startup | Como visitante, quiero conocer al equipo detrás de Tourmate para construir confianza en la propuesta de valor. | **Escenario 1: Información del equipo disponible**<br>Dado que el visitante solicita el contenido del equipo<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema retorna información sobre los miembros del equipo de Axiom<br><br>**Escenario 2: Acceso desde dispositivo móvil**<br>Dado que el visitante accede al contenido del equipo desde un dispositivo móvil<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema retorna la información adaptada al tamaño del dispositivo<br><br>**Escenario 3: Contenido no disponible**<br>Dado que ocurre un fallo al entregar el contenido del equipo<br>Cuando el visitante solicita el contenido<br>Entonces el sistema retorna un mensaje indicando que el contenido no está disponible temporalmente                                                                                                                                                            | EP06 |
-| US-LP10 | Acceder a una demostración del sistema | Como visitante, quiero acceder a una demostración del sistema para comprender el funcionamiento de la plataforma antes de registrarme. | **Escenario 1: Demostración disponible**<br>Dado que el visitante solicita la demostración del sistema<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema provee acceso al recurso de demostración correctamente<br><br>**Escenario 2: Interacción con la demostración**<br>Dado que el visitante interactúa con la demostración<br>Cuando el sistema procesa cada interacción<br>Entonces el sistema responde correctamente a cada acción del visitante<br><br>**Escenario 3: Demostración no disponible**<br>Dado que el recurso de demostración no se encuentra disponible<br>Cuando el visitante solicita la demostración<br>Entonces el sistema retorna un mensaje indicando que el recurso no está disponible temporalmente                                                                                                                                                                                             | EP06 |
+| US-LP10 | Acceder a una demostración del sistema | Como visitante, quiero acceder a una demostración del sistema para comprender el funcionamiento de la plataforma antes de registrarme. | **Escenario 1: Demostración disponible**<br>Dado que el visitante solicita la demostración del sistema<br>Cuando el sistema procesa la solicitud<br>Entonces el sistema provee acceso al recurso de demostración correctamente<br><br>**Escenario 2: Interacción con la demostración**<br>Dado que el visitante interactúa con la demostración<br>Cuando el sistema procesa cada interacción<br>Entonces el sistema responde correctamente a cada acción del visitante<br><br>**Escenario 3: Demostración no disponible**<br>Dado que el recurso de demostración no se encuentra disponible<br>Cuando el visitante solicita la demostración<br>Entonces el sistema retorna un mensaje indicando que el recurso no está disponible temporalmente | EP06 |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | Como visitante de la landing page, quiero reproducir un video institucional sobre el equipo de desarrollo para conocer a los integrantes de la startup, sus roles y la visión del proyecto. | **Escenario 1: Reproducción exitosa del video del equipo**<br>Dado que el visitante navega a la sección del equipo en la landing page<br>Cuando interactúa con el reproductor multimedia o modal interactivo<br>Entonces el sistema inicia la reproducción del video institucional 'About-the-Team' en alta definición con controles accesibles de pausa y volumen<br><br>**Escenario 2: Adaptabilidad y reproducción en dispositivos móviles**<br>Dado que el visitante accede a la landing page desde un smartphone o tablet<br>Cuando inicia la reproducción del video<br>Entonces el contenedor multimedia adapta su relación de aspecto (16:9 responsivo) sin desbordar el viewport ni degradar la experiencia de usuario<br><br>**Escenario 3: Enlace alternativo y fallback por conectividad**<br>Dado que la conexión a internet del visitante presenta latencia o bloqueo de iframes externos<br>Cuando falla la carga del reproductor embebido<br>Entonces el sistema muestra un enlace directo alternativo al repositorio de video institucional y un mensaje descriptivo accesible | EP06 |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | Como visitante o cliente potencial (agencia o turista), quiero ver un video demostrativo del producto para comprender de forma dinámica el funcionamiento de TourMate, sus funcionalidades clave y su propuesta de valor antes de iniciar el registro. | **Escenario 1: Reproducción fluida de la demostración del producto**<br>Dado que el visitante se encuentra en la sección principal o de características de la landing page<br>Cuando presiona el botón de reproducción del video 'About-the-Product'<br>Entonces el sistema despliega el video promocional destacando la telemetría en tiempo real, gestión de tours y respuesta a incidentes<br><br>**Escenario 2: Apertura en modal interactivo con overlay**<br>Dado que el usuario solicita la visualización inmersiva del video<br>Cuando hace clic en el CTA de vista previa<br>Entonces el video se ejecuta dentro de una ventana modal con fondo oscurecido y botón de cierre visible que retorna al flujo de navegación previo al cerrarse<br><br>**Escenario 3: Llamado a la acción (CTA) posterior al video**<br>Dado que el visitante concluye la visualización del video demostrativo<br>Cuando el video finaliza<br>Entonces la interfaz presenta botones de llamado a la acción destacados que guían al usuario hacia el registro de cuenta o la selección de planes comerciales | EP06 |
 | **EP07** | **RESTful API** | Agrupa los endpoints RESTful que exponen las funcionalidades del sistema a los componentes del frontend, dispositivos IoT y servicios externos, siguiendo los estándares de diseño de API REST. | — | — |
 | TS01 | Endpoint de registro y autenticación | Como developer, quiero exponer endpoints que registren usuarios y validen credenciales para que los clientes puedan crear cuentas y autenticarse de forma segura en la plataforma. | **Escenario 1: Registro exitoso**<br>Given que el request contiene un body con información válida y completa<br>When el cliente consume el endpoint POST /api/v1/users<br>Then el sistema retorna una respuesta con código 201 y los datos del usuario creado<br><br>**Escenario 2: Autenticación exitosa**<br>Given que el request contiene credenciales válidas y registradas<br>When el cliente consume el endpoint POST /api/v1/auth/login<br>Then el sistema retorna una respuesta con código 200 y el token de acceso generado<br><br>**Escenario 3: Correo duplicado en registro**<br>Given que el correo del request ya existe en el sistema<br>When el cliente consume el endpoint POST /api/v1/users<br>Then el sistema retorna una respuesta con código 409 indicando que el recurso ya existe<br><br>**Escenario 4: Token expirado**<br>Given que el token de acceso del cliente ha superado su tiempo de validez<br>When el cliente consume un endpoint protegido<br>Then el sistema retorna una respuesta con código 401 indicando que el token no es válido | EP07 |
 | TS02 | Endpoint de gestión de tours | Como developer, quiero exponer endpoints para la creación, consulta, actualización y eliminación de tours para que el frontend pueda administrar el catálogo de la agencia. | **Escenario 1: Creación exitosa**<br>Given que el request contiene información válida del tour y un token de acceso válido<br>When el cliente consume el endpoint POST /api/v1/tours<br>Then el sistema retorna una respuesta con código 201 y los datos del tour creado<br><br>**Escenario 2: Consulta exitosa**<br>Given que existen tours registrados y el token es válido<br>When el cliente consume el endpoint GET /api/v1/tours<br>Then el sistema retorna una respuesta con código 200 y la lista de tours disponibles<br><br>**Escenario 3: Tour no encontrado**<br>Given que el identificador del tour solicitado no existe<br>When el cliente consume el endpoint GET /api/v1/tours/{id}<br>Then el sistema retorna una respuesta con código 404 indicando que el recurso no existe<br><br>**Escenario 4: Solicitud sin autorización**<br>Given que el request no contiene un token de acceso válido<br>When el cliente consume el endpoint<br>Then el sistema retorna una respuesta con código 401 indicando que se requiere autenticación | EP07 |
@@ -2974,7 +2976,7 @@ Para este tercer sprint, los aspectos se han redefinido para alinearse con los o
 
 #### *5.2.3.3. Sprint Backlog 3*
 
-El objetivo principal de este tercer Sprint es construir, integrar y desplegar los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en 36 tareas de ingeniería backend (*Engineering Tasks* bajo la nomenclatura `TS-Bxx.x`), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, repositorios JPA y documentación viva bajo OpenAPI/Swagger.
+El objetivo principal de este tercer Sprint se dividió en dos frentes complementarios: por un lado, la evolución de la *Landing Page* institucional mediante la incorporación de secciones multimedia interactivas (*About-the-Team* y *About-the-Product*) para consolidar la propuesta de valor; y por otro lado, la construcción, integración y despliegue de los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en tareas de ingeniería (*Engineering Tasks* bajo las nomenclaturas `TS-LPxx.x` para Landing Page y `TS-Bxx.x` para Backend), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, componentes de interfaz interactivos y documentación viva bajo OpenAPI/Swagger.
 
 **Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
@@ -2982,7 +2984,9 @@ El objetivo principal de este tercer Sprint es construir, integrar y desplegar l
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | To Do |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11 | Integración multimedia y diseño responsivo de video About-the-Team | Desarrollar el componente responsivo con contenedor 16:9 y controles de reproducción para presentar al equipo de Axiom en la Landing Page, garantizando adaptabilidad en dispositivos móviles y de escritorio. | 5 | @Franz2308 | Done |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12 | Integración de modal interactivo y vinculación de video About-the-Product | Implementar el modal/lightbox con overlay interactivo para reproducir el video demostrativo del producto y propuesta de valor de TourMate, vinculando los llamados a la acción posteriores hacia la selección de planes y registro. | 5 | @CaLoVM | Done |
+| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | Done |
 | US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.2 | Validación de expedición en curso | Agregar lógica para denegar o requerir confirmación extra si se intenta desasignar con la expedición iniciada. | 2 | @Franz2308 | To Do |
@@ -3021,11 +3025,48 @@ El objetivo principal de este tercer Sprint es construir, integrar y desplegar l
 
 #### *5.2.3.4. Development Evidence for Sprint Review*
 
-Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente entre el frontend (`tourmate-web-application`) y el backend (`tourmate-platform`). 
+Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente a través de los tres repositorios que conforman la plataforma TourMate: la página de aterrizaje institucional (`tourmate-landing`), la aplicación web de cara al usuario (`tourmate-web-application`) y los servicios backend RESTful (`tourmate-platform`).
 
-A continuación, se presentan las tablas consolidadas de commits representativos realizados durante el ciclo de desarrollo del Sprint 3 por cada miembro del equipo:
+A continuación, se presentan las secciones correspondientes a la evidencia de desarrollo y commits organizados por repositorio:
 
-##### Repositorio Backend: `tourmate-platform`
+##### 1. Repositorio Landing Page: `tourmate-landing`
+
+*Trazabilidad de modificaciones y despliegue continuo en la Landing Page orientados a la incorporación de recursos multimedia (videos About-the-Team y About-the-Product) y ajustes de diseño responsivo.*
+
+| Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `[hash]` | Feat | Multimedia / About-the-Team | feat(landing): embed responsive video player and layout for About-the-Team section | @Franz2308 |
+| `[hash]` | Feat | Multimedia / About-the-Product | feat(landing): integrate interactive modal dialog for About-the-Product showcase | @CaLoVM |
+| `[hash]` | Style | UI / Responsive Design | style(landing): optimize media query breakpoints and video aspect-ratio for mobile devices | @GonzJunior18p |
+| `[hash]` | Docs | Content & Copywriting | docs(landing): update team profile bios, roles and product value proposition copy | @AleDusty |
+
+##### 2. Repositorio Frontend: `tourmate-web-application`
+
+*Trazabilidad de desarrollo en la aplicación Single Page Application construida en Angular 19, cubriendo la lógica de negocio, integración con servicios REST y componentes de presentación.*
+
+| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
+| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
+| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
+| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
+| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
+| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
+| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
+| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
+| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
+| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
+| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
+| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
+| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
+| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
+| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
+| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
+| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
+
+##### 3. Repositorio Backend: `tourmate-platform`
+
+*Trazabilidad de desarrollo en la API RESTful construida con Spring Boot 3 y arquitectura Domain-Driven Design (DDD), cubriendo controladores, casos de uso, agregados del dominio y persistencia JPA.*
 
 | Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
@@ -3051,28 +3092,6 @@ A continuación, se presentan las tablas consolidadas de commits representativos
 | `2c33f15` | Feat | Safety and Incident Management | feat: add detailed documentation for UpdateIncidentResource parameters | @AleDusty |
 | `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
 | `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
-
-##### Repositorio Frontend: `tourmate-web-application`
-
-| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
-| :--- | :---: | :--- | :--- | :---: |
-| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
-| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
-| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
-| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
-| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
-| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
-| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
-| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
-| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
-| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
-| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
-| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
-| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
-| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
-| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
-| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
-| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
 
 ---
 
@@ -3112,23 +3131,76 @@ Para validar la correcta ejecución de los servicios backend desarrollados en Sp
 
 #### *5.2.3.6. Services Documentation Evidence for Sprint Review*
 
-El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.0**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui`. La documentación se encuentra accesible localmente en la ruta `http://localhost:8092/swagger-ui/index.html` y en el entorno desplegado en la nube.
+El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.1**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui` y desplegada públicamente en la nube en el entorno de producción de Render:  
+**URL de Swagger UI en Producción:** [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ##### Características Clave de la Documentación OpenAPI Implementada:
 
-* **Categorización por Bounded Contexts:** Los controladores REST están etiquetados mediante la anotación `@Tag` (ej. `ActiveTours`, `Plans`, `Subscriptions`, `Payments`, `Incidents`, `Reviews`, `Comments`, `Tours`, `Users`, `Roles`), agrupando lógicamente las operaciones del sistema.
+* **Categorización por Bounded Contexts y Controladores:** Los controladores REST están etiquetados mediante la anotación `@Tag` (`Users`, `Tokens`, `Incidents`, `Plans`, `ActiveTours`, `Payments`, `Reviews`, `Comments`, `Safety Monitoring`, `Roles`, `Subscriptions`, `Tours`), agrupando lógicamente las operaciones del sistema.
 * **Especificación de Contratos de Datos (Schemas / DTOs):** Cada DTO de entrada (*Request*) y salida (*Response*) está tipado con `@Schema`, documentando tipos de datos, ejemplos representativos (`example`) y restricciones de obligatoriedad (`requiredMode`).
 * **Códigos de Estado HTTP Documentados:** Se documentan explícitamente los códigos de respuesta esperados mediante `@ApiResponses` y `@ApiResponse` (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`).
 * **Seguridad y Autorización:** Se incorpora el esquema de seguridad global `bearerAuth` (`@SecurityRequirement(name = "bearerAuth")`), indicando qué endpoints exigen cabeceras HTTP `Authorization: Bearer <token_jwt>` para su consumo.
 
-![Interfaz Swagger UI de la Plataforma TourMate](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.X. Catálogo de servicios RESTful y esquemas OpenAPI interactivos en Swagger UI.*
+##### Catálogo de Servicios RESTful y Endpoints Desplegados en Producción:
+
+A continuación, se documenta la totalidad de los controladores y endpoints interactivos expuestos en Swagger UI en el servicio activo en la nube:
+
+**1. Vista Panorámica General de la Plataforma y Autenticación:**  
+Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
+
+![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
+*Figura 5.X. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+
+**2. Endpoints de Usuarios, Tokens e Incidentes:**  
+Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
+
+![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
+*Figura 5.X. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+
+**3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
+Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
+
+![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
+*Figura 5.X. Endpoints interactivos documentados para Plans y Active Tours.*
+
+**4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
+Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
+
+![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
+*Figura 5.X. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+
+**5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
+Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
+
+![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
+*Figura 5.X. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
 Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+
+##### Tabla Resumen de Despliegue de la Plataforma TourMate
+
+A fin de facilitar la evaluación de los entregables y garantizar el acceso directo a los servicios en producción, se consolida la siguiente matriz con las URLs públicas de despliegue y repositorios asociados:
+
+| Componente | Entorno / Plataforma | URL de Producción | Repositorio GitHub | Estado |
+| :--- | :--- | :--- | :--- | :---: |
+| **Landing Page** | GitHub Pages / Hosting | https://axiom-daos.github.io/tourmate-landing/ | [axiom-daos/tourmate-landing](https://github.com/axiom-daos/tourmate-landing) | *Desplegado* |
+| **Frontend Web Application** | Firebase Hosting / Cloud | https://tourmate-e66ff.web.app/home | [axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application) | *Desplegado* |
+| **Backend RESTful API & Swagger UI** | Render Cloud Services | https://tourmate-platform.onrender.com/swagger-ui/index.html# | [axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform) | *Desplegado* |
+
+##### Credenciales de Acceso para Evaluación (Cuentas Demo)
+
+A continuación, se proporcionan las cuentas de demostración configuradas para la evaluación de los diferentes roles del sistema, tanto en el consumo directo de la API RESTful (a través de Swagger UI) como en la interacción de las interfaces de usuario:
+
+| Rol de Usuario | Entorno de Aplicación | Usuario / Correo Electrónico | Contraseña de Prueba | Alcance y Flujo de Evaluación |
+| :--- | :--- | :--- | :--- | :--- |
+| **Administrador del Sistema (`ROLE_ADMIN`)** | Frontend Web & Backend API | `demo.admin@tourmate.pe` | `SecurePass123!` | Acceso a métricas globales, catálogos y auditoría transversal del sistema. |
+| **Dueño de Agencia (`ROLE_AGENCY_OWNER`)** | Frontend Web & Backend API | `demo.agency@tourmate.pe` | `SecurePass123!` | Gestión completa de suscripciones, planes comerciales y catálogo de tours. |
+| **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `demo.guide@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
+| **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `demo.tourist@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
 
 ##### Arquitectura de Despliegue:
 
@@ -3433,10 +3505,13 @@ El video *About-the-Product* constituye el artefacto audiovisual de validación 
 | Parámetro | Detalle |
 | :--- | :--- |
 | **Título del Video:** | TourMate - Plataforma Web para Gestión y Monitoreo Seguro de Turismo de Aventura |
-| **Duración:** | [MM:SS] min *(Recomendado entre 3 y 5 minutos)* |
-| **Fecha de Producción:** | [DD/MM/AAAA] |
-| **Plataforma / Enlace:** | [Enlace al video en YouTube / OneDrive / SharePoint] |
+| **Duración:** | 4:30 min |
+| **Fecha de Producción:** | Noviembre 2026 |
+| **Plataforma / Enlace:** | [TourMate – About the Product (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAPtJVrqwuGTZCCC9fHlhMBARrVqF87HanSRUyzDOXRLus?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IhZXfd) |
 | **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+
+![TourMate - About the Product](../assets/images/About-The-Producto-foto.jpeg)
+*Figura 5.X. Captura representativa del video de demostración About the Product.*
 
 ---
 

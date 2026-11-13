@@ -161,7 +161,7 @@ El despliegue de la Landing Page de TourMate se realizó utilizando GitHub Pages
 #### Resultado
 La Landing Page de TourMate fue desplegada exitosamente mediante GitHub Pages, permitiendo su acceso público a través de una URL estable. Esto facilita la presentación del producto a usuarios potenciales y valida la propuesta de valor del sistema de manera rápida y efectiva.
 
-URL: https://axiom-daos.github.io/tourmate-landing/
+URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
 
 #### *5.2.1.8. Team Collaboration Insights during Sprint*
 
@@ -686,7 +686,7 @@ Para este tercer sprint, los aspectos se han redefinido para alinearse con los o
 
 #### *5.2.3.3. Sprint Backlog 3*
 
-El objetivo principal de este tercer Sprint es construir, integrar y desplegar los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en 36 tareas de ingeniería backend (*Engineering Tasks* bajo la nomenclatura `TS-Bxx.x`), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, repositorios JPA y documentación viva bajo OpenAPI/Swagger.
+El objetivo principal de este tercer Sprint se dividió en dos frentes complementarios: por un lado, la evolución de la *Landing Page* institucional mediante la incorporación de secciones multimedia interactivas (*About-the-Team* y *About-the-Product*) para consolidar la propuesta de valor; y por otro lado, la construcción, integración y despliegue de los servicios backend RESTful (*Server-Side Software*) de la plataforma TourMate, estableciendo una arquitectura robusta basada en *Domain-Driven Design* (DDD) y el patrón CQRS (*Command Query Responsibility Segregation*) desarrollada con Spring Boot 3.x, Java 21 y persistencia relacional en PostgreSQL. Durante este ciclo se implementa la lógica de negocio y persistencia transversal dividida en cuatro *Bounded Contexts* clave: la asignación, confirmación y consulta paramétrica de tours (*BC: Tour Management*), el seguimiento en tiempo real y transiciones de estado de expediciones activas (*BC: Tour Monitoring*), la gestión de alertas, persistencia de incidentes y umbrales biométricos (*BC: Safety & Incidents*), y el control de perfiles, bitácoras de experiencia y servicios de geolocalización (*BC: IAM & Profiles*). Las User Stories y Technical Stories planificadas han sido rigurosamente descompuestas en tareas de ingeniería (*Engineering Tasks* bajo las nomenclaturas `TS-LPxx.x` para Landing Page y `TS-Bxx.x` para Backend), cubriendo la creación de controladores REST, casos de uso/servicios de aplicación, modelos y agregados del dominio, validación de reglas de negocio, componentes de interfaz interactivos y documentación viva bajo OpenAPI/Swagger.
 
 **Trello link:** [https://trello.com/b/GFgdnufq/tourmate-sprint-3](https://trello.com/b/GFgdnufq/tourmate-sprint-3)
 
@@ -694,7 +694,9 @@ El objetivo principal de este tercer Sprint es construir, integrar y desplegar l
 
 | User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | To Do |
+| US-LP11 | Visualizar video institucional 'About-the-Team' | TS-LP11 | Integración multimedia y diseño responsivo de video About-the-Team | Desarrollar el componente responsivo con contenedor 16:9 y controles de reproducción para presentar al equipo de Axiom en la Landing Page, garantizando adaptabilidad en dispositivos móviles y de escritorio. | 5 | @Franz2308 | Done |
+| US-LP12 | Visualizar video demostrativo 'About-the-Product' | TS-LP12 | Integración de modal interactivo y vinculación de video About-the-Product | Implementar el modal/lightbox con overlay interactivo para reproducir el video demostrativo del producto y propuesta de valor de TourMate, vinculando los llamados a la acción posteriores hacia la selección de planes y registro. | 5 | @CaLoVM | Done |
+| US13 | Asignar turistas a un tour | TS-B13.1 | Implementar servicio de asignación | Desarrollar la lógica de negocio en el backend para vincular turistas a un tour específico. | 3 | @lonybreux | Done |
 | US13 | Asignar turistas a un tour | TS-B13.2 | Validaciones de capacidad y estado | Implementar reglas de negocio para evitar sobrecupo o asignación a tours ya cerrados/cancelados. | 2 | @CaLoVM | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.1 | Implementar servicio de remoción | Crear el método en el backend para eliminar de forma segura la relación entre turista y tour. | 2 | @AleDusty | To Do |
 | US14 | Desasignar turista de un tour | TS-B14.2 | Validación de expedición en curso | Agregar lógica para denegar o requerir confirmación extra si se intenta desasignar con la expedición iniciada. | 2 | @Franz2308 | To Do |
@@ -733,11 +735,48 @@ El objetivo principal de este tercer Sprint es construir, integrar y desplegar l
 
 #### *5.2.3.4. Development Evidence for Sprint Review*
 
-Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente entre el frontend (`tourmate-web-application`) y el backend (`tourmate-platform`). 
+Durante el Sprint 3, el equipo de desarrollo aplicó la metodología GitFlow y el estándar de Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`) para asegurar la trazabilidad, atomicidad y consistencia del código fuente a través de los tres repositorios que conforman la plataforma TourMate: la página de aterrizaje institucional (`tourmate-landing`), la aplicación web de cara al usuario (`tourmate-web-application`) y los servicios backend RESTful (`tourmate-platform`).
 
-A continuación, se presentan las tablas consolidadas de commits representativos realizados durante el ciclo de desarrollo del Sprint 3 por cada miembro del equipo:
+A continuación, se presentan las secciones correspondientes a la evidencia de desarrollo y commits organizados por repositorio:
 
-##### Repositorio Backend: `tourmate-platform`
+##### 1. Repositorio Landing Page: `tourmate-landing`
+
+*Trazabilidad de modificaciones y despliegue continuo en la Landing Page orientados a la incorporación de recursos multimedia (videos About-the-Team y About-the-Product) y ajustes de diseño responsivo.*
+
+| Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `[hash]` | Feat | Multimedia / About-the-Team | feat(landing): embed responsive video player and layout for About-the-Team section | @Franz2308 |
+| `[hash]` | Feat | Multimedia / About-the-Product | feat(landing): integrate interactive modal dialog for About-the-Product showcase | @CaLoVM |
+| `[hash]` | Style | UI / Responsive Design | style(landing): optimize media query breakpoints and video aspect-ratio for mobile devices | @GonzJunior18p |
+| `[hash]` | Docs | Content & Copywriting | docs(landing): update team profile bios, roles and product value proposition copy | @AleDusty |
+
+##### 2. Repositorio Frontend: `tourmate-web-application`
+
+*Trazabilidad de desarrollo en la aplicación Single Page Application construida en Angular 19, cubriendo la lógica de negocio, integración con servicios REST y componentes de presentación.*
+
+| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
+| :--- | :---: | :--- | :--- | :---: |
+| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
+| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
+| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
+| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
+| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
+| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
+| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
+| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
+| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
+| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
+| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
+| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
+| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
+| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
+| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
+| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
+| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
+
+##### 3. Repositorio Backend: `tourmate-platform`
+
+*Trazabilidad de desarrollo en la API RESTful construida con Spring Boot 3 y arquitectura Domain-Driven Design (DDD), cubriendo controladores, casos de uso, agregados del dominio y persistencia JPA.*
 
 | Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
@@ -763,28 +802,6 @@ A continuación, se presentan las tablas consolidadas de commits representativos
 | `2c33f15` | Feat | Safety and Incident Management | feat: add detailed documentation for UpdateIncidentResource parameters | @AleDusty |
 | `af157bc` | Feat | Safety and Incident Management | feat: add detailed documentation for SafetyMonitoringController endpoints | @AleDusty |
 | `c059112` | Feat | Safety and Incident Management | feat: enhance IncidentsController with detailed documentation for incident management endpoints | @AleDusty |
-
-##### Repositorio Frontend: `tourmate-web-application`
-
-| Hash | Tipo | Módulo / Bounded Context | Descripción del Commit | Autor |
-| :--- | :---: | :--- | :--- | :---: |
-| `f69fd8e` | Merge | Subscriptions & Payment Management | Merge branch 'feature/subscriptions-and-payment-management-business-logic' into develop | @Franz2308 |
-| `bcb2323` | Feat | Subscriptions & Payment Management | feat(subscription): enhance API endpoints and assemblers for resilient backend and query integration | @Franz2308 |
-| `4581dc2` | Merge | Feedback and Tour Reviews | Merge branch 'feedback-and-tour-reviews2-business-logic' into develop | @GonzJunior18p |
-| `0bdf0b6` | Fix | Feedback and Tour Reviews | fix(feedback-and-tour-reviews): sanitize review creation payload and optimize comment queries by review id | @GonzJunior18p |
-| `b25aac9` | Fix | Profiles & IAM | fix(profiles): update difficulty translation key to difficulty_label in localization files | @CaLoVM |
-| `0bc589e` | Feat | Profiles & IAM | feat(profiles): add routing and localization for My Profile section | @CaLoVM |
-| `2464e2c` | Feat | Profiles & IAM | feat(profiles): add ProfileTours component with HTML, CSS, and TypeScript logic for managing assigned tours | @CaLoVM |
-| `c995159` | Feat | Profiles & IAM | feat(profiles): add ProfileToursStore and assigned tour management logic | @CaLoVM |
-| `8398c25` | Feat | Profiles & IAM | feat(profiles): implement ProfileAssembler and related API endpoint for profile management | @CaLoVM |
-| `2c507a3` | Feat | Profiles & IAM | feat(profiles): add Profile entity and ProfileRole enum for user profiles | @CaLoVM |
-| `090df13` | Feat | Subscriptions & Payment Management | feat(subscription): add digital payment receipt modal with fiscal details and print action | @Franz2308 |
-| `ec273bc` | Feat | Subscriptions & Payment Management | feat(subscription): introduce financial KPI summary cards and cancellation dialog in subscription dashboard | @Franz2308 |
-| `0837984` | Feat | Subscriptions & Payment Management | feat(subscription): add interactive checkout confirmation modal and localized plan features in plan selection view | @Franz2308 |
-| `a047d3f` | Feat | Subscriptions & Payment Management | feat(subscription): implement expenditure computation, renewal date estimation, and cancellation reason logging in store | @Franz2308 |
-| `cd814c8` | Feat | Subscriptions & Payment Management | feat(subscription): add comprehensive i18n keys for subscription metrics, receipts, and checkout dialogs | @Franz2308 |
-| `1501fcb` | Feat | Tour Monitoring | feat(active-tour-form): add loading state and enhance form handling for active tours | @CaLoVM |
-| `5cf550b` | Feat | Feedback and Tour Reviews | feat(feedback-and-tour-reviews): enhance UI and visual design of the dashboard | @GonzJunior18p |
 
 ---
 
@@ -824,54 +841,149 @@ Para validar la correcta ejecución de los servicios backend desarrollados en Sp
 
 #### *5.2.3.6. Services Documentation Evidence for Sprint Review*
 
-El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.0**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui`. La documentación se encuentra accesible localmente en la ruta `http://localhost:8092/swagger-ui/index.html` y en el entorno desplegado en la nube.
+El backend de TourMate cuenta con documentación interactiva estandarizada bajo la especificación **OpenAPI 3.1**, generada dinámicamente mediante la dependencia `springdoc-openapi-starter-webmvc-ui` y desplegada públicamente en la nube en el entorno de producción de Render:  
+**URL de Swagger UI en Producción:** [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ##### Características Clave de la Documentación OpenAPI Implementada:
 
-* **Categorización por Bounded Contexts:** Los controladores REST están etiquetados mediante la anotación `@Tag` (ej. `ActiveTours`, `Plans`, `Subscriptions`, `Payments`, `Incidents`, `Reviews`, `Comments`, `Tours`, `Users`, `Roles`), agrupando lógicamente las operaciones del sistema.
+* **Categorización por Bounded Contexts y Controladores:** Los controladores REST están etiquetados mediante la anotación `@Tag` (`Users`, `Tokens`, `Incidents`, `Plans`, `ActiveTours`, `Payments`, `Reviews`, `Comments`, `Safety Monitoring`, `Roles`, `Subscriptions`, `Tours`), agrupando lógicamente las operaciones del sistema.
 * **Especificación de Contratos de Datos (Schemas / DTOs):** Cada DTO de entrada (*Request*) y salida (*Response*) está tipado con `@Schema`, documentando tipos de datos, ejemplos representativos (`example`) y restricciones de obligatoriedad (`requiredMode`).
 * **Códigos de Estado HTTP Documentados:** Se documentan explícitamente los códigos de respuesta esperados mediante `@ApiResponses` y `@ApiResponse` (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`).
 * **Seguridad y Autorización:** Se incorpora el esquema de seguridad global `bearerAuth` (`@SecurityRequirement(name = "bearerAuth")`), indicando qué endpoints exigen cabeceras HTTP `Authorization: Bearer <token_jwt>` para su consumo.
 
-![Interfaz Swagger UI de la Plataforma TourMate](../assets/images/sprint3-swagger-ui-overview.png)
-*Figura 5.X. Catálogo de servicios RESTful y esquemas OpenAPI interactivos en Swagger UI.*
+##### Catálogo de Servicios RESTful y Endpoints Desplegados en Producción:
+
+A continuación, se documenta la totalidad de los controladores y endpoints interactivos expuestos en Swagger UI en el servicio activo en la nube:
+
+**1. Vista Panorámica General de la Plataforma y Autenticación:**  
+Muestra la cabecera del servicio, especificación OpenAPI 3.1, configuración del servidor en la nube y los endpoints iniciales de gestión de usuarios (`Users`) y generación de tokens de autenticación (`Tokens`).
+
+![Vista Panorámica de Swagger UI en Producción](../assets/images/sprint3-swagger-ui-overview.png)
+*Figura 5.X. Vista general de la especificación OpenAPI 3.1 y cabecera de TourMate Platform en Render.*
+
+**2. Endpoints de Usuarios, Tokens e Incidentes:**  
+Endpoints para registro y consulta de usuarios (`Users`), autenticación de credenciales (`Tokens`) y gestión completa de incidentes de seguridad en campo (`Incidents`).
+
+![Endpoints de Usuarios, Tokens e Incidentes](../assets/images/sprint3-swagger-users-incidents.png)
+*Figura 5.X. Endpoints interactivos documentados para Users, Tokens e Incident Management.*
+
+**3. Endpoints de Planes Comerciales y Monitoreo de Expediciones:**  
+Endpoints CRUD para el catálogo de planes de suscripción de agencias (`Plans`) y administración del ciclo de vida de expediciones activas (`ActiveTours`).
+
+![Endpoints de Planes y Expediciones Activas](../assets/images/sprint3-swagger-plans-activetours.png)
+*Figura 5.X. Endpoints interactivos documentados para Plans y Active Tours.*
+
+**4. Endpoints de Transacciones de Pago, Reseñas y Comentarios:**  
+Endpoints para el libro mayor de pagos de agencias (`Payments`), calificación de experiencias turísticas (`Reviews`) y comentarios colaborativos (`Comments`).
+
+![Endpoints de Pagos, Reseñas y Comentarios](../assets/images/sprint3-swagger-payments-reviews.png)
+*Figura 5.X. Endpoints interactivos documentados para Payments, Reviews y Comments.*
+
+**5. Endpoints de Telemetría de Seguridad, Roles, Suscripciones y Tours:**  
+Endpoints para ingesta de coordenadas y telemetría (`Safety Monitoring`), asignación de roles IAM (`Roles`), ciclo de vida y cancelación de suscripciones (`Subscriptions`) y catálogo principal de tours (`Tours`).
+
+![Endpoints de Seguridad, Roles, Suscripciones y Tours](../assets/images/sprint3-swagger-subscriptions-tours.png)
+*Figura 5.X. Endpoints interactivos documentados para Safety Monitoring, Roles, Subscriptions y Tour Management.*
 
 ---
 
 #### *5.2.3.7. Software Deployment Evidence for Sprint Review*
 
-Para el despliegue del software en el Sprint 3, se implementó una estrategia orientada a microservicios contenerizados y servicios en la nube, garantizando disponibilidad, aislamiento de procesos y escalabilidad.
+Durante este tercer Sprint, el proceso de despliegue (Deployment) marcó un hito fundamental para el proyecto con la puesta en producción de nuestra primera versión real del Web Service y su respectiva base de datos relacional. Además, se dio continuidad a los despliegues de la Landing Page y la Web Application, aplicando un enfoque de entrega continua e iterativa para integrar las correcciones solicitadas por el docente y la nueva lógica de negocio. A continuación, se detallan las actividades, configuraciones en los proveedores de nube y los procesos realizados para cada uno de los productos de software.
 
-##### Arquitectura de Despliegue:
+##### Tabla Resumen de Despliegue de la Plataforma TourMate
 
-```mermaid
-flowchart LR
-    A["Cliente Frontend<br>(Angular SPA / Firebase Hosting)"] -->|HTTPS / JSON API| B["Servicio Backend REST<br>(Spring Boot / Render Cloud)"]
-    B -->|JDBC Connection Pool| C[("Base de Datos Gestionada<br>(PostgreSQL Cloud / Render)")]
-    D["Desarrollo Local<br>(Docker Compose)"] -.->|compose.yaml| E[("Contenedor Local<br>tourmate-db:5432")]
-```
+A fin de facilitar la evaluación de los entregables y garantizar el acceso directo a los servicios en producción, se consolida la siguiente matriz con las URLs públicas de despliegue y repositorios asociados:
 
-##### Pasos Técnicos para el Despliegue del Backend en Render / Cloud:
+| Componente | Entorno / Plataforma | URL de Producción | Repositorio GitHub | Estado |
+| :--- | :--- | :--- | :--- | :---: |
+| **Landing Page** | GitHub Pages / Hosting | https://axiom-daos.github.io/tourmate-landing/ | [axiom-daos/tourmate-landing](https://github.com/axiom-daos/tourmate-landing) | *Desplegado* |
+| **Frontend Web Application** | Firebase Hosting / Cloud | https://tourmate-e66ff.web.app/home | [axiom-daos/tourmate-web-application](https://github.com/axiom-daos/tourmate-web-application) | *Desplegado* |
+| **Backend RESTful API & Swagger UI** | Render Cloud Services | https://tourmate-platform.onrender.com/swagger-ui/index.html# | [axiom-daos/tourmate-platform](https://github.com/axiom-daos/tourmate-platform) | *Desplegado* |
 
-1. **Aprovisionamiento de la Base de Datos Gestionada:**  
-   Se crea una instancia gestionada de PostgreSQL en Render (`tourmate-db`), obteniendo los parámetros de conexión seguros (Host, Puerto, Database Name, Usuario y Contraseña).
-2. **Contenerización y Configuración de Docker:**  
-   Se utiliza el archivo `compose.yaml` para levantar contenedores locales idénticos al entorno productivo, asegurando paridad de entornos de desarrollo y producción (*12-Factor App methodology*).
-3. **Inyección de Variables de Entorno Productivas:**  
-   En el panel de configuración de Render, se definen las variables de entorno sin exponer secretos en el repositorio:
-   * `SPRING_PROFILES_ACTIVE=prod`
-   * `DATABASE_URL=jdbc:postgresql://<render_postgres_host>:5432/tour_mate`
-   * `DATABASE_USER=<render_user>`
-   * `DATABASE_PASSWORD=<render_password>`
-   * `PORT=8092`
-   * `AUTHORIZATION_JWT_SECRET=<secret_key>`
-4. **Compilación y Construcción del Artefacto:**  
-   El motor de construcción ejecuta `./mvnw clean package -DskipTests` y levanta el servicio ejecutando el binario JAR generado (`java -jar target/tourmate-platform-0.0.1-SNAPSHOT.jar`).
-5. **Verificación de Disponibilidad (*Health Check*):**  
-   Se valida el acceso al endpoint de documentación en vivo y la correcta ejecución de las migraciones/tablas en la base de datos remota.
+##### Credenciales de Acceso para Evaluación (Cuentas Demo)
 
-![Evidencia de Despliegue en Render](../assets/images/sprint3-deployment-render-evidence.png)
-*Figura 5.X. Panel de administración del servicio web y base de datos desplegados en la plataforma Render en estado "Live".*
+A continuación, se proporcionan las cuentas de demostración configuradas para la evaluación de los diferentes roles del sistema, tanto en el consumo directo de la API RESTful (a través de Swagger UI) como en la interacción de las interfaces de usuario:
+
+| Rol de Usuario | Entorno de Aplicación | Usuario / Correo Electrónico | Contraseña de Prueba | Alcance y Flujo de Evaluación |
+| :--- | :--- | :--- | :--- | :--- |
+| **Administrador del Sistema (`ROLE_ADMIN`)** | Frontend Web & Backend API | `demo.admin@tourmate.pe` | `SecurePass123!` | Acceso a métricas globales, catálogos y auditoría transversal del sistema. |
+| **Dueño de Agencia (`ROLE_AGENCY_OWNER`)** | Frontend Web & Backend API | `demo.agency@tourmate.pe` | `SecurePass123!` | Gestión completa de suscripciones, planes comerciales y catálogo de tours. |
+| **Guía de Expedición (`ROLE_TOUR_GUIDE`)** | Frontend Web & Backend API | `demo.guide@tourmate.pe` | `SecurePass123!` | Monitoreo en tiempo real de expediciones, telemetría y alertas de incidentes. |
+| **Turista / Cliente (`ROLE_USER`)** | Frontend Web & Backend API | `demo.tourist@tourmate.pe` | `SecurePass123!` | Exploración paramétrica de tours, checkout simulado y registro de reseñas. |
+
+##### Detalle de Despliegue por Componente:
+
+#### 1. Landing Page (GitHub Pages)
+Nuestra Landing Page ya se encontraba configurada y desplegada en GitHub Pages desde el primer sprint. Para esta tercera iteración, los trabajos se centraron en aplicar las mejoras recomendadas por el docente y en la integración de los videos promocionales y explicativos: *"About the Product"* y *"About the Team"*.
+
+**Proceso de Despliegue:**
+Dado que la integración continua (CI/CD) ya estaba configurada nativamente con el repositorio, no fue necesario realizar configuraciones adicionales en la nube. El despliegue de esta nueva versión fue completamente automático:
+1.  Se integraron los cambios y nuevos recursos multimedia en la rama de desarrollo.
+2.  Se realizó el *Merge* hacia la rama `main`.
+3.  GitHub Actions detectó los cambios y disparó automáticamente el *build* y despliegue del sitio estático.
+
+*GitHub Actions - Landing Page*
+![GitHub Actions](../assets/images/landing-deploy-3.png)
+*Landing - About the product.*
+![Landing - About the product](../assets/images/landing-ap.png)
+
+*Landing - About the team*
+![Landing - Abouth the team](../assets/images/landing-at.png)
+
+URL: [https://axiom-daos.github.io/tourmate-landing/](https://axiom-daos.github.io/tourmate-landing/)
+
+#### 2. Web Application - Frontend (Firebase Hosting)
+La aplicación web interactiva (Frontend desarrollado en Angular) ya contaba con su infraestructura configurada en Firebase Hosting desde el Sprint 2. En este ciclo, se implementó la lógica de negocio restante y se aplicaron mejoras de usabilidad (UI/UX) basadas en el feedback del docente.
+
+**Proceso de Despliegue:**
+Al tratarse de una actualización sobre un servicio ya aprovisionado, el despliegue consistió en la compilación local optimizada y la subida de los nuevos artefactos mediante la interfaz de línea de comandos (CLI) de Firebase:
+1.  **Build:** Se compiló el proyecto para producción ejecutando `ng build`, generando los archivos estáticos optimizados en la carpeta `dist`.
+2.  **Deploy:** Se ejecutó el comando `firebase deploy --only hosting` para subir la nueva versión a los servidores de Google.
+
+*Web - build sprint 3.*
+![Web - build sprint 3](../assets/images/web-build-2.png)
+
+*Web - deploy sprint 3.*
+![Web - deploy sprint 3](../assets/images/web-deploy-2.png)
+
+*Web.*
+![Web - deploy sprint 3](../assets/images/web-sprint3.png)
+
+URL: [https://tourmate-e66ff.web.app/home](https://tourmate-e66ff.web.app/home)
+
+
+#### 3. Web Services y Base de Datos (Render)
+El avance más significativo en infraestructura durante este Sprint fue el despliegue de nuestro backend real, el cual incluye todos los endpoints CRUD de la aplicación. Para alojar tanto la base de datos como la API RESTful, se seleccionó el proveedor de nube **Render**, utilizando sus planes gratuitos (Free Tier).
+
+**Paso 1: Despliegue de la Base de Datos (PostgreSQL)**
+*   Se creó una cuenta en Render y se accedió al Dashboard principal.
+*   Se creó el proyecto Tour Mate
+*   Se seleccionó la opción **New > PostgreSQL**.
+*   Se configuró el nombre de la instancia (`tour_mate`), el usuario y se dejo la región preseleccionada automaticamente.
+*   Render aprovisionó la base de datos y proporcionó la cadena de conexión interna (`Internal Database URL`) y externa (`External Database URL`), necesarias para conectar nuestro Web Service.
+
+*Tour Mate DB Render*
+![Tour Mate DB Render](../assets/images/tourmate-db-render.png)
+
+
+**Paso 2: Despliegue del Web Service (Backend API)**
+*   En el Dashboard de Render, se seleccionó **New > Web Service**.
+*   Se vinculó la cuenta de GitHub del equipo y se seleccionó el repositorio que contiene el código fuente del backend.
+*   Se configuró el entorno de ejecución y los comandos de construcción (Build Command) y ejecución (Start Command).
+*   **Variables de Entorno (Environment Variables):** Se configuraron las variables críticas de entorno, especialmente la cadena de conexión a la base de datos creada en el Paso 1 (`DATABASE_URL`), para garantizar que el backend apunte correctamente a la instancia productiva.
+*   Se procedió con el despliegue manual. Render clonó el repositorio, construyó la aplicación y la expuso en una URL pública con certificado SSL automático (`https://tourmate-platform.onrender.com`).
+
+*Web service enviroment*
+![Web service enviroment](../assets/images/render-enviroment.png)
+
+*Web service deploy*
+![Web service Deploy](../assets/images/render-deploy.png)
+
+*Web service swagger*
+![Web service swagger](../assets/images/web-services-swagger.png)
+
+URL: [https://tourmate-platform.onrender.com/swagger-ui/index.html#](https://tourmate-platform.onrender.com/swagger-ui/index.html#)
 
 ---
 
@@ -879,128 +991,22 @@ flowchart LR
 
 Todos los miembros del equipo han participado activamente en la implementación de los productos del Sprint 3, lo cual se evidencia mediante los reportes de actividad y contribución del repositorio de GitHub de la organización Axiom.
 
-**Insights**
-![Team Insights Sprint 2](../assets/images/insights3.png)
-
-**Contributors**
-![Team Insights Sprint 2](../assets/images/contribuciones3.png)
-
-**Commits**
-![Team Insights Sprint 2](../assets/images/commits3.png)
+**Landing:**
+![Landing Sprint 3](../assets/images/landing-sprint3.png)
 
 
+**Web Application:**
 
+*Insights*
+![Web insights](../assets/images/web-sprint3-1.png)
 
-## Conclusiones
+*Contributors*
+![Web contributors](../assets/images/web-sprint3-2.png)
 
-### Sprint 1 – Landing Page y documentación del proyecto
+**Web Service:**
 
-- **Sobre el análisis del problema y la investigación del usuario:** Se concluye que las entrevistas realizadas a dueños de agencias de tours y turistas de aventura permitieron identificar necesidades, expectativas y puntos de dolor relevantes para el desarrollo de SpotGo. La información recopilada fue fundamental para la definición de *User Personas*, *Empathy Maps* y *Journey Maps*, los cuales sirvieron como base para la priorización de funcionalidades y la elaboración del *Problem Statement*.
+*Insights*
+![Web service insigths](../assets/images/back-sprint3-1.png)
 
-- **Sobre la propuesta de valor y validación inicial:** La elaboración de la *Landing Page* permitió comunicar de forma clara los objetivos, beneficios y funcionalidades principales de TourMate, funcionando como un medio de validación temprana de la idea de negocio. Se evidenció que presentar una interfaz informativa y accesible favorece la comprensión del problema y fortalece el interés de potenciales usuarios y clientes B2B.
-
-- **Sobre la documentación y modelado del proyecto:** La construcción del reporte técnico permitió consolidar los hallazgos del *Problem Statement*, *Needfinding*, *User Personas*, *Empathy Maps*, *Journey Maps*, *Event Storming* y *Ubiquitous Language*, generando una visión integral del dominio del negocio. Asimismo, el uso de metodologías como *Domain-Driven Design (DDD)* facilitó la identificación de *Bounded Contexts* y responsabilidades del sistema desde etapas tempranas.
-
-- **Sobre la definición de requerimientos:** La especificación inicial de *User Stories* y criterios de aceptación permitió transformar necesidades de usuarios en funcionalidades concretas, proporcionando una guía estructurada para el desarrollo de los siguientes sprints y reduciendo ambigüedades en la planificación técnica.
-
-### Sprint 2 – Web Application Frontend y Servicios Mock
-
-- **Sobre la arquitectura Single Page Application (SPA) en Angular:** La adopción de Angular 19 con componentes independientes (*Standalone Components*), señales reactivas (*Angular Signals*) e inyección de dependencias moderna permitió estructurar una aplicación altamente modular, desacoplada y mantenible. La separación por capas (dominio, aplicación, infraestructura y presentación) en cada *Bounded Context* garantizó que las reglas de negocio del frontend permanecieran independientes de los mecanismos de transporte HTTP.
-
-- **Sobre la estrategia de desacoplamiento con MockAPI:** El uso de servicios simulados en la nube (*MockAPI.io*) durante la etapa intermedia de desarrollo posibilitó avanzar en la construcción de interfaces de usuario complejas y flujos interactivos (tales como la gestión de planes, el dashboard de suscripciones y el monitoreo en vivo) sin bloquearse por la disponibilidad inmediata de los servicios backend, validando la lógica de presentación de forma temprana.
-
-- **Sobre la experiencia de usuario y accesibilidad:** La implementación de un sistema de diseño consistente con Angular Material, complementado con internacionalización dinámica (*ngx-translate*) en inglés y español y diseño responsivo adaptativo, mejoró significativamente la usabilidad de la plataforma tanto en dispositivos de escritorio para las agencias como en pantallas móviles para guías y turistas.
-
-### Sprint 3 – Backend RESTful, Arquitectura DDD y Validación Heurística
-
-- **Sobre la arquitectura orientada al dominio (DDD) y CQRS en Spring Boot:** La implementación del backend con Spring Boot 3 y Java 21 bajo los patrones de *Domain-Driven Design* y la segregación de responsabilidades de comando y consulta (*CQRS*) demostró ser altamente eficaz para modelar la complejidad del negocio. La encapsulación de la lógica en Agregados, Entidades y *Value Objects* inmutables garantizó la consistencia de los datos y simplificó la trazabilidad de operaciones críticas como el procesamiento de pagos, el control de expediciones activas y el reporte de incidentes.
-
-- **Sobre la persistencia relacional con PostgreSQL y JPA/Hibernate:** La integración de Spring Data JPA con PostgreSQL proporcionó una capa de persistencia robusta y escalable. El uso de convertidores JPA personalizados y ensambladores de persistencia evitó la fuga de modelos relacionales hacia el dominio, asegurando transacciones atómicas y facilitando la inicialización del sistema mediante seeders automáticos.
-
-- **Sobre la estandarización de contratos y documentación OpenAPI:** La adopción rigurosa de OpenAPI 3.0 / Swagger UI permitió formalizar los contratos de comunicación entre el frontend y el backend, reduciendo la fricción durante la integración. Asimismo, la configuración de deserialización resiliente en Jackson y el esquema de seguridad basado en tokens JWT (`bearerAuth`) consolidaron una plataforma segura y preparada para entornos productivos.
-
-- **Sobre la validación empírica y evaluación heurística:** Las entrevistas de validación realizadas a usuarios reales y la posterior evaluación según las 10 Heurísticas de Nielsen permitieron contrastar las hipótesis iniciales de diseño frente a la realidad operativa del turismo de aventura. Los hallazgos obtenidos evidenciaron fortalezas en la claridad del monitoreo en vivo y la gestión de planes, así como áreas puntuales de optimización en retroalimentación de errores y simplificación visual de bitácoras de campo.
-
-### Conclusiones y Recomendaciones Generales
-
-- **Coordinación y sincronización de contratos tempranos:** Como lección aprendida fundamental para futuras entregas, se recomienda formalizar los contratos de datos (DTOs) en las fases iniciales del sprint mediante especificaciones *API-First*, reduciendo el esfuerzo de homologación y permitiendo una integración continua más fluida entre los desarrolladores de frontend y backend.
-- **Evolución hacia microservicios y telemetría en tiempo real:** Se recomienda que las futuras versiones de TourMate incorporen comunicación bidireccional vía WebSockets o Server-Sent Events (SSE) para el monitoreo de ubicación en vivo y la recepción inmediata de alertas críticas de seguridad, así como la paquetización de cada *Bounded Context* en contenedores Docker independientes orquestados en la nube.
-
-### Bibliografía
-
-
-- Brown, S. (2020). *The C4 model for visualising software architecture*. C4Model.com. Recuperado de [https://c4model.com](https://c4model.com)
-- Driessen, V. (2010). *A successful Git branching model*. Nvie. Recuperado de [https://nvie.com/posts/a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model)
-- Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional. Recuperado de [https://www.domainlanguage.com/ddd](https://www.domainlanguage.com/ddd)
-- Freeman, A. (2022). *Pro Angular 16*. Apress. Recuperado de [https://link.springer.com/book/10.1007/978-1-4842-8823-8](https://link.springer.com/book/10.1007/978-1-4842-8823-8)
-- Newman, S. (2021). *Building Microservices: Designing Fine-Grained Systems* (2nd ed.). O'Reilly Media. Recuperado de [https://samnewman.io/books/building_microservices_2nd_edition](https://samnewman.io/books/building_microservices_2nd_edition)
-- Walls, C. (2022). *Spring in Action* (6th ed.). Manning Publications. Recuperado de [https://www.manning.com/books/spring-in-action-sixth-edition](https://www.manning.com/books/spring-in-action-sixth-edition)
-
-## Anexos
-
-<div style="page-break-before: always;"></div>
-
-### Anexo A. Videos de exposiciones
-
-- Exposición AV1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDffa4P9uW3SqlkTMvmZIkDAdNuNWS0YpS-94osKLniRPY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gXbFhx
-
-- Exposición TB1:
-<div style="page-break-before: always;"></div>
-
-### Anexo B. Videos de entrevistas
-
-- Entrevista 1 - Mateo Escudero, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQCf3pj989dtRqsxlQP-cphyAdmHJbpSw14HLGTRks5qOyM?e=L98d2n&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D
-- Entrevista 2 - Aarón Espinosa, Agencia de Tour: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAofZYR8ATPSbWHvKq3vOSvAZ1mk5uCZxK_sr8rN9qoqI4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CzroE4
-- Entrevista 3 - Carlos Gutierrez, Agencia de Tour: https://upcedupe-my.sharepoint.com/personal/u202319057_upc_edu_pe/_layouts/15/stream.aspx?id=/personal/u202319057_upc_edu_pe/Documents/Entrevista+DAOP.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.2461ff76-283b-41f2-bb72-df3bc61e4215&ClientRender=1
-- Entrevista 4 - Sofia Mendoza, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBPxk5ihQP7Qpk1EiObhUKMAcqE0PkmidpljYmgsKZhw60?e=y94DfE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXcifX0%3D
-- Entrevista 5 - Romina Antonella Molina Vásquez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAQPNKuz_cKS4krk8KnLmoKAaAOQuWIL6WmZXL4T30cJJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=B3HGgd
-- Entrevista 6 - Miler Rodriguez, Turista de aventura: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419483_upc_edu_pe/IQDe0UWGvKUwRojgbs_XPIuJAclsUfNSUJK04_8jjCFOE7A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Szx6cw
-
-
-
-### Anexo D. Materiales de ideación y diseño
-
-- Lean UX Canvas del proyecto TourMate: 
-- Big Picture EventStorming y Design-Level EventStorming: [https://miro.com/app/board/uXjVHl1uCrg=/?share_link_id=456387536744](https://miro.com/app/board/uXjVHl1uCrg=/?share_link_id=456387536744)
-- Wireframe de la landing page: [https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1](https://www.figma.com/design/byMOHsD6I3IV3fdNwVPg3C/Tourmate-Landing-Page-Mockup?node-id=0-1&t=tADie7c5MlXe8uc4-1)
-- Mock-up de la landing page: [https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1](https://www.figma.com/design/GVX1ocXvc77A9A24OnWhom/Tourmate-Mockup?node-id=0-1&t=5e7BZiJAVQvdoPjv-1)
-- Wireframes de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-- Wireflows de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-- Mock-ups de la aplicación web:[https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-- Prototipo de la aplicación web: [https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1](https://www.figma.com/design/SKEFgPxKRE4cJmEnGjuAx3/DAOS_final?node-id=0-1&t=yXf7imx6mdAPUOiO-1)
-
-
-
-### Anexo E. Repositorios y despliegues
-
-- Repositorio del informe del proyecto: https://github.com/axiom-daos/tourmate-report
-- Repositorio de la landing page: https://github.com/axiom-daos/tourmate-landing
-- Repositorio del Web Application: https://github.com/axiom-daos/tourmate-web-application
-- Repositorio del Backend: https://github.com/axiom-daos/tourmate-platform
-- Despliegue de la landing page: https://axiom-daos.github.io/tourmate-landing/
-- Despliegue de la Web Application: https://tourmate-e66ff.web.app
-- Tablero del Sprint Backlog 1: https://trello.com/b/gCKcMjVR/tourmate-sprint-1
-
-
-### Anexo F. Herramientas utilizadas
-
-- Trello, para gestión del backlog y tareas del proyecto: https://trello.com
-- Gherkin, para criterios de aceptación en formato Given-When-Then: https://cucumber.io/docs/gherkin/
-- Miro, para dinámicas de EventStorming: https://miro.com/
-- Figma, para wireframes, mock-ups y prototipos: https://www.figma.com
-- Canva, para recursos visuales del producto: https://www.canva.com
-- UXPressia, para User Personas y Customer Journey Maps: https://uxpressia.com
-- Lucidchart, para diagramas del sistema: https://www.lucidchart.com/ / https://lucidchart.com
-- GitHub, para control de versiones y colaboración: https://github.com
-- Visual Studio Code, para edición de código y archivos Markdown: https://code.visualstudio.com/
-- GitHub Pages, para despliegue de la landing page y frontend web: https://pages.github.com
-- Structurizr, para diagramas C4: https://structurizr.com
-- Vertabelo, para diagramas de base de datos: https://vertabelo.com
-
-
-### Anexo G. Referencias bibliográficas con enlace
-
-- Guía para ejecutar Big Picture Event Storming: https://bit.ly/bpes-guide
-- Guía práctica de EventStorming remoto: https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/
-- Material sobre historias de usuario: https://www.scrummanager.com/files/scrum_manager_historias_usuario.pdf
-- Libro de ingeniería de software usado como referencia: https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF
+*Contributors*
+![Web service contributors](../assets/images/back-sprint3-2.png)
