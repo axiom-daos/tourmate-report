@@ -143,14 +143,14 @@ En esta sección se documentan las entrevistas de validación realizadas a los u
 | | |
 | :--- | :--- |
 | **Entrevistador:** | Manuel Alejandro Molina Vásquez |
-| **Entrevistado:** | Sebastián Rojas ||
+| **Entrevistado:** | Sebastián Rojas |
 | **Cargo / Agencia:** | Manager de una agencia de turismo. |
 | **Edad:** | 29 años |
 | **Segmento:** | Dueño o responsable de agencia de turismo de aventura |
 | **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
 | **Duración:** | 11:55 min |
-| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQDiXpUGhKUlRYlM5PIDGRelAaj4EeGX2tt505uHNBNHIQ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=LKK1Jz] |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQDiXpUGhKUlRYlM5PIDGRelAaj4EeGX2tt505uHNBNHIQ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=LKK1Jz |
 
 **Resumen:** En esta tercera entrevista, Sebastián Rojas, un manager de una agencia de turismo de 29 años, señala que la aplicación TourMate optimiza notablemente la gestión y el monitoreo en vivo de las expediciones frente a los métodos tradicionales, logrando una alineación operativa de entre el 90 y el 100 por ciento al facilitar eventos personalizados, planes de facturación y el control detallado de los puntos de control o checkpoints para garantizar la seguridad de los usuarios. Asimismo, destaca que el sistema de alertas automáticas, calificado con un sólido 9 sobre 10, y la sincronización asincrónica funcionan de manera excelente ante la falta de señal en las rutas peruanas, mientras que el modelo de suscripción se adapta de forma muy adecuada al presupuesto y capacidad de intervención de una MYPE turística local. Finalmente, considera como funcionalidades indispensables desde el primer día la gestión y el monitoreo en tiempo real de los tours, dejando las reseñas y comentarios para fases posteriores, y valora muy positivamente el uso del historial de rutas pasadas para estructurar itinerarios más eficientes que optimicen el tiempo limitado de los clientes..
 
@@ -187,11 +187,11 @@ La entrevista de validación se realizó a Kristel Miluska Hurtado Gaspar, de ap
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | Manuel Alejandro Molina Vásquez] |
+| **Entrevistador:** | Manuel Alejandro Molina Vásquez |
 | **Entrevistado:** | Kevyn Huerta |
 | **Edad:** | 22 años |
 | **Segmento:** | Turista de Aventura |
-| **Fecha:** | 08/11/2026] |
+| **Fecha:** | 08/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
 | **Duración:** | 10:00 min |
 | **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g231_upc_edu_pe/IQAG25-_TphrT5U-4sAxeMWXAdn-ONSl-8y605TanyfME5E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qB9log |
@@ -258,10 +258,13 @@ El video *About-the-Product* constituye el artefacto audiovisual de validación 
 | Parámetro | Detalle |
 | :--- | :--- |
 | **Título del Video:** | TourMate - Plataforma Web para Gestión y Monitoreo Seguro de Turismo de Aventura |
-| **Duración:** | [MM:SS] min *(Recomendado entre 3 y 5 minutos)* |
-| **Fecha de Producción:** | [DD/MM/AAAA] |
-| **Plataforma / Enlace:** | [Enlace al video en YouTube / OneDrive / SharePoint] |
+| **Duración:** | 4:30 min |
+| **Fecha de Producción:** | Noviembre 2026 |
+| **Plataforma / Enlace:** | [TourMate – About the Product (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQAPtJVrqwuGTZCCC9fHlhMBARrVqF87HanSRUyzDOXRLus?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IhZXfd) |
 | **Presentadores / Miembros:** | Frank Anthony Huingo Tello, Matias Renato Carrillo Acho, Giancarlo Jose Verastigue Martinez, Manuel Alejandro Molina Vasquez, Tony Jhunior Quispe Palomino |
+
+![TourMate - About the Product](../assets/images/About-The-Producto-foto.jpeg)
+*Figura 5.X. Captura representativa del video de demostración About the Product.*
 
 ---
 
