@@ -748,6 +748,8 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 
 | Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
+| `8351e9c` | Merge | Multimedia / Landing Videos | Merge pull request #2 from axiom-daos/feature/landing-video-sections | @GonzJunior18p |
+| `d865891` | Feat | Multimedia / About-the-Team | feat(landing): update news section and integrate team video | @GonzJunior18p |
 | `73850a1` | Fix | Layout & Conflicts | fix: resolve merge conflict in index.html | @CarrilloMatias |
 | `8c37b66` | Merge | Multimedia / Landing Videos | Merge pull request #1 from axiom-daos/feature/landing-video-sections | @GonzJunior18p |
 | `25dcc2f` | Feat | Multimedia / About-the-Product | feat(landing): add product presentation video | @GonzJunior18p |

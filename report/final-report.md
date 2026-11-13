@@ -2110,6 +2110,10 @@ Gestiona el registro, autenticación, control de sesiones y ciclo de vida de las
 
 ![Identity & Access Class Diagram](../assets/images/TourMate_IdentityAccess_ClassDiagram.png)
 
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Identity & Access Class Diagram](../assets/images/iam_lucid.png)
+
 ---
 
 #### 4.7.1.3. Bounded Context: Tour Management
@@ -2122,6 +2126,10 @@ Controla la creación, configuración, publicación y administración del catál
 
 ![Tour Management Class Diagram](../assets/images/TourMate_TourManagement_ClassDiagram.png)
 
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Tour Management Class Diagram](../assets/images/tour_management_lucid.png)
+
 ---
 
 #### 4.7.1.4. Bounded Context: Tour Monitoring
@@ -2132,6 +2140,10 @@ Gestiona la supervisión en tiempo real de las expediciones en curso, calculando
 - **Interacciones:** Se comunica con el contexto de navegación para recibir coordenadas GPS y con el contexto de seguridad para alertar anomalías, desvíos o retrasos críticos durante el recorrido.
 
 ![Tour Monitoring Class Diagram](../assets/images/Tourmate_TourMonitoring_ClassDiagram.png)
+
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Tour Monitoring Class Diagram](../assets/images/tour_monitoring_lucid.png)
 
 ---
 
@@ -2145,6 +2157,10 @@ Supervisa los signos vitales, alertas biométricas y la documentación formal de
 
 ![Safety & Incident Management Class Diagram](../assets/images/Tourmate_Safety_Incident_Management_ClassDiagram.png)
 
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Safety & Incident Management Class Diagram](../assets/images/safety_and_incident_lucid.png)
+
 ---
 
 #### 4.7.1.6. Bounded Context: Feedback and Tour Reviews
@@ -2156,6 +2172,10 @@ Administra las valoraciones cuantitativas y reseñas cualitativas generadas por 
 
 ![Feedback & Tour Reviews Class Diagram](../assets/images/Tourmate_FeedbackTourReview_ClassDiagram.png)
 
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Feedback & Tour Reviews Class Diagram](../assets/images/feedback_and_tour_review_lucid.png)
+
 ---
 
 #### 4.7.1.7. Bounded Context: Subscriptions and Payment Management
@@ -2166,6 +2186,10 @@ Gestiona los planes comerciales de suscripción y el procesamiento de transaccio
 - **Enumeraciones:** `SubscriptionStatus` (`ACTIVE`, `CANCELLED`) y `PaymentStatus` (`REQUESTED`, `PROCESSED`, `REJECTED`).
 
 ![Subscriptions & Payment Class Diagram](../assets/images/subscription-classDiagram.png)
+
+El siguiente diagrama de clases muestra el modelo interno, sin relaciones con otros *bounded contexts*.
+
+![Subscriptions & Payment Class Diagram](../assets/images/subscriptions_lucid.png)
 
 ## 4.8. Database Design
 ### 4.8.1. Database Diagrams
@@ -3035,6 +3059,8 @@ A continuación, se presentan las secciones correspondientes a la evidencia de d
 
 | Hash | Tipo | Módulo / Componente | Descripción del Commit | Autor |
 | :--- | :---: | :--- | :--- | :---: |
+| `8351e9c` | Merge | Multimedia / Landing Videos | Merge pull request #2 from axiom-daos/feature/landing-video-sections | @GonzJunior18p |
+| `d865891` | Feat | Multimedia / About-the-Team | feat(landing): update news section and integrate team video | @GonzJunior18p |
 | `73850a1` | Fix | Layout & Conflicts | fix: resolve merge conflict in index.html | @CarrilloMatias |
 | `8c37b66` | Merge | Multimedia / Landing Videos | Merge pull request #1 from axiom-daos/feature/landing-video-sections | @GonzJunior18p |
 | `25dcc2f` | Feat | Multimedia / About-the-Product | feat(landing): add product presentation video | @GonzJunior18p |
