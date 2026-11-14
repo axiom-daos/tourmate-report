@@ -202,20 +202,20 @@ La entrevista de validación se realizó a Kristel Miluska Hurtado Gaspar, de ap
 
 **Entrevista de Validación 6:**
 
-![Entrevista de Validación 6](../assets/images/validation-interview-6.png)
+![Entrevista de Validación 6](../assets/images/entrevista-matias.png)
 
 | | |
 | :--- | :--- |
-| **Entrevistador:** | [Nombre del Entrevistador (Equipo Axiom)] |
-| **Entrevistado:** | [Nombre y Apellidos del Entrevistado] |
-| **Edad:** | [Edad] años |
+| **Entrevistador:** | Matias Carrillo |
+| **Entrevistado:** | Joaquin Alfaro |
+| **Edad:** | 19 años |
 | **Segmento:** | Turista de Aventura |
-| **Fecha:** | [DD/MM/2026] |
+| **Fecha:** | 13/11/2026 |
 | **Inicio de la entrevista:** | 0:00 |
-| **Duración:** | [MM:SS] min |
-| **Enlace:** | [URL del video en OneDrive / SharePoint / YouTube] |
+| **Duración:** | 05:48 min |
+| **Enlace:** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323010_upc_edu_pe/IQDY3y5zX4lmQ7x5E_PkZPgAAY8PAidzblAtgLGLS5oHbG4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=j4u4Zx |
 
-**Resumen:** [Síntesis cualitativa de la entrevista: perfil del turista y frecuencia de viajes de aventura, experiencia al explorar el catálogo de tours y detalles de las rutas en la Web App, percepción sobre el sistema de seguimiento de expedición y seguridad, dudas encontradas en la interfaz y sugerencias de diseño].
+**Resumen:** Joaquín hace trekking unas 4 o 5 veces al año en zonas remotas y lo que más le preocupa es perder la señal, desorientarse o tener un accidente lejos de ayuda. Le encantó la app de TourMate: la navegación es clara, el recorrido se registra solo y los mapas offline y los checkpoints le parecieron mucho mejores que un mapa genérico, aunque pidió que gaste menos batería. El wearable lo hizo sentir respaldado, pero le preocupa un poco la privacidad, así que quiere saber qué datos se recogen, quién los ve y cuándo se borran. También le inquieta que el dispositivo sea cómodo, aguante frío y lluvia, y qué pasa si hay una falsa alarma. El botón de pánico le parece buena idea mientras funcione con poca señal y pida confirmación. Las alertas de clima y la info de la ruta le parecieron muy útiles, y entre dos agencias elegiría la que tenga este tipo de tecnología. El diario de viaje automático le gustó, pero quiere poder editarlo antes de compartirlo.
 
 ---
 
